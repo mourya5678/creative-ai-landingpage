@@ -19,12 +19,13 @@ export default function Page() {
 
           <span>✨ Build apps, websites & AI products instantly
           </span>
-          <h1>Turn Your Ideas Into Real <small>Products</small> In Seconds</h1>
+          {/* <h1>Turn Your Ideas Into Real <small>Products</small> In Seconds</h1> */}
+          <h1>The AI Business <small>Builder</small> For Great Ideas</h1>
           <p>
             From business websites to custom apps, Creative AI helps you turn ideas into real products in minutes.
           </p>
           <div className="cti_prompt_main">
-            <textarea className="form-control" placeholder="Type your idea… we’ll build it for you" rows="5"></textarea>
+            <textarea className="form-control" placeholder="What would you like to build today?" rows="5"></textarea>
             <div className="cti_home_prompt_action_btns">
               <div className="ctiprompt_left_btns">
                 <button>
@@ -107,27 +108,26 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
-                <h2>What Can You Build with Creative AI?</h2>
-                <p style={{ maxWidth: "600px" }}>Build websites, applications, customer experiences, and online businesses with
-                  Creative AI. Choose what you want to create and launch faster without coding.
+                <h2>What Can You Build With Creative AI?</h2>
+                <p style={{ maxWidth: "600px" }}>
+                  Build websites, applications, customer experiences, and online businesses with Creative AI. Choose what you want to create and launch faster without coding.
                 </p>
               </div>
               <div style={{ height: "111px" }}></div>
               <div className="ct_sticky_scroll_main">
                 <section className="cti_saas_card">
                   <div className="cti_content">
-                    <span className="cti_badge">Business Websites </span>
+                    <span className="cti_badge">Business Websites</span>
                     <h2 className="cti_heading">I Need A Website</h2>
                     <p className="cti_desc">
-                      Build a modern website for your business with AI. Create landing pages, company websites, portfolios,
-                      and lead generation websites designed to help you attract customers and grow online.
+                      Build a modern website for your business with AI. Create landing pages, company websites, portfolios, and lead generation websites designed to help you attract customers and grow online.
                     </p>
                     <div className="cti_stats_wrapper">
                       <div className="cti_stat_box">
                         <h3>SEO Ready</h3>
                       </div>
                       <div className="cti_stat_box">
-                        <h3>Mobile Friendly </h3>
+                        <h3>Mobile Friendly</h3>
                       </div>
                     </div>
                     <button className="cti_build_btn">
@@ -148,16 +148,14 @@ export default function Page() {
                     <span className="cti_badge">Mobile Applications </span>
                     <h2 className="cti_heading">I Need An App</h2>
                     <p className="cti_desc">
-                      Turn your idea into a fully functional application without writing code. Build business apps, customer
-                      dashboards, booking systems, and operational tools in a fraction of the usual time.
+                      Turn your idea into a fully functional application without writing code. Build business apps, customer dashboards, booking systems, and operational tools in a fraction of the usual time.
                     </p>
                     <div className="cti_stats_wrapper">
                       <div className="cti_stat_box">
-                        <h3>No Code Required
-                        </h3>
+                        <h3>No Code Required</h3>
                       </div>
                       <div className="cti_stat_box">
-                        <h3>Business Ready </h3>
+                        <h3>Business Ready</h3>
                       </div>
                     </div>
                     <button className="cti_build_btn">
@@ -178,17 +176,14 @@ export default function Page() {
                     <span className="cti_badge">Customer Portal</span>
                     <h2 className="cti_heading">I Need A Customer Portal</h2>
                     <p className="cti_desc">
-                      Give customers a dedicated space to manage their accounts, access services, submit requests, and stay
-                      connected with your business through a professional online portal.
+                      Give customers a dedicated space to manage their accounts, access services, submit requests, and stay connected with your business through a professional online portal.
                     </p>
                     <div className="cti_stats_wrapper">
                       <div className="cti_stat_box">
-                        <h3>Customer Friendly
-                        </h3>
+                        <h3>Customer Friendly</h3>
                       </div>
                       <div className="cti_stat_box">
-                        <h3>Built To Scale
-                        </h3>
+                        <h3>Built To Scale</h3>
                       </div>
                     </div>
                     <button className="cti_build_btn">
@@ -206,22 +201,17 @@ export default function Page() {
                 </section>
                 <section className="cti_saas_card is_green">
                   <div className="cti_content">
-                    <span className="cti_badge">Online Marketplaces
-                    </span>
-                    <h2 className="cti_heading">I Need A Marketplace
-                    </h2>
+                    <span className="cti_badge">Online Marketplaces</span>
+                    <h2 className="cti_heading">I Need A Marketplace</h2>
                     <p className="cti_desc">
-                      Create a marketplace platform with user profiles, listings, payments, reviews, and vendor management
-                      tools. Everything you need to launch and scale an online marketplace.
+                      Create a marketplace platform with user profiles, listings, payments, reviews, and vendor management tools. Everything you need to launch and scale an online marketplace.
                     </p>
                     <div className="cti_stats_wrapper">
                       <div className="cti_stat_box">
-                        <h3>Multi-Vendor Ready
-                        </h3>
+                        <h3>Multi-Vendor Ready</h3>
                       </div>
                       <div className="cti_stat_box">
-                        <h3>Built For Growth
-                        </h3>
+                        <h3>Built For Growth</h3>
                       </div>
                     </div>
                     <button className="cti_build_btn">
@@ -530,47 +520,47 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section class="your_own_bulid_sec ct_py_98 pb-0">
-        <div class="container">
-          <div class="your_own_bulid_sec_desc ">
-            <div class="position-relative left-cont">
-              <div class="ct_home_titles_cnt">
-                <h2 class="text-xl-end text-center">You Own What You <small class="ct_clr_6c82fe ">Build</small> </h2>
-                <img src="assets/img/build-shap-svg.webp" class="ct_curve_arrow" alt="" />
+      <section className="your_own_bulid_sec ct_py_98 pb-0">
+        <div className="container">
+          <div className="your_own_bulid_sec_desc ">
+            <div className="position-relative left-cont">
+              <div className="ct_home_titles_cnt">
+                <h2 className="text-xl-end text-center">You Own What You <small className="ct_clr_6c82fe ">Build</small> </h2>
+                <img src="assets/img/build-shap-svg.webp" className="ct_curve_arrow" alt="" />
               </div>
-              <div class="d-xl-flex d-none justify-content-end ct_mt_63"><button class="ct_get_started_btn ct_down_btn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.33365 6.79167V0.833333C8.33365 0.61232 8.24586 0.400358 8.08958 0.244078C7.9333 0.0877973 7.72133 0 7.50032 0C7.27931 0 7.06735 0.0877973 6.91107 0.244078C6.75478 0.400358 6.66699 0.61232 6.66699 0.833333V6.79167L4.81699 4.47833C4.74994 4.38909 4.66565 4.31422 4.56911 4.25817C4.47258 4.20213 4.36576 4.16605 4.25502 4.15208C4.14427 4.13811 4.03184 4.14653 3.92441 4.17684C3.81698 4.20716 3.71674 4.25874 3.62963 4.32854C3.54252 4.39834 3.47032 4.48493 3.41732 4.58317C3.36431 4.68141 3.33159 4.7893 3.32108 4.90043C3.31058 5.01156 3.3225 5.12366 3.35616 5.23009C3.38981 5.33653 3.4445 5.43511 3.51699 5.52L6.85032 9.68667C6.92841 9.78399 7.02735 9.86255 7.13985 9.91652C7.25235 9.9705 7.37554 9.99852 7.50032 9.99852C7.6251 9.99852 7.74829 9.9705 7.86079 9.91652C7.97329 9.86255 8.07224 9.78399 8.15032 9.68667L11.4837 5.52C11.5561 5.43511 11.6108 5.33653 11.6445 5.23009C11.6781 5.12366 11.6901 5.01156 11.6796 4.90043C11.6691 4.7893 11.6363 4.68141 11.5833 4.58317C11.5303 4.48493 11.4581 4.39834 11.371 4.32854C11.2839 4.25874 11.1837 4.20716 11.0762 4.17684C10.9688 4.14653 10.8564 4.13811 10.7456 4.15208C10.6349 4.16605 10.5281 4.20213 10.4315 4.25817C10.335 4.31422 10.2507 4.38909 10.1837 4.47833L8.33365 6.79167Z" fill="white" />
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5475 10.7285L3.63167 8.3335H1.66667C1.22464 8.3335 0.800716 8.50909 0.488155 8.82165C0.175595 9.13421 0 9.55814 0 10.0002V13.3335C0 13.7755 0.175595 14.1994 0.488155 14.512C0.800716 14.8246 1.22464 15.0002 1.66667 15.0002H13.3333C13.7754 15.0002 14.1993 14.8246 14.5118 14.512C14.8244 14.1994 15 13.7755 15 13.3335V10.0002C15 9.55814 14.8244 9.13421 14.5118 8.82165C14.1993 8.50909 13.7754 8.3335 13.3333 8.3335H11.3683L9.45167 10.7285C9.21745 11.0212 8.9204 11.2575 8.58249 11.4199C8.24459 11.5823 7.87449 11.6666 7.49958 11.6666C7.12468 11.6666 6.75458 11.5823 6.41668 11.4199C6.07877 11.2575 5.78172 11.0212 5.5475 10.7285ZM11.6667 10.8335C11.4457 10.8335 11.2337 10.9213 11.0774 11.0776C10.9211 11.2339 10.8333 11.4458 10.8333 11.6668C10.8333 11.8878 10.9211 12.0998 11.0774 12.2561C11.2337 12.4124 11.4457 12.5002 11.6667 12.5002H11.675C11.896 12.5002 12.108 12.4124 12.2643 12.2561C12.4205 12.0998 12.5083 11.8878 12.5083 11.6668C12.5083 11.4458 12.4205 11.2339 12.2643 11.0776C12.108 10.9213 11.896 10.8335 11.675 10.8335H11.6667Z" fill="white" />
+              <div className="d-xl-flex d-none justify-content-end ct_mt_63"><button className="ct_get_started_btn ct_down_btn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fillRule="evenodd" clipRule="evenodd" d="M8.33365 6.79167V0.833333C8.33365 0.61232 8.24586 0.400358 8.08958 0.244078C7.9333 0.0877973 7.72133 0 7.50032 0C7.27931 0 7.06735 0.0877973 6.91107 0.244078C6.75478 0.400358 6.66699 0.61232 6.66699 0.833333V6.79167L4.81699 4.47833C4.74994 4.38909 4.66565 4.31422 4.56911 4.25817C4.47258 4.20213 4.36576 4.16605 4.25502 4.15208C4.14427 4.13811 4.03184 4.14653 3.92441 4.17684C3.81698 4.20716 3.71674 4.25874 3.62963 4.32854C3.54252 4.39834 3.47032 4.48493 3.41732 4.58317C3.36431 4.68141 3.33159 4.7893 3.32108 4.90043C3.31058 5.01156 3.3225 5.12366 3.35616 5.23009C3.38981 5.33653 3.4445 5.43511 3.51699 5.52L6.85032 9.68667C6.92841 9.78399 7.02735 9.86255 7.13985 9.91652C7.25235 9.9705 7.37554 9.99852 7.50032 9.99852C7.6251 9.99852 7.74829 9.9705 7.86079 9.91652C7.97329 9.86255 8.07224 9.78399 8.15032 9.68667L11.4837 5.52C11.5561 5.43511 11.6108 5.33653 11.6445 5.23009C11.6781 5.12366 11.6901 5.01156 11.6796 4.90043C11.6691 4.7893 11.6363 4.68141 11.5833 4.58317C11.5303 4.48493 11.4581 4.39834 11.371 4.32854C11.2839 4.25874 11.1837 4.20716 11.0762 4.17684C10.9688 4.14653 10.8564 4.13811 10.7456 4.15208C10.6349 4.16605 10.5281 4.20213 10.4315 4.25817C10.335 4.31422 10.2507 4.38909 10.1837 4.47833L8.33365 6.79167Z" fill="white" />
+                <path fillRule="evenodd" clipRule="evenodd" d="M5.5475 10.7285L3.63167 8.3335H1.66667C1.22464 8.3335 0.800716 8.50909 0.488155 8.82165C0.175595 9.13421 0 9.55814 0 10.0002V13.3335C0 13.7755 0.175595 14.1994 0.488155 14.512C0.800716 14.8246 1.22464 15.0002 1.66667 15.0002H13.3333C13.7754 15.0002 14.1993 14.8246 14.5118 14.512C14.8244 14.1994 15 13.7755 15 13.3335V10.0002C15 9.55814 14.8244 9.13421 14.5118 8.82165C14.1993 8.50909 13.7754 8.3335 13.3333 8.3335H11.3683L9.45167 10.7285C9.21745 11.0212 8.9204 11.2575 8.58249 11.4199C8.24459 11.5823 7.87449 11.6666 7.49958 11.6666C7.12468 11.6666 6.75458 11.5823 6.41668 11.4199C6.07877 11.2575 5.78172 11.0212 5.5475 10.7285ZM11.6667 10.8335C11.4457 10.8335 11.2337 10.9213 11.0774 11.0776C10.9211 11.2339 10.8333 11.4458 10.8333 11.6668C10.8333 11.8878 10.9211 12.0998 11.0774 12.2561C11.2337 12.4124 11.4457 12.5002 11.6667 12.5002H11.675C11.896 12.5002 12.108 12.4124 12.2643 12.2561C12.4205 12.0998 12.5083 11.8878 12.5083 11.6668C12.5083 11.4458 12.4205 11.2339 12.2643 11.0776C12.108 10.9213 11.896 10.8335 11.675 10.8335H11.6667Z" fill="white" />
               </svg>
                 Download</button></div>
             </div>
             <div>
-              <img src="assets/img/MacBookPro.webp" class="w-100 h-100 object-fit-cover" />
+              <img src="assets/img/MacBookPro.webp" className="w-100 h-100 object-fit-cover" />
             </div>
             <div>
-              <p class="ct_text_dark ct_fs_20 ct_mb_34 text-xl-start text-center">Download the complete source code of your website or app anytime. Host it anywhere, customize it freely, and stay in full control. </p>
-              <div class="">
-                <ul class="d-grid gap-3 build-sec-list">
-                  <li class="ct_fw_700 text-black ct_fs_18"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12.5" cy="12.5" r="11.9444" stroke="#6B81FE" stroke-opacity="0.62" stroke-width="1.11111" />
+              <p className="ct_text_dark ct_fs_20 ct_mb_34 text-xl-start text-center">Download the complete source code of your website or app anytime. Host it anywhere, customize it freely, and stay in full control. </p>
+              <div className="">
+                <ul className="d-grid gap-3 build-sec-list">
+                  <li className="ct_fw_700 text-black ct_fs_18"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="12.5" r="11.9444" stroke="#6B81FE" strokeOpacity="0.62" strokeWidth="1.11111" />
                     <path d="M17.1923 9.22936C17.1234 9.15994 17.0415 9.10483 16.9512 9.06722C16.861 9.02962 16.7642 9.01025 16.6664 9.01025C16.5686 9.01025 16.4718 9.02962 16.3815 9.06722C16.2912 9.10483 16.2093 9.15994 16.1405 9.22936L10.6219 14.7553L8.30341 12.4294C8.23192 12.3603 8.14751 12.306 8.05503 12.2695C7.96254 12.2331 7.86379 12.2152 7.76439 12.2169C7.665 12.2187 7.56692 12.2399 7.47575 12.2796C7.38458 12.3192 7.30211 12.3764 7.23304 12.4479C7.16398 12.5194 7.10967 12.6038 7.07322 12.6963C7.03678 12.7888 7.0189 12.8875 7.02062 12.9869C7.02234 13.0863 7.04362 13.1844 7.08325 13.2755C7.12287 13.3667 7.18006 13.4492 7.25156 13.5183L10.096 16.3627C10.1649 16.4321 10.2468 16.4872 10.3371 16.5248C10.4273 16.5624 10.5241 16.5818 10.6219 16.5818C10.7197 16.5818 10.8165 16.5624 10.9068 16.5248C10.9971 16.4872 11.079 16.4321 11.1479 16.3627L17.1923 10.3183C17.2675 10.2489 17.3275 10.1647 17.3685 10.071C17.4096 9.97729 17.4308 9.87611 17.4308 9.77381C17.4308 9.67151 17.4096 9.57032 17.3685 9.47662C17.3275 9.38291 17.2675 9.29873 17.1923 9.22936Z" fill="#6B81FE" />
                   </svg>
                     Download Anytime
                   </li>
-                  <li class="ct_fw_700 text-black ct_fs_18"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12.5" cy="12.5" r="11.9444" stroke="#6B81FE" stroke-opacity="0.62" stroke-width="1.11111" />
+                  <li className="ct_fw_700 text-black ct_fs_18"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="12.5" r="11.9444" stroke="#6B81FE" strokeOpacity="0.62" strokeWidth="1.11111" />
                     <path d="M17.1923 9.22936C17.1234 9.15994 17.0415 9.10483 16.9512 9.06722C16.861 9.02962 16.7642 9.01025 16.6664 9.01025C16.5686 9.01025 16.4718 9.02962 16.3815 9.06722C16.2912 9.10483 16.2093 9.15994 16.1405 9.22936L10.6219 14.7553L8.30341 12.4294C8.23192 12.3603 8.14751 12.306 8.05503 12.2695C7.96254 12.2331 7.86379 12.2152 7.76439 12.2169C7.665 12.2187 7.56692 12.2399 7.47575 12.2796C7.38458 12.3192 7.30211 12.3764 7.23304 12.4479C7.16398 12.5194 7.10967 12.6038 7.07322 12.6963C7.03678 12.7888 7.0189 12.8875 7.02062 12.9869C7.02234 13.0863 7.04362 13.1844 7.08325 13.2755C7.12287 13.3667 7.18006 13.4492 7.25156 13.5183L10.096 16.3627C10.1649 16.4321 10.2468 16.4872 10.3371 16.5248C10.4273 16.5624 10.5241 16.5818 10.6219 16.5818C10.7197 16.5818 10.8165 16.5624 10.9068 16.5248C10.9971 16.4872 11.079 16.4321 11.1479 16.3627L17.1923 10.3183C17.2675 10.2489 17.3275 10.1647 17.3685 10.071C17.4096 9.97729 17.4308 9.87611 17.4308 9.77381C17.4308 9.67151 17.4096 9.57032 17.3685 9.47662C17.3275 9.38291 17.2675 9.29873 17.1923 9.22936Z" fill="#6B81FE" />
                   </svg>
                     Full Ownership
                   </li>
-                  <li class="ct_fw_700 text-black ct_fs_18"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12.5" cy="12.5" r="11.9444" stroke="#6B81FE" stroke-opacity="0.62" stroke-width="1.11111" />
+                  <li className="ct_fw_700 text-black ct_fs_18"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="12.5" r="11.9444" stroke="#6B81FE" strokeOpacity="0.62" strokeWidth="1.11111" />
                     <path d="M17.1923 9.22936C17.1234 9.15994 17.0415 9.10483 16.9512 9.06722C16.861 9.02962 16.7642 9.01025 16.6664 9.01025C16.5686 9.01025 16.4718 9.02962 16.3815 9.06722C16.2912 9.10483 16.2093 9.15994 16.1405 9.22936L10.6219 14.7553L8.30341 12.4294C8.23192 12.3603 8.14751 12.306 8.05503 12.2695C7.96254 12.2331 7.86379 12.2152 7.76439 12.2169C7.665 12.2187 7.56692 12.2399 7.47575 12.2796C7.38458 12.3192 7.30211 12.3764 7.23304 12.4479C7.16398 12.5194 7.10967 12.6038 7.07322 12.6963C7.03678 12.7888 7.0189 12.8875 7.02062 12.9869C7.02234 13.0863 7.04362 13.1844 7.08325 13.2755C7.12287 13.3667 7.18006 13.4492 7.25156 13.5183L10.096 16.3627C10.1649 16.4321 10.2468 16.4872 10.3371 16.5248C10.4273 16.5624 10.5241 16.5818 10.6219 16.5818C10.7197 16.5818 10.8165 16.5624 10.9068 16.5248C10.9971 16.4872 11.079 16.4321 11.1479 16.3627L17.1923 10.3183C17.2675 10.2489 17.3275 10.1647 17.3685 10.071C17.4096 9.97729 17.4308 9.87611 17.4308 9.77381C17.4308 9.67151 17.4096 9.57032 17.3685 9.47662C17.3275 9.38291 17.2675 9.29873 17.1923 9.22936Z" fill="#6B81FE" />
                   </svg>
                     No Vendor Lock-In
                   </li>
-                  <li class="ct_fw_700 text-black ct_fs_18"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="12.5" cy="12.5" r="11.9444" stroke="#6B81FE" stroke-opacity="0.62" stroke-width="1.11111" />
+                  <li className="ct_fw_700 text-black ct_fs_18"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12.5" cy="12.5" r="11.9444" stroke="#6B81FE" strokeOpacity="0.62" strokeWidth="1.11111" />
                     <path d="M17.1923 9.22936C17.1234 9.15994 17.0415 9.10483 16.9512 9.06722C16.861 9.02962 16.7642 9.01025 16.6664 9.01025C16.5686 9.01025 16.4718 9.02962 16.3815 9.06722C16.2912 9.10483 16.2093 9.15994 16.1405 9.22936L10.6219 14.7553L8.30341 12.4294C8.23192 12.3603 8.14751 12.306 8.05503 12.2695C7.96254 12.2331 7.86379 12.2152 7.76439 12.2169C7.665 12.2187 7.56692 12.2399 7.47575 12.2796C7.38458 12.3192 7.30211 12.3764 7.23304 12.4479C7.16398 12.5194 7.10967 12.6038 7.07322 12.6963C7.03678 12.7888 7.0189 12.8875 7.02062 12.9869C7.02234 13.0863 7.04362 13.1844 7.08325 13.2755C7.12287 13.3667 7.18006 13.4492 7.25156 13.5183L10.096 16.3627C10.1649 16.4321 10.2468 16.4872 10.3371 16.5248C10.4273 16.5624 10.5241 16.5818 10.6219 16.5818C10.7197 16.5818 10.8165 16.5624 10.9068 16.5248C10.9971 16.4872 11.079 16.4321 11.1479 16.3627L17.1923 10.3183C17.2675 10.2489 17.3275 10.1647 17.3685 10.071C17.4096 9.97729 17.4308 9.87611 17.4308 9.77381C17.4308 9.67151 17.4096 9.57032 17.3685 9.47662C17.3275 9.38291 17.2675 9.29873 17.1923 9.22936Z" fill="#6B81FE" />
                   </svg>
                     Deploy Anywhere
