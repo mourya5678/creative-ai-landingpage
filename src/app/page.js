@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import { HomeInit } from "@/components/PageInitializers";
 
+
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
   description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
@@ -1150,7 +1151,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-      Main Sections E
 
 
 

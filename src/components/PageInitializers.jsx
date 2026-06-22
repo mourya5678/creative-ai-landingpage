@@ -128,18 +128,6 @@ export function HomeInit() {
       const isDesktop = window.matchMedia("(min-width: 992px)").matches;
       const firstCardSpace = isDesktop ? 160 : 0;
       const offset = isDesktop ? 70 : 0;
-      const cardHeights = Array.from(stickyBoxes).map((box) =>
-        Math.ceil(box.getBoundingClientRect().height || box.offsetHeight || 0),
-      );
-      const tallestCard = Math.max(...cardHeights, 0);
-
-      stickySection.style.setProperty("--sticky-count", stickyBoxes.length);
-      stickySection.style.paddingBottom = isDesktop
-        ? `${Math.max(
-          window.innerHeight * 0.75,
-          tallestCard + (stickyBoxes.length - 1) * Math.max(tallestCard - offset, 280) + 160,
-        )}px`
-        : "";
 
       stickyBoxes.forEach((box, index) => {
         const topValue =
@@ -150,34 +138,14 @@ export function HomeInit() {
         box.style.setProperty("--stick-top", `${topValue}px`);
         box.style.zIndex = String(index + 1);
       });
-
-      if (window.cti_lenis) {
-        window.cti_lenis.resize();
-      }
-
-      if (window.ScrollTrigger?.refresh) {
-        window.ScrollTrigger.refresh();
-      }
-    };
-
-    const scheduleStickyLayout = () => {
-      window.clearTimeout(stickyResizeTimer);
-      stickyResizeTimer = window.setTimeout(syncStickyLayout, 50);
     };
 
     syncStickyLayout();
     window.requestAnimationFrame(syncStickyLayout);
     stickyInitialTimer = window.setTimeout(syncStickyLayout, 150);
 
-    if (stickySection && "ResizeObserver" in window) {
-      stickyObserver = new ResizeObserver(() => {
-        scheduleStickyLayout();
-      });
-      stickyObserver.observe(stickySection);
-    }
-
-    window.addEventListener("resize", scheduleStickyLayout);
-    window.addEventListener("load", scheduleStickyLayout);
+    window.addEventListener("resize", syncStickyLayout);
+    window.addEventListener("load", syncStickyLayout);
 
     const onPageShow = (event) => {
       if (event.persisted) {
@@ -193,15 +161,11 @@ export function HomeInit() {
 
     return () => {
       window.removeEventListener("pageshow", onPageShow);
-      window.removeEventListener("resize", scheduleStickyLayout);
-      window.removeEventListener("load", scheduleStickyLayout);
-      if (stickyObserver) {
-        stickyObserver.disconnect();
-      }
+      window.removeEventListener("resize", syncStickyLayout);
+      window.removeEventListener("load", syncStickyLayout);
       window.cancelAnimationFrame(animationFrame1);
       window.cancelAnimationFrame(animationFrame2);
       window.clearTimeout(retryTimer);
-      window.clearTimeout(stickyResizeTimer);
       window.clearTimeout(stickyInitialTimer);
     };
   }, [pathname]);
