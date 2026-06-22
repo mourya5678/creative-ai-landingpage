@@ -62,7 +62,7 @@ export default function Page() {
                   <li>
                     <div className="ct_works_ai_icon">
                       <svg fill="none" height="25" viewBox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-                        <mask height="12" id="mask0_303_14898" maskunits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
+                        <mask height="12" id="mask0_303_14898" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
                           <path d="M0 0.802734H10.016V11.7744H0V0.802734Z" fill="white"></path>
                         </mask>
                         <g mask="url(#mask0_303_14898)">
@@ -82,7 +82,7 @@ export default function Page() {
                   <li>
                     <div className="ct_works_ai_icon">
                       <svg fill="none" height="25" viewBox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-                        <mask height="12" id="mask0_303_14898" maskunits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
+                        <mask height="12" id="mask0_303_14898" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
                           <path d="M0 0.802734H10.016V11.7744H0V0.802734Z" fill="white"></path>
                         </mask>
                         <g mask="url(#mask0_303_14898)">
@@ -104,7 +104,7 @@ export default function Page() {
                   <li>
                     <div className="ct_works_ai_icon">
                       <svg fill="none" height="25" viewBox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-                        <mask height="12" id="mask0_303_14898" maskunits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
+                        <mask height="12" id="mask0_303_14898" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
                           <path d="M0 0.802734H10.016V11.7744H0V0.802734Z" fill="white"></path>
                         </mask>
                         <g mask="url(#mask0_303_14898)">
@@ -555,7 +555,7 @@ export default function Page() {
                 <div className="item">
                   <div className="ct_related_article_card">
                     <figure>
-                      <div className="ct_article_img" tabindex="0">
+                      <div className="ct_article_img" tabIndex="0">
                         <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228019-1780904378323.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
@@ -571,7 +571,7 @@ export default function Page() {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabindex="0">
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabIndex="0">
                             Learn More
                           </Link>
                         </div>
@@ -582,7 +582,7 @@ export default function Page() {
                 <div className="item">
                   <div className="ct_related_article_card">
                     <figure>
-                      <div className="ct_article_img" tabindex="0">
+                      <div className="ct_article_img" tabIndex="0">
                         <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
@@ -596,7 +596,7 @@ export default function Page() {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabindex="0">
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabIndex="0">
                             Learn More
                           </Link>
                         </div>
@@ -607,7 +607,7 @@ export default function Page() {
                 <div className="item">
                   <div className="ct_related_article_card">
                     <figure>
-                      <div className="ct_article_img" tabindex="0">
+                      <div className="ct_article_img" tabIndex="0">
                         <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
@@ -621,7 +621,7 @@ export default function Page() {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabindex="0">
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabIndex="0">
                             Learn More
                           </Link>
                         </div>
@@ -632,7 +632,7 @@ export default function Page() {
                 <div className="item">
                   <div className="ct_related_article_card">
                     <figure>
-                      <div className="ct_article_img" tabindex="0">
+                      <div className="ct_article_img" tabIndex="0">
                         <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
@@ -646,7 +646,7 @@ export default function Page() {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabindex="0">
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabIndex="0">
                             Learn More
                           </Link>
                         </div>

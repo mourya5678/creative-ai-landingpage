@@ -63,7 +63,7 @@ export default function Page() {
                   <li>
                     <div className="ct_works_ai_icon">
                       <svg fill="none" height="25" viewBox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-                        <mask height="12" id="mask0_303_14898" maskunits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
+                        <mask height="12" id="mask0_303_14898" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
                           <path d="M0 0.802734H10.016V11.7744H0V0.802734Z" fill="white"></path>
                         </mask>
                         <g mask="url(#mask0_303_14898)">
@@ -83,7 +83,7 @@ export default function Page() {
                   <li>
                     <div className="ct_works_ai_icon">
                       <svg fill="none" height="25" viewBox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-                        <mask height="12" id="mask0_303_14898" maskunits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
+                        <mask height="12" id="mask0_303_14898" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
                           <path d="M0 0.802734H10.016V11.7744H0V0.802734Z" fill="white"></path>
                         </mask>
                         <g mask="url(#mask0_303_14898)">
@@ -105,7 +105,7 @@ export default function Page() {
                   <li>
                     <div className="ct_works_ai_icon">
                       <svg fill="none" height="25" viewBox="0 0 11 12" width="11" xmlns="http://www.w3.org/2000/svg">
-                        <mask height="12" id="mask0_303_14898" maskunits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
+                        <mask height="12" id="mask0_303_14898" maskUnits="userSpaceOnUse" style={{ maskType: "luminance" }} width="11" x="0" y="0">
                           <path d="M0 0.802734H10.016V11.7744H0V0.802734Z" fill="white"></path>
                         </mask>
                         <g mask="url(#mask0_303_14898)">

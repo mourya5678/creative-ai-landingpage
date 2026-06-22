@@ -741,7 +741,7 @@ export default function Page() {
                 <div className="item">
                   <div className="ct_related_article_card">
                     <figure>
-                      <div className="ct_article_img" tabindex="0">
+                      <div className="ct_article_img" tabIndex="0">
                         <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228019-1780904378323.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
@@ -757,7 +757,7 @@ export default function Page() {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabindex="0">
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabIndex="0">
                             Learn More
                           </Link>
                         </div>
@@ -768,7 +768,7 @@ export default function Page() {
                 <div className="item">
                   <div className="ct_related_article_card">
                     <figure>
-                      <div className="ct_article_img" tabindex="0">
+                      <div className="ct_article_img" tabIndex="0">
                         <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
@@ -782,7 +782,7 @@ export default function Page() {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabindex="0">
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabIndex="0">
                             Learn More
                           </Link>
                         </div>
@@ -793,7 +793,7 @@ export default function Page() {
                 <div className="item">
                   <div className="ct_related_article_card">
                     <figure>
-                      <div className="ct_article_img" tabindex="0">
+                      <div className="ct_article_img" tabIndex="0">
                         <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
@@ -807,7 +807,7 @@ export default function Page() {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabindex="0">
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabIndex="0">
                             Learn More
                           </Link>
                         </div>
@@ -818,7 +818,7 @@ export default function Page() {
                 <div className="item">
                   <div className="ct_related_article_card">
                     <figure>
-                      <div className="ct_article_img" tabindex="0">
+                      <div className="ct_article_img" tabIndex="0">
                         <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
@@ -832,7 +832,7 @@ export default function Page() {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabindex="0">
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href="/blog-details" tabIndex="0">
                             Learn More
                           </Link>
                         </div>

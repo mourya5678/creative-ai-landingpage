@@ -51,7 +51,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228019-1780904378323.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -78,7 +78,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -106,7 +106,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/The_Shift_from_SaaS_to_Custom_AI-Built_Applications_(1)-1780480266223.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -133,7 +133,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147227886_3-1780293726902.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -160,7 +160,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147227887_(1)-1780042878966.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -188,7 +188,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Blue_and_Black_Modern_Product_Update_YouTube_Thumbnail_(1)_4_(4)-1779944283994.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -215,7 +215,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147227854_2-1779779070923.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -242,7 +242,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Blue_and_Black_Modern_Product_Update_YouTube_Thumbnail_(1)_3_1-1779433641706.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -270,7 +270,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147227793_2_(2)-1779268983814.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -298,7 +298,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Blue_and_Black_Modern_Product_Update_YouTube_Thumbnail_(1)_1_(1)-1779081421585.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -325,7 +325,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147227678-1778657839558.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -352,7 +352,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147227558-1778478683960.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -380,7 +380,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147227552_1-1778216407937.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -407,7 +407,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147227347_(1)-1778045087322.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -434,7 +434,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2085664699-1760340616516-1777980944362.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
@@ -470,7 +470,7 @@ export default function Page() {
             <div className="col-lg-6 col-md-6 mb-4">
               <div className="ct_related_article_card">
                 <figure>
-                  <div className="ct_article_img" tabindex="0">
+                  <div className="ct_article_img" tabIndex="0">
                     <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2085664695-1760337043839.png" />
                   </div>
                   <figcaption className="mt-4 px-3">
