@@ -230,7 +230,7 @@ export default function Page() {
                               </p>
                            </div>
                            <div className="pt-4 mt-auto">
-                              <Link className="ct_blue_outline_btn ct_white_outline_border w-100 text-center" href="/retail-&amp;-commerce">Build Retail Solutions</Link>
+                              <Link className="ct_blue_outline_btn ct_white_outline_border w-100 text-center" href="/retail-&-commerce">Build Retail Solutions</Link>
                            </div>
                         </div>
                      </div>
