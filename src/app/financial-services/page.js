@@ -32,7 +32,7 @@ export default function Page() {
                   <p>From idea to launch, create financial applications easily using a no-code AI app builder designed for speed, security, and scalability.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href="#">Build Now</a>
+                    <a className="ct_blue_btn_fill"  >Build Now</a>
                   </div>
                 </div>
               </div>
@@ -893,7 +893,7 @@ export default function Page() {
 
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href="#">Build Now</a>
+                <a className="ct_blue_btn_fill ct_white_btn"  >Build Now</a>
               </div>
             </div>
           </div>

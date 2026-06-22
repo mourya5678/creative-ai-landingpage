@@ -190,7 +190,7 @@ export default function Page() {
               <h4>Stuck or Need Guidance?</h4>
               <p>We’re here to help you build your first app.</p>
             </div>
-            <a className="ct_blue_btn_fill" href="#">Contact Us</a>
+            <a className="ct_blue_btn_fill"  >Contact Us</a>
           </div>
         </div>
       </section>
@@ -596,7 +596,7 @@ export default function Page() {
               <div className="ct_ai_cta_content">
                 <h2 className="ct_fs_40 ct_fw_600">From Idea to App Made Simple.</h2>
                 <p>Fast, easy, and no coding needed</p>
-                <a className="ct_blue_outline_btn ct_white_btn" href="#">
+                <a className="ct_blue_outline_btn ct_white_btn"  >
                   Launch Your App Today</a>
               </div>
             </div>

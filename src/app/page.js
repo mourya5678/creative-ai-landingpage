@@ -245,7 +245,7 @@ export default function Page() {
         <div className="container">
           <div className="row">
             <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card" href="#">
+              <a className="ct_service_card"  >
                 <span>E-Commerce Stores</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +255,7 @@ export default function Page() {
               </a>
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card" href="#">
+              <a className="ct_service_card"  >
                 <span>Doctor &amp; Clinic Websites</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +265,7 @@ export default function Page() {
               </a>
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card" href="#">
+              <a className="ct_service_card"  >
                 <span>Portfolio Websites</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
@@ -275,7 +275,7 @@ export default function Page() {
               </a>
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card" href="#">
+              <a className="ct_service_card"  >
                 <span>Portfolio Websites</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
@@ -285,7 +285,7 @@ export default function Page() {
               </a>
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card" href="#">
+              <a className="ct_service_card"  >
                 <span>Restaurant Websites</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
@@ -295,7 +295,7 @@ export default function Page() {
               </a>
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card" href="#">
+              <a className="ct_service_card"  >
                 <span>Real Estate Platforms</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
@@ -305,7 +305,7 @@ export default function Page() {
               </a>
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card" href="#">
+              <a className="ct_service_card"  >
                 <span>Law Firm Websites</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
@@ -315,7 +315,7 @@ export default function Page() {
               </a>
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6">
-              <a className="ct_service_card" href="#">
+              <a className="ct_service_card"  >
                 <span>Portfolio Websites</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
@@ -863,7 +863,7 @@ export default function Page() {
                   </ul>
                 </div>
                 <div className="mt-auto">
-                  <a className="cti_pricing_btn" href="#">
+                  <a className="cti_pricing_btn"  >
                     Start Free
                     <span>→</span>
                   </a>
@@ -921,7 +921,7 @@ export default function Page() {
                   </ul>
                 </div>
                 <div className="mt-auto">
-                  <a className="cti_pricing_btn cti_pricing_btn_white" href="#">
+                  <a className="cti_pricing_btn cti_pricing_btn_white"  >
                     Get Started
                   </a>
                 </div>
@@ -983,7 +983,7 @@ export default function Page() {
                   </ul>
                 </div>
                 <div className="mt-auto">
-                  <a className="cti_pricing_btn" href="#"> Contact Sales </a>
+                  <a className="cti_pricing_btn"  > Contact Sales </a>
                 </div>
               </div>
             </div>

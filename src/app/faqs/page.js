@@ -76,7 +76,7 @@ export default function Page() {
                                                       <Link className="ct_link_green ct_link_blue" href="/why-creative-ai">How we use AI</Link>
                                                 </div>
                                                 <div className="mt-4">
-                                                      <a className="ct_blue_btn_fill w-100" href="#">Talk to an expert</a>
+                                                      <a className="ct_blue_btn_fill w-100"  >Talk to an expert</a>
                                                 </div>
                                           </div>
                                     </div>
@@ -443,7 +443,7 @@ export default function Page() {
                                           <p className="ct_fs_17 mb-0 text-center text-white mx-auto" style={{ maxWidth: "600px" }}>Turn your imagination into fully functional AI apps with Creative AI and bring your vision to life instantly.
                                           </p>
                                           <div className="text-center mt-4">
-                                                <a className="ct_blue_btn_fill ct_white_btn" href="#">Launch Your App
+                                                <a className="ct_blue_btn_fill ct_white_btn"  >Launch Your App
                                                 </a>
                                           </div>
                                     </div>

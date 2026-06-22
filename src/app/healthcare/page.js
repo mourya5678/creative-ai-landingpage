@@ -31,7 +31,7 @@ export default function Page() {
                   <p>Build secure and scalable healthcare apps faster with our AI app builder, designed to simplify development and support every stage from idea to deployment.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href="#">Launch Faster with AI</a>
+                    <a className="ct_blue_btn_fill"  >Launch Faster with AI</a>
                   </div>
                 </div>
               </div>
@@ -857,7 +857,7 @@ export default function Page() {
                 Let Creative AI Build Your Next Healthcare Solution
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href="#">Start Your Project
+                <a className="ct_blue_btn_fill ct_white_btn"  >Start Your Project
                 </a>
               </div>
             </div>

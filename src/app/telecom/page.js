@@ -32,7 +32,7 @@ export default function Page() {
                   <p>From telecom management systems to customer engagement apps, our AI app builder simplifies the entire development process.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href="#">Start Today</a>
+                    <a className="ct_blue_btn_fill"  >Start Today</a>
                   </div>
                 </div>
               </div>
@@ -863,7 +863,7 @@ export default function Page() {
 
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href="#">Turn Ideas Into Reality
+                <a className="ct_blue_btn_fill ct_white_btn"  >Turn Ideas Into Reality
                 </a>
               </div>
             </div>

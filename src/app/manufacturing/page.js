@@ -31,7 +31,7 @@ export default function Page() {
                   <p>Launch smarter manufacturing solutions without complex coding using our no-code AI app builder.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href="#">Launch Now
+                    <a className="ct_blue_btn_fill"  >Launch Now
                     </a>
                   </div>
                 </div>
@@ -862,7 +862,7 @@ export default function Page() {
 
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href="#">Launch Your App</a>
+                <a className="ct_blue_btn_fill ct_white_btn"  >Launch Your App</a>
               </div>
             </div>
           </div>

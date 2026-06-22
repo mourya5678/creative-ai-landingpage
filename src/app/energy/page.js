@@ -32,7 +32,7 @@ export default function Page() {
                   <p>Build custom energy management platforms faster with a reliable AI app builder for digital transformation.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href="#">Get Started with AI</a>
+                    <a className="ct_blue_btn_fill"  >Get Started with AI</a>
                   </div>
                 </div>
               </div>
@@ -885,7 +885,7 @@ export default function Page() {
 
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href="#">Start Building Now
+                <a className="ct_blue_btn_fill ct_white_btn"  >Start Building Now
                 </a>
               </div>
             </div>

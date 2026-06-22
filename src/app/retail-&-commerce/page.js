@@ -34,7 +34,7 @@ export default function Page() {
                     and launch projects faster with complete end-to-end support.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href="#">Build Your App</a>
+                    <a className="ct_blue_btn_fill"  >Build Your App</a>
                   </div>
                 </div>
               </div>
@@ -850,7 +850,7 @@ export default function Page() {
                 Turn your idea into a live store in minutes with no coding needed.
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href="#">Build Now </a>
+                <a className="ct_blue_btn_fill ct_white_btn"  >Build Now </a>
               </div>
             </div>
           </div>
