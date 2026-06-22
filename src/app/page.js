@@ -12,16 +12,12 @@ export default function Page() {
   return (
     <>
       <HomeInit />
-
       <div className="cti_home_banner">
         <Header />
-
-
-
         <div className="cti_home_banner_cnt">
-          <h1>The complete AI business builder</h1>
+          <h1>The AI Business Builder For Great Ideas</h1>
           <p>
-            Describe your idea and let AI turn it into a real product in seconds.
+            From business websites to custom apps, Creative AI helps you turn ideas into real products in minutes.
           </p>
           <div className="cti_prompt_main">
             <textarea className="form-control" placeholder="Type your idea… we’ll build it for you" rows="5"></textarea>
@@ -53,7 +49,6 @@ export default function Page() {
       <section className="cti_brands_logo_slider">
         <div className="logo-slider">
           <div className="logo-slider__track">
-
             <div className="logo-slider__item">
               <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_1.png" />
             </div>
@@ -78,7 +73,6 @@ export default function Page() {
             <div className="logo-slider__item">
               <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_8.png" />
             </div>
-
             <div className="logo-slider__item">
               <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_1.png" />
             </div>
@@ -112,128 +106,133 @@ export default function Page() {
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <h2>What Can You Build with Creative AI?</h2>
-                <p>Choose the package that fits your current ambition.</p>
+                <p style={{ maxWidth: "600px" }}>Build websites, applications, customer experiences, and online businesses with
+                  Creative AI. Choose what you want to create and launch faster without coding.
+                </p>
               </div>
               <div style={{ height: "111px" }}></div>
               <div className="ct_sticky_scroll_main">
-                <section className="cti_saas_card cti_sass_card_reverse">
-                  <div className="ct_sass_card_img">
-                    <img alt="" className="img-fluid" src="/img/build-sass-product-img.webp" />
-                  </div>
+                <section className="cti_saas_card">
                   <div className="cti_content">
-                    <span className="cti_badge">SaaS Platforms</span>
-                    <h2 className="cti_heading">Build SaaS Products Faster</h2>
+                    <span className="cti_badge">Business Websites </span>
+                    <h2 className="cti_heading">I Need A Website</h2>
                     <p className="cti_desc">
-                      Create complete SaaS applications with authentication,
-                      dashboards, payments, subscriptions, and user management.
+                      Build a modern website for your business with AI. Create landing pages, company websites, portfolios,
+                      and lead generation websites designed to help you attract customers and grow online.
                     </p>
                     <div className="cti_stats_wrapper">
                       <div className="cti_stat_box">
-                        <span>Projects Built</span>
-                        <h3>100+</h3>
+                        <h3>SEO Ready</h3>
                       </div>
                       <div className="cti_stat_box">
-                        <span>Launch Speed</span>
-                        <h3>10x Faster</h3>
+                        <h3>Mobile Friendly </h3>
                       </div>
                     </div>
                     <button className="cti_build_btn">
                       Buid
-                      <svg fill="none" height="27" viewBox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
-                        <rect fill="white" height="27" rx="13.5" transform="rotate(90 27 0)" width="27" x="27"></rect>
-                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.61801"></path>
+                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
+                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
+                          stroke-width="1.61801" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </button>
+                  </div>
+                  <div className="ct_sass_card_img">
+                    <img src="/img/build-sass-product-img.webp" className="img-fluid" alt="" />
                   </div>
                 </section>
                 <section className="cti_saas_card is_skin">
                   <div className="cti_content">
-                    <span className="cti_badge">AI Applications</span>
-                    <h2 className="cti_heading">Turn AI Ideas Into Products</h2>
+                    <span className="cti_badge">Mobile Applications </span>
+                    <h2 className="cti_heading">I Need An App</h2>
                     <p className="cti_desc">
-                      Build AI chatbots, agents, content tools, automation
-                      systems, and custom AI-powered applications.
+                      Turn your idea into a fully functional application without writing code. Build business apps, customer
+                      dashboards, booking systems, and operational tools in a fraction of the usual time.
                     </p>
                     <div className="cti_stats_wrapper">
                       <div className="cti_stat_box">
-                        <span>AI Apps</span>
-                        <h3>50+</h3>
+                        <h3>No Code Required
+                        </h3>
                       </div>
                       <div className="cti_stat_box">
-                        <span>Integration Ready</span>
-                        <h3>100%</h3>
+                        <h3>Business Ready </h3>
                       </div>
                     </div>
                     <button className="cti_build_btn">
                       Buid
-                      <svg fill="none" height="27" viewBox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
-                        <rect fill="white" height="27" rx="13.5" transform="rotate(90 27 0)" width="27" x="27"></rect>
-                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.61801"></path>
+                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
+                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
+                          stroke-width="1.61801" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </button>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img alt="" src="/img/turn-ai-into-img.webp" />
+                    <img src="/img/turn-ai-into-img.webp" alt="" />
                   </div>
                 </section>
-                <section className="cti_saas_card is_sky cti_sass_card_reverse">
-                  <div className="ct_sass_card_img">
-                    <img alt="" src="/img/professional-websites-img.webp" />
-                  </div>
+                <section className="cti_saas_card is_sky">
                   <div className="cti_content">
-                    <span className="cti_badge">Business Websites</span>
-                    <h2 className="cti_heading">Professional Websites in Minutes</h2>
+                    <span className="cti_badge">Customer Portal</span>
+                    <h2 className="cti_heading">I Need A Customer Portal</h2>
                     <p className="cti_desc">
-                      Generate modern business websites with responsive design,
-                      SEO optimization, and lead capture forms.
+                      Give customers a dedicated space to manage their accounts, access services, submit requests, and stay
+                      connected with your business through a professional online portal.
                     </p>
                     <div className="cti_stats_wrapper">
                       <div className="cti_stat_box">
-                        <span>Websites Built</span>
-                        <h3>500+</h3>
+                        <h3>Customer Friendly
+                        </h3>
                       </div>
                       <div className="cti_stat_box">
-                        <span>Conversion Focus</span>
-                        <h3>95%</h3>
+                        <h3>Built To Scale
+                        </h3>
                       </div>
                     </div>
                     <button className="cti_build_btn">
                       Buid
-                      <svg fill="none" height="27" viewBox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
-                        <rect fill="white" height="27" rx="13.5" transform="rotate(90 27 0)" width="27" x="27"></rect>
-                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.61801"></path>
+                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
+                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
+                          stroke-width="1.61801" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </button>
+                  </div>
+                  <div className="ct_sass_card_img">
+                    <img src="/img/professional-websites-img.webp" alt="" />
                   </div>
                 </section>
                 <section className="cti_saas_card is_green">
                   <div className="cti_content">
-                    <span className="cti_badge">Business Websites</span>
-                    <h2 className="cti_heading">Launch Your Marketplace</h2>
+                    <span className="cti_badge">Online Marketplaces
+                    </span>
+                    <h2 className="cti_heading">I Need A Marketplace
+                    </h2>
                     <p className="cti_desc">
-                      Create platforms for buyers and sellers with listings,
-                      payments, reviews, and messaging systems.
+                      Create a marketplace platform with user profiles, listings, payments, reviews, and vendor management
+                      tools. Everything you need to launch and scale an online marketplace.
                     </p>
                     <div className="cti_stats_wrapper">
                       <div className="cti_stat_box">
-                        <span>Marketplace Features</span>
-                        <h3>20+</h3>
+                        <h3>Multi-Vendor Ready
+                        </h3>
                       </div>
                       <div className="cti_stat_box">
-                        <span>Setup Time</span>
-                        <h3>Hours, Not Weeks</h3>
+                        <h3>Built For Growth
+                        </h3>
                       </div>
                     </div>
                     <button className="cti_build_btn">
                       Buid
-                      <svg fill="none" height="27" viewBox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
-                        <rect fill="white" height="27" rx="13.5" transform="rotate(90 27 0)" width="27" x="27"></rect>
-                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.61801"></path>
+                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
+                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
+                          stroke-width="1.61801" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                     </button>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img alt="" src="/img/launch-marketplace-img.webp" />
+                    <img src="/img/launch-marketplace-img.webp" alt="" />
                   </div>
                 </section>
               </div>
@@ -389,10 +388,10 @@ export default function Page() {
                 <svg className="conn-vline" fill="none" height="465" viewBox="0 0 3 465" width="3" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1.28906 0V464.942" stroke="url(#paint0_linear_120_2507)" strokeWidth="2.57824"></path>
                   <defs>
-                    <lineargradient gradientUnits="userSpaceOnUse" id="paint0_linear_120_2507" x1="1.28906" x2="2.28906" y1="232.471" y2="232.471">
+                    <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_120_2507" x1="1.28906" x2="2.28906" y1="232.471" y2="232.471">
                       <stop stopColor="#5D5CFF"></stop>
                       <stop offset="1" stopColor="#222266"></stop>
-                    </lineargradient>
+                    </linearGradient>
                   </defs>
                 </svg>
                 <div className="ball-v-down"></div>
@@ -400,92 +399,92 @@ export default function Page() {
                 <div className="conn-tl" style={{ position: "absolute", right: "calc(50% - 1px)", bottom: "calc(50% - 2px)", width: "400px", height: "178px" }}>
                   <svg fill="none" height="178" style={{ display: "block", overflow: "visible" }} viewBox="0 0 309 178" width="350" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                      <lineargradient gradientUnits="userSpaceOnUse" id="grad-tl" x1="308.959" x2="1.28915" y1="107.427" y2="107.427">
+                      <linearGradient gradientUnits="userSpaceOnUse" id="grad-tl" x1="308.959" x2="1.28915" y1="107.427" y2="107.427">
                         <stop stopColor="#5D5CFF"></stop>
                         <stop offset="1" stopColor="#222266"></stop>
-                      </lineargradient>
+                      </linearGradient>
                       <filter id="glow">
-                        <fegaussianblur result="blur" stdDeviation="3"></fegaussianblur>
-                        <femerge>
-                          <femergenode in="blur"></femergenode>
-                          <femergenode in="SourceGraphic"></femergenode>
-                        </femerge>
+                        <feGaussianBlur result="blur" stdDeviation="3"></feGaussianBlur>
+                        <feMerge>
+                          <feMergeNode in="blur"></feMergeNode>
+                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
                       </filter>
                     </defs>
                     <path d="M308.959 176.18H247.777C242.803 176.18 237.901 174.984 233.485 172.694C230.256 171.02 227.346 168.792 224.889 166.111L212.094 152.153C204.535 143.906 193.893 139.164 182.706 139.057L27.1802 137.569C22.8739 137.528 18.6407 136.451 14.8376 134.431L13.942 133.955C9.35665 131.519 5.69215 127.653 3.50563 122.943C2.04557 119.798 1.28916 116.373 1.28916 112.906V38.6736V0" fill="none" id="path-tl" stroke="url(#grad-tl)" strokeWidth="2.57824"></path>
                     <circle fill="#C56EFF" filter="url(#glow)" r="5">
-                      <animatemotion dur="3s" repeatCount="indefinite" rotate="auto">
+                      <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
                         <mpath href="#path-tl"></mpath>
-                      </animatemotion>
+                      </animateMotion>
                     </circle>
                   </svg>
                 </div>
                 <div className="conn-tr" style={{ position: "absolute", left: "calc(50% - 1px)", bottom: "calc(50% - 2px)", width: "309px", height: "178px" }}>
                   <svg fill="none" height="178" style={{ display: "block", overflow: "visible" }} viewBox="0 0 309 178" width="450" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                      <lineargradient gradientUnits="userSpaceOnUse" id="grad-tr" x1="0" x2="307.67" y1="107.427" y2="107.427">
+                      <linearGradient gradientUnits="userSpaceOnUse" id="grad-tr" x1="0" x2="307.67" y1="107.427" y2="107.427">
                         <stop stopColor="#5D5CFF"></stop>
                         <stop offset="1" stopColor="#222266"></stop>
-                      </lineargradient>
+                      </linearGradient>
                       <filter id="glow-tr">
-                        <fegaussianblur result="blur" stdDeviation="3"></fegaussianblur>
-                        <femerge>
-                          <femergenode in="blur"></femergenode>
-                          <femergenode in="SourceGraphic"></femergenode>
-                        </femerge>
+                        <feGaussianBlur result="blur" stdDeviation="3"></feGaussianBlur>
+                        <feMerge>
+                          <feMergeNode in="blur"></feMergeNode>
+                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
                       </filter>
                     </defs>
                     <path d="M0 176.18H61.1818C66.1564 176.18 71.0582 174.984 75.4744 172.694C78.7031 171.02 81.6125 168.792 84.0701 166.111L96.8645 152.153C104.424 143.906 115.066 139.164 126.253 139.057L281.779 137.569C286.085 137.528 290.318 136.451 294.121 134.431L295.017 133.955C299.602 131.519 303.267 127.653 305.453 122.943C306.913 119.798 307.67 116.373 307.67 112.906V38.6736V0" fill="none" id="path-tr" stroke="url(#grad-tr)" strokeWidth="2.57824"></path>
                     <circle fill="#C56EFF" filter="url(#glow-tr)" r="5">
-                      <animatemotion dur="3s" repeatCount="indefinite" rotate="auto">
+                      <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
                         <mpath href="#path-tr"></mpath>
-                      </animatemotion>
+                      </animateMotion>
                     </circle>
                   </svg>
                 </div>
                 <div className="conn-bl" style={{ position: "absolute", right: "calc(50% - 1px)", top: "calc(50% - 2px)", width: "400px", height: "178px" }}>
                   <svg fill="none" height="178" style={{ display: "block", overflow: "visible" }} viewBox="0 0 309 178" width="350" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                      <lineargradient gradientUnits="userSpaceOnUse" id="grad-bl" x1="308.959" x2="1.28915" y1="70.0421" y2="70.0421">
+                      <linearGradient gradientUnits="userSpaceOnUse" id="grad-bl" x1="308.959" x2="1.28915" y1="70.0421" y2="70.0421">
                         <stop stopColor="#5D5CFF"></stop>
                         <stop offset="1" stopColor="#222266"></stop>
-                      </lineargradient>
+                      </linearGradient>
                       <filter id="glow-bl">
-                        <fegaussianblur result="blur" stdDeviation="3"></fegaussianblur>
-                        <femerge>
-                          <femergenode in="blur"></femergenode>
-                          <femergenode in="SourceGraphic"></femergenode>
-                        </femerge>
+                        <feGaussianBlur result="blur" stdDeviation="3"></feGaussianBlur>
+                        <feMerge>
+                          <feMergeNode in="blur"></feMergeNode>
+                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
                       </filter>
                     </defs>
                     <path d="M308.959 1.2891H247.777C242.803 1.2891 237.901 2.48438 233.485 4.77427C230.256 6.4484 227.346 8.67675 224.889 11.3577L212.094 25.3153C204.535 33.5624 193.893 38.3046 182.706 38.4117L27.1802 39.9C22.8739 39.9412 18.6407 41.0174 14.8376 43.0378L13.942 43.5135C9.35665 45.9495 5.69215 49.8161 3.50563 54.5255C2.04557 57.6703 1.28916 61.0957 1.28916 64.5629V138.795V177.469" fill="none" id="path-bl" stroke="url(#grad-bl)" strokeWidth="2.57824"></path>
                     <circle fill="#C56EFF" filter="url(#glow-bl)" r="5">
-                      <animatemotion dur="3s" repeatCount="indefinite" rotate="auto">
+                      <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
                         <mpath href="#path-bl"></mpath>
-                      </animatemotion>
+                      </animateMotion>
                     </circle>
                   </svg>
                 </div>
                 <div className="conn-br" style={{ position: "absolute", left: "calc(50% - 1px)", top: "calc(50% - 2px)", width: "309px", height: "178px" }}>
                   <svg fill="none" height="178" style={{ display: "block", overflow: "visible" }} viewBox="0 0 309 178" width="450" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                      <lineargradient gradientUnits="userSpaceOnUse" id="grad-br" x1="0" x2="307.67" y1="70.0421" y2="70.0421">
+                      <linearGradient gradientUnits="userSpaceOnUse" id="grad-br" x1="0" x2="307.67" y1="70.0421" y2="70.0421">
                         <stop stopColor="#5D5CFF"></stop>
                         <stop offset="1" stopColor="#222266"></stop>
-                      </lineargradient>
+                      </linearGradient>
                       <filter id="glow-br">
-                        <fegaussianblur result="blur" stdDeviation="3"></fegaussianblur>
-                        <femerge>
-                          <femergenode in="blur"></femergenode>
-                          <femergenode in="SourceGraphic"></femergenode>
-                        </femerge>
+                        <feGaussianBlur result="blur" stdDeviation="3"></feGaussianBlur>
+                        <feMerge>
+                          <feMergeNode in="blur"></feMergeNode>
+                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
                       </filter>
                     </defs>
                     <path d="M0 1.2891H61.1818C66.1564 1.2891 71.0582 2.48438 75.4744 4.77427C78.7031 6.4484 81.6125 8.67675 84.0701 11.3577L96.8645 25.3153C104.424 33.5624 115.066 38.3046 126.253 38.4117L281.779 39.9C286.085 39.9412 290.318 41.0174 294.121 43.0378L295.017 43.5135C299.602 45.9495 303.267 49.8161 305.453 54.5255C306.913 57.6703 307.67 61.0957 307.67 64.5629V138.795V177.469" fill="none" id="path-br" stroke="url(#grad-br)" strokeWidth="2.57824"></path>
                     <circle fill="#C56EFF" filter="url(#glow-br)" r="5">
-                      <animatemotion dur="3s" repeatCount="indefinite" rotate="auto">
+                      <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
                         <mpath href="#path-br"></mpath>
-                      </animatemotion>
+                      </animateMotion>
                     </circle>
                   </svg>
                 </div>

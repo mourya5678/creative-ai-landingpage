@@ -1,23 +1,87 @@
 "use client";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
-// Helper to wait for JQuery and plugins to load before initialization
-const safeInit = (name, initFn, retries = 50) => {
+// Helper to wait for JQuery and plugins to load before initialization via dynamic imports
+const safeInit = async (name, initFn) => {
   if (typeof window !== "undefined") {
-    const $ = window.jQuery || window.$;
-    if ($ && $.fn && $.fn.owlCarousel) {
-      console.log(`[Carousel] ${name}: jQuery and Owl Carousel loaded. Initializing...`);
+    try {
+      let $ = window.jQuery || window.$;
+      if (!$) {
+        $ = (await import("jquery")).default;
+        window.jQuery = $;
+        window.$ = $;
+      }
+      // Polyfill $.camelCase if missing (deprecations or bundler resolution issues)
+      if (!$.camelCase) {
+        $.camelCase = (str) => str.replace(/-([a-z])/g, (g) => g[1].toUpperCase());
+      }
+      // Polyfill $.type if missing (removed in newer jQuery versions, but needed by older Owl Carousel)
+      if (!$.type) {
+        $.type = (obj) => {
+          if (obj === null) return "null";
+          if (obj === undefined) return "undefined";
+          const type = typeof obj;
+          if (type === "object") {
+            if (Array.isArray(obj)) return "array";
+            if (obj instanceof Date) return "date";
+            if (obj instanceof RegExp) return "regexp";
+          }
+          return type;
+        };
+      }
+      if (!$.fn.owlCarousel) {
+        await import("owl.carousel");
+      }
+      console.log(`[Carousel] ${name}: jQuery and Owl Carousel initialized via npm.`);
       initFn($);
-    } else if (retries > 0) {
-      setTimeout(() => safeInit(name, initFn, retries - 1), 100);
-    } else {
-      console.warn(`[Carousel] ${name}: Timed out waiting for jQuery/OwlCarousel plugin.`);
+    } catch (err) {
+      console.error(`[Carousel] ${name}: Failed to dynamically load jQuery/OwlCarousel:`, err);
     }
   }
 };
 
+export function SmoothScrollInit() {
+  return null;
+}
+
 export function HomeInit() {
+  const pathname = usePathname();
+
   useEffect(() => {
+    let animationFrame1 = 0;
+    let animationFrame2 = 0;
+    let retryTimer = 0;
+    let stickyResizeTimer = 0;
+    let stickyInitialTimer = 0;
+    let stickyObserver = null;
+
+    const restartHomeAnimation = () => {
+      const centerRow = document.querySelector(".center-row");
+      if (!centerRow) return false;
+
+      // Re-mount the animated block so SVG SMIL and CSS animations restart
+      // when navigating back to the home page or restoring from bfcache.
+      const clone = centerRow.cloneNode(true);
+      centerRow.replaceWith(clone);
+      return true;
+    };
+
+    const scheduleRestart = (attempt = 0) => {
+      window.cancelAnimationFrame(animationFrame1);
+      window.cancelAnimationFrame(animationFrame2);
+      window.clearTimeout(retryTimer);
+
+      animationFrame1 = window.requestAnimationFrame(() => {
+        animationFrame2 = window.requestAnimationFrame(() => {
+          const didRestart = restartHomeAnimation();
+          if (!didRestart && attempt < 20) {
+            retryTimer = window.setTimeout(() => scheduleRestart(attempt + 1), 100);
+          }
+        });
+      });
+    };
+
     // 1. Owl Carousel
     safeInit("Home Testimonial Slider", ($) => {
       const $el = $(".cti_testimonial_slider");
@@ -45,18 +109,102 @@ export function HomeInit() {
         console.log("[Carousel] Home Testimonial Slider element not found on page.");
       }
     });
-    
+
     // 2. Sticky Scroll cards
-    document.querySelectorAll('.ct_sticky_scroll_main').forEach((section) => {
-      const stickyBoxes = section.querySelectorAll('.cti_saas_card');
-      const offset = 70;
-      const firstCardSpace = 0;
+    const stickySection =
+      document.querySelector("#stickybox") ||
+      document.querySelector(".ct_sticky_scroll_main");
+
+    const syncStickyLayout = () => {
+      if (!stickySection) {
+        return;
+      }
+
+      const stickyBoxes = stickySection.querySelectorAll(".cti_saas_card");
+      if (!stickyBoxes.length) {
+        return;
+      }
+
+      const isDesktop = window.matchMedia("(min-width: 992px)").matches;
+      const firstCardSpace = isDesktop ? 160 : 0;
+      const offset = isDesktop ? 70 : 0;
+      const cardHeights = Array.from(stickyBoxes).map((box) =>
+        Math.ceil(box.getBoundingClientRect().height || box.offsetHeight || 0),
+      );
+      const tallestCard = Math.max(...cardHeights, 0);
+
+      stickySection.style.setProperty("--sticky-count", stickyBoxes.length);
+      stickySection.style.paddingBottom = isDesktop
+        ? `${Math.max(
+          window.innerHeight * 0.75,
+          tallestCard + (stickyBoxes.length - 1) * Math.max(tallestCard - offset, 280) + 160,
+        )}px`
+        : "";
+
       stickyBoxes.forEach((box, index) => {
-        const topValue = index === 0 ? firstCardSpace : firstCardSpace + offset * index;
-        box.style.setProperty('--stick-top', `${topValue}px`);
+        const topValue =
+          index === 0
+            ? firstCardSpace
+            : firstCardSpace + offset * index;
+
+        box.style.setProperty("--stick-top", `${topValue}px`);
+        box.style.zIndex = String(index + 1);
       });
-    });
-  }, []);
+
+      if (window.cti_lenis) {
+        window.cti_lenis.resize();
+      }
+
+      if (window.ScrollTrigger?.refresh) {
+        window.ScrollTrigger.refresh();
+      }
+    };
+
+    const scheduleStickyLayout = () => {
+      window.clearTimeout(stickyResizeTimer);
+      stickyResizeTimer = window.setTimeout(syncStickyLayout, 50);
+    };
+
+    syncStickyLayout();
+    window.requestAnimationFrame(syncStickyLayout);
+    stickyInitialTimer = window.setTimeout(syncStickyLayout, 150);
+
+    if (stickySection && "ResizeObserver" in window) {
+      stickyObserver = new ResizeObserver(() => {
+        scheduleStickyLayout();
+      });
+      stickyObserver.observe(stickySection);
+    }
+
+    window.addEventListener("resize", scheduleStickyLayout);
+    window.addEventListener("load", scheduleStickyLayout);
+
+    const onPageShow = (event) => {
+      if (event.persisted) {
+        scheduleRestart();
+        return;
+      }
+
+      scheduleRestart();
+    };
+
+    scheduleRestart();
+    window.addEventListener("pageshow", onPageShow);
+
+    return () => {
+      window.removeEventListener("pageshow", onPageShow);
+      window.removeEventListener("resize", scheduleStickyLayout);
+      window.removeEventListener("load", scheduleStickyLayout);
+      if (stickyObserver) {
+        stickyObserver.disconnect();
+      }
+      window.cancelAnimationFrame(animationFrame1);
+      window.cancelAnimationFrame(animationFrame2);
+      window.clearTimeout(retryTimer);
+      window.clearTimeout(stickyResizeTimer);
+      window.clearTimeout(stickyInitialTimer);
+    };
+  }, [pathname]);
   return null;
 }
 
@@ -290,7 +438,7 @@ export function EntrepreneursAnimationInit() {
     const initGSAP = () => {
       const gsap = window.gsap;
       const ScrollTrigger = window.ScrollTrigger;
-      
+
       if (!gsap || !ScrollTrigger) {
         return false;
       }
