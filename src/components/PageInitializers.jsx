@@ -349,26 +349,32 @@ export function OurStorySlidersInit() {
 }
 
 export function AOSInit() {
+  const pathname = usePathname();
+
   useEffect(() => {
     // Auto-animate all elements with 'aos-init' class using IntersectionObserver
     // This mimics AOS behavior without requiring data-aos on every element
-    const style = document.createElement('style');
-    style.textContent = `
-      .aos-init {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.8s ease, transform 0.8s ease;
-      }
-      .aos-init.ct_row_reverse_767 > *,
-      .aos-init > *:not([class*="aos-init"]) {
-        /* inherit */
-      }
-      .aos-visible {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-      }
-    `;
-    document.head.appendChild(style);
+    let style = document.getElementById('aos-init-style');
+    if (!style) {
+      style = document.createElement('style');
+      style.id = 'aos-init-style';
+      style.textContent = `
+        .aos-init {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .aos-init.ct_row_reverse_767 > *,
+        .aos-init > *:not([class*="aos-init"]) {
+          /* inherit */
+        }
+        .aos-visible {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+        }
+      `;
+      document.head.appendChild(style);
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -382,15 +388,47 @@ export function AOSInit() {
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     );
 
-    // Observe all elements with aos-init class
-    const elements = document.querySelectorAll('.aos-init');
-    elements.forEach((el) => observer.observe(el));
+    const observeElements = () => {
+      const elements = document.querySelectorAll('.aos-init:not(.aos-visible)');
+      elements.forEach((el) => observer.observe(el));
+    };
+
+    // Observe initially
+    observeElements();
+
+    // Since nextjs transitions might render elements asynchronously, run checks
+    const timers = [
+      setTimeout(observeElements, 50),
+      setTimeout(observeElements, 200),
+      setTimeout(observeElements, 500),
+      setTimeout(observeElements, 1000)
+    ];
+
+    // Set up a MutationObserver to automatically detect newly added .aos-init elements
+    const mutationObserver = new MutationObserver((mutations) => {
+      let needsObserve = false;
+      for (const mutation of mutations) {
+        if (mutation.addedNodes.length > 0) {
+          needsObserve = true;
+          break;
+        }
+      }
+      if (needsObserve) {
+        observeElements();
+      }
+    });
+
+    mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
 
     return () => {
       observer.disconnect();
-      if (style.parentNode) style.parentNode.removeChild(style);
+      mutationObserver.disconnect();
+      timers.forEach(clearTimeout);
     };
-  }, []);
+  }, [pathname]);
   return null;
 }
 
