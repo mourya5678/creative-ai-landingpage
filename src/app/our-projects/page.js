@@ -18,7 +18,6 @@ export default function Page() {
 
 
 </div>
- Inner Hero Content S 
 <section className="ct_py_70 ct_inner_hero_bg">
 <div className="container">
 <div className="row">
@@ -42,8 +41,6 @@ export default function Page() {
 </div>
 </div>
 </section>
- Inner Hero Content E 
- Inner Hero Content E 
 <hr className="ct_break_line"/>
 <section className="ct_pt_50">
 <div className="container">

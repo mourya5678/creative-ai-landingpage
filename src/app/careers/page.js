@@ -11,13 +11,9 @@ export const metadata = {
 
 export default function Page() {
       return (
-    <>
-      <Header />
+            <>
+                  <Header />
                   <OurStorySlidersInit />
-
-
-
-                  Inner Hero Content S
                   <section className="ct_py_70">
                         <div className="container">
                               <div className="row align-items-center">
@@ -44,9 +40,7 @@ export default function Page() {
                               </div>
                         </div>
                   </section>
-                  Inner Hero Content E
                   <hr className="ct_break_line" />
-                  Our Mission Section S
                   <section className="ct_pt_50">
                         <div className="container">
                               <div className="row">
@@ -118,8 +112,6 @@ export default function Page() {
                               </div>
                         </div>
                   </section>
-                  Our Mission Section E
-                  What Life At Section S
                   <section className="ct_mt_100 ct_py_70 pt-0">
                         <div className="container">
                               <div className="row">
@@ -175,9 +167,7 @@ export default function Page() {
                               </div>
                         </div>
                   </section>
-                  What Life At Section E
                   <hr className="ct_break_line" />
-                  The first steps to your future Section  S
                   <section className="ct_py_70">
                         <div className="container">
                               <div className="row">
@@ -226,8 +216,6 @@ export default function Page() {
                               </div>
                         </div>
                   </section>
-                  The first steps to your future Section  E
-                  Feeling social Section S
                   <section className="ct_py_70 ct_olw_nav_show_main px-3">
                         <h2 className="ct_fs_44 ct_fw_700 text-center mb-5">Feeling <span className="ct_orange_gredient_text">social</span>
                         </h2>
@@ -269,8 +257,6 @@ export default function Page() {
                               </div>
                         </div>
                   </section>
-                  Feeling social Section E
-                  Our Heart Value Section S
                   <section>
                         <div className="container">
                               <div className="row">
@@ -373,8 +359,6 @@ export default function Page() {
                               </div>
                         </div>
                   </section>
-                  Our Heart Value Section E
-                  What to expect  Section S
                   <section className="ct_grey_bg ct_py_70">
                         <div className="container">
                               <div className="row">
@@ -460,7 +444,6 @@ export default function Page() {
                               </div>
                         </div>
                   </section>
-                  What to expect  Section E
                   <section className="ct_pt_50 ct_pb_50">
                         <div className="container">
                               <div className="col-md-12">

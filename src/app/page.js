@@ -133,7 +133,7 @@ export default function Page() {
                       <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
                         <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
-                          stroke-width="1.61801" stroke-linecap="round" stroke-linejoin="round" />
+                          strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
                   </div>
@@ -163,7 +163,7 @@ export default function Page() {
                       <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
                         <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
-                          stroke-width="1.61801" stroke-linecap="round" stroke-linejoin="round" />
+                          strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
                   </div>
@@ -194,7 +194,7 @@ export default function Page() {
                       <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
                         <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
-                          stroke-width="1.61801" stroke-linecap="round" stroke-linejoin="round" />
+                          strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
                   </div>
@@ -227,7 +227,7 @@ export default function Page() {
                       <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
                         <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
-                          stroke-width="1.61801" stroke-linecap="round" stroke-linejoin="round" />
+                          strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
                   </div>

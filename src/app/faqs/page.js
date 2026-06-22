@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function Page() {
       return (
-    <>
-      <Header />
+            <>
+                  <Header />
 
 
                   <section className="ct_faq_banner pt-0">
@@ -450,17 +450,6 @@ export default function Page() {
                               </div>
                         </div>
                   </section>
-                  Selling Online Section E
-
-
-
-
-
-
-
-
-
-
             </>
       );
 }
