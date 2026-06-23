@@ -38,14 +38,17 @@ export default function Footer() {
                         </h5>
                         <ul className="all-link-block">
                             <li>
-                                <Link href="/our-projects">Projects</Link>
+                                <Link href="/blog">Blogs</Link>
                             </li>
                             <li>
-                                <Link href="/blog">Blogs</Link>
+                                <Link href="/our-projects">Our Projects</Link>
                             </li>
                             <li>
                                 <Link href="/faqs">FAQs</Link>
                             </li>
+                            {/* <li>
+                                <Link href="/contact">Contact Us</Link>
+                            </li> */}
                         </ul>
                     </div>
                     <div className="col-lg-2 col-md-3 col-6">
@@ -60,7 +63,8 @@ export default function Footer() {
                                 <Link href="/careers">Careers</Link>
                             </li>
                             <li>
-                                <Link href="/pricing">Pricing</Link>
+                                {/* <Link href="/pricing">Pricing</Link> */}
+                                <Link href="/why-creative-ai">Why Creative AI</Link>
                             </li>
                         </ul>
                     </div>
@@ -71,7 +75,8 @@ export default function Footer() {
                         <Link
                             href="/terms-condition"
                             className="text-decoration-none text-white ct_fs_16 ct_fw_500 ct_delight_medium"
-                        >Terms & Conditions</Link>
+                        >Terms of Service
+                        </Link>
                     </div>
                     <div className="order-lg-0 order-3">
                         <p className="text-white ct_fs_16 ct_fw_500 mb-0 text-center ct_delight_medium">
