@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import { HomeInit } from "@/components/PageInitializers";
 
-
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
   description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
@@ -20,7 +19,7 @@ export default function Page() {
           <span>✨ Build apps, websites & AI products instantly
           </span>
           {/* <h1>Turn Your Ideas Into Real <small>Products</small> In Seconds</h1> */}
-          <h1>The AI Business <small>Builder</small> For Great Ideas</h1>
+          <h1>The AI Business Builder <small className="gradient-text ct_fw_800">For Great Ideas</small></h1>
           <p>
             From business websites to custom apps, Creative AI helps you turn ideas into real products in minutes.
           </p>
@@ -46,6 +45,13 @@ export default function Page() {
                 </button>
               </div>
             </div>
+          </div>
+          <div className="cti_suggestions">
+            <div className="cti_tag">Food Delivery App</div>
+            <div className="cti_tag">CRM Dashboard</div>
+            <div className="cti_tag">AI Chatbot</div>
+            <div className="cti_tag">Fitness Platform</div>
+            <div className="cti_tag">Marketplace App</div>
           </div>
         </div>
       </div>
@@ -130,7 +136,7 @@ export default function Page() {
                         <h3>Mobile Friendly</h3>
                       </div>
                     </div>
-                    <button className="cti_build_btn">
+                    <button className="cti_build_btn mt-4">
                       Buid
                       <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
@@ -158,7 +164,7 @@ export default function Page() {
                         <h3>Business Ready</h3>
                       </div>
                     </div>
-                    <button className="cti_build_btn">
+                    <button className="cti_build_btn mt-4">
                       Buid
                       <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
@@ -186,7 +192,7 @@ export default function Page() {
                         <h3>Built To Scale</h3>
                       </div>
                     </div>
-                    <button className="cti_build_btn">
+                    <button className="cti_build_btn mt-4">
                       Buid
                       <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
@@ -214,7 +220,7 @@ export default function Page() {
                         <h3>Built For Growth</h3>
                       </div>
                     </div>
-                    <button className="cti_build_btn">
+                    <button className="cti_build_btn mt-4">
                       Buid
                       <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
@@ -257,37 +263,7 @@ export default function Page() {
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
               <a className="ct_service_card"  >
-                <span>Portfolio Websites</span>
-                <div className="ct_arrow_btn">
-                  <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z" fill="white"></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card"  >
-                <span>Portfolio Websites</span>
-                <div className="ct_arrow_btn">
-                  <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z" fill="white"></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card"  >
                 <span>Restaurant Websites</span>
-                <div className="ct_arrow_btn">
-                  <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z" fill="white"></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card"  >
-                <span>Real Estate Platforms</span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z" fill="white"></path>
@@ -305,9 +281,39 @@ export default function Page() {
                 </div>
               </a>
             </div>
+            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
+              <a className="ct_service_card"  >
+                <span>Fitness Apps </span>
+                <div className="ct_arrow_btn">
+                  <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z" fill="white"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
+              <a className="ct_service_card"  >
+                <span>Booking Apps</span>
+                <div className="ct_arrow_btn">
+                  <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z" fill="white"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
+              <a className="ct_service_card"  >
+                <span>Loyalty & Rewards Apps</span>
+                <div className="ct_arrow_btn">
+                  <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z" fill="white"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
             <div className="col-xxl-3 col-lg-4 col-md-6">
               <a className="ct_service_card"  >
-                <span>Portfolio Websites</span>
+                <span>Travel Apps </span>
                 <div className="ct_arrow_btn">
                   <svg fill="none" height="11" viewBox="0 0 10 11" width="10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z" fill="white"></path>
@@ -337,8 +343,8 @@ export default function Page() {
               <div className="col-lg-4 col-md-12">
                 <div className="card design-box-card">
                   <div className="content">
-                    <h3>From Idea to Product</h3>
-                    <p>Turn simple ideas into fully functional apps instantly.</p>
+                    <h3>Describe Your Vision</h3>
+                    <p>Tell AI what you want to build.</p>
                   </div>
                   <div className="card-preview">
                     <img src="/img/1.webp" />
@@ -348,8 +354,8 @@ export default function Page() {
               <div className="col-lg-4 col-md-12">
                 <div className="card design-box-card">
                   <div className="content">
-                    <h3>Build Apps in Seconds</h3>
-                    <p>Generate complete apps with just a single prompt.</p>
+                    <h3>Generate Instantly</h3>
+                    <p>Create websites and apps in minutes.</p>
                   </div>
                   <div className="card-preview">
                     <img src="/img/2.webp" />
@@ -359,8 +365,8 @@ export default function Page() {
               <div className="col-lg-4 col-md-12">
                 <div className="card design-box-card">
                   <div className="content">
-                    <h3>Just Describe It</h3>
-                    <p>No coding. Just tell AI what you want.</p>
+                    <h3>Build Without Code</h3>
+                    <p>No developers or technical skills needed.</p>
                   </div>
                   <div className="card-preview">
                     <img src="/img/3.webp" />
@@ -486,8 +492,8 @@ export default function Page() {
               <div className="col-lg-4 col-md-12">
                 <div className="card design-box-card">
                   <div className="content">
-                    <h3>Design That Works</h3>
-                    <p>AI creates clean, modern, user-friendly interfaces.</p>
+                    <h3>Designed For Growth</h3>
+                    <p>Professional designs built for modern businesses.</p>
                   </div>
                   <div className="card-preview">
                     <img src="/img/4.webp" />
@@ -497,8 +503,8 @@ export default function Page() {
               <div className="col-lg-4 col-md-12">
                 <div className="card design-box-card">
                   <div className="content">
-                    <h3>Smarter Decision</h3>
-                    <p>AI improves performance with real insights.</p>
+                    <h3>Tailor Your Product</h3>
+                    <p>Customize every detail your way.</p>
                   </div>
                   <div className="card-preview">
                     <img src="/img/5.webp" />
@@ -508,8 +514,8 @@ export default function Page() {
               <div className="col-lg-4 col-md-12">
                 <div className="card design-box-card">
                   <div className="content">
-                    <h3>Launch Faster</h3>
-                    <p>Go live quickly and scale without limits.</p>
+                    <h3>Go Live Faster</h3>
+                    <p>Launch and scale with confidence.</p>
                   </div>
                   <div className="card-preview">
                     <img src="/img/6.webp" />
@@ -526,7 +532,7 @@ export default function Page() {
             <div className="position-relative left-cont">
               <div className="ct_home_titles_cnt">
                 <h2 className="text-xl-end text-center">You Own What You <small className="ct_clr_6c82fe ">Build</small> </h2>
-                <img src="assets/img/build-shap-svg.webp" className="ct_curve_arrow" alt="" />
+                <img src="/img/build-shap-svg.webp" className="ct_curve_arrow" alt="" />
               </div>
               <div className="d-xl-flex d-none justify-content-end ct_mt_63"><button className="ct_get_started_btn ct_down_btn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd" d="M8.33365 6.79167V0.833333C8.33365 0.61232 8.24586 0.400358 8.08958 0.244078C7.9333 0.0877973 7.72133 0 7.50032 0C7.27931 0 7.06735 0.0877973 6.91107 0.244078C6.75478 0.400358 6.66699 0.61232 6.66699 0.833333V6.79167L4.81699 4.47833C4.74994 4.38909 4.66565 4.31422 4.56911 4.25817C4.47258 4.20213 4.36576 4.16605 4.25502 4.15208C4.14427 4.13811 4.03184 4.14653 3.92441 4.17684C3.81698 4.20716 3.71674 4.25874 3.62963 4.32854C3.54252 4.39834 3.47032 4.48493 3.41732 4.58317C3.36431 4.68141 3.33159 4.7893 3.32108 4.90043C3.31058 5.01156 3.3225 5.12366 3.35616 5.23009C3.38981 5.33653 3.4445 5.43511 3.51699 5.52L6.85032 9.68667C6.92841 9.78399 7.02735 9.86255 7.13985 9.91652C7.25235 9.9705 7.37554 9.99852 7.50032 9.99852C7.6251 9.99852 7.74829 9.9705 7.86079 9.91652C7.97329 9.86255 8.07224 9.78399 8.15032 9.68667L11.4837 5.52C11.5561 5.43511 11.6108 5.33653 11.6445 5.23009C11.6781 5.12366 11.6901 5.01156 11.6796 4.90043C11.6691 4.7893 11.6363 4.68141 11.5833 4.58317C11.5303 4.48493 11.4581 4.39834 11.371 4.32854C11.2839 4.25874 11.1837 4.20716 11.0762 4.17684C10.9688 4.14653 10.8564 4.13811 10.7456 4.15208C10.6349 4.16605 10.5281 4.20213 10.4315 4.25817C10.335 4.31422 10.2507 4.38909 10.1837 4.47833L8.33365 6.79167Z" fill="white" />
@@ -535,7 +541,7 @@ export default function Page() {
                 Download</button></div>
             </div>
             <div>
-              <img src="assets/img/MacBookPro.webp" className="w-100 h-100 object-fit-cover" />
+              <img src="/img/MacBookPro.webp" className="w-100 h-100 object-fit-cover" />
             </div>
             <div>
               <p className="ct_text_dark ct_fs_20 ct_mb_34 text-xl-start text-center">Download the complete source code of your website or app anytime. Host it anywhere, customize it freely, and stay in full control. </p>
@@ -578,11 +584,10 @@ export default function Page() {
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Action</span>
                 <h2 className="text-center" style={{ maxWidth: "100%" }}>
-                  See How Creative AI Works
+                  Watch Creative AI In Action
                 </h2>
                 <p className="text-center mx-auto" style={{ maxWidth: "545px" }}>
-                  Watch how Creative AI turns simple ideas into powerful web and
-                  mobile apps in minutes.
+                  From idea to launch, see how Creative AI turns your vision into a fully functional website or app.
                 </p>
               </div>
               <div className="ct_video_banner">
@@ -592,91 +597,21 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="cti_blog_new_bg">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="ct_home_titles_cnt">
-                <span>Blogs</span>
-                <h2>Insights &amp; Ideas on AI-Powered Building</h2>
-                <p>
-                  Explore how AI is transforming the way we design, build, and
-                  launch digital products.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="row ct_pt_76">
-
-            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-              <div className="cti_blog_card">
-                <div className="cti_blog_img">
-                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_1.webp" />
-                </div>
-                <div className="cti_blog_content">
-                  <h3>The Shift from SaaS to Custom AI-Built Applications</h3>
-                  <p>
-                    The future of software is AI-built. Discover how custom AI
-                    applications offer more control, efficiency, and business
-                    growth than SaaS.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-              <div className="cti_blog_card">
-                <div className="cti_blog_img">
-                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_2.webp" />
-                </div>
-                <div className="cti_blog_content">
-                  <h3>
-                    Lovable vs Replit vs Creative AI Compared: Best AI App Builder
-                  </h3>
-                  <p>
-                    Compare Lovable, Replit, and Creative AI. See which AI app
-                    builder is best for your needs, workflow, and technical level.
-                    Fair comparison with real metrics.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-              <div className="cti_blog_card">
-                <div className="cti_blog_img">
-                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_3.webp" />
-                </div>
-                <div className="cti_blog_content">
-                  <h3>Claude Sonnet 4.5 Is Now Live in Creative AI</h3>
-                  <p>
-                    Claude Sonnet 4.5 is now live in Creative AI, helping startups
-                    and businesses build smarter, faster, and more advanced
-                    AI-powered applications with improved performance.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="cti_testimonal_new_section ct_pb_150">
+      <section className="cti_testimonal_new_section ct_pb_150 pt-0">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Testimonial</span>
-                <h2 className="text-center mx-auto">Trusted By Founders Worldwide</h2>
+                <h2 className="text-center mx-auto">Loved By Founders And Businesses</h2>
                 <p className="text-center mx-auto">
-                  See how startups are launching faster and growing smarter with
-                  our help.
+                  Hear from customers who turned their ideas into real products with Creative AI.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div className="owl-carousel cti_testimonial_slider mt-4 pt-4">
-
           <div className="cti_testimonial_card">
             <p className="cti_testimonial_text">
               Outstanding experience working with this team. They delivered our
@@ -692,7 +627,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-
           <div className="cti_testimonial_card">
             <p className="cti_testimonial_text">
               We hired them for a complete website redesign and were impressed
@@ -708,7 +642,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-
           <div className="cti_testimonial_card">
             <p className="cti_testimonial_text">
               Working with Creative AI has been a game changer for us. Their
@@ -730,7 +663,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-
           <div className="cti_testimonial_card">
             <p className="cti_testimonial_text">
               Creative AI helped us build a robust financial and insurance
@@ -749,7 +681,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-
           <div className="cti_testimonial_card">
             <p className="cti_testimonial_text">
               Creative AI makes app building so simple! The platform is super easy
@@ -766,7 +697,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-
           <div className="cti_testimonial_card">
             <p className="cti_testimonial_text">
               We initially partnered with Builder.ai to create our sustainability
@@ -842,19 +772,18 @@ export default function Page() {
               <div className="ct_home_titles_cnt text-center text-white">
                 <span className="mx-auto">Pricing</span>
                 <h2 className="mx-auto text-white" style={{ maxWidth: "100%" }}>
-                  No Subscriptions. Just Results.
+                  Simple Pricing. Powerful Results.
                 </h2>
                 <p className="mx-auto text-white ct_opacity_80">
-                  Choose the package that fits your current ambition.
+                  Simple, transparent plans built for modern creators, startups, and businesses.
                 </p>
               </div>
             </div>
           </div>
-          <div className="ct_pricing_toggle">
+          <div className="ct_pricing_toggle ct_pricing_toggle_home">
             <button className="active" type="button">Monthly</button><button type="button">Annually</button>
           </div>
           <div className="row ct_pt_60">
-
             <div className="col-lg-4 mb-4 mb-lg-0">
               <div className="cti_pricing_card">
                 <div>
@@ -871,35 +800,30 @@ export default function Page() {
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Create your first project (25 credits)
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Use remaining credits for minor edits &amp; tweaks
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Access to basic AI generation
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Single agent processing
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Chat-based interaction only
                     </li>
                   </ul>
@@ -912,7 +836,6 @@ export default function Page() {
                 </div>
               </div>
             </div>
-
             <div className="col-lg-4 mb-4 mb-lg-0">
               <div className="cti_pricing_card cti_pricing_card_active">
                 <div>
@@ -929,35 +852,30 @@ export default function Page() {
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Create full-scale projects
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Basic deployment access
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Standard customization (credit-based)
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Faster generation vs free plan
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Clean production-ready outputs
                     </li>
                   </ul>
@@ -969,7 +887,6 @@ export default function Page() {
                 </div>
               </div>
             </div>
-
             <div className="col-lg-4 mb-4 mb-lg-0">
               <div className="cti_pricing_card">
                 <div>
@@ -984,42 +901,36 @@ export default function Page() {
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Unlimited scale project creation
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Enterprise-grade deployment infrastructure
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Full customization freedom (no limitations)
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Chat + Email + Phone Support
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Maximum speed &amp; priority processing
                     </li>
                     <li>
                       <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path>
                       </svg>
-
                       Optimized for large-scale automation
                     </li>
                   </ul>
@@ -1032,70 +943,159 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section className="cti_blog_new_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="ct_home_titles_cnt">
+                <span>Blogs</span>
+                <h2>Insights &amp; Ideas On AI-Powered Building </h2>
+                <p>
+                  Explore the latest articles, guides, and insights from the world of AI and innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="row ct_pt_76">
+            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div className="cti_blog_card">
+                <div className="cti_blog_img">
+                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_1.webp" />
+                </div>
+                <div className="cti_blog_content">
+                  <h3>The Shift from SaaS to Custom AI-Built Applications</h3>
+                  <p>
+                    The future of software is AI-built. Discover how custom AI
+                    applications offer more control, efficiency, and business
+                    growth than SaaS.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div className="cti_blog_card">
+                <div className="cti_blog_img">
+                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_2.webp" />
+                </div>
+                <div className="cti_blog_content">
+                  <h3>
+                    Lovable vs Replit vs Creative AI Compared: Best AI App Builder
+                  </h3>
+                  <p>
+                    Compare Lovable, Replit, and Creative AI. See which AI app
+                    builder is best for your needs, workflow, and technical level.
+                    Fair comparison with real metrics.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div className="cti_blog_card">
+                <div className="cti_blog_img">
+                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_3.webp" />
+                </div>
+                <div className="cti_blog_content">
+                  <h3>Claude Sonnet 4.5 Is Now Live in Creative AI</h3>
+                  <p>
+                    Claude Sonnet 4.5 is now live in Creative AI, helping startups
+                    and businesses build smarter, faster, and more advanced
+                    AI-powered applications with improved performance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-                <h2 className="mx-auto text-center">Your Questions Answered!</h2>
+                <h2 className="mx-auto text-center">Common Questions, Clear Answers</h2>
               </div>
               <div className="accordion cti_faq_accordion" id="ctiFaqAccordion">
-
                 <div className="accordion-item cti_faq_item">
                   <h2 className="accordion-header">
                     <button aria-expanded="true" className="accordion-button cti_faq_btn" data-bs-target="#ctiFaqOne" data-bs-toggle="collapse" type="button">
-                      Can I build apps without coding using AI?
+                      What is Creative AI?
                     </button>
                   </h2>
                   <div className="accordion-collapse collapse show" data-bs-parent="#ctiFaqAccordion" id="ctiFaqOne">
                     <div className="accordion-body cti_faq_body">
-                      Yes, with AI app generators from Creative AI, anyone can
-                      build apps without technical skills using no-code or
-                      low-code platforms.
+                      Creative AI is an AI website and app builder that helps you create websites, web apps, customer portals, marketplaces, and other digital products using simple prompts. No coding is required.
                     </div>
                   </div>
                 </div>
-
                 <div className="accordion-item cti_faq_item">
                   <h2 className="accordion-header">
                     <button className="accordion-button collapsed cti_faq_btn" data-bs-target="#ctiFaqTwo" data-bs-toggle="collapse" type="button">
-                      What is an AI app builder?
+                      Do I need coding skills to use Creative AI?
                     </button>
                   </h2>
                   <div className="accordion-collapse collapse" data-bs-parent="#ctiFaqAccordion" id="ctiFaqTwo">
                     <div className="accordion-body cti_faq_body">
-                      An AI app builder helps users create web and mobile
-                      applications using artificial intelligence with minimal
-                      coding effort.
+                      No. You can describe what you want to build in plain English, and Creative AI will generate the website or application for you.
                     </div>
                   </div>
                 </div>
-
                 <div className="accordion-item cti_faq_item">
                   <h2 className="accordion-header">
                     <button className="accordion-button collapsed cti_faq_btn" data-bs-target="#ctiFaqThree" data-bs-toggle="collapse" type="button">
-                      Why choose Creative AI for app development?
+                      What can I build with Creative AI?
                     </button>
                   </h2>
                   <div className="accordion-collapse collapse" data-bs-parent="#ctiFaqAccordion" id="ctiFaqThree">
                     <div className="accordion-body cti_faq_body">
-                      Creative AI enables faster development, automation, and
-                      scalable solutions tailored to your business requirements.
+                      You can build business websites, online stores, web applications, customer portals, booking systems, marketplaces, dashboards, and many other digital products.
                     </div>
                   </div>
                 </div>
-
                 <div className="accordion-item cti_faq_item">
                   <h2 className="accordion-header">
                     <button className="accordion-button collapsed cti_faq_btn" data-bs-target="#ctiFaqFour" data-bs-toggle="collapse" type="button">
-                      Is AI app development fast and cost-effective?
+                      Can I download the source code?
                     </button>
                   </h2>
                   <div className="accordion-collapse collapse" data-bs-parent="#ctiFaqAccordion" id="ctiFaqFour">
                     <div className="accordion-body cti_faq_body">
-                      Yes, AI-driven development significantly reduces development
-                      time and costs compared to traditional software development.
+                      Yes. You can download your project's source code, giving you full ownership and the freedom to host, customize, and scale it however you want.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item cti_faq_item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed cti_faq_btn" data-bs-target="#ctiFaqFive" data-bs-toggle="collapse" type="button">
+                      Is Creative AI good for small businesses?
+                    </button>
+                  </h2>
+                  <div className="accordion-collapse collapse" data-bs-parent="#ctiFaqAccordion" id="ctiFaqFive">
+                    <div className="accordion-body cti_faq_body">
+                      Yes. Creative AI is built for small businesses, startups, agencies, consultants, and entrepreneurs who want to launch online faster without hiring a large development team.                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item cti_faq_item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed cti_faq_btn" data-bs-target="#ctiFaqSix" data-bs-toggle="collapse" type="button">
+                      How long does it take to build a website or app?
+                    </button>
+                  </h2>
+                  <div className="accordion-collapse collapse" data-bs-parent="#ctiFaqAccordion" id="ctiFaqSix">
+                    <div className="accordion-body cti_faq_body">
+                      Most projects can be generated within minutes. The exact time depends on the complexity of the website or application you want to create.
+                    </div>
+                  </div>
+                </div>
+                <div className="accordion-item cti_faq_item">
+                  <h2 className="accordion-header">
+                    <button className="accordion-button collapsed cti_faq_btn" data-bs-target="#ctiFaqSeven" data-bs-toggle="collapse" type="button">
+                      Why choose Creative AI over a traditional website builder?
+                    </button>
+                  </h2>
+                  <div className="accordion-collapse collapse" data-bs-parent="#ctiFaqAccordion" id="ctiFaqSeven">
+                    <div className="accordion-body cti_faq_body">
+                      Unlike many website builders, Creative AI helps you create both websites and applications, offers source code access, and allows you to build using simple prompts instead of complex tools.
                     </div>
                   </div>
                 </div>
@@ -1110,11 +1110,9 @@ export default function Page() {
             <div className="col-lg-6 mb-5 mb-lg-0">
               <div className="ct_home_titles_cnt">
                 <span>Contact Us</span>
-                <h2>Let's Build Something Amazing</h2>
+                <h2 style={{ maxWidth: "439px" }}>Have An Idea? Let's Build It.</h2>
                 <p style={{ maxWidth: "533px" }}>
-                  Have an idea for an app, website, or SaaS product? Our
-                  AI-powered platform helps you design, build, launch, and scale
-                  digital products faster than traditional development.
+                  Whether you're building a website, app, marketplace, or startup MVP, we're here to help you get started.
                 </p>
               </div>
               <div className="cti_trusted_wrap">
@@ -1139,13 +1137,13 @@ export default function Page() {
             <div className="col-lg-6 mb-5 mb-lg-0">
               <form className="cti_contact_form">
                 <div className="ct_input_group ct_mb_43">
-                  <input className="input" required="" type="text" />
+                  <input className="input" type="text" required />
                   <span className="highlight"></span>
                   <span className="bar"></span>
                   <label>Full Name <span className="text-danger">*</span></label>
                 </div>
                 <div className="ct_input_group ct_mb_43">
-                  <input className="input" required="" type="text" />
+                  <input className="input" type="text" required />
                   <span className="highlight"></span>
                   <span className="bar"></span>
                   <label>Email <span className="text-danger">*</span></label>
@@ -1153,27 +1151,27 @@ export default function Page() {
                 <div className="cti_build_section">
                   <h5>What Would You Like To Build?</h5>
                   <div className="cti_option_wrap">
-                    <input defaultChecked={true} hidden="" id="ctiWebsite" name="build" type="radio" />
+                    <input defaultChecked={true} className="d-none" id="ctiWebsite" name="build" type="radio" />
                     <label className="cti_option_btn" htmlFor="ctiWebsite">
                       <span></span>
                       Website
                     </label>
-                    <input hidden="" id="ctiMobile" name="build" type="radio" />
+                    <input className="d-none" id="ctiMobile" name="build" type="radio" />
                     <label className="cti_option_btn" htmlFor="ctiMobile">
                       <span></span>
                       Mobile App
                     </label>
-                    <input hidden="" id="ctiSaas" name="build" type="radio" />
+                    <input className="d-none" id="ctiSaas" name="build" type="radio" />
                     <label className="cti_option_btn" htmlFor="ctiSaas">
                       <span></span>
                       SaaS Platform
                     </label>
-                    <input hidden="" id="ctiEcommerce" name="build" type="radio" />
+                    <input className="d-none" id="ctiEcommerce" name="build" type="radio" />
                     <label className="cti_option_btn" htmlFor="ctiEcommerce">
                       <span></span>
                       E-Commerce
                     </label>
-                    <input hidden="" id="ctiWebapp" name="build" type="radio" />
+                    <input className="d-none" id="ctiWebapp" name="build" type="radio" />
                     <label className="cti_option_btn" htmlFor="ctiWebapp">
                       <span></span>
                       Web App
@@ -1181,7 +1179,7 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="ct_input_group ct_mb_43">
-                  <textarea className="input" required="" rows="5" type="text"></textarea>
+                  <textarea className="input text-dark" required="" rows="3" type="text"></textarea>
                   <span className="highlight"></span>
                   <span className="bar"></span>
                   <label>Tell us about your idea, goals, and requirements...
@@ -1193,16 +1191,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
     </>
   );
 }

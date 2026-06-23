@@ -101,7 +101,8 @@ export function HomeInit() {
           responsive: {
             0: { items: 1 },
             768: { items: 2 },
-            1400: { items: 3 },
+            1200: { items: 3 },
+            1326: { items: 4 },
             1600: { items: 5 }
           }
         });
@@ -126,7 +127,7 @@ export function HomeInit() {
       }
 
       const isDesktop = window.matchMedia("(min-width: 992px)").matches;
-      const firstCardSpace = isDesktop ? 160 : 0;
+      const firstCardSpace = isDesktop ? 100 : 0;
       const offset = isDesktop ? 70 : 0;
 
       stickyBoxes.forEach((box, index) => {
