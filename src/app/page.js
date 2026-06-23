@@ -62,7 +62,7 @@ export default function Page() {
               <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_1.png" width={300} height={88} />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_2.png" width={316} height={121} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_2.avif" width={316} height={121} />
             </div>
             <div className="logo-slider__item">
               <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_3.png" width={171} height={50} />
@@ -214,7 +214,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/professional-websites-img.webp" alt="Client onboarding portal displaying analytics chart" width={1857} height={1509} />
+                    <img src="/img/professional-websites-img.webp" alt="Client onboarding portal displaying analytics chart" width={1288} height={1046} />
                   </div>
                 </section>
                 <section className="cti_saas_card is_green">
