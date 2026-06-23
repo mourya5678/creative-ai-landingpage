@@ -150,7 +150,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/build-sass-product-img.webp" className="img-fluid" alt="" />
+                    <img src="/img/build-sass-product-img.webp" className="img-fluid" alt="AI website builder interface showing drag and drop elements" />
                   </div>
                 </section>
                 <section className="cti_saas_card is_skin">
@@ -182,7 +182,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/turn-ai-into-img.webp" alt="" />
+                    <img src="/img/turn-ai-into-img.webp" alt="AI mobile application development dashboard" />
                   </div>
                 </section>
                 <section className="cti_saas_card is_sky">
@@ -214,7 +214,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/professional-websites-img.webp" alt="" />
+                    <img src="/img/professional-websites-img.webp" alt="Client onboarding portal displaying analytics chart" />
                   </div>
                 </section>
                 <section className="cti_saas_card is_green">
@@ -246,7 +246,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/launch-marketplace-img.webp" alt="" />
+                    <img src="/img/launch-marketplace-img.webp" alt="E-commerce multi-vendor marketplace product listings screen" />
                   </div>
                 </section>
               </div>
@@ -512,7 +512,7 @@ export default function Page() {
                     <p>Professional designs built for modern businesses.</p>
                   </div>
                   <div className="card-preview">
-                    <img src="/img/4.webp" />
+                    <img src="/img/4.webp" alt="Analytics and growth dashboard visual layout" />
                   </div>
                 </div>
               </div>
@@ -523,7 +523,7 @@ export default function Page() {
                     <p>Customize every detail your way.</p>
                   </div>
                   <div className="card-preview">
-                    <img src="/img/5.webp" />
+                    <img src="/img/5.webp" alt="Mobile app customization drag and drop editor view" />
                   </div>
                 </div>
               </div>
@@ -534,7 +534,7 @@ export default function Page() {
                     <p>Launch and scale with confidence.</p>
                   </div>
                   <div className="card-preview">
-                    <img src="/img/6.webp" />
+                    <img src="/img/6.webp" alt="Cloud deployment status showing success screen" />
                   </div>
                 </div>
               </div>
@@ -548,7 +548,7 @@ export default function Page() {
             <div className="position-relative left-cont">
               <div className="ct_home_titles_cnt">
                 <h2 className="text-xl-end text-center">You Own What You <small className="ct_clr_6c82fe ">Build</small> </h2>
-                <img src="/img/build-shap-svg.webp" className="ct_curve_arrow" alt="" />
+                <img src="/img/build-shap-svg.webp" className="ct_curve_arrow" alt="Decorative dynamic arrow pointer pointing to ownership benefits" />
               </div>
               <div className="d-xl-flex d-none justify-content-end ct_mt_63"><button className="ct_get_started_btn ct_down_btn"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd" d="M8.33365 6.79167V0.833333C8.33365 0.61232 8.24586 0.400358 8.08958 0.244078C7.9333 0.0877973 7.72133 0 7.50032 0C7.27931 0 7.06735 0.0877973 6.91107 0.244078C6.75478 0.400358 6.66699 0.61232 6.66699 0.833333V6.79167L4.81699 4.47833C4.74994 4.38909 4.66565 4.31422 4.56911 4.25817C4.47258 4.20213 4.36576 4.16605 4.25502 4.15208C4.14427 4.13811 4.03184 4.14653 3.92441 4.17684C3.81698 4.20716 3.71674 4.25874 3.62963 4.32854C3.54252 4.39834 3.47032 4.48493 3.41732 4.58317C3.36431 4.68141 3.33159 4.7893 3.32108 4.90043C3.31058 5.01156 3.3225 5.12366 3.35616 5.23009C3.38981 5.33653 3.4445 5.43511 3.51699 5.52L6.85032 9.68667C6.92841 9.78399 7.02735 9.86255 7.13985 9.91652C7.25235 9.9705 7.37554 9.99852 7.50032 9.99852C7.6251 9.99852 7.74829 9.9705 7.86079 9.91652C7.97329 9.86255 8.07224 9.78399 8.15032 9.68667L11.4837 5.52C11.5561 5.43511 11.6108 5.33653 11.6445 5.23009C11.6781 5.12366 11.6901 5.01156 11.6796 4.90043C11.6691 4.7893 11.6363 4.68141 11.5833 4.58317C11.5303 4.48493 11.4581 4.39834 11.371 4.32854C11.2839 4.25874 11.1837 4.20716 11.0762 4.17684C10.9688 4.14653 10.8564 4.13811 10.7456 4.15208C10.6349 4.16605 10.5281 4.20213 10.4315 4.25817C10.335 4.31422 10.2507 4.38909 10.1837 4.47833L8.33365 6.79167Z" fill="white" />
@@ -1133,10 +1133,10 @@ export default function Page() {
               </div>
               <div className="cti_trusted_wrap">
                 <div className="cti_user_images">
-                  <img alt="" src="/img/client_3.webp" />
-                  <img alt="" src="/img/client_4.webp" />
-                  <img alt="" src="/img/client_2.webp" />
-                  <img alt="" src="/img/james.webp" />
+                  <img alt="Trusted client Paul profile avatar" src="/img/client_3.webp" />
+                  <img alt="Trusted client Stefan profile avatar" src="/img/client_4.webp" />
+                  <img alt="Trusted client Justine profile avatar" src="/img/client_2.webp" />
+                  <img alt="Trusted client James profile avatar" src="/img/james.webp" />
                 </div>
                 <div className="cti_trusted_content">
                   <div className="cti_rating_stars">
