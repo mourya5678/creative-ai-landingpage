@@ -27,18 +27,18 @@ export default function Page() {
             <textarea className="form-control" id="home_prompt_textarea" placeholder="What would you like to build today?" rows="5" aria-label="What would you like to build today?"></textarea>
             <div className="cti_home_prompt_action_btns">
               <div className="ctiprompt_left_btns">
-                <button>
+                <button aria-label="Attach file">
                   📎
                 </button>
-                <button>
+                <button aria-label="Voice input">
                   🎤
                 </button>
-                <button>
+                <button aria-label="Enhance with AI">
                   ✨
                 </button>
               </div>
               <div className="ctiprompt_right_btns">
-                <button type="submit">
+                <button type="submit" aria-label="Submit prompt">
                   <svg fill="none" height="18" viewBox="0 0 15 19" width="13" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.19824 17.1986V1.19855M1.19824 7.19855L7.19824 1.19855L13.1982 7.19855" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.39705"></path>
                   </svg>

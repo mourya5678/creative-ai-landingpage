@@ -38,8 +38,22 @@ export default function Header() {
         <div className="ct_middle_navbar">
           <nav>
             <ul className={`mb-0 ${isMenuOpen ? "show" : ""}`}>
-              <li className="ct_close_bar" onClick={() => setIsMenuOpen(false)} role="button" aria-label="Close navigation menu" tabIndex={0}>
-                <i className="fa-solid fa-xmark"></i>
+              <li className="ct_close_bar">
+                <button
+                  type="button"
+                  onClick={() => setIsMenuOpen(false)}
+                  aria-label="Close navigation menu"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    padding: 0,
+                    color: "inherit",
+                    font: "inherit",
+                    cursor: "pointer",
+                  }}
+                >
+                  <i className="fa-solid fa-xmark"></i>
+                </button>
               </li>
 
               <li className="ct_dropdown">
