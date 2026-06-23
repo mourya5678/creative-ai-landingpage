@@ -6,11 +6,37 @@ import Footer from "@/components/Footer";
 import LenisProvider from "@/components/LenisProvider";
 import { AOSInit } from "@/components/PageInitializers";
 
-export const dynamic = "force-dynamic";
-
 export const metadata = {
+  metadataBase: new URL("https://creative-ai-landingpage.vercel.app"),
   title: "Creative AI | AI App Builder for Mobile & Web Application",
   description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
+  icons: {
+    icon: "/img/c.png",
+    shortcut: "/img/c.png",
+    apple: "/img/c.png",
+  },
+  openGraph: {
+    title: "Creative AI | AI App Builder for Mobile & Web Application",
+    description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
+    url: "https://creative-ai-landingpage.vercel.app",
+    siteName: "Creative AI",
+    images: [
+      {
+        url: "/img/c.png",
+        width: 512,
+        height: 512,
+        alt: "Creative AI Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Creative AI | AI App Builder for Mobile & Web Application",
+    description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
+    images: ["/img/c.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
