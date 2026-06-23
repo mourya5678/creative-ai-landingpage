@@ -123,27 +123,31 @@ export default function Page() {
               <div className="ct_sticky_scroll_main">
                 <section className="cti_saas_card">
                   <div className="cti_content">
-                    <span className="cti_badge">Business Websites</span>
-                    <h2 className="cti_heading">I Need A Website</h2>
-                    <p className="cti_desc">
-                      Build a modern website for your business with AI. Create landing pages, company websites, portfolios, and lead generation websites designed to help you attract customers and grow online.
-                    </p>
-                    <div className="cti_stats_wrapper">
-                      <div className="cti_stat_box">
-                        <h3>SEO Ready</h3>
-                      </div>
-                      <div className="cti_stat_box">
-                        <h3>Mobile Friendly</h3>
+                    <div>
+                      <span className="cti_badge">Business Websites</span>
+                      <h2 className="cti_heading">I Need A Website</h2>
+                      <p className="cti_desc">
+                        Build a modern website for your business with AI. Create landing pages, company websites, portfolios, and lead generation websites designed to help you attract customers and grow online.
+                      </p>
+                      <div className="cti_stats_wrapper">
+                        <div className="cti_stat_box">
+                          <h3>SEO Ready</h3>
+                        </div>
+                        <div className="cti_stat_box">
+                          <h3>Mobile Friendly</h3>
+                        </div>
                       </div>
                     </div>
-                    <button className="cti_build_btn mt-4">
-                      Buid
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
-                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
-                          strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </button>
+                    <div className="mt-auto">
+                      <button className="cti_build_btn mt-4">
+                        Build
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
+                          <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
+                            strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                   <div className="ct_sass_card_img">
                     <img src="/img/build-sass-product-img.webp" className="img-fluid" alt="" />
@@ -151,27 +155,31 @@ export default function Page() {
                 </section>
                 <section className="cti_saas_card is_skin">
                   <div className="cti_content">
-                    <span className="cti_badge">Mobile Applications </span>
-                    <h2 className="cti_heading">I Need An App</h2>
-                    <p className="cti_desc">
-                      Turn your idea into a fully functional application without writing code. Build business apps, customer dashboards, booking systems, and operational tools in a fraction of the usual time.
-                    </p>
-                    <div className="cti_stats_wrapper">
-                      <div className="cti_stat_box">
-                        <h3>No Code Required</h3>
-                      </div>
-                      <div className="cti_stat_box">
-                        <h3>Business Ready</h3>
+                    <div>
+                      <span className="cti_badge">Mobile Applications </span>
+                      <h2 className="cti_heading">I Need An App</h2>
+                      <p className="cti_desc">
+                        Turn your idea into a fully functional application without writing code. Build business apps, customer dashboards, booking systems, and operational tools in a fraction of the usual time.
+                      </p>
+                      <div className="cti_stats_wrapper">
+                        <div className="cti_stat_box">
+                          <h3>No Code Required</h3>
+                        </div>
+                        <div className="cti_stat_box">
+                          <h3>Business Ready</h3>
+                        </div>
                       </div>
                     </div>
-                    <button className="cti_build_btn mt-4">
-                      Buid
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
-                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
-                          strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </button>
+                    <div className="mt-auto">
+                      <button className="cti_build_btn mt-4">
+                        Build
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
+                          <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
+                            strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                   <div className="ct_sass_card_img">
                     <img src="/img/turn-ai-into-img.webp" alt="" />
@@ -179,27 +187,31 @@ export default function Page() {
                 </section>
                 <section className="cti_saas_card is_sky">
                   <div className="cti_content">
-                    <span className="cti_badge">Customer Portal</span>
-                    <h2 className="cti_heading">I Need A Customer Portal</h2>
-                    <p className="cti_desc">
-                      Give customers a dedicated space to manage their accounts, access services, submit requests, and stay connected with your business through a professional online portal.
-                    </p>
-                    <div className="cti_stats_wrapper">
-                      <div className="cti_stat_box">
-                        <h3>Customer Friendly</h3>
-                      </div>
-                      <div className="cti_stat_box">
-                        <h3>Built To Scale</h3>
+                    <div>
+                      <span className="cti_badge">Customer Portal</span>
+                      <h2 className="cti_heading">I Need A Customer Portal</h2>
+                      <p className="cti_desc">
+                        Give customers a dedicated space to manage their accounts, access services, submit requests, and stay connected with your business through a professional online portal.
+                      </p>
+                      <div className="cti_stats_wrapper">
+                        <div className="cti_stat_box">
+                          <h3>Customer Friendly</h3>
+                        </div>
+                        <div className="cti_stat_box">
+                          <h3>Built To Scale</h3>
+                        </div>
                       </div>
                     </div>
-                    <button className="cti_build_btn mt-4">
-                      Buid
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
-                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
-                          strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </button>
+                    <div className="mt-auto">
+                      <button className="cti_build_btn mt-4">
+                        Build
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
+                          <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
+                            strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                   <div className="ct_sass_card_img">
                     <img src="/img/professional-websites-img.webp" alt="" />
@@ -207,27 +219,31 @@ export default function Page() {
                 </section>
                 <section className="cti_saas_card is_green">
                   <div className="cti_content">
-                    <span className="cti_badge">Online Marketplaces</span>
-                    <h2 className="cti_heading">I Need A Marketplace</h2>
-                    <p className="cti_desc">
-                      Create a marketplace platform with user profiles, listings, payments, reviews, and vendor management tools. Everything you need to launch and scale an online marketplace.
-                    </p>
-                    <div className="cti_stats_wrapper">
-                      <div className="cti_stat_box">
-                        <h3>Multi-Vendor Ready</h3>
-                      </div>
-                      <div className="cti_stat_box">
-                        <h3>Built For Growth</h3>
+                    <div>
+                      <span className="cti_badge">Online Marketplaces</span>
+                      <h2 className="cti_heading">I Need A Marketplace</h2>
+                      <p className="cti_desc">
+                        Create a marketplace platform with user profiles, listings, payments, reviews, and vendor management tools. Everything you need to launch and scale an online marketplace.
+                      </p>
+                      <div className="cti_stats_wrapper">
+                        <div className="cti_stat_box">
+                          <h3>Multi-Vendor Ready</h3>
+                        </div>
+                        <div className="cti_stat_box">
+                          <h3>Built For Growth</h3>
+                        </div>
                       </div>
                     </div>
-                    <button className="cti_build_btn mt-4">
-                      Buid
-                      <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
-                        <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
-                          strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </button>
+                    <div className="mt-auto">
+                      <button className="cti_build_btn mt-4">
+                        Build
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="27" width="27" height="27" rx="13.5" transform="rotate(90 27 0)" fill="white" />
+                          <path d="M8.09941 13.4996H18.8994M14.8494 9.44958L18.8994 13.4996L14.8494 17.5496" stroke="#8396FF"
+                            strokeWidth="1.61801" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                   <div className="ct_sass_card_img">
                     <img src="/img/launch-marketplace-img.webp" alt="" />

@@ -127,8 +127,8 @@ export function HomeInit() {
       }
 
       const isDesktop = window.matchMedia("(min-width: 992px)").matches;
-      const firstCardSpace = isDesktop ? 100 : 0;
-      const offset = isDesktop ? 70 : 0;
+      const firstCardSpace = isDesktop ? 110 : 0;
+      const offset = isDesktop ? 60 : 0;
 
       stickyBoxes.forEach((box, index) => {
         const topValue =
