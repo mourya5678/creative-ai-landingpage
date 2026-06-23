@@ -59,52 +59,52 @@ export default function Page() {
         <div className="logo-slider">
           <div className="logo-slider__track">
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_1.png" width={300} height={88} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_1.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_2.avif" width={316} height={121} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_2.avif" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_3.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_3.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_4.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_4.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_5.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_5.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_6.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_6.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_7.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_7.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_8.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_8.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_1.png" width={300} height={88} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_1.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_2.avif" width={316} height={121} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_2.avif" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_3.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_3.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_4.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_4.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_5.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_5.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_6.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_6.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_7.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_7.png" />
             </div>
             <div className="logo-slider__item">
-              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_8.png" width={171} height={50} />
+              <img alt="Best AI app builder for startups and businesses" loading="lazy" src="/img/brand_logo_8.png" />
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/build-sass-product-img.webp" className="img-fluid" alt="AI website builder interface showing drag and drop elements" width={617} height={501} />
+                    <img src="/img/build-sass-product-img.webp" className="img-fluid" alt="AI website builder interface showing drag and drop elements" />
                   </div>
                 </section>
                 <section className="cti_saas_card is_skin">
@@ -182,7 +182,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/turn-ai-into-img.webp" alt="AI mobile application development dashboard" width={619} height={503} />
+                    <img src="/img/turn-ai-into-img.webp" alt="AI mobile application development dashboard" />
                   </div>
                 </section>
                 <section className="cti_saas_card is_sky">
@@ -214,7 +214,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/professional-websites-img.webp" alt="Client onboarding portal displaying analytics chart" width={1288} height={1046} />
+                    <img src="/img/professional-websites-img.webp" alt="Client onboarding portal displaying analytics chart" />
                   </div>
                 </section>
                 <section className="cti_saas_card is_green">
@@ -246,7 +246,7 @@ export default function Page() {
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
-                    <img src="/img/launch-marketplace-img.webp" alt="E-commerce multi-vendor marketplace product listings screen" width={473} height={384} />
+                    <img src="/img/launch-marketplace-img.webp" alt="E-commerce multi-vendor marketplace product listings screen" />
                   </div>
                 </section>
               </div>
@@ -557,7 +557,7 @@ export default function Page() {
                 Download</button></div>
             </div>
             <div>
-              <img src="/img/MacBookPro.webp" className="w-100 h-100 object-fit-cover" alt="MacBook mockup displaying custom web dashboard" width={650} height={393} />
+              <img src="/img/MacBookPro.webp" className="w-100 h-100 object-fit-cover" alt="MacBook mockup displaying custom web dashboard" />
             </div>
             <div>
               <p className="ct_text_dark ct_fs_20 ct_mb_34 text-xl-start text-center">Download the complete source code of your website or app anytime. Host it anywhere, customize it freely, and stay in full control. </p>
@@ -636,7 +636,7 @@ export default function Page() {
               recommended!
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_4.webp" width={949} height={1090} />
+              <img alt="User" src="/img/client_4.webp" />
               <div>
                 <h5>Stefan Roger</h5>
                 <span>Our Happy Client</span>
@@ -651,7 +651,7 @@ export default function Page() {
               traffic and leads!
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_5.webp" width={499} height={498} />
+              <img alt="User" src="/img/client_5.webp" />
               <div>
                 <h5>Eric J.</h5>
                 <span>Our Happy Client</span>
@@ -672,7 +672,7 @@ export default function Page() {
               smarter and faster.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/sam.webp" width={1544} height={1500} />
+              <img alt="User" src="/img/sam.webp" />
               <div>
                 <h5>Sam Buah</h5>
                 <span>Our Happy Client</span>
@@ -690,7 +690,7 @@ export default function Page() {
               ensuring enterprise-level quality.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/james.webp" width={450} height={450} />
+              <img alt="User" src="/img/james.webp" />
               <div>
                 <h5>James Pollard</h5>
                 <span>Our Happy Client</span>
@@ -706,7 +706,7 @@ export default function Page() {
               from other tools I’ve tried.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/paul.webp" width={800} height={800} />
+              <img alt="User" src="/img/paul.webp" />
               <div>
                 <h5>Paul Calleja</h5>
                 <span>Our Happy Client</span>
@@ -727,7 +727,7 @@ export default function Page() {
               to client success truly sets them apart.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/nirdesh.webp" width={800} height={800} />
+              <img alt="User" src="/img/nirdesh.webp" />
               <div>
                 <h5>Nirdesh Badjatiya</h5>
                 <span>Our Happy Client</span>
@@ -741,7 +741,7 @@ export default function Page() {
               great. You always get a fast responds. I definitely recommend them.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_2.webp" width={1080} height={1080} />
+              <img alt="User" src="/img/client_2.webp" />
               <div>
                 <h5>Justine Pogroske</h5>
                 <span>Our Happy Client</span>
@@ -756,7 +756,7 @@ export default function Page() {
               very professional fellow. Keep up the great work folks!
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_1.webp" width={400} height={400} />
+              <img alt="User" src="/img/client_1.webp" />
               <div>
                 <h5>Ady Bui</h5>
                 <span>Our Happy Client</span>
@@ -772,7 +772,7 @@ export default function Page() {
               the work in general.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_3.webp" width={700} height={700} />
+              <img alt="User" src="/img/client_3.webp" />
               <div>
                 <h5>Phillipe Dastous</h5>
                 <span>Our Happy Client</span>
@@ -976,7 +976,7 @@ export default function Page() {
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="cti_blog_card">
                 <div className="cti_blog_img">
-                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_1.webp" width={733} height={382} />
+                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_1.webp" />
                 </div>
                 <div className="cti_blog_content">
                   <h3>The Shift from SaaS to Custom AI-Built Applications</h3>
@@ -991,7 +991,7 @@ export default function Page() {
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="cti_blog_card">
                 <div className="cti_blog_img">
-                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_2.webp" width={733} height={382} />
+                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_2.webp" />
                 </div>
                 <div className="cti_blog_content">
                   <h3>
@@ -1008,7 +1008,7 @@ export default function Page() {
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="cti_blog_card">
                 <div className="cti_blog_img">
-                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_3.webp" width={733} height={382} />
+                  <img alt="Blog Image" className="img-fluid" src="/img/new_blog_3.webp" />
                 </div>
                 <div className="cti_blog_content">
                   <h3>Claude Sonnet 4.5 Is Now Live in Creative AI</h3>
@@ -1133,10 +1133,10 @@ export default function Page() {
               </div>
               <div className="cti_trusted_wrap">
                 <div className="cti_user_images">
-                  <img alt="Trusted client Paul profile avatar" src="/img/client_3.webp" width={700} height={700} />
-                  <img alt="Trusted client Stefan profile avatar" src="/img/client_4.webp" width={949} height={1090} />
-                  <img alt="Trusted client Justine profile avatar" src="/img/client_2.webp" width={1080} height={1080} />
-                  <img alt="Trusted client James profile avatar" src="/img/james.webp" width={450} height={450} />
+                  <img alt="Trusted client Paul profile avatar" src="/img/client_3.webp" />
+                  <img alt="Trusted client Stefan profile avatar" src="/img/client_4.webp" />
+                  <img alt="Trusted client Justine profile avatar" src="/img/client_2.webp" />
+                  <img alt="Trusted client James profile avatar" src="/img/james.webp" />
                 </div>
                 <div className="cti_trusted_content">
                   <div className="cti_rating_stars">

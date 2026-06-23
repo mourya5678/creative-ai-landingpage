@@ -1056,10 +1056,11 @@ header::after {
 .cti_content {
   flex: 1;
   width: 100%;
-  position: relative;
-  padding: 28px;
   height: 100%;
+  padding: 28px;
   display: grid;
+  position: relative;
+  max-width: 623px;
 }
 
 .cti_badge {
