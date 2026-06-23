@@ -9,7 +9,7 @@ export default function Footer() {
                         <div className="row">
                             <div className="col-lg-5">
                                 <div>
-                                    <img src="/img/cti_white_new_logo.webp" className="mb-3" alt="Creative AI white branding logo" />
+                                    <img src="/img/cti_white_new_logo.webp" className="mb-3" alt="Creative AI white branding logo" width={140} height={28} />
                                     <p className="ct_fs_20 ct_fw_500 mb-0 text-white ct_satoshi_medium"
                                         style={{ maxWidth: "225px" }}>
                                         Everything you need to build, launch, and grow online.
@@ -97,7 +97,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="pt-5 px-4">
-                <img src="/img/footer.webp" className="w-100" alt="Footer decorative wave background" />
+                <img src="/img/footer.webp" className="w-100" alt="Footer decorative wave background" width={1375} height={174} />
             </div>
         </footer>
     );

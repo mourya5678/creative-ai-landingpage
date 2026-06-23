@@ -1,3 +1,6 @@
+import "@/assets/css/style.css";
+import "@/assets/css/pages.css";
+import "@/assets/css/responsive.css";
 import "./globals.css";
 import "lenis/dist/lenis.css";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -6,6 +9,13 @@ import Footer from "@/components/Footer";
 import LenisProvider from "@/components/LenisProvider";
 import { AOSInit } from "@/components/PageInitializers";
 import Script from "next/script";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata = {
   metadataBase: new URL("https://creative-ai-landingpage.vercel.app"),
@@ -42,7 +52,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <head>
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />

@@ -30,6 +30,8 @@ export default function Header() {
               loading="eager"
               src="/img/cti_white_new_logo.webp"
               alt="AI-powered app and web development"
+              width={140}
+              height={28}
             />
           </Link>
         </div>
