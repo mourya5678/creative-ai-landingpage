@@ -24,7 +24,7 @@ export default function Page() {
             From business websites to custom apps, Creative AI helps you turn ideas into real products in minutes.
           </p>
           <div className="cti_prompt_main">
-            <textarea className="form-control" placeholder="What would you like to build today?" rows="5"></textarea>
+            <textarea className="form-control" id="home_prompt_textarea" placeholder="What would you like to build today?" rows="5" aria-label="What would you like to build today?"></textarea>
             <div className="cti_home_prompt_action_btns">
               <div className="ctiprompt_left_btns">
                 <button>
@@ -363,7 +363,7 @@ export default function Page() {
                     <p>Tell AI what you want to build.</p>
                   </div>
                   <div className="card-preview">
-                    <img src="/img/1.webp" />
+                    <img src="/img/1.webp" alt="AI design generation step 1 - describe your vision illustration" />
                   </div>
                 </div>
               </div>
@@ -374,7 +374,7 @@ export default function Page() {
                     <p>Create websites and apps in minutes.</p>
                   </div>
                   <div className="card-preview">
-                    <img src="/img/2.webp" />
+                    <img src="/img/2.webp" alt="AI design generation step 2 - generate instantly illustration" />
                   </div>
                 </div>
               </div>
@@ -385,7 +385,7 @@ export default function Page() {
                     <p>No developers or technical skills needed.</p>
                   </div>
                   <div className="card-preview">
-                    <img src="/img/3.webp" />
+                    <img src="/img/3.webp" alt="AI design generation step 3 - build without code illustration" />
                   </div>
                 </div>
               </div>
@@ -557,7 +557,7 @@ export default function Page() {
                 Download</button></div>
             </div>
             <div>
-              <img src="/img/MacBookPro.webp" className="w-100 h-100 object-fit-cover" />
+              <img src="/img/MacBookPro.webp" className="w-100 h-100 object-fit-cover" alt="MacBook mockup displaying custom web dashboard" />
             </div>
             <div>
               <p className="ct_text_dark ct_fs_20 ct_mb_34 text-xl-start text-center">Download the complete source code of your website or app anytime. Host it anywhere, customize it freely, and stay in full control. </p>
@@ -1153,16 +1153,16 @@ export default function Page() {
             <div className="col-lg-6 mb-5 mb-lg-0">
               <form className="cti_contact_form">
                 <div className="ct_input_group ct_mb_43">
-                  <input className="input" type="text" required />
+                  <input className="input" id="ct_full_name" type="text" required />
                   <span className="highlight"></span>
                   <span className="bar"></span>
-                  <label>Full Name <span className="text-danger">*</span></label>
+                  <label htmlFor="ct_full_name">Full Name <span className="text-danger">*</span></label>
                 </div>
                 <div className="ct_input_group ct_mb_43">
-                  <input className="input" type="text" required />
+                  <input className="input" id="ct_email" type="email" required />
                   <span className="highlight"></span>
                   <span className="bar"></span>
-                  <label>Email <span className="text-danger">*</span></label>
+                  <label htmlFor="ct_email">Email <span className="text-danger">*</span></label>
                 </div>
                 <div className="cti_build_section">
                   <h5>What Would You Like To Build?</h5>
@@ -1195,10 +1195,10 @@ export default function Page() {
                   </div>
                 </div>
                 <div className="ct_input_group ct_mb_43">
-                  <textarea className="input text-dark" required="" rows="3" type="text"></textarea>
+                  <textarea className="input text-dark" id="ct_message" required="" rows="3"></textarea>
                   <span className="highlight"></span>
                   <span className="bar"></span>
-                  <label>Tell us about your idea, goals, and requirements...
+                  <label htmlFor="ct_message">Tell us about your idea, goals, and requirements...
                     <span className="text-danger">*</span></label>
                 </div>
                 <button className="cti_submit_btn" type="submit">Submit</button>

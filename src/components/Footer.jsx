@@ -17,16 +17,24 @@ export default function Footer() {
                                 </div>
                                 <ul className="social-icon">
                                     <li>
-                                        <i className="fa-brands fa-linkedin-in"></i>
+                                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                            <i className="fa-brands fa-linkedin-in"></i>
+                                        </a>
                                     </li>
                                     <li>
-                                        <i className="fa-brands fa-facebook"></i>
+                                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                            <i className="fa-brands fa-facebook"></i>
+                                        </a>
                                     </li>
                                     <li>
-                                        <i className="fa-brands fa-instagram"></i>
+                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                            <i className="fa-brands fa-instagram"></i>
+                                        </a>
                                     </li>
                                     <li>
-                                        <i className="fa-brands fa-youtube"></i>
+                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                            <i className="fa-brands fa-youtube"></i>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,7 +97,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="pt-5 px-4">
-                <img src="/img/footer.webp" className="w-100" />
+                <img src="/img/footer.webp" className="w-100" alt="Footer decorative wave background" />
             </div>
         </footer>
     );

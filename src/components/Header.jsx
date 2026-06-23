@@ -36,7 +36,7 @@ export default function Header() {
         <div className="ct_middle_navbar">
           <nav>
             <ul className={`mb-0 ${isMenuOpen ? "show" : ""}`}>
-              <li className="ct_close_bar" onClick={() => setIsMenuOpen(false)}>
+              <li className="ct_close_bar" onClick={() => setIsMenuOpen(false)} role="button" aria-label="Close navigation menu" tabIndex={0}>
                 <i className="fa-solid fa-xmark"></i>
               </li>
 
@@ -374,7 +374,7 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <div className="ct_hamburger" id="hamburger-12" onClick={() => setIsMenuOpen(true)}>
+              <div className="ct_hamburger" id="hamburger-12" onClick={() => setIsMenuOpen(true)} role="button" aria-label="Open navigation menu" tabIndex={0}>
                 <i className="fa-solid fa-bars"></i>
               </div>
             </li>
