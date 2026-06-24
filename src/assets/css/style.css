@@ -504,9 +504,9 @@ header::after {
   pointer-events: none;
 }
 
-/* .ct_header_main {
+.ct_header_main {
   padding-top: 40px;
-} */
+}
 
 .ct_buider_img_23 img {
   width: 100%;
@@ -602,7 +602,7 @@ header::after {
 .ct_header_main.ct_sticky_menu {
   background-color: transparent;
   position: fixed;
-  top: 40px;
+  top: 0px;
   width: 100%;
   z-index: 9;
   animation: slideDown 0.3s ease-out;
@@ -696,7 +696,9 @@ header::after {
 .ct_middle_navbar nav {
   flex: 1;
 }
-
+.ct_dropdown_items ol{
+  padding-left: 0px;
+}
 .ct_middle_navbar ul:not(.ct_dropdown_items ol) {
   display: flex;
   align-items: center;
@@ -2166,18 +2168,20 @@ input[type="radio"]:checked+.cti_option_btn span {
   top: 0;
   z-index: 30;
   pointer-events: none;
-  animation: ballVDown 2.4s linear infinite;
+  animation: ballVDown 3s linear infinite;
+  animation-delay: 2.8s;
+  
 }
 
 @keyframes ballVDown {
   0% {
-    top: 0%;
+    top: 50%;
     opacity: 1;
   }
 
   100% {
-    top: 100%;
-    opacity: 0.3;
+    top: 0%;
+    /* opacity: 0.3; */
   }
 }
 
@@ -2194,19 +2198,20 @@ input[type="radio"]:checked+.cti_option_btn span {
   bottom: 0;
   z-index: 30;
   pointer-events: none;
-  animation: ballVUp 2.4s linear infinite;
-  animation-delay: 1.2s;
+  animation: ballVUp 3s linear infinite;
+    animation-delay: 2.8s;
+  
 }
 
 @keyframes ballVUp {
   0% {
-    bottom: 0%;
+    bottom: 50%;
     opacity: 1;
   }
 
   100% {
-    bottom: 100%;
-    opacity: 0.3;
+    bottom: 0%;
+    opacity: 1;
   }
 }
 
@@ -2244,6 +2249,7 @@ input[type="radio"]:checked+.cti_option_btn span {
   transition: 0.4s ease all;
   z-index: 1;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .social-icon i {
@@ -2365,6 +2371,9 @@ input[type="radio"]:checked+.cti_option_btn span {
   color: #fff;
 
 }
+.ct_down_btn:hover svg path{
+  fill: #fff;
+}
 
 .your_own_bulid_sec_desc {
   display: grid;
@@ -2433,9 +2442,14 @@ input[type="radio"]:checked+.cti_option_btn span {
   font-size: 20px;
 }
 
-.ct_header_main {
+.et_main_header_344 {
     position: absolute;
     top: 40px;
     left: 0px;
     right: 0px;
+    padding-top: 0px;
+}
+
+.ct_header_main.ct_sticky_menu.et_main_header_344{
+  top: 40px;
 }
