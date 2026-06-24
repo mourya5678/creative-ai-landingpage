@@ -52,7 +52,7 @@ export default function Page() {
                   </svg>
                 </button>
                 <button aria-label="Voice input">
-                  <i class="fa-solid fa-microphone"></i>
+                  <i className="fa-solid fa-microphone"></i>
                 </button>
                 <button aria-label="Enhance with AI">✨</button>
               </div>

@@ -11,7 +11,6 @@ export default function Page() {
   return (
     <>
       <Header />
-      
       {/* Inner Hero Content S */}
       <div className="ct_py_70 ct_inner_hero_bg">
         <div className="container-fluid">
@@ -30,9 +29,9 @@ export default function Page() {
         </div>
       </div>
       {/* Inner Hero Content E */}
-      
+
       <hr className="ct_break_line" />
-      
+
       <section className="ct_pt_50 ct_pb_50">
         <div className="container">
           <div className="row">
@@ -46,7 +45,7 @@ export default function Page() {
               </p>
             </div>
           </div>
-          
+
           <div className="row mt-5">
             <div className="col-md-6 mb-4">
               <div className="ct_types_app_card">
@@ -66,7 +65,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-6 mb-4">
               <div className="ct_types_app_card">
                 <div className="ct_app_types_img">
@@ -85,7 +84,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-6 mb-4">
               <div className="ct_types_app_card">
                 <div className="ct_app_types_img">
@@ -104,7 +103,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-6 mb-4">
               <div className="ct_types_app_card">
                 <div className="ct_app_types_img">
@@ -123,7 +122,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-6 mb-4">
               <div className="ct_types_app_card">
                 <div className="ct_app_types_img">
@@ -142,7 +141,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-6 mb-4">
               <div className="ct_types_app_card">
                 <div className="ct_app_types_img">
@@ -161,7 +160,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-6 mb-4">
               <div className="ct_types_app_card">
                 <div className="ct_app_types_img">
@@ -180,7 +179,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-6 mb-4">
               <div className="ct_types_app_card">
                 <div className="ct_app_types_img">
@@ -202,9 +201,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-      
+
       <hr className="ct_break_line" />
-      
+
       {/* Free Demo Section S */}
       <section className="ct_pt_50 ct_pb_50">
         <div className="container">

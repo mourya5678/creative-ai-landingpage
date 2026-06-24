@@ -7,34 +7,34 @@ export default function Footer() {
                 <div className="row">
                     <div className="col-lg-5 col-md-12 mb-lg-0 mb-3">
                         <div>
-                                    <img src="/img/cti_white_new_logo.webp" className="mb-3" alt="Creative AI white branding logo" width={140} height={28} />
-                                    <p className="ct_fs_20 ct_fw_500 mb-0 text-white ct_satoshi_medium"
+                            <img src="/img/cti_white_new_logo.webp" className="mb-3" alt="Creative AI white branding logo" width={140} height={28} />
+                            <p className="ct_fs_20 ct_fw_500 mb-0 text-white ct_satoshi_medium"
                                 style={{ maxWidth: "277px" }}>
-                                        Everything you need to build, launch, and grow online.
-                                    </p>
-                                </div>
-                                <ul className="social-icon">
-                                    <li>
-                                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                            <i className="fa-brands fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                                            <i className="fa-brands fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                            <i className="fa-brands fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                                            <i className="fa-brands fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                                Everything you need to build, launch, and grow online.
+                            </p>
+                        </div>
+                        <ul className="social-icon">
+                            <li>
+                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i className="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <i className="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <i className="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                    <i className="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <div className="col-lg-2 col-md-3 col-6 mb-3 mb-md-0">
                         <h5 className="ct_fw_700 ct_fs_18 text-white mb-3 text-uppercase ct_satoshi_bold">
@@ -51,11 +51,8 @@ export default function Footer() {
                                 <Link href="/faqs">FAQs</Link>
                             </li>
                             <li>
-                                <Link href="/faqs">Contact Us</Link>
-                            </li>
-                            {/* <li>
                                 <Link href="/contact">Contact Us</Link>
-                            </li> */}
+                            </li>
                         </ul>
                     </div>
                     <div className="col-lg-2 col-md-3 col-6 mb-3 mb-md-0">
