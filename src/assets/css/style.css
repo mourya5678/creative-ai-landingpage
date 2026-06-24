@@ -2418,3 +2418,19 @@ input[type="radio"]:checked+.cti_option_btn span {
   background: #5D5CFF !important;
   color: #fff !important;
 }
+
+.ct_clr_666 {
+  color: #666;
+}
+
+.ct_clr_555 {
+  color: #555;
+}
+
+.ct_fs_35 {
+  font-size: 35px;
+}
+
+.ct_fs_20 {
+  font-size: 20px;
+}

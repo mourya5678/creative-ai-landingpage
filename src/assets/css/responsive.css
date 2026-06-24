@@ -182,6 +182,10 @@
     display: none;
   }
 
+  .cti_home_banner_cnt h1 {
+    font-size: 68px;
+  }
+
   .left-cont {
     display: flex;
     flex-direction: column;

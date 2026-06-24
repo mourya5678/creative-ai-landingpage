@@ -1,11 +1,10 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 
-
 export const metadata = {
-  title: "Creative AI",
-  description: "",
-  keywords: "",
+  title: "All Industries | Creative AI",
+  description: "Innovative AI mobile and web app development solutions across all industries - Retail, Finance, Healthcare, Manufacturing, Entertainment, Education, Telecom, and Energy.",
+  keywords: "ai mobile app development, web development solutions, retail e-commerce app, healthcare software solutions, manufacturing ai, educational apps, telecom app development, energy app solutions",
 };
 
 export default function Page() {
@@ -13,7 +12,221 @@ export default function Page() {
     <>
       <Header />
       
+      {/* Inner Hero Content S */}
+      <div className="ct_py_70 ct_inner_hero_bg">
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-lg-12">
+              <div className="ct_hero_banner_left_cnt text-center">
+                <h1 className="ct_fs_44 ct_fw_700">
+                  Innovative AI Mobile & Web Development for All Industries
+                </h1>
+                <p className="ct_fs_18 ct_fw_500">
+                  How Creative.ai streamlines your app project
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Inner Hero Content E */}
       
+      <hr className="ct_break_line" />
+      
+      <section className="ct_pt_50 ct_pb_50">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h2 className="ct_fs_44 ct_fw_700 mb-3 text-center">
+                Dream Big, Build Any Mobile App with <br />
+                <span className="ct_orange_gredient_text">Creative AI</span>
+              </h2>
+              <p className="text-center ct_fs_16">
+                Unleash your creativity! With Creative AI's amazing mobile app builder, you can turn your vision for any mobile application into a reality fully customized and loaded with features. We blend cutting-edge AI technology with expert development to create the app you need, and we do it faster and smarter:
+              </p>
+            </div>
+          </div>
+          
+          <div className="row mt-5">
+            <div className="col-md-6 mb-4">
+              <div className="ct_types_app_card">
+                <div className="ct_app_types_img">
+                  <img loading="lazy" src="/img/app_1.webp" alt="Retail and e-commerce mobile app development" />
+                </div>
+                <div className="ct_app_types_cnt">
+                  <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Retail & E-commerce</h3>
+                  <p className="ct_fs_14">
+                    Our mobile apps offer a seamless and personalized shopping experience, providing features like tailored product recommendations and easy checkout processes. These solutions help businesses enhance customer engagement, boost sales, and build lasting loyalty by offering a more intuitive, customer-centric approach to e-commerce.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/retail-&-commerce" className="ct_blue_outline_btn ct_white_outline_border w-100 text-center">
+                      Explore Retail & E-commerce App Development
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-6 mb-4">
+              <div className="ct_types_app_card">
+                <div className="ct_app_types_img">
+                  <img loading="lazy" src="/img/app_1.webp" alt="Financial services mobile solutions development" />
+                </div>
+                <div className="ct_app_types_cnt">
+                  <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Financial-services</h3>
+                  <p className="ct_fs_14">
+                    Revolutionize banking with AI-powered apps and websites. Our smart financial solutions deliver secure, user-friendly platforms that streamline workflows, personalize experiences, and ensure compliance making finance fast, easy, and reliable.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/financial-services" className="ct_blue_outline_btn ct_white_outline_border w-100 text-center">
+                      Discover Financial-services App Solutions
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-6 mb-4">
+              <div className="ct_types_app_card">
+                <div className="ct_app_types_img">
+                  <img loading="lazy" src="/img/app_3.webp" alt="AI healthcare companies and app solutions" />
+                </div>
+                <div className="ct_app_types_cnt">
+                  <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Healthcare</h3>
+                  <p className="ct_fs_14">
+                    Develop innovative mobile healthcare solutions that improve patient care, streamline workflows, and enhance access to medical services. From appointment scheduling to remote monitoring apps, we build impactful tools for the healthcare industry.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/healthcare" className="ct_blue_outline_btn ct_white_outline_border w-100 text-center">
+                      Explore Healthcare App Development
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-6 mb-4">
+              <div className="ct_types_app_card">
+                <div className="ct_app_types_img">
+                  <img loading="lazy" src="/img/app_3.webp" alt="Manufacturing industry app development with AI" />
+                </div>
+                <div className="ct_app_types_cnt">
+                  <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Manufacturing</h3>
+                  <p className="ct_fs_14">
+                    We design mobile apps that streamline manufacturing processes, from real-time equipment monitoring to predictive maintenance and inventory management. These solutions help manufacturers increase operational efficiency, reduce downtime, and make data-driven decisions to stay ahead in a competitive market.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/manufacturing" className="ct_blue_outline_btn ct_white_outline_border w-100 text-center">
+                      Explore Manufacturing App Development
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-6 mb-4">
+              <div className="ct_types_app_card">
+                <div className="ct_app_types_img">
+                  <img loading="lazy" src="/img/app_2.webp" alt="Entertainment app development solutions" />
+                </div>
+                <div className="ct_app_types_cnt">
+                  <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Entertainment</h3>
+                  <p className="ct_fs_14">
+                    Create captivating and engaging mobile entertainment apps that connect users with content, experiences, and communities. From streaming platforms to gaming companions, we build immersive digital entertainment solutions.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/entertainment" className="ct_blue_outline_btn ct_white_outline_border w-100 text-center">
+                      Discover Entertainment App Solutions
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-6 mb-4">
+              <div className="ct_types_app_card">
+                <div className="ct_app_types_img">
+                  <img loading="lazy" src="/img/app_1.webp" alt="Educational apps development with AI" />
+                </div>
+                <div className="ct_app_types_cnt">
+                  <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Education</h3>
+                  <p className="ct_fs_14">
+                    Transform learning experiences with engaging and interactive AI educational apps. From smart e-learning platforms to personalized skill development tools, our AI mobile app builder creates solutions that empower educators and inspire learners to achieve more.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/education" className="ct_blue_outline_btn ct_white_outline_border w-100 text-center">
+                      Explore Education App Development
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-6 mb-4">
+              <div className="ct_types_app_card">
+                <div className="ct_app_types_img">
+                  <img loading="lazy" src="/img/app_3.webp" alt="Telecom app development with AI" />
+                </div>
+                <div className="ct_app_types_cnt">
+                  <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Telecom</h3>
+                  <p className="ct_fs_14">
+                    Our mobile apps simplify telecom service management, allowing users to easily track data usage, manage accounts, and access customer support. These solutions help telecom businesses enhance customer satisfaction, optimize billing, and improve service delivery, fostering stronger customer relationships and operational efficiency.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/telecom" className="ct_blue_outline_btn ct_white_outline_border w-100 text-center">
+                      Explore Telecom App Development
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-6 mb-4">
+              <div className="ct_types_app_card">
+                <div className="ct_app_types_img">
+                  <img loading="lazy" src="/img/app_1.webp" alt="Energy sector app development with AI" />
+                </div>
+                <div className="ct_app_types_cnt">
+                  <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Energy</h3>
+                  <p className="ct_fs_14">
+                    We develop mobile solutions for the energy sector that improve resource management, energy consumption tracking, and predictive maintenance. By providing real-time insights and optimizing operations, our apps help energy companies reduce costs, improve sustainability, and ensure reliable service for their customers.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/energy" className="ct_blue_outline_btn ct_white_outline_border w-100 text-center">
+                      Explore Energy App Development
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <hr className="ct_break_line" />
+      
+      {/* Free Demo Section S */}
+      <section className="ct_pt_50 ct_pb_50">
+        <div className="container">
+          <div className="col-md-12">
+            <div className="ct_free_demo_bg">
+              <h3 className="ct_fs_20 text-white text-center mb-2 ct_fw_600">
+                Struggling to Choose?
+              </h3>
+              <h2 className="ct_fs_38 text-center text-white ct_fw_700 mb-2">
+                Discover Your Ideal Development Plan in Minutes
+              </h2>
+              <p className="ct_fs_17 mb-0 text-center text-white">Quick & Easy Assessment</p>
+              <div className="text-center mt-4">
+                <Link href="/pricing" className="ct_blue_btn_fill ct_white_btn">
+                  Find My Perfect Plan
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Free Demo Section E */}
     </>
   );
 }
