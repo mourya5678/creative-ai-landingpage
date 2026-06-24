@@ -504,9 +504,9 @@ header::after {
   pointer-events: none;
 }
 
-.ct_header_main {
+/* .ct_header_main {
   padding-top: 40px;
-}
+} */
 
 .ct_buider_img_23 img {
   width: 100%;
@@ -602,13 +602,13 @@ header::after {
 .ct_header_main.ct_sticky_menu {
   background-color: transparent;
   position: fixed;
-  top: 0px;
+  top: 40px;
   width: 100%;
   z-index: 9;
   animation: slideDown 0.3s ease-out;
   left: 0px;
   right: 0px;
-  z-index: 999;
+  z-index: 9999;
 }
 
 @keyframes slideDown {
@@ -746,14 +746,12 @@ header::after {
 /* Home page Css S */
 
 .cti_home_banner {
-  /* background-image: url(/img/home_banner.webp);
-  background-size: cover;
-  background-position: center; */
-  padding-bottom: 239px;
-  position: relative;
-  background: #050f1d;
-  z-index: 9999;
-  overflow: hidden;
+    z-index: 99;
+    background: #050f1d;
+    padding-bottom: 239px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
 }
 
 .cti_home_banner::before {
@@ -996,7 +994,7 @@ header::after {
   border-top-right-radius: 70px;
   margin-top: -142px;
   position: relative;
-  z-index: 9999;
+  z-index: 99;
 }
 
 .ct_pt_145px {
@@ -2433,4 +2431,11 @@ input[type="radio"]:checked+.cti_option_btn span {
 
 .ct_fs_20 {
   font-size: 20px;
+}
+
+.ct_header_main {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
 }
