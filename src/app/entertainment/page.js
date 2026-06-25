@@ -30,7 +30,7 @@ export default function Page() {
                   <p>Launch entertainment apps without complex coding using the Creative AI app builder designed for media and entertainment businesses.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill"  >Start Your Project</a>
+                    <a className="ct_blue_btn_fill" href="http://72.60.203.98/login">Start Your Project</a>
                   </div>
                 </div>
               </div>
@@ -852,26 +852,15 @@ export default function Page() {
             <div className="ct_free_demo_bg">
               <h2 className="ct_fs_28 text-center text-white ct_fw_700 mb-2 mx-auto" style={{ maxWidth: "600px" }}>
                 Launch Your Entertainment Platform with Creative AI
-
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn"  >Create Your App Now
+                <a className="ct_blue_btn_fill ct_white_btn" href="http://72.60.203.98/login">Create Your App Now
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
     </>
   );
 }

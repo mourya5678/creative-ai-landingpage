@@ -16,23 +16,18 @@ export default function Page() {
       <RetailSliderInit />
       <PricingSliderInit />
       <BlogDetailsSliderInit />
-
       <div>
-
-
-
         <section className="ct_py_70">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0">
                 <div className="ct_hero_banner_left_cnt">
                   <h1 className="ct_fs_44 ct_fw_700">Simplify Telecom App Development with Creative AI
-
                   </h1>
                   <p>From telecom management systems to customer engagement apps, our AI app builder simplifies the entire development process.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill"  >Start Today</a>
+                    <a className="ct_blue_btn_fill" href="http://72.60.203.98/login">Start Today</a>
                   </div>
                 </div>
               </div>
@@ -46,7 +41,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
       </div>
       <hr className="ct_break_line" />
       <section className="ct_pt_50 ct_pb_50">
@@ -56,7 +50,6 @@ export default function Page() {
               <h2 className="ct_fw_700 ct_fs_44 text-center mb-3">How Creative AI Simplifies Telecom<span className="ct_orange_gredient_text"> <br />  Digital Transformation</span>
               </h2>
               <p className="ct_fw_18 text-center mb-2 ct_fw_500 mx-auto" style={{ maxWidth: "700px" }}>Use our no-code AI app builder to modernize telecom operations with faster development, automation, and scalable digital solutions.
-
               </p>
             </div>
           </div>
@@ -71,7 +64,6 @@ export default function Page() {
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Faster Telecom App Development
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">Creative AI uses an advanced AI app builder to create telecom solutions quickly, helping businesses launch digital platforms without long development timelines.
-
                 </p>
               </div>
             </div>
@@ -80,7 +72,6 @@ export default function Page() {
             <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Custom Solutions for Every Business
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   The platform understands user requirements and builds tailored telecom applications using a smart no-code AI app builder approach.
@@ -103,11 +94,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Easy Project Customization
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   With the help of an intelligent AI app generator, users can create multiple project versions, improve workflows, and optimize telecom operations easily.
-
                 </p>
               </div>
             </div>
@@ -117,11 +106,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   End-to-End Project Support
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   Creative AI manages the complete process, including planning, design, development, and deployment, to simplify telecom digital transformation.
-
                 </p>
               </div>
             </div>
@@ -141,12 +128,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Expert Help for Advanced Features
-
-
                 </h4>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   For custom telecom requirements, users can directly connect with the Creative AI team to get personalized support and scalable solutions.
-
                 </p>
               </div>
             </div>
@@ -172,13 +156,9 @@ export default function Page() {
                       </div>
                       <figcaption>
                         <h4 className="ct_fs_22 ct_fw_700 text-center">Easy Telecom App Development
-
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center">
                           Creative AI simplifies telecom solution development with a smart AI app builder that turns ideas into fully functional platforms quickly and efficiently.
-
-
-
                         </p>
                       </figcaption>
                     </figure>
@@ -194,12 +174,9 @@ export default function Page() {
                       </div>
                       <figcaption>
                         <h4 className="ct_fs_22 ct_fw_700 text-center"> Custom Solutions Without Complexity
-
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center">
                           Using a powerful no-code AI app builder, businesses can create and customize telecom workflows based on their exact requirements without technical difficulties.
-
-
                         </p>
                       </figcaption>
                     </figure>
@@ -215,14 +192,9 @@ export default function Page() {
                       </div>
                       <figcaption>
                         <h4 className="ct_fs_22 ct_fw_700 text-center">Complete Support from Start to Launch
-
-
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center">
                           From planning and design to deployment, Creative AI manages the entire process to deliver smooth, scalable, and modern telecom solutions.
-
-
-
                         </p>
                       </figcaption>
                     </figure>
@@ -247,7 +219,6 @@ export default function Page() {
                 <div className="col-md-8 mb-4 mb-md-0 aos-init aos-animate">
                   <div className="ct_flexible_serivce_cnt">
                     <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">STL
-
                     </h4>
                     <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                       STL is a global leader in optical and digital networking, powering 5G, FTTH, and data
@@ -336,7 +307,6 @@ export default function Page() {
                 <div className="col-md-8 mb-4 mb-md-0 aos-init aos-animate">
                   <div className="ct_flexible_serivce_cnt">
                     <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">STL
-
                     </h4>
                     <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                       STL is a global leader in optical and digital networking, powering 5G, FTTH, and data
@@ -425,7 +395,6 @@ export default function Page() {
                 <div className="col-md-8 mb-4 mb-md-0 aos-init aos-animate">
                   <div className="ct_flexible_serivce_cnt">
                     <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">STL
-
                     </h4>
                     <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                       STL is a global leader in optical and digital networking, powering 5G, FTTH, and data
@@ -860,26 +829,15 @@ export default function Page() {
             <div className="ct_free_demo_bg">
               <h2 className="ct_fs_28 text-center text-white ct_fw_700 mb-2 mx-auto" style={{ maxWidth: "600px" }}>
                 Make Telecom Simpler, Smarter, and Faster
-
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn"  >Turn Ideas Into Reality
+                <a className="ct_blue_btn_fill ct_white_btn" href="http://72.60.203.98/login">Turn Ideas Into Reality
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
     </>
   );
 }

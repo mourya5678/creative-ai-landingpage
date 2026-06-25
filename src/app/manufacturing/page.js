@@ -31,7 +31,7 @@ export default function Page() {
                   <p>Launch smarter manufacturing solutions without complex coding using our no-code AI app builder.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill"  >Launch Now
+                    <a className="ct_blue_btn_fill" href="http://72.60.203.98/login">Launch Now
                     </a>
                   </div>
                 </div>
@@ -859,25 +859,14 @@ export default function Page() {
             <div className="ct_free_demo_bg">
               <h2 className="ct_fs_28 text-center text-white ct_fw_700 mb-2 mx-auto" style={{ maxWidth: "600px" }}>
                 Launch Your Manufacturing App Faster with Creative AI
-
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn"  >Launch Your App</a>
+                <a className="ct_blue_btn_fill ct_white_btn" href="http://72.60.203.98/login">Launch Your App</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
     </>
   );
 }

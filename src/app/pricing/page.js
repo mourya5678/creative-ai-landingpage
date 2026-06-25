@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import { InnerTestimonialInit } from "@/components/PageInitializers";
+import InnerPricingSection from "@/components/InnerPricingSection";
 
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
@@ -8,7 +9,23 @@ export const metadata = {
   keywords: "AI app builder, AI app generator, AI app maker, AI app creator, AI mobile app builder, AI application generator, AI retail solutions, retail AI solutions, mobile e-commerce, finance software, software solutions, AI solutions, AI-powered financial solutions, AI healthcare companies, AI healthcare, AI in healthcare, AI for manufacturing, manufacturing artificial intelligence, AI in telecommunications, telecom AI, AI-powered software, energy app, AI educational apps, AI website builder, Entertainment mobile app development, converting a website to a mobile app, converting a website to an app, creating an iPhone app, how to create an app for iPhone",
 };
 
-export default function Page() {
+const getPlans = async (billingInterval) => {
+  try {
+    const res = await fetch(`https://dev-api.creativethoughts.ai/api/user/getAllPlans?billing_interval=${billingInterval}`, {
+      next: { revalidate: 3600 }
+    });
+    if (!res.ok) return null;
+    const json = await res.json();
+    return json.success ? json.data : null;
+  } catch (error) {
+    console.error("Error fetching plans:", error);
+    return null;
+  }
+};
+
+export default async function Page() {
+  const monthlyPlans = await getPlans("MONTH");
+  const yearlyPlans = await getPlans("YEAR");
   return (
     <>
       <Header />
@@ -19,178 +36,21 @@ export default function Page() {
         <div className="container">
           <div className="ct_section_heading text-center">
             <h2 className="ct_fw_600 ct_fs_40 mb-2">
-              Choose the Perfect Plan for
+              Choose the Perfect Plan for {" "}
               <span className="ct_orange_gredient_text">Your Next Big Idea </span>
             </h2>
             <p className="mx-auto" style={{ maxWidth: "716px" }}>
               Flexible pricing built for startups, agencies, and growing
               businesses.
             </p>
-            <div className="ct_pricing_toggle">
-              <button className="active" type="button">
-                Monthly
-              </button>
-              <button type="button">
-                Annually
-              </button>
-            </div>
           </div>
-          <div className="ct_pricing_grid mt-5">
-            <div className="ct_price_card">
-              <div className="ct_price_card_top">
-                <span className="ct_price_badge">FREE PLAN</span>
-                <h3 className="ct_price_credits">
-                  50 Credits
-                </h3>
-                <div className="ct_price_value">
-                  <span className="ct_price_current">₹0.00</span><span className="ct_price_suffix">/month</span>
-                </div>
-                <p>
-                  Best for exploring the platform
-                </p>
-                <div className="ct_price_offer_slot">
-
-                </div>
-                <a className="ct_price_cta" href="/login" routerlink="/login">Start Free</a>
-              </div>
-              <div className="ct_price_card_bottom">
-                <h4>Features you will get:</h4>
-                <ul>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Create your first project (at 25 credits)</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Use remaining credits for minor edits &amp; tweaks</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Access to basic AI generation</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Single agent processing</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Chat-based interaction only</span>
-                  </li>
-
-                </ul>
-                <p className="ct_price_note">
-                  Upgrade anytime or buy credits directly
-                </p>
-              </div>
-            </div>
-
-            <div className="ct_price_card ct_price_card_featured">
-              <div className="ct_price_card_top">
-                <span className="ct_price_badge">STANDARD PLAN</span>
-                <h3 className="ct_price_credits">
-                  100 Credits
-                </h3>
-                <div className="ct_price_value ct_price_value_compact ct_price_value_with_old">
-                  <span className="ct_price_previous">
-                    ₹1650.00/month </span><span className="ct_price_current">₹199.00</span><span className="ct_price_suffix">/month</span>
-                </div>
-                <div className="ct_price_offer_slot">
-                  <div className="ct_price_offer_wrap">
-                    <div className="ct_price_offer">
-                      ₹199.00
-                    </div>
-                  </div>
-
-                </div>
-                <p>
-                  Perfect to build your first real product
-                </p>
-                <a className="ct_price_cta" href="/login" routerlink="/login">Get Started</a>
-                <div className="position-relative">
-                  <button className="ct_starter_plan" type="button">
-                    100 credits /month
-                    <svg className="ct_show_eye" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" fillRule="evenodd"></path>
-                    </svg></button>
-                </div>
-
-              </div>
-              <div className="ct_price_card_bottom">
-                <h4>Features you will get:</h4>
-                <ul>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Create full-scale projects</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Basic deployment access</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Standard customization (credit-based)</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Faster generation vs free plan</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Clean production-ready outputs</span>
-                  </li>
-
-                </ul>
-                <p className="ct_price_note">
-                  Auto-upgrades to Standard plan next month.
-                </p>
-              </div>
-            </div>
-
-            <div className="ct_price_card">
-              <div className="ct_price_card_top">
-                <span className="ct_price_badge">ENTERPRISE PLAN</span>
-                <h3 className="ct_price_credits">
-                  2000 Credits
-                </h3>
-                <div className="ct_price_value">
-                  <span className="ct_price_current">₹35000.00</span><span className="ct_price_suffix">/month</span>
-                </div>
-                <div className="ct_price_offer_slot">
-
-                </div>
-                <p>
-                  For agencies &amp; enterprise teams
-                </p>
-                <a className="ct_price_cta" href="/login" routerlink="/login">Get Started</a>
-              </div>
-              <div className="ct_price_card_bottom">
-                <h4>
-                  Pro Features and you will get:
-                </h4>
-                <ul>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Unlimited scale project creation</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Enterprise-grade deployment infrastructure</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Full customization freedom (no limitations)</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Chat + Email + Phone Support</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Maximum speed &amp; priority processing</span>
-                  </li>
-                  <li>
-                    <img alt="Create powerful apps with no code AI app builder" className="me-2" height="20" loading="lazy" src="/img/pricing_check_icon.svg" width="20" /><span>Optimized for large-scale automation</span>
-                  </li>
-
-                </ul>
-                <p className="ct_price_note">
-                  Tailored for high-end business workflows
-                </p>
-              </div>
-            </div>
-
-          </div>
+          <InnerPricingSection monthlyPlans={monthlyPlans} yearlyPlans={yearlyPlans} />
           <div className="ct_pricing_cta">
             <div>
               <h4>Stuck or Need Guidance?</h4>
               <p>We’re here to help you build your first app.</p>
             </div>
-            <a className="ct_blue_btn_fill"  >Contact Us</a>
+            <a className="ct_blue_btn_fill" href="/contact">Contact Us</a>
           </div>
         </div>
       </section>

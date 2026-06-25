@@ -13,11 +13,7 @@ export default function Page() {
     <>
       <Header />
       <InnerTestimonialInit />
-
       <div>
-
-
-
         <section className="ct_py_70">
           <div className="container">
             <div className="row align-items-center">
@@ -25,12 +21,11 @@ export default function Page() {
                 <div className="ct_hero_banner_left_cnt ct_interprenuer_shape">
                   <h1 className="ct_fs_44 ct_fw_700" style={{ maxWidth: "500px" }}>
                     Build Business Applications Without Complexity
-
                   </h1>
                   <p className="mb-0">Creative AI helps SMBs turn ideas into scalable digital solutions with intelligent automation and expert support.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill"  >Start Building </a>
+                    <a className="ct_blue_btn_fill" href="http://72.60.203.98/login">Start Building </a>
                     <Link className="ct_blue_outline_btn" href="/pricing">See pricing &amp; plans</Link>
                   </div>
                 </div>
@@ -45,7 +40,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
       </div>
       <hr className="ct_break_line" />
       <section className="ct_how_works_bg">
@@ -76,7 +70,6 @@ export default function Page() {
                       <h3 className="ct_fs_18 ct_fw_700 mb-0"> Just Write Your Prompt
                       </h3>
                       <p className="ct_fs_16 ct_line_h_30">Simply describe your app idea in clear, simple language no coding or technical skills required. Creative AI understands your prompt and converts it into a structured app plan instantly.
-
                       </p>
                     </div>
                   </li>
@@ -94,11 +87,9 @@ export default function Page() {
                     </div>
                     <div>
                       <h3 className="ct_fs_18 ct_fw_700 mb-0">Let AI Build Your App
-
                       </h3>
                       <p className="ct_fs_16 ct_line_h_30">
                         Based on your prompt, Creative AI automatically designs, develops, and structures your app within minutes. The AI app builder selects layouts, features, and functionality tailored to your requirements.
-
                       </p>
                     </div>
                   </li>
@@ -116,10 +107,8 @@ export default function Page() {
                     </div>
                     <div>
                       <h3 className="ct_fs_18 ct_fw_700 mb-0"> Get Your App Live
-
                       </h3>
                       <p className="ct_fs_16 ct_line_h_30">Once your app is ready, review and publish it with just one click. Creative AI helps you launch your mobile or web app quickly, making it ready for users in as little as 5 minutes.
-
                       </p>
                     </div>
                   </li>
@@ -150,8 +139,6 @@ export default function Page() {
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   Creative AI helps SMBs simplify daily operations, organize workflows, and reduce manual work with a no-code AI app builder designed for growing businesses.
-
-
                 </p>
               </div>
             </div>
@@ -160,11 +147,9 @@ export default function Page() {
             <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Build Business Apps Faster
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   Businesses can quickly create customer platforms, internal systems, and digital solutions using an AI app builder without long development delays.
-
                 </p>
               </div>
             </div>
@@ -183,12 +168,9 @@ export default function Page() {
             <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Grow Your Business with Flexibility
-
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">You’re not alone our experienced team
                   With a no-code AI app builder, SMBs can build scalable applications that adapt to business growth and changing operational needs.
-
                 </p>
               </div>
             </div>
@@ -201,7 +183,6 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12">
               <h2 className="ct_fs_44 ct_fw_700 mb-3 text-center"> Transform Any Business Idea into Reality with
-
                 <br />
                 <span className="ct_orange_gredient_text">Creative AI</span>
               </h2>
@@ -221,7 +202,6 @@ export default function Page() {
                     <h3 className="ct_fs_22 text-white ct_fw_700 mb-2">Education</h3>
                     <p className="ct_fs_14">
                       Build smart learning platforms, student portals, and eLearning solutions with an AI app builder designed for modern education. Simplify course management, student engagement, and digital learning experiences.
-
                     </p>
                   </div>
                   <div className="pt-4 mt-auto">
@@ -299,21 +279,15 @@ export default function Page() {
               <div className="col-md-12 mb-4 mb-md-0">
                 <div className="ct_launch_left_cnt">
                   <h2 className="ct_fs_44 ct_fw_600 text-white mb-3 text-center">See Why Businesses Build with Creative AI
-
                   </h2>
                   <div className="ct_perks_job_list_ul mt-4">
                     <ul className="d-flex justify-content-center gap-3 flex-wrap">
                       <li className="text-white">
                         <i className="bi bi-check2-circle text-white"></i>AI-Powered Project Building
-
                       </li>
                       <li className="text-white"><i className="bi bi-check2-circle text-white"></i>No-Code &amp; Custom Solutions
-
-
                       </li>
                       <li className="text-white"><i className="bi bi-check2-circle text-white"></i>End-to-End Product Support
-
-
                       </li>
                     </ul>
                   </div>
@@ -550,28 +524,17 @@ export default function Page() {
           <div className="col-md-12">
             <div className="ct_free_demo_bg">
               <h2 className="ct_fs_38 text-center ct_fw_600 text-white mb-2"> Ready to Build Your Next Big Idea?
-
               </h2>
               <p className="ct_fs_17 mb-0 text-center text-white mx-auto" style={{ maxWidth: "600px" }}>Turn your vision into a scalable digital product with Creative AI. Build faster, simplify development, and launch smarter with our AI app builder.
               </p>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn"  > Start Your Project
+                <a className="ct_blue_btn_fill ct_white_btn" href="http://72.60.203.98/login"> Start Your Project
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-
-
-
-
-
-
-
-
-
+      </section >
     </>
   );
 }

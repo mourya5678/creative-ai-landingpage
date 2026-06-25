@@ -16,11 +16,7 @@ export default function Page() {
       <RetailSliderInit />
       <PricingSliderInit />
       <BlogDetailsSliderInit />
-
       <div>
-
-
-
         <section className="ct_py_70">
           <div className="container">
             <div className="row align-items-center">
@@ -32,7 +28,7 @@ export default function Page() {
                   <p>Our AI app builder helps schools, educators, and startups create scalable education apps without complex coding.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill"  >Start Building
+                    <a className="ct_blue_btn_fill" href="http://72.60.203.98/login">Start Building
                     </a>
                   </div>
                 </div>
@@ -47,7 +43,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
       </div>
       <hr className="ct_break_line" />
       <section className="ct_pt_50 ct_pb_50">
@@ -59,7 +54,6 @@ export default function Page() {
               </h2>
               <p className="ct_fw_18 text-center mb-2 ct_fw_500">
                 Our no-code AI app builder helps schools, educators, and startups build scalable education solutions without complex coding.
-
               </p>
             </div>
           </div>
@@ -73,12 +67,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Understands Education Project Requirements Quickly
-
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   Creative AI analyzes submitted requirements and understands the features needed to build complete education platforms and learning solutions.
-
                 </p>
               </div>
             </div>
@@ -88,12 +79,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Builds End-to-End Education Solutions
-
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   From planning and design to development and deployment, our no-code AI app builder delivers complete education app solutions with full support.
-
                 </p>
               </div>
             </div>
@@ -113,11 +101,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Supports Multiple Learning Platform Variations
-
                 </h4>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">Save time with AI-powered tools that
                   Users can create different education app concepts, explore new learning experiences, and optimize project workflows easily.
-
                 </p>
               </div>
             </div>
@@ -127,11 +113,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Offers Flexible Customization and Expert Guidance
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   For advanced customization, education businesses can connect directly with our team to create tailored digital learning solutions.
-
                 </p>
               </div>
             </div>
@@ -150,11 +134,9 @@ export default function Page() {
             <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Helps Launch Education Apps Faster
-
                 </h3>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   Creative AI simplifies the entire development process, helping schools, startups, and educators launch education apps more efficiently.
-
                 </p>
               </div>
             </div>
@@ -180,13 +162,9 @@ export default function Page() {
                       </div>
                       <figcaption>
                         <h4 className="ct_fs_22 ct_fw_700 text-center"> Build Interactive Learning Apps Faster
-
-
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center">
                           Creative AI’s AI app generator helps create engaging education platforms with smart features and modern learning experiences.
-
-
                         </p>
                       </figcaption>
                     </figure>
@@ -203,12 +181,9 @@ export default function Page() {
                       <figcaption>
                         <h4 className="ct_fs_22 ct_fw_700 text-center">
                           Easy Customization for Education Businesses
-
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center">
                           Our AI app generator allows schools, educators, and startups to customize workflows, features, and user experiences based on their needs.
-
-
                         </p>
                       </figcaption>
                     </figure>
@@ -225,12 +200,9 @@ export default function Page() {
                       <figcaption>
                         <h4 className="ct_fs_22 ct_fw_700 text-center">
                           From Idea to Live Education Platform
-
-
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center">
                           Creative AI provides complete support through planning, development, and deployment using an advanced AI app generator for faster project delivery.
-
                         </p>
                       </figcaption>
                     </figure>
@@ -255,7 +227,6 @@ export default function Page() {
                 <div className="col-md-8 mb-4 mb-md-0 aos-init aos-animate">
                   <div className="ct_flexible_serivce_cnt">
                     <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Master PTE
-
                     </h4>
                     <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                       Master PTE is an AI-powered platform for students in Australia, also
@@ -296,7 +267,6 @@ export default function Page() {
                         <p className="mb-0 mt-3">Students can practice with realistic PTE mock
                           exams backed by advanced AI for precise scoring and
                           insights.
-
                         </p>
                       </details>
                     </div>
@@ -320,7 +290,6 @@ export default function Page() {
                         <p className="mb-0 mt-3">
                           Learners read aloud or practice text passages any misread
                           words are highlighted in red for immediate correction.
-
                         </p>
                       </details>
                     </div>
@@ -796,26 +765,15 @@ export default function Page() {
             <div className="ct_free_demo_bg">
               <h2 className="ct_fs_28 text-center text-white ct_fw_700 mb-2 mx-auto" style={{ maxWidth: "600px" }}>
                 Build Modern Education Apps Without Coding
-
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn"  >Build Your Education App
+                <a className="ct_blue_btn_fill ct_white_btn" href="http://72.60.203.98/login">Build Your Education App
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
     </>
   );
 }

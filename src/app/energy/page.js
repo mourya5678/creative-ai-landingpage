@@ -16,23 +16,18 @@ export default function Page() {
       <RetailSliderInit />
       <PricingSliderInit />
       <BlogDetailsSliderInit />
-
       <div>
-
-
-
         <section className="ct_py_70">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 mb-4 mb-lg-0">
                 <div className="ct_hero_banner_left_cnt">
                   <h1 className="ct_fs_44 ct_fw_700">Easy-to-Build Energy Solutions with Creative AI
-
                   </h1>
                   <p>Build custom energy management platforms faster with a reliable AI app builder for digital transformation.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill"  >Get Started with AI</a>
+                    <a className="ct_blue_btn_fill" href="http://72.60.203.98/login">Get Started with AI</a>
                   </div>
                 </div>
               </div>
@@ -46,7 +41,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
       </div>
       <hr className="ct_break_line" />
       <section className="ct_pt_50 ct_pb_50">
@@ -54,14 +48,12 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12">
               <h1 className="ct_fw_700 ct_fs_44 text-center mb-3">How Creative AI Helps Deliver Smarter
-
                 <br />
                 <span className="ct_orange_gredient_text">
                   Energy Experiences</span>
               </h1>
               <p className="ct_fw_18 text-center mb-2 ct_fw_500">
                 Build scalable energy solutions without complexity using a flexible no-code AI app builder.
-
               </p>
             </div>
           </div>
@@ -78,7 +70,6 @@ export default function Page() {
                 </h4>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   Creative AI uses a powerful AI app builder to turn energy business requirements into fully functional digital platforms with faster development and deployment.
-
                 </p>
               </div>
             </div>
@@ -88,11 +79,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Custom Energy Workflows for Every Business
-
                 </h4>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   With an intelligent no-code AI app builder, businesses can create tailored energy solutions that match their operations, services, and customer needs.
-
                 </p>
               </div>
             </div>
@@ -112,11 +101,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Easy Optimization and Project Flexibility
-
                 </h4>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   Creative AI allows users to test different project ideas, improve workflows, and optimize energy systems using a flexible AI app generator.
-
                 </p>
               </div>
             </div>
@@ -126,11 +113,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Complete Support from Idea to Launch
-
                 </h4>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   From planning and design to development and deployment, Creative AI manages the entire energy digital transformation process in one place.
-
                 </p>
               </div>
             </div>
@@ -150,11 +135,9 @@ export default function Page() {
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Direct Expert Support for Advanced Solutions
-
                 </h4>
                 <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                   For complex energy projects and advanced customization, businesses can connect directly with the Creative AI team for personalized guidance and scalable solutions.
-
                 </p>
               </div>
             </div>
@@ -179,11 +162,9 @@ export default function Page() {
                       </div>
                       <figcaption>
                         <h4 className="ct_fs_22 ct_fw_700 text-center"> Faster Energy Solution Development
-
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center">
                           Creative AI helps businesses build and launch modern energy platforms quickly using an advanced AI app builder designed for faster digital transformation.
-
                         </p>
                       </figcaption>
                     </figure>
@@ -203,7 +184,6 @@ export default function Page() {
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center">
                           With a smart no-code AI app builder, energy businesses can customize workflows, explore multiple project ideas, and create solutions based on their exact needs.
-
                         </p>
                       </figcaption>
                     </figure>
@@ -219,11 +199,8 @@ export default function Page() {
                       </div>
                       <figcaption>
                         <h4 className="ct_fs_22 ct_fw_700 text-center"> Complete End-to-End Support
-
-
                         </h4>
                         <p className="mb-0 ct_fs_18 ct_line_h_25 text-center"> From planning and design to deployment and optimization, Creative AI provides full support to help energy businesses create scalable and efficient digital solutions.
-
                         </p>
                       </figcaption>
                     </figure>
@@ -248,7 +225,6 @@ export default function Page() {
                 <div className="col-md-8 mb-4 mb-md-0 aos-init aos-animate">
                   <div className="ct_flexible_serivce_cnt">
                     <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Infinity Banking | Canada
-
                     </h4>
                     <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                       Infinity Banking is an advanced financial management solution built for
@@ -257,7 +233,6 @@ export default function Page() {
                       savings in one smart dashboard. The platform then analyzes this data and
                       delivers personalized insights to help customers and agents make
                       informed, confident financial choices.
-
                     </p>
                   </div>
                 </div>
@@ -310,7 +285,6 @@ export default function Page() {
                         </summary>
                         <p className="mb-0 mt-3">
                           Get custom tips and strategies to manage money better.
-
                         </p>
                       </details>
                     </div>
@@ -344,7 +318,6 @@ export default function Page() {
                 <div className="col-md-8 mb-4 mb-md-0 aos-init aos-animate">
                   <div className="ct_flexible_serivce_cnt">
                     <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Infinity Banking | Canada
-
                     </h4>
                     <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                       Infinity Banking is an advanced financial management solution built for
@@ -353,7 +326,6 @@ export default function Page() {
                       savings in one smart dashboard. The platform then analyzes this data and
                       delivers personalized insights to help customers and agents make
                       informed, confident financial choices.
-
                     </p>
                   </div>
                 </div>
@@ -406,7 +378,6 @@ export default function Page() {
                         </summary>
                         <p className="mb-0 mt-3">
                           Get custom tips and strategies to manage money better.
-
                         </p>
                       </details>
                     </div>
@@ -440,7 +411,6 @@ export default function Page() {
                 <div className="col-md-8 mb-4 mb-md-0 aos-init aos-animate">
                   <div className="ct_flexible_serivce_cnt">
                     <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Infinity Banking | Canada
-
                     </h4>
                     <p className="mb-0 ct_fs_16 ct_fw_600 ct_line_h_25">
                       Infinity Banking is an advanced financial management solution built for
@@ -449,7 +419,6 @@ export default function Page() {
                       savings in one smart dashboard. The platform then analyzes this data and
                       delivers personalized insights to help customers and agents make
                       informed, confident financial choices.
-
                     </p>
                   </div>
                 </div>
@@ -502,7 +471,6 @@ export default function Page() {
                         </summary>
                         <p className="mb-0 mt-3">
                           Get custom tips and strategies to manage money better.
-
                         </p>
                       </details>
                     </div>
@@ -882,26 +850,15 @@ export default function Page() {
             <div className="ct_free_demo_bg">
               <h2 className="ct_fs_28 text-center text-white ct_fw_700 mb-2 mx-auto" style={{ maxWidth: "600px" }}>
                 Ready to Transform Your Energy Business?
-
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn"  >Start Building Now
+                <a className="ct_blue_btn_fill ct_white_btn" href="http://72.60.203.98/login">Start Building Now
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
     </>
   );
-}
+};
