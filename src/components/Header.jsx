@@ -335,7 +335,7 @@ export default function Header() {
         <div className="ct_right_menu">
           <ul className="justify-content-end mb-0">
             <li>
-              <a className="ct_get_started_btn"
+              <a href="http://72.60.203.98/login" className="ct_get_started_btn"
               >Get Started
                 <svg
                   width="24"

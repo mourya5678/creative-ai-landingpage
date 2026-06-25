@@ -57,24 +57,30 @@ export default function Page() {
                 <button aria-label="Enhance with AI">✨</button>
               </div>
               <div className="ctiprompt_right_btns">
-                <button type="submit" aria-label="Submit prompt">
-                  <svg
-                    style={{ transform: "rotate(90deg)" }}
-                    fill="none"
-                    height="18"
-                    viewBox="0 0 15 19"
-                    width="13"
-                    xmlns="http://www.w3.org/2000/svg"
+                <a href="http://72.60.203.98/login" style={{ textDecoration: 'none' }}>
+                  <button
+                    type="button"
+                    aria-label="Submit prompt"
+                    style={{ pointerEvents: 'none' }}
                   >
-                    <path
-                      d="M7.19824 17.1986V1.19855M1.19824 7.19855L7.19824 1.19855L13.1982 7.19855"
-                      stroke="white"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2.39705"
-                    ></path>
-                  </svg>
-                </button>
+                    <svg
+                      style={{ transform: "rotate(90deg)" }}
+                      fill="none"
+                      height="18"
+                      viewBox="0 0 15 19"
+                      width="13"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.19824 17.1986V1.19855M1.19824 7.19855L7.19824 1.19855L13.1982 7.19855"
+                        stroke="white"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2.39705"
+                      ></path>
+                    </svg>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -86,7 +92,7 @@ export default function Page() {
             <div className="cti_tag">Marketplace App</div>
           </div>
         </div>
-      </div>
+      </div >
       <section className="cti_brands_logo_slider">
         <div className="logo-slider">
           <div className="logo-slider__track">
@@ -240,7 +246,7 @@ export default function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <button className="cti_build_btn mt-4">
+                      <a href="http://72.60.203.98/login" className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
                         Build
                         <svg
                           width="27"
@@ -265,7 +271,7 @@ export default function Page() {
                             strokeLinejoin="round"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
@@ -297,7 +303,7 @@ export default function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <button className="cti_build_btn mt-4">
+                      <a href="http://72.60.203.98/login" className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
                         Build
                         <svg
                           width="27"
@@ -322,7 +328,7 @@ export default function Page() {
                             strokeLinejoin="round"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
@@ -353,7 +359,7 @@ export default function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <button className="cti_build_btn mt-4">
+                      <a href="http://72.60.203.98/login" className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
                         Build
                         <svg
                           width="27"
@@ -378,7 +384,7 @@ export default function Page() {
                             strokeLinejoin="round"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
@@ -409,7 +415,7 @@ export default function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <button className="cti_build_btn mt-4">
+                      <a href="http://72.60.203.98/login" className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
                         Build
                         <svg
                           width="27"
@@ -434,7 +440,7 @@ export default function Page() {
                             strokeLinejoin="round"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </div>
                   <div className="ct_sass_card_img">
@@ -1472,7 +1478,7 @@ export default function Page() {
                   </ul>
                 </div>
                 <div className="mt-auto">
-                  <a className="cti_pricing_btn">
+                  <a className="cti_pricing_btn" href="http://72.60.203.98/login">
                     Start Free
                     <span>→</span>
                   </a>
@@ -1680,7 +1686,7 @@ export default function Page() {
                   </ul>
                 </div>
                 <div className="mt-auto">
-                  <a className="cti_pricing_btn"> Contact Sales </a>
+                  <a className="cti_pricing_btn" href="/contact"> Contact Sales </a>
                 </div>
               </div>
             </div>
