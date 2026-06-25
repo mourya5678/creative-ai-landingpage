@@ -203,7 +203,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
                       cursor: "pointer"
                     }}
                   >
-                    {standardPlan.credits_per_cycle || 100} credits {billingInterval === "MONTH" ? "/month" : "/year"}
+                    {standardPlan.credits_per_cycle || 100} credits {standardPlan?.credit_grant_interval === "MONTH" ? "/month" : "/year"}
                     <svg
                       className="ct_show_eye"
                       fill="currentColor"
@@ -236,13 +236,13 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
                       }}
                     >
                       {proPlans
-                        .map((plan, index) => ({ plan, originalIndex: index }))
-                        .filter((item) => item.originalIndex !== selectedPlanIndex)
-                        .map(({ plan, originalIndex }) => {
-                          const price = plan.has_intro_offer
-                            ? `₹${formatCurrency(plan.intro_amount)}`
-                            : `₹${formatCurrency(plan.display_amount)}`;
-                          const intervalLabel = billingInterval === "MONTH" ? "/month" : "/year";
+                        ?.map((plan, index) => ({ plan, originalIndex: index }))
+                        ?.filter((item) => item.originalIndex !== selectedPlanIndex)
+                        ?.map(({ plan, originalIndex }) => {
+                          const price = plan?.has_intro_offer
+                            ? `₹${formatCurrency(plan?.intro_amount)}`
+                            : `₹${formatCurrency(plan?.display_amount)}`;
+                          const intervalLabel = plan?.credit_grant_interval === "MONTH" ? "/month" : "/year";
                           return (
                             <button
                               key={plan.id}
