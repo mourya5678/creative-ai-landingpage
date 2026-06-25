@@ -30,8 +30,6 @@ export default async function Page() {
     <>
       <Header />
       <InnerTestimonialInit />
-
-
       <section className="ct_pricing_section ct_py_70">
         <div className="container">
           <div className="ct_section_heading text-center">
@@ -396,7 +394,6 @@ export default async function Page() {
       <section className="ct_py_70">
         <div className="logo-slider">
           <div className="logo-slider__track">
-
             <div className="logo-slider__item">
               <img alt="No code AI app builder for fast custom apps" loading="lazy" src="/img/brand_logo_1.png" />
             </div>
@@ -421,7 +418,6 @@ export default async function Page() {
             <div className="logo-slider__item">
               <img alt="No code AI app builder for fast custom apps" loading="lazy" src="/img/brand_logo_8.png" />
             </div>
-
             <div className="logo-slider__item">
               <img alt="No code AI app builder for fast custom apps" loading="lazy" src="/img/brand_logo_1.png" />
             </div>
@@ -468,16 +464,6 @@ export default async function Page() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
     </>
   );
-}
+};

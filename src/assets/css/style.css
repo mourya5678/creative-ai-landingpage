@@ -696,9 +696,11 @@ header::after {
 .ct_middle_navbar nav {
   flex: 1;
 }
-.ct_dropdown_items ol{
+
+.ct_dropdown_items ol {
   padding-left: 0px;
 }
+
 .ct_middle_navbar ul:not(.ct_dropdown_items ol) {
   display: flex;
   align-items: center;
@@ -748,12 +750,12 @@ header::after {
 /* Home page Css S */
 
 .cti_home_banner {
-    z-index: 99;
-    background: #050f1d;
-    padding-bottom: 239px;
-    position: relative;
-    overflow: hidden;
-    padding-top: 100px;
+  z-index: 99;
+  background: #050f1d;
+  padding-bottom: 239px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
 }
 
 .cti_home_banner::before {
@@ -1513,7 +1515,7 @@ html.w-mod-touch * {
 
 .cti_plan_title {
   color: #fff;
-  font-size: 32px;
+  font-size: 22px;
   line-height: 38.97px;
   font-weight: 500;
   font-family: delight-medium;
@@ -1535,7 +1537,7 @@ html.w-mod-touch * {
 
 .cti_price_wrap h2 {
   color: #fff;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: -1%;
@@ -1564,7 +1566,7 @@ html.w-mod-touch * {
   color: #c8c4d5;
   font-size: 12px;
   line-height: 20.79px;
-  margin-bottom: 19px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   font-family: Satoshi-medium;
@@ -2170,7 +2172,7 @@ input[type="radio"]:checked+.cti_option_btn span {
   pointer-events: none;
   animation: ballVDown 3s linear infinite;
   animation-delay: 2.8s;
-  
+
 }
 
 @keyframes ballVDown {
@@ -2199,8 +2201,8 @@ input[type="radio"]:checked+.cti_option_btn span {
   z-index: 30;
   pointer-events: none;
   animation: ballVUp 3s linear infinite;
-    animation-delay: 2.8s;
-  
+  animation-delay: 2.8s;
+
 }
 
 @keyframes ballVUp {
@@ -2371,7 +2373,8 @@ input[type="radio"]:checked+.cti_option_btn span {
   color: #fff;
 
 }
-.ct_down_btn:hover svg path{
+
+.ct_down_btn:hover svg path {
   fill: #fff;
 }
 
@@ -2443,13 +2446,13 @@ input[type="radio"]:checked+.cti_option_btn span {
 }
 
 .et_main_header_344 {
-    position: absolute;
-    top: 40px;
-    left: 0px;
-    right: 0px;
-    padding-top: 0px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  right: 0px;
+  padding-top: 0px;
 }
 
-.ct_header_main.ct_sticky_menu.et_main_header_344{
+.ct_header_main.ct_sticky_menu.et_main_header_344 {
   top: 40px;
 }

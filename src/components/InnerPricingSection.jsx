@@ -49,21 +49,23 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
 
   return (
     <>
-      <div className="ct_pricing_toggle">
-        <button
-          className={billingInterval === "MONTH" ? "active" : ""}
-          type="button"
-          onClick={() => setBillingInterval("MONTH")}
-        >
-          Monthly
-        </button>
-        <button
-          className={billingInterval === "YEAR" ? "active" : ""}
-          type="button"
-          onClick={() => setBillingInterval("YEAR")}
-        >
-          Annually
-        </button>
+      <div className="text-center">
+        <div className="ct_pricing_toggle justify-content-center">
+          <button
+            className={billingInterval === "MONTH" ? "active" : ""}
+            type="button"
+            onClick={() => setBillingInterval("MONTH")}
+          >
+            Monthly
+          </button>
+          <button
+            className={billingInterval === "YEAR" ? "active" : ""}
+            type="button"
+            onClick={() => setBillingInterval("YEAR")}
+          >
+            Annually
+          </button>
+        </div>
       </div>
 
       <div className="ct_pricing_grid mt-5">

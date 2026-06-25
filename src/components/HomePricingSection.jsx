@@ -27,7 +27,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
   // Standard Plan pricing fields
   let standardPrice = "₹199.00";
   let standardPrevPrice = null;
-  
+
   if (standardPlan.has_intro_offer) {
     standardPrice = `₹${formatCurrency(standardPlan.intro_amount)}`;
     standardPrevPrice = `₹${formatCurrency(standardPlan.display_amount)}/month`;
@@ -40,8 +40,8 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
   const standardCredits = standardPlan.credits_per_cycle ? `${standardPlan.credits_per_cycle} Credits` : "100 Credits";
 
   // Enterprise Plan pricing fields
-  const enterprisePrice = enterprisePlan.display_amount 
-    ? `₹${formatCurrency(enterprisePlan.display_amount)}` 
+  const enterprisePrice = enterprisePlan.display_amount
+    ? `₹${formatCurrency(enterprisePlan.display_amount)}`
     : (billingInterval === "MONTH" ? "₹35000.00" : "₹385199.00");
   const enterpriseCredits = enterprisePlan.credits_per_cycle ? `${enterprisePlan.credits_per_cycle} Credits` : "2000 Credits";
 
@@ -50,15 +50,15 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
   return (
     <>
       <div className="ct_pricing_toggle ct_pricing_toggle_home">
-        <button 
-          className={billingInterval === "MONTH" ? "active" : ""} 
+        <button
+          className={billingInterval === "MONTH" ? "active" : ""}
           type="button"
           onClick={() => setBillingInterval("MONTH")}
         >
           Monthly
         </button>
-        <button 
-          className={billingInterval === "YEAR" ? "active" : ""} 
+        <button
+          className={billingInterval === "YEAR" ? "active" : ""}
           type="button"
           onClick={() => setBillingInterval("YEAR")}
         >
@@ -176,13 +176,110 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
               </p>
               <div className="cti_price_wrap">
                 {standardPrevPrice && (
-                  <span className="ct_price_previous" style={{ fontSize: "14px", textDecoration: "line-through", color: "#c8c4d5", display: "block", marginBottom: "4px" }}>
+                  <span className="ct_price_previous mb-2" style={{ fontSize: "14px", textDecoration: "line-through", color: "#c8c4d5", display: "block", marginBottom: "4px" }}>
                     {standardPrevPrice}
                   </span>
                 )}
                 <h2>{standardPrice}{intervalText}</h2>
                 <span>{standardCredits}</span>
+
+                <div className="position-relative mt-3">
+                  <button
+                    type="button"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      gap: "12px",
+                      padding: "12px 16px",
+                      borderRadius: "12px",
+                      background: "rgba(255, 255, 255, 0.15)",
+                      color: "#ffffff",
+                      border: "1px solid rgba(255, 255, 255, 0.25)",
+                      fontSize: "14px",
+                      fontWeight: "600",
+                      width: "100%",
+                      cursor: "pointer"
+                    }}
+                  >
+                    {standardPlan.credits_per_cycle || 100} credits {billingInterval === "MONTH" ? "/month" : "/year"}
+                    <svg
+                      className="ct_show_eye"
+                      fill="currentColor"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      width="16"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style={{ transform: isDropdownOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
+                    >
+                      <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" fillRule="evenodd"></path>
+                    </svg>
+                  </button>
+
+                  {isDropdownOpen && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "100%",
+                        left: 0,
+                        right: 0,
+                        backgroundColor: "#1a244d",
+                        border: "1px solid rgba(255, 255, 255, 0.2)",
+                        borderRadius: "12px",
+                        boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+                        zIndex: 100,
+                        marginTop: "4px",
+                        padding: "6px 0",
+                        maxHeight: "220px",
+                        overflowY: "auto"
+                      }}
+                    >
+                      {proPlans
+                        .map((plan, index) => ({ plan, originalIndex: index }))
+                        .filter((item) => item.originalIndex !== selectedPlanIndex)
+                        .map(({ plan, originalIndex }) => {
+                          const price = plan.has_intro_offer
+                            ? `₹${formatCurrency(plan.intro_amount)}`
+                            : `₹${formatCurrency(plan.display_amount)}`;
+                          const intervalLabel = billingInterval === "MONTH" ? "/month" : "/year";
+                          return (
+                            <button
+                              key={plan.id}
+                              type="button"
+                              onClick={() => {
+                                setSelectedPlanIndex(originalIndex);
+                                setIsDropdownOpen(false);
+                              }}
+                              style={{
+                                width: "100%",
+                                textAlign: "left",
+                                padding: "10px 16px",
+                                background: "transparent",
+                                border: 0,
+                                color: "#ffffff",
+                                fontSize: "14px",
+                                fontWeight: "500",
+                                cursor: "pointer",
+                                display: "block",
+                                transition: "background 0.2s"
+                              }}
+                              onMouseEnter={(e) => {
+                                e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+                              }}
+                              onMouseLeave={(e) => {
+                                e.currentTarget.style.backgroundColor = "transparent";
+                              }}
+                            >
+                              {plan.credits_per_cycle} credits - {price}{intervalLabel}
+                            </button>
+                          );
+                        })}
+                    </div>
+                  )}
+                </div>
               </div>
+
               <ul className="cti_feature_list">
                 <li>
                   <svg
@@ -265,101 +362,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
               <a className="cti_pricing_btn cti_pricing_btn_white" href="http://72.60.203.98/login">
                 Get Started
               </a>
-              <div className="position-relative mt-3">
-                <button 
-                  type="button"
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    gap: "12px",
-                    padding: "12px 16px",
-                    borderRadius: "12px",
-                    background: "rgba(255, 255, 255, 0.15)",
-                    color: "#ffffff",
-                    border: "1px solid rgba(255, 255, 255, 0.25)",
-                    fontSize: "14px",
-                    fontWeight: "600",
-                    width: "100%",
-                    cursor: "pointer"
-                  }}
-                >
-                  {standardPlan.credits_per_cycle || 100} credits {billingInterval === "MONTH" ? "/month" : "/year"}
-                  <svg 
-                    className="ct_show_eye" 
-                    fill="currentColor" 
-                    height="16" 
-                    viewBox="0 0 16 16" 
-                    width="16" 
-                    xmlns="http://www.w3.org/2000/svg"
-                    style={{ transform: isDropdownOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}
-                  >
-                    <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" fillRule="evenodd"></path>
-                  </svg>
-                </button>
 
-                {isDropdownOpen && (
-                  <div 
-                    style={{
-                      position: "absolute",
-                      top: "100%",
-                      left: 0,
-                      right: 0,
-                      backgroundColor: "#1a244d",
-                      border: "1px solid rgba(255, 255, 255, 0.2)",
-                      borderRadius: "12px",
-                      boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
-                      zIndex: 100,
-                      marginTop: "4px",
-                      padding: "6px 0",
-                      maxHeight: "220px",
-                      overflowY: "auto"
-                    }}
-                  >
-                    {proPlans
-                      .map((plan, index) => ({ plan, originalIndex: index }))
-                      .filter((item) => item.originalIndex !== selectedPlanIndex)
-                      .map(({ plan, originalIndex }) => {
-                        const price = plan.has_intro_offer 
-                          ? `₹${formatCurrency(plan.intro_amount)}` 
-                          : `₹${formatCurrency(plan.display_amount)}`;
-                        const intervalLabel = billingInterval === "MONTH" ? "/month" : "/year";
-                        return (
-                          <button
-                            key={plan.id}
-                            type="button"
-                            onClick={() => {
-                              setSelectedPlanIndex(originalIndex);
-                              setIsDropdownOpen(false);
-                            }}
-                            style={{
-                              width: "100%",
-                              textAlign: "left",
-                              padding: "10px 16px",
-                              background: "transparent",
-                              border: 0,
-                              color: "#ffffff",
-                              fontSize: "14px",
-                              fontWeight: "500",
-                              cursor: "pointer",
-                              display: "block",
-                              transition: "background 0.2s"
-                            }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.backgroundColor = "transparent";
-                            }}
-                          >
-                            {plan.credits_per_cycle} credits - {price}{intervalLabel}
-                          </button>
-                        );
-                      })}
-                  </div>
-                )}
-              </div>
             </div>
           </div>
         </div>
@@ -378,93 +381,27 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
               </div>
               <ul className="cti_feature_list">
                 <li>
-                  <svg
-                    fill="none"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 10.0112C1.41699 10.0112 1.41699 10.0112 1.41699 10.0112Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                  <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path></svg>
                   Unlimited scale project creation
                 </li>
                 <li>
-                  <svg
-                    fill="none"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 10.0112C1.41699 10.0112 1.41699 10.0112 1.41699 10.0112Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                  <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path></svg>
                   Enterprise-grade deployment infrastructure
                 </li>
                 <li>
-                  <svg
-                    fill="none"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 10.0112C1.41699 10.0112 1.41699 10.0112 1.41699 10.0112Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                  <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path></svg>
                   Full customization freedom (no limitations)
                 </li>
                 <li>
-                  <svg
-                    fill="none"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 10.0112C1.41699 10.0112 1.41699 10.0112 1.41699 10.0112Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                  <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path></svg>
                   Chat + Email + Phone Support
                 </li>
                 <li>
-                  <svg
-                    fill="none"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 10.0112C1.41699 10.0112 1.41699 10.0112 1.41699 10.0112Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                  <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path></svg>
                   Maximum speed &amp; priority processing
                 </li>
                 <li>
-                  <svg
-                    fill="none"
-                    height="17"
-                    viewBox="0 0 17 17"
-                    width="17"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 10.0112C1.41699 10.0112 1.41699 10.0112 1.41699 10.0112Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                  <svg fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M14.5424 5.66486C15.3634 5.13645 15.7877 4.60095 15.4845 3.81895C15.182 3.03624 14.2768 2.63745 13.4622 2.92786C12.212 3.3727 11.0326 4.21491 10.0126 5.11449C8.97491 6.02966 8.00733 7.09003 7.18778 8.07816C6.67381 8.69928 6.17824 9.33541 5.7017 9.9857C5.34612 9.60816 5.00399 9.32057 4.68099 9.10382C4.17524 8.76382 3.60503 8.52228 2.99091 8.49961C2.12178 8.49961 1.41699 9.17607 1.41699 10.0112C1.41699 11.0624 2.20466 11.1275 2.87545 11.5794C3.1262 11.7473 3.67162 12.2169 4.37924 13.4048C4.52 13.636 4.71756 13.8273 4.95312 13.9606C5.18868 14.0939 5.45443 14.1647 5.72508 14.1663C5.99588 14.1711 6.26344 14.1069 6.50251 13.9796C6.74159 13.8523 6.94428 13.6662 7.09145 13.4388C7.09145 13.4388 7.50158 12.8141 7.79483 12.3954C8.3813 11.5599 9.00039 10.7478 9.65066 9.96091C10.4107 9.04432 11.2657 8.11286 12.1426 7.34007C13.0365 6.5517 13.8801 6.08986 14.5424 5.66486Z" fill="white"></path></svg>
                   Optimized for large-scale automation
                 </li>
               </ul>
