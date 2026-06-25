@@ -11,7 +11,8 @@ export const metadata = {
 
 const getPlans = async (billingInterval) => {
   try {
-    const res = await fetch(`https://dev-api.creativethoughts.ai/api/user/getAllPlans?billing_interval=${billingInterval}`, {
+    const apiBase = process.env.NEXT_PUBLIC_API_URL || "https://dev-api.creativethoughts.ai";
+    const res = await fetch(`${apiBase}/api/user/getAllPlans?billing_interval=${billingInterval}`, {
       next: { revalidate: 3600 }
     });
     if (!res.ok) return null;

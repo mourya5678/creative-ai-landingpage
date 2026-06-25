@@ -31,7 +31,7 @@ export default function HomePromptSection() {
     if (e) e.preventDefault();
     if (typeof window !== "undefined") {
       localStorage.setItem("prompt", prompt);
-      window.location.href = "http://72.60.203.98/login";
+      window.location.href = process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login";
     }
   };
 
@@ -78,7 +78,7 @@ export default function HomePromptSection() {
           </div>
           <div className="ctiprompt_right_btns">
             <a
-              href="http://72.60.203.98/login"
+              href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}
               onClick={handleSend}
               style={{ textDecoration: 'none' }}
             >

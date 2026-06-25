@@ -158,7 +158,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
               </ul>
             </div>
             <div className="mt-auto">
-              <a className="cti_pricing_btn" href="http://72.60.203.98/login">
+              <a className="cti_pricing_btn" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>
                 Start Free
                 <span>→</span>
               </a>
@@ -359,7 +359,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
               </ul>
             </div>
             <div className="mt-auto">
-              <a className="cti_pricing_btn cti_pricing_btn_white" href="http://72.60.203.98/login">
+              <a className="cti_pricing_btn cti_pricing_btn_white" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>
                 Get Started
               </a>
 

@@ -82,7 +82,7 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
             </div>
             <p>Best for exploring the platform</p>
             <div className="ct_price_offer_slot"></div>
-            <a className="ct_price_cta" href="http://72.60.203.98/login">Start Free</a>
+            <a className="ct_price_cta" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Start Free</a>
           </div>
           <div className="ct_price_card_bottom">
             <h4>Features you will get:</h4>
@@ -132,7 +132,7 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
               </div>
             </div>
             <p>Perfect to build your first real product</p>
-            <a className="ct_price_cta" href="http://72.60.203.98/login">Get Started</a>
+            <a className="ct_price_cta" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Get Started</a>
 
             <div className="position-relative mt-3">
               <button
@@ -260,7 +260,7 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
             </div>
             <div className="ct_price_offer_slot"></div>
             <p>For agencies &amp; enterprise teams</p>
-            <a className="ct_price_cta" href="http://72.60.203.98/login">Get Started</a>
+            <a className="ct_price_cta" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Get Started</a>
           </div>
           <div className="ct_price_card_bottom">
             <h4>Pro Features and you will get:</h4>
