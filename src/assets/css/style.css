@@ -556,14 +556,14 @@ header::after {
 .ct_get_started_btn {
   padding: 8.5px 18px;
   border-radius: 100px;
-  background-color: #ffffff;
-  border: 1px solid #fff;
+  background-color: #5d5cff;
+  border: 1px solid #5d5cff;
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: #000;
+  color: #fff;
   font-family: Satoshi-medium;
   position: relative;
   transition: 0.4s ease all;
@@ -576,7 +576,7 @@ header::after {
   content: "";
   position: absolute;
   inset: 0px;
-  background-color: #5d5cff;
+  background-color: #fff;
   transform: scaleX(0);
   transform-origin: left;
   transition: 0.4s ease all;
@@ -588,15 +588,21 @@ header::after {
 }
 
 .ct_get_started_btn:hover {
-  color: #fff;
+  color: #000;
+  border-color: #fff;
 }
-
-.ct_get_started_btn:hover svg rect {
+.ct_get_started_btn svg rect{
   fill: #fff;
 }
+.ct_get_started_btn:hover svg rect {
+  fill: #5d5cff;
+}
 
-.ct_get_started_btn:hover svg path {
-  fill: #000;
+.ct_get_started_btn:hover svg path{
+  fill: #fff;
+}
+.ct_get_started_btn svg path {
+  fill: #5d5cff;
 }
 
 .ct_header_main.ct_sticky_menu {
@@ -609,6 +615,8 @@ header::after {
   left: 0px;
   right: 0px;
   z-index: 9999;
+  padding-top: 0px;
+
 }
 
 @keyframes slideDown {
@@ -2459,7 +2467,43 @@ input[type="radio"]:checked+.cti_option_btn span {
 .ct_header_main.ct_sticky_menu.et_main_header_344 {
   top: 40px;
 }
+.ct_sticky_menu header.container {
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    border: 0px;
 
+}
+.ct_header_main.ct_sticky_menu  {
+  background: #020202b5;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  
+}
+.ct_header_main.ct_sticky_menu header:after {
+  display: none;
+    
+}
+/* .ct_header_main.ct_sticky_menu:after {
+    content: "";
+    border-radius: inherit;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    background: linear-gradient(#ffffff4d, #fff0);
+    padding: 1px;
+    position: absolute;
+    inset: 0;
+    -webkit-mask-image: linear-gradient(#fff 0 0), linear-gradient(#fff 0 0);
+    -webkit-mask-position: 0 0, 0 0;
+    -webkit-mask-size: auto, auto;
+    -webkit-mask-repeat: repeat, repeat;
+    -webkit-mask-clip: content-box, border-box;
+    -webkit-mask-origin: content-box, border-box;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    -webkit-mask-source-type: auto, auto;
+    mask-mode: match-source, match-source;
+} */
 @media screen and (max-width:575px){
   .ct_get_started_btn{
     padding: 6px 8px;
