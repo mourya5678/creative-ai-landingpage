@@ -15,22 +15,22 @@ export default function Footer() {
                         </div>
                         <ul className="social-icon">
                             <li>
-                                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <a href="https://www.linkedin.com/company/creativethoughtsai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                     <i className="fa-brands fa-linkedin-in"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <a href="https://www.facebook.com/CTInformatics" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                                     <i className="fa-brands fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <a href="https://www.instagram.com/creative.ai_official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                     <i className="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                <a href="https://www.youtube.com/@creative.ai_official" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                                     <i className="fa-brands fa-youtube"></i>
                                 </a>
                             </li>
