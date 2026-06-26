@@ -1679,6 +1679,8 @@ html.w-mod-touch * {
   font-size: 23.95px;
   font-family: Satoshi-medium;
   font-weight: 500;
+   padding-right: 70px;
+ 
 
 }
 
@@ -1686,6 +1688,7 @@ html.w-mod-touch * {
 
   background-color: #FBF7FF !important;
   box-shadow: 0px 1px 2px 0px #0000000D !important;
+   padding-right: 70px;
 
 }
 
@@ -2455,4 +2458,24 @@ input[type="radio"]:checked+.cti_option_btn span {
 
 .ct_header_main.ct_sticky_menu.et_main_header_344 {
   top: 40px;
+}
+
+@media screen and (max-width:575px){
+  .ct_get_started_btn{
+    padding: 6px 8px;
+    font-size: 14px !important;
+    line-height: 14px;
+    gap: 6px;
+  }
+  .ct_get_started_btn svg{
+    width: 18px;
+    height: 18px;
+  }
+  .cti_faq_accordion button {
+    font-size: 20px;
+  }
+  .cti_faq_body{
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
