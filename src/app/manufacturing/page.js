@@ -1,3 +1,4 @@
+import { LOGIN_URL } from "@/config";
 import Header from "@/components/Header";
 import Link from "next/link";
 import { InnerTestimonialInit, RetailSliderInit, PricingSliderInit, BlogDetailsSliderInit } from "@/components/PageInitializers";
@@ -31,7 +32,7 @@ export default function Page() {
                   <p>Launch smarter manufacturing solutions without complex coding using our no-code AI app builder.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Launch Now
+                    <a className="ct_blue_btn_fill" href={LOGIN_URL}>Launch Now
                     </a>
                   </div>
                 </div>
@@ -861,7 +862,7 @@ export default function Page() {
                 Launch Your Manufacturing App Faster with Creative AI
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Launch Your App</a>
+                <a className="ct_blue_btn_fill ct_white_btn" href={LOGIN_URL}>Launch Your App</a>
               </div>
             </div>
           </div>

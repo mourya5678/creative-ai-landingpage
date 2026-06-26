@@ -1,3 +1,4 @@
+import { LOGIN_URL } from "@/config";
 import Header from "@/components/Header";
 import Link from "next/link";
 import { InnerTestimonialInit, BlogDetailsSliderInit } from "@/components/PageInitializers";
@@ -29,7 +30,7 @@ export default function Page() {
                   <p className="mb-0">Modernize enterprise operations and workflows using a no-code AI app builder for faster and smarter development.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Get Started</a>
+                    <a className="ct_blue_btn_fill" href={LOGIN_URL}>Get Started</a>
                     <Link className="ct_blue_outline_btn" href="/pricing">See pricing &amp; plans</Link>
                   </div>
                 </div>
@@ -668,7 +669,7 @@ export default function Page() {
               <p className="ct_fs_17 mb-0 text-center text-white mx-auto" style={{ maxWidth: "600px" }}>Turn your vision into a scalable digital product with Creative AI. Build faster, simplify development, and launch smarter with our AI app builder.
               </p>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Start Your Project
+                <a className="ct_blue_btn_fill ct_white_btn" href={LOGIN_URL}>Start Your Project
                 </a>
               </div>
             </div>

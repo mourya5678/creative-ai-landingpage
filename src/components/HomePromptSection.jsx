@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { LOGIN_URL } from "@/config";
 
 const SUGGESTIONS = [
   {
@@ -31,7 +32,7 @@ export default function HomePromptSection() {
     if (e) e.preventDefault();
     if (typeof window !== "undefined") {
       localStorage.setItem("prompt", prompt);
-      window.location.href = process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login";
+      window.location.href = LOGIN_URL;
     }
   };
 
@@ -78,7 +79,7 @@ export default function HomePromptSection() {
           </div>
           <div className="ctiprompt_right_btns">
             <a
-              href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}
+              href={LOGIN_URL}
               onClick={handleSend}
               style={{ textDecoration: 'none' }}
             >

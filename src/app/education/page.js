@@ -1,3 +1,4 @@
+import { LOGIN_URL } from "@/config";
 import Header from "@/components/Header";
 import Link from "next/link";
 import { InnerTestimonialInit, RetailSliderInit, PricingSliderInit, BlogDetailsSliderInit } from "@/components/PageInitializers";
@@ -28,7 +29,7 @@ export default function Page() {
                   <p>Our AI app builder helps schools, educators, and startups create scalable education apps without complex coding.
                   </p>
                   <div className="ct_btn_group mt-5">
-                    <a className="ct_blue_btn_fill" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Start Building
+                    <a className="ct_blue_btn_fill" href={LOGIN_URL}>Start Building
                     </a>
                   </div>
                 </div>
@@ -767,7 +768,7 @@ export default function Page() {
                 Build Modern Education Apps Without Coding
               </h2>
               <div className="text-center mt-4">
-                <a className="ct_blue_btn_fill ct_white_btn" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Build Your Education App
+                <a className="ct_blue_btn_fill ct_white_btn" href={LOGIN_URL}>Build Your Education App
                 </a>
               </div>
             </div>

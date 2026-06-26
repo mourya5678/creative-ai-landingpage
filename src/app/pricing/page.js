@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import { InnerTestimonialInit } from "@/components/PageInitializers";
 import InnerPricingSection from "@/components/InnerPricingSection";
+import { API_URL } from "@/config";
 
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
@@ -11,8 +12,7 @@ export const metadata = {
 
 const getPlans = async (billingInterval) => {
   try {
-    const apiBase = process.env.NEXT_PUBLIC_API_URL || "https://dev-api.creativethoughts.ai";
-    const res = await fetch(`${apiBase}/api/user/getAllPlans?billing_interval=${billingInterval}`, {
+    const res = await fetch(`${API_URL}/api/user/getAllPlans?billing_interval=${billingInterval}`, {
       next: { revalidate: 3600 }
     });
     if (!res.ok) return null;

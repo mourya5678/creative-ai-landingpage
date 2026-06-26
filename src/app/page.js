@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HomeInit } from "@/components/PageInitializers";
 import HomePricingSection from "@/components/HomePricingSection";
 import HomePromptSection from "@/components/HomePromptSection";
+import { LOGIN_URL, API_URL } from "@/config";
 
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
@@ -14,8 +15,7 @@ export const metadata = {
 
 const getPlans = async (billingInterval) => {
   try {
-    const apiBase = process.env.NEXT_PUBLIC_API_URL || "https://dev-api.creativethoughts.ai";
-    const res = await fetch(`${apiBase}/api/user/getAllPlans?billing_interval=${billingInterval}`, {
+    const res = await fetch(`${API_URL}/api/user/getAllPlans?billing_interval=${billingInterval}`, {
       next: { revalidate: 3600 }
     });
     if (!res.ok) return null;
@@ -202,7 +202,7 @@ export default async function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <a href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
+                      <a href={LOGIN_URL} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
                         Build
                         <svg
                           width="27"
@@ -259,7 +259,7 @@ export default async function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <a href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
+                      <a href={LOGIN_URL} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
                         Build
                         <svg
                           width="27"
@@ -315,7 +315,7 @@ export default async function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <a href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
+                      <a href={LOGIN_URL} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
                         Build
                         <svg
                           width="27"
@@ -371,7 +371,7 @@ export default async function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <a href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
+                      <a href={LOGIN_URL} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
                         Build
                         <svg
                           width="27"

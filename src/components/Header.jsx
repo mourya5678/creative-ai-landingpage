@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LOGIN_URL } from "@/config";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -335,7 +336,7 @@ export default function Header() {
         <div className="ct_right_menu">
           <ul className="justify-content-end mb-0">
             <li>
-              <a href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"} className="ct_get_started_btn"
+              <a href={LOGIN_URL} className="ct_get_started_btn"
               >Get Started
                 <svg
                   width="24"

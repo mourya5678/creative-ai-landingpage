@@ -1,3 +1,4 @@
+import { LOGIN_URL } from "@/config";
 import Header from "@/components/Header";
 import Link from "next/link";
 
@@ -34,7 +35,7 @@ export default function Page() {
                   turn your vision into a tangible product.
                 </h2>
                 <div className="ct_btn_group justify-content-center">
-                  <a className="ct_blue_btn_fill" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>Get Started</a>
+                  <a className="ct_blue_btn_fill" href={LOGIN_URL}>Get Started</a>
                 </div>
               </div>
             </div>

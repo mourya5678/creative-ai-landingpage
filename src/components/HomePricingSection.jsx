@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { LOGIN_URL } from "@/config";
 
 const formatCurrency = (val) => {
   if (val === undefined || val === null) return "";
@@ -158,7 +159,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
               </ul>
             </div>
             <div className="mt-auto">
-              <a className="cti_pricing_btn" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>
+              <a className="cti_pricing_btn" href={LOGIN_URL}>
                 Start Free
                 <span>→</span>
               </a>
@@ -359,7 +360,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
               </ul>
             </div>
             <div className="mt-auto">
-              <a className="cti_pricing_btn cti_pricing_btn_white" href={process.env.NEXT_PUBLIC_LOGIN_URL || "http://72.60.203.98/login"}>
+              <a className="cti_pricing_btn cti_pricing_btn_white" href={LOGIN_URL}>
                 Get Started
               </a>
 
