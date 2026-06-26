@@ -48,7 +48,7 @@ export default async function Page() {
           </p>
           <HomePromptSection />
         </div>
-      </div >
+      </div>
       <section className="cti_brands_logo_slider">
         <div className="logo-slider">
           <div className="logo-slider__track">
@@ -202,7 +202,11 @@ export default async function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <a href={LOGIN_URL} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
+                      <a
+                        href={LOGIN_URL}
+                        className="cti_build_btn mt-4"
+                        style={{ width: "fit-content", textDecoration: "none" }}
+                      >
                         Build
                         <svg
                           width="27"
@@ -259,7 +263,11 @@ export default async function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <a href={LOGIN_URL} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
+                      <a
+                        href={LOGIN_URL}
+                        className="cti_build_btn mt-4"
+                        style={{ width: "fit-content", textDecoration: "none" }}
+                      >
                         Build
                         <svg
                           width="27"
@@ -315,7 +323,11 @@ export default async function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <a href={LOGIN_URL} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
+                      <a
+                        href={LOGIN_URL}
+                        className="cti_build_btn mt-4"
+                        style={{ width: "fit-content", textDecoration: "none" }}
+                      >
                         Build
                         <svg
                           width="27"
@@ -371,7 +383,11 @@ export default async function Page() {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <a href={LOGIN_URL} className="cti_build_btn mt-4" style={{ width: "fit-content", textDecoration: 'none' }}>
+                      <a
+                        href={LOGIN_URL}
+                        className="cti_build_btn mt-4"
+                        style={{ width: "fit-content", textDecoration: "none" }}
+                      >
                         Build
                         <svg
                           width="27"
@@ -928,7 +944,7 @@ export default async function Page() {
                 <div className="card design-box-card">
                   <div className="content">
                     <h3>Designed For Growth</h3>
-                    <p>Professional web design, simplified.</p>
+                    <p>Grow your online presence faster.</p>
                   </div>
                   <div className="card-preview">
                     <img
@@ -1337,7 +1353,10 @@ export default async function Page() {
               </div>
             </div>
           </div>
-          <HomePricingSection monthlyPlans={monthlyPlans} yearlyPlans={yearlyPlans} />
+          <HomePricingSection
+            monthlyPlans={monthlyPlans}
+            yearlyPlans={yearlyPlans}
+          />
         </div>
       </section>
       <section className="cti_blog_new_bg">

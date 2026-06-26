@@ -1110,7 +1110,7 @@ header::after {
 }
 
 .cti_stat_box h3 {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
   color: #1a1a1a;
@@ -2478,5 +2478,8 @@ input[type="radio"]:checked+.cti_option_btn span {
   .cti_faq_body{
     font-size: 16px;
     line-height: 22px;
+  }
+  .ct_sticky_scroll_main {
+    grid-row-gap: 2rem;
   }
 }

@@ -409,11 +409,11 @@
   }
 
   .cti_stat_box h3 {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .cti_stats_wrapper {
-    gap: 40px;
+    gap: 20px;
   }
 
   .cti_heading {
@@ -467,4 +467,10 @@
   .build-sec-list {
     grid-template-columns: repeat(1, 1fr);
   }
+  .ct_pt_145px,.ct_service_section,.ct_pt_150 ,.cti_contact_bg_new {
+    padding-top: 82px;
+}
+.ct_service_section ,.ct_pb_150 ,.cti_contact_bg_new{
+  padding-bottom: 82px;
+}
 }
