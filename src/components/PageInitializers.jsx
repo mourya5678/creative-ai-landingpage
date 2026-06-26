@@ -49,6 +49,8 @@ export function HomeInit() {
   const pathname = usePathname();
 
   useEffect(() => {
+    localStorage.removeItem("prompt");
+    sessionStorage.clear();
     let animationFrame1 = 0;
     let animationFrame2 = 0;
     let retryTimer = 0;

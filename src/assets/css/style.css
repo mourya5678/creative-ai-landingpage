@@ -591,16 +591,19 @@ header::after {
   color: #000;
   border-color: #fff;
 }
-.ct_get_started_btn svg rect{
+
+.ct_get_started_btn svg rect {
   fill: #fff;
 }
+
 .ct_get_started_btn:hover svg rect {
   fill: #5d5cff;
 }
 
-.ct_get_started_btn:hover svg path{
+.ct_get_started_btn:hover svg path {
   fill: #fff;
 }
+
 .ct_get_started_btn svg path {
   fill: #5d5cff;
 }
@@ -1687,8 +1690,8 @@ html.w-mod-touch * {
   font-size: 23.95px;
   font-family: Satoshi-medium;
   font-weight: 500;
-   padding-right: 70px;
- 
+  padding-right: 70px;
+
 
 }
 
@@ -1696,7 +1699,7 @@ html.w-mod-touch * {
 
   background-color: #FBF7FF !important;
   box-shadow: 0px 1px 2px 0px #0000000D !important;
-   padding-right: 70px;
+  padding-right: 70px;
 
 }
 
@@ -2465,25 +2468,29 @@ input[type="radio"]:checked+.cti_option_btn span {
 }
 
 .ct_header_main.ct_sticky_menu.et_main_header_344 {
-  top: 40px;
+  top: 0px;
 }
+
 .ct_sticky_menu header.container {
-    border-radius: 0px;
-    background-color: transparent;
-    box-shadow: none;
-    border: 0px;
+  border-radius: 0px;
+  background-color: transparent;
+  box-shadow: none;
+  border: 0px;
 
 }
-.ct_header_main.ct_sticky_menu  {
+
+.ct_header_main.ct_sticky_menu {
   background: #020202b5;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  
+
 }
+
 .ct_header_main.ct_sticky_menu header:after {
   display: none;
-    
+
 }
+
 /* .ct_header_main.ct_sticky_menu:after {
     content: "";
     border-radius: inherit;
@@ -2504,25 +2511,29 @@ input[type="radio"]:checked+.cti_option_btn span {
     -webkit-mask-source-type: auto, auto;
     mask-mode: match-source, match-source;
 } */
-@media screen and (max-width:575px){
-  .ct_get_started_btn{
+@media screen and (max-width:575px) {
+  .ct_get_started_btn {
     padding: 6px 8px;
     font-size: 14px !important;
     line-height: 14px;
     gap: 6px;
   }
-  .ct_get_started_btn svg{
+
+  .ct_get_started_btn svg {
     width: 18px;
     height: 18px;
   }
+
   .cti_faq_accordion button {
     font-size: 20px;
     line-height: 26px;
   }
-  .cti_faq_body{
+
+  .cti_faq_body {
     font-size: 16px;
     line-height: 22px;
   }
+
   .ct_sticky_scroll_main {
     grid-row-gap: 2rem;
   }
