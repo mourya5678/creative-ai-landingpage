@@ -3,7 +3,43 @@ import Link from "next/link";
 import { HomeInit } from "@/components/PageInitializers";
 import HomePricingSection from "@/components/HomePricingSection";
 import HomePromptSection from "@/components/HomePromptSection";
+import ServiceSection from "@/components/ServiceSection";
 import { LOGIN_URL, API_URL } from "@/config";
+
+export const websitePrompts = [
+  {
+    title: "E-Commerce Stores",
+    prompt: "Build a modern, responsive e-commerce store with product listings, cart, checkout, payment integration, and an admin dashboard."
+  },
+  {
+    title: "Doctor & Clinic Websites",
+    prompt: "Create a professional doctor and clinic website with appointment booking, doctor profiles, services, testimonials, and contact forms."
+  },
+  {
+    title: "Restaurant Websites",
+    prompt: "Design a restaurant website with an online menu, table reservations, gallery, customer reviews, and online ordering."
+  },
+  {
+    title: "Law Firm Websites",
+    prompt: "Develop a professional law firm website featuring practice areas, attorney profiles, case results, consultation booking, and contact information."
+  },
+  {
+    title: "Fitness Apps",
+    prompt: "Build a fitness app with workout plans, progress tracking, nutrition guides, user profiles, and subscription support."
+  },
+  {
+    title: "Booking Apps",
+    prompt: "Create a booking application with user authentication, availability calendar, online reservations, payment integration, and notifications."
+  },
+  {
+    title: "Loyalty & Rewards Apps",
+    prompt: "Develop a loyalty and rewards app with points tracking, reward redemption, referrals, offers, and user dashboards."
+  },
+  {
+    title: "Travel Apps",
+    prompt: "Build a travel app with destination discovery, itinerary planning, hotel and flight booking, maps, and travel recommendations."
+  }
+];
 
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
@@ -36,7 +72,9 @@ export default async function Page() {
       <Header />
       <div className="cti_home_banner">
         <div className="cti_home_banner_cnt">
-          <span>✨ Build apps, websites & AI products instantly</span>
+          <span>
+            {/* ✨ */}
+            Build apps, websites & AI products instantly</span>
           {/* <h1>Turn Your Ideas Into Real <small>Products</small> In Seconds</h1> */}
           <h1>
             The AI Business Builder{" "}
@@ -427,164 +465,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_service_section">
-        <div className="container">
-          <div className="row">
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card">
-                <span>E-Commerce Stores</span>
-                <div className="ct_arrow_btn">
-                  <svg
-                    fill="none"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    width="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card">
-                <span>Doctor &amp; Clinic Websites</span>
-                <div className="ct_arrow_btn">
-                  <svg
-                    fill="none"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    width="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card">
-                <span>Restaurant Websites</span>
-                <div className="ct_arrow_btn">
-                  <svg
-                    fill="none"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    width="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card">
-                <span>Law Firm Websites</span>
-                <div className="ct_arrow_btn">
-                  <svg
-                    fill="none"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    width="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card">
-                <span>Fitness Apps </span>
-                <div className="ct_arrow_btn">
-                  <svg
-                    fill="none"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    width="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card">
-                <span>Booking Apps</span>
-                <div className="ct_arrow_btn">
-                  <svg
-                    fill="none"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    width="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6 ct_mb_26">
-              <a className="ct_service_card">
-                <span>Loyalty & Rewards Apps</span>
-                <div className="ct_arrow_btn">
-                  <svg
-                    fill="none"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    width="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <div className="col-xxl-3 col-lg-4 col-md-6">
-              <a className="ct_service_card">
-                <span>Travel Apps </span>
-                <div className="ct_arrow_btn">
-                  <svg
-                    fill="none"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    width="10"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.110019 10.1693L7.01588 1.12767L0.181229 2.04301L-0.000270947 1.13306L8.46168 -0.000217624L9.59495 8.46173L8.66931 8.52606L7.75397 1.69141L0.848113 10.7331L0.110019 10.1693Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServiceSection websitePrompts={websitePrompts} loginUrl={LOGIN_URL} />
       <section className="ct_smart_product_design_bg">
         <div className="container">
           <div className="row">

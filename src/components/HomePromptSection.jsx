@@ -75,7 +75,7 @@ export default function HomePromptSection() {
             <button type="button" aria-label="Voice input">
               <i className="fa-solid fa-microphone"></i>
             </button>
-            <button type="button" aria-label="Enhance with AI">✨</button>
+            {/* <button type="button" aria-label="Enhance with AI">✨</button> */}
           </div>
           <div className="ctiprompt_right_btns">
             <a
