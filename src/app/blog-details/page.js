@@ -42,7 +42,7 @@ export async function generateMetadata({ searchParams }) {
 
   const imageUrl = blog.banner_image
     ? (blog.banner_image.startsWith("http") ? blog.banner_image : `${API_URL}${blog.banner_image}`)
-    : "https://creative-ai-landingpage.vercel.app/img/c.png";
+    : "https://creativethoughts.ai/img/c.png";
 
   return {
     title: `${blog.title} | Creative AI Blog`,

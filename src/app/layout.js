@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://creative-ai-landingpage.vercel.app"),
+  metadataBase: new URL("https://creativethoughts.ai"),
   title: "Creative AI | AI App Builder for Mobile & Web Application",
   description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
   icons: {
@@ -29,11 +29,11 @@ export const metadata = {
   openGraph: {
     title: "Creative AI | AI App Builder for Mobile & Web Application",
     description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
-    url: "https://creative-ai-landingpage.vercel.app",
+    url: "https://creativethoughts.ai",
     siteName: "Creative AI",
     images: [
       {
-        url: "https://creative-ai-landingpage.vercel.app/img/c.png",
+        url: "https://creativethoughts.ai/img/c.png",
         width: 512,
         height: 512,
         alt: "Creative AI Logo",
@@ -46,7 +46,7 @@ export const metadata = {
     card: "summary",
     title: "Creative AI | AI App Builder for Mobile & Web Application",
     description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
-    images: ["https://creative-ai-landingpage.vercel.app/img/c.png"],
+    images: ["https://creativethoughts.ai/img/c.png"],
   },
 };
 

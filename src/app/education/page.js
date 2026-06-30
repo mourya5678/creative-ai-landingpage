@@ -37,7 +37,9 @@ export default function Page() {
               <div className="col-lg-6 mb-4 mb-lg-0">
                 <div className="ct_hero_right_main">
                   <div className="position-relative">
-                    <img alt="AI app builder for mobile and web" className="ct_img_w_80 ct_img_h_400" src="/img/education_banner_1_new.webp" style={{ objectFit: "contain" }} />
+                    <img alt="AI app builder for mobile and web"
+                      loading="lazy"
+                      className="ct_img_w_80 ct_img_h_400" src="/img/education_banner_1_new.webp" style={{ objectFit: "contain" }} />
                   </div>
                 </div>
               </div>
@@ -95,7 +97,9 @@ export default function Page() {
           <div className="row align-items-center ct_py_70 pb-0">
             <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
-                <img alt="AI app builder for mobile and web" src="/img/eudcation_img_new_5.webp" />
+                <img alt="AI app builder for mobile and web" src="/img/eudcation_img_new_5.webp"
+                  loading="lazy"
+                />
               </div>
             </div>
             <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
@@ -656,7 +660,7 @@ export default function Page() {
                   <div className="ct_related_article_card">
                     <figure>
                       <div className="ct_article_img" tabIndex="0">
-                        <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228019-1780904378323.png" style={{ aspectRatio: "16 / 5 !important" }} />
+                        <img alt="AI app builder for mobile and web" loading="lazy" src="https://api.creativethoughts.ai/blog_image/Frame_2147228019-1780904378323.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
                         <div>
@@ -683,7 +687,7 @@ export default function Page() {
                   <div className="ct_related_article_card">
                     <figure>
                       <div className="ct_article_img" tabIndex="0">
-                        <img alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" style={{ aspectRatio: "16 / 5 !important" }} />
+                        <img loading="lazy" alt="AI app builder for mobile and web" src="https://api.creativethoughts.ai/blog_image/Frame_2147228014-1780649688909.png" style={{ aspectRatio: "16 / 5 !important" }} />
                       </div>
                       <figcaption className="mt-4 px-3">
                         <div>
