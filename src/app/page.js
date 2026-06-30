@@ -63,9 +63,25 @@ const getPlans = async (billingInterval) => {
   }
 };
 
+const getBlogs = async () => {
+  try {
+    const res = await fetch(`${API_URL}/api/user/getBlogs`, {
+      next: { revalidate: 3600 }
+    });
+    if (!res.ok) return [];
+    const json = await res.json();
+    return json.success ? json.data : [];
+  } catch (error) {
+    console.error("Error fetching blogs:", error);
+    return [];
+  }
+};
+
+
 export default async function Page() {
   const monthlyPlans = await getPlans("MONTH");
   const yearlyPlans = await getPlans("YEAR");
+  const blogs = await getBlogs();
   return (
     <>
       <HomeInit />
@@ -1255,25 +1271,38 @@ export default async function Page() {
             </div>
           </div>
           <div className="row ct_pt_76">
-            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-              <div className="cti_blog_card">
-                <div className="cti_blog_img">
-                  <img
-                    alt="Blog Image"
-                    className="img-fluid"
-                    src="/img/new_blog_1.webp"
-                  />
-                </div>
-                <div className="cti_blog_content">
-                  <h3>The Shift from SaaS to Custom AI-Built Applications</h3>
-                  <p>
-                    The future of software is AI-built. Discover how custom AI
-                    applications offer more control, efficiency, and business
-                    growth than SaaS.
-                  </p>
-                </div>
+            {blogs.length > 0 ? (
+              blogs?.slice(0, 3).map((blog) => {
+                const imageUrl = blog.banner_image
+                  ? (blog.banner_image.startsWith("http") ? blog.banner_image : `${API_URL}${blog.banner_image}`)
+                  : "";
+
+                return (
+                  <div className="col-lg-4 col-md-6 mb-4 mb-lg-0" key={blog.id}>
+                    <div className="cti_blog_card">
+                      <div className="cti_blog_img">
+                        {imageUrl && <img
+
+                          className="img-fluid"
+
+                          alt={blog.title || "Blog banner"} src={imageUrl} />}
+                      </div>
+                      <div className="cti_blog_content">
+                        <a href={`/blog-details?slug=${blog.slug}`}><h3 className="text-truncate"> {blog.title}</h3></a>
+                        <p className="ct_minimise_cnt">
+                          {blog.description}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              <div className="col-12 text-center py-5">
+                <p className="ct_fs_18 ct_fw_600 text-muted">No blogs found.</p>
               </div>
-            </div>
+            )}
+
             <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
               <div className="cti_blog_card">
                 <div className="cti_blog_img">
