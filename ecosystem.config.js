@@ -1,12 +1,11 @@
-const fs = require("fs");
-
 module.exports = {
   apps: [
     {
       name: "creative-ai-next",
-      script: fs.existsSync("server.js") ? "server.js" : "./.next/standalone/server.js",
-      instances: "max",
-      exec_mode: "cluster",
+      script: "./node_modules/next/dist/bin/next",
+      args: "start",
+      instances: 1,
+      exec_mode: "fork",
       watch: false,
       max_memory_restart: "1G",
       env: {

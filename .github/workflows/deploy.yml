@@ -1,0 +1,41 @@
+name: Deploy Next.js to Ubuntu Server
+
+on:
+  push:
+    branches:
+      - master  # Change to your default branch (e.g. master or main)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Server via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22  # Change this if you use a custom SSH port
+          script: |
+            # 1. Navigate to git directory and pull/build
+            cd /var/www/creative-ai-landingpage
+            
+            # Fetch and reset to discard any accidental local changes/conflicts on server
+            git fetch --all
+            git reset --hard origin/master
+            
+            # Install dependencies
+            npm install
+            
+            # Build Next.js project
+            npm run build
+            
+            # 2. If the build succeeds, sync the files to the live folder
+            # This ensures that if the build fails above, the live folder remains completely untouched
+            mkdir -p /var/www/creative-ai-landingpage-live
+            rsync -a --delete --exclude='.git' /var/www/creative-ai-landingpage/ /var/www/creative-ai-landingpage-live/
+            
+            # 3. Reload PM2 from the live directory
+            cd /var/www/creative-ai-landingpage-live
+            pm2 startOrReload ecosystem.config.js --update-env
