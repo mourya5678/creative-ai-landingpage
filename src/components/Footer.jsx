@@ -63,9 +63,9 @@ export default function Footer() {
                             <li>
                                 <Link href="/our-story">About Us</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href="/careers">Careers</Link>
-                            </li>
+                            </li> */}
                             <li>
                                 {/* <Link href="/pricing">Pricing</Link> */}
                                 <Link href="/why-creative-ai">Why Creative AI</Link>
@@ -107,7 +107,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="pt-5 px-4">
-                <img src="/img/footer.webp" className="w-100" alt="Footer decorative wave background" width={1375} height={174} />
+                <img src="/img/footer.webp" className="w-100 ct_footer_watermark_logo" alt="Footer decorative wave background" width={1375} height={174} />
             </div>
         </footer>
     );

@@ -15,7 +15,7 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const plans = billingInterval === "MONTH" ? monthlyPlans : yearlyPlans;
-
+  console.log({ monthlyPlans, yearlyPlans })
   const freePlan = plans?.free?.[0] || plans?.free || {};
   const proPlans = plans?.pro || [];
   const standardPlan = proPlans[selectedPlanIndex] || {};
@@ -120,12 +120,17 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
           <div className="ct_price_card_top">
             <span className="ct_price_badge">STANDARD PLAN</span>
             <h3 className="ct_price_credits">{standardCredits}</h3>
-            <div className="ct_price_value ct_price_value_compact ct_price_value_with_old">
+            <div className="ct_price_value d-block text-center ct_price_value_compact ct_price_value_with_old">
               {standardPrevPrice && (
-                <span className="ct_price_previous">{standardPrevPrice}</span>
+                <span className="ct_price_previous d-block">{standardPrevPrice}</span>
               )}
-              <span className="ct_price_current">{standardPrice}</span>
-              <span className="ct_price_suffix">{intervalSuffix}</span>
+              <div className="d-flex align-items-center gap-2 justify-content-center">
+                <div>
+                  <span className="ct_price_current">{standardPrice}</span>
+                  <span className="ct_price_suffix">{intervalSuffix}</span>
+                </div>
+                {billingInterval === "MONTH" && <small className="text-dark opacity-50 fw-semibold ct_fs_12 "> ( 1st month only )</small>}
+              </div>
             </div>
             <div className="ct_price_offer_slot">
               <div className="ct_price_offer_wrap">
@@ -142,7 +147,12 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 style={{ marginTop: "0px" }}
               >
-                {standardPlan.credits_per_cycle || 100} credits {billingInterval === "MONTH" ? "/month" : "/year"}
+                {standardPlan.credits_per_cycle || 100} credits{" "}
+                {standardPlan.credit_grant_interval
+                  ? `/${standardPlan.credit_grant_interval.toLowerCase()}`
+                  : billingInterval === "MONTH"
+                    ? "/month"
+                    : "/year"}
                 <svg
                   className="ct_show_eye"
                   fill="currentColor"
@@ -181,7 +191,7 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
                       const price = plan.has_intro_offer
                         ? `₹${formatCurrency(plan.intro_amount)}`
                         : `₹${formatCurrency(plan.display_amount)}`;
-                      const intervalLabel = billingInterval === "MONTH" ? "/month" : "/year";
+                      const intervalLabel = plan?.billing_interval === "MONTH" ? "/month" : "/year";
                       return (
                         <button
                           key={plan.id}
@@ -210,7 +220,7 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
                             e.currentTarget.style.backgroundColor = "transparent";
                           }}
                         >
-                          {plan.credits_per_cycle} credits - {price}{intervalLabel}
+                          {plan.credits_per_cycle} credits - {price} {intervalLabel}
                         </button>
                       );
                     })}

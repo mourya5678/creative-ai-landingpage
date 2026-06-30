@@ -317,9 +317,9 @@ export default function Page() {
                         We are expanding rapidly and seeking talented individuals, just like
                         you, to join our team.
                      </p>
-                     <div className="text-center">
+                     {/* <div className="text-center">
                         <Link className="ct_link_green ct_link_blue" href="/careers">Explore career opportunities</Link>
-                     </div>
+                     </div> */}
                   </div>
                </div>
                <div className="pt-5">

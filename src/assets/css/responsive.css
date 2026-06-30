@@ -328,6 +328,10 @@
 
   }
 
+  .ct_footer_watermark_logo {
+    height: 120px;
+  }
+
   .ct_fs_24 {
     font-size: 20px;
     line-height: 25.4px;
@@ -467,10 +471,17 @@
   .build-sec-list {
     grid-template-columns: repeat(1, 1fr);
   }
-  .ct_pt_145px,.ct_service_section,.ct_pt_150 ,.cti_contact_bg_new {
+
+  .ct_pt_145px,
+  .ct_service_section,
+  .ct_pt_150,
+  .cti_contact_bg_new {
     padding-top: 82px;
-}
-.ct_service_section ,.ct_pb_150 ,.cti_contact_bg_new{
-  padding-bottom: 82px;
-}
+  }
+
+  .ct_service_section,
+  .ct_pb_150,
+  .cti_contact_bg_new {
+    padding-bottom: 82px;
+  }
 }

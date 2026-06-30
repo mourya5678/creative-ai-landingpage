@@ -48,6 +48,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
 
   const intervalText = billingInterval === "MONTH" ? "/month" : "/year";
 
+  { console.log({ plans }) }
   return (
     <>
       <div className="ct_pricing_toggle ct_pricing_toggle_home">
@@ -70,6 +71,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
       <div className="row ct_pt_60">
         {/* Free Plan */}
         <div className="col-lg-4 mb-4 mb-lg-0">
+
           <div className="cti_pricing_card">
             <div>
               <h3 className="cti_plan_title">Free Plan</h3>
@@ -181,8 +183,9 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
                     {standardPrevPrice}
                   </span>
                 )}
-                <h2>{standardPrice}{intervalText}</h2>
-                <span>{standardCredits}</span>
+                <h2>{standardPrice}{intervalText}
+                  {billingInterval === "MONTH" && <small className="text-white opacity-75 fw-semibold ct_fs_12"> ( 1st Month Only )</small>}</h2>
+                <span>{standardCredits}  </span>
 
                 <div className="position-relative mt-3">
                   <button
@@ -243,7 +246,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
                           const price = plan?.has_intro_offer
                             ? `₹${formatCurrency(plan?.intro_amount)}`
                             : `₹${formatCurrency(plan?.display_amount)}`;
-                          const intervalLabel = plan?.credit_grant_interval === "MONTH" ? "/month" : "/year";
+                          const intervalLabel = plan?.billing_interval === "MONTH" ? "/month" : "/year";
                           return (
                             <button
                               key={plan.id}
@@ -272,7 +275,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
                                 e.currentTarget.style.backgroundColor = "transparent";
                               }}
                             >
-                              {plan.credits_per_cycle} credits - {price}{intervalLabel}
+                              {plan.credits_per_cycle} credits - {price} {intervalLabel}
                             </button>
                           );
                         })}

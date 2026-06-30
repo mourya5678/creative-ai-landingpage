@@ -73,7 +73,7 @@ export default async function Page() {
       <div className="cti_home_banner">
         <div className="cti_home_banner_cnt">
           <span>
-            {/* ✨ */}
+            ✨
             Build apps, websites & AI products instantly</span>
           {/* <h1>Turn Your Ideas Into Real <small>Products</small> In Seconds</h1> */}
           <h1>
@@ -274,7 +274,7 @@ export default async function Page() {
                   </div>
                   <div className="ct_sass_card_img">
                     <img
-                      src="/img/dummy_img_1_new.png"
+                      src="/img/dummy_img_1_new.webp"
                       className="img-fluid"
                       alt="AI website builder interface showing drag and drop elements"
                     />
@@ -335,7 +335,7 @@ export default async function Page() {
                   </div>
                   <div className="ct_sass_card_img">
                     <img
-                      src="/img/dummy_img_2_new.png"
+                      src="/img/dummy_img_2_new.webp"
                       alt="AI mobile application development dashboard"
                     />
                   </div>
@@ -395,7 +395,7 @@ export default async function Page() {
                   </div>
                   <div className="ct_sass_card_img">
                     <img
-                      src="/img/dummy_img_3_new.png"
+                      src="/img/dummy_img_3_new.webp"
                       alt="Client onboarding portal displaying analytics chart"
                     />
                   </div>
@@ -455,7 +455,7 @@ export default async function Page() {
                   </div>
                   <div className="ct_sass_card_img">
                     <img
-                      src="/img/dummy_img_4_new.png"
+                      src="/img/dummy_img_4_new.webp"
                       alt="E-commerce multi-vendor marketplace product listings screen"
                     />
                   </div>
@@ -1563,7 +1563,7 @@ export default async function Page() {
                   <input
                     className="input"
                     id="ct_email"
-                    type="email"
+                    type="text  "
                     required
                   />
                   <span className="highlight"></span>

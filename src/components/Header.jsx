@@ -242,7 +242,7 @@ export default function Header() {
                         </div>
                       </li>
 
-                      <li>
+                      {/* <li>
                         <div className="ct_grid_2_flex">
                           <div className="ct_drop_title_icon">
                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,7 +258,7 @@ export default function Header() {
                             <p className="mb-0">See our current openings</p>
                           </div>
                         </div>
-                      </li>
+                      </li> */}
                     </ol>
                   </div>
                 </div>
