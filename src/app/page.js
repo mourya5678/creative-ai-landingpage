@@ -9,38 +9,45 @@ import { LOGIN_URL, API_URL } from "@/config";
 export const websitePrompts = [
   {
     title: "E-Commerce Stores",
-    prompt: "Build a modern, responsive e-commerce store with product listings, cart, checkout, payment integration, and an admin dashboard."
+    prompt:
+      "Build a modern, responsive e-commerce platform with secure user authentication, product catalog management, advanced search and filtering, shopping cart, wishlist, secure payment gateway integration, order tracking, customer reviews and ratings, discount coupons, inventory management, email notifications, responsive design, SEO optimization, and a comprehensive admin dashboard for managing products, orders, customers, analytics, and sales reports."
   },
   {
     title: "Doctor & Clinic Websites",
-    prompt: "Create a professional doctor and clinic website with appointment booking, doctor profiles, services, testimonials, and contact forms."
+    prompt:
+      "Create a professional healthcare website for doctors and clinics featuring appointment scheduling, doctor profiles, specialties, online consultation booking, patient testimonials, service listings, health blogs, secure contact forms, Google Maps integration, emergency contact information, responsive design, SEO optimization, and an admin panel to manage appointments, doctors, patients, and website content."
   },
   {
     title: "Restaurant Websites",
-    prompt: "Design a restaurant website with an online menu, table reservations, gallery, customer reviews, and online ordering."
+    prompt:
+      "Design a premium restaurant website with an elegant UI featuring interactive menus, food categories, online table reservations, food ordering, delivery and pickup options, chef profiles, image gallery, customer reviews, promotional offers, events management, Google Maps integration, social media links, responsive design, SEO optimization, and an admin dashboard to manage menu items, reservations, orders, and customer feedback."
   },
   {
     title: "Law Firm Websites",
-    prompt: "Develop a professional law firm website featuring practice areas, attorney profiles, case results, consultation booking, and contact information."
+    prompt:
+      "Develop a professional law firm website with practice area pages, attorney profiles, case studies, client testimonials, legal resources and blogs, consultation booking, secure contact forms, live chat support, office locations, responsive design, SEO optimization, and an admin dashboard to manage lawyers, appointments, blog articles, inquiries, and client communications."
   },
   {
     title: "Fitness Apps",
-    prompt: "Build a fitness app with workout plans, progress tracking, nutrition guides, user profiles, and subscription support."
+    prompt:
+      "Build a comprehensive fitness platform with user authentication, personalized workout plans, exercise library, nutrition tracking, meal plans, progress analytics, BMI calculator, fitness challenges, trainer profiles, subscription plans, wearable device integration, push notifications, responsive design, and an admin dashboard to manage users, trainers, workout content, subscriptions, and analytics."
   },
   {
     title: "Booking Apps",
-    prompt: "Create a booking application with user authentication, availability calendar, online reservations, payment integration, and notifications."
+    prompt:
+      "Create a complete booking and reservation platform with secure user authentication, real-time availability calendar, booking management, online payments, automated confirmations, email and SMS notifications, cancellation and refund handling, customer profiles, service provider dashboard, reviews and ratings, responsive design, and an admin panel for managing bookings, customers, services, schedules, and reports."
   },
   {
     title: "Loyalty & Rewards Apps",
-    prompt: "Develop a loyalty and rewards app with points tracking, reward redemption, referrals, offers, and user dashboards."
+    prompt:
+      "Develop a customer loyalty and rewards platform with user registration, digital membership cards, points earning and redemption, referral program, exclusive offers, coupons, reward tiers, transaction history, personalized recommendations, push notifications, analytics dashboard, responsive design, and an admin panel to manage customers, campaigns, rewards, offers, and engagement reports."
   },
   {
     title: "Travel Apps",
-    prompt: "Build a travel app with destination discovery, itinerary planning, hotel and flight booking, maps, and travel recommendations."
+    prompt:
+      "Build a feature-rich travel platform with destination discovery, AI-powered travel recommendations, itinerary planning, hotel and flight booking, vacation packages, interactive maps, weather forecasts, travel guides, budget tracking, trip sharing, customer reviews, secure payments, multilingual support, responsive design, and an admin dashboard to manage destinations, bookings, users, travel content, and analytics."
   }
 ];
-
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
   description:
@@ -1279,7 +1286,7 @@ export default async function Page() {
 
                 return (
                   <div className="col-lg-4 col-md-6 mb-4 mb-lg-0" key={blog.id}>
-                    <div className="cti_blog_card">
+                    <a href={`/blog-details?slug=${blog.slug}`} className="cti_blog_card d-block">
                       <div className="cti_blog_img">
                         {imageUrl && <img
 
@@ -1288,12 +1295,12 @@ export default async function Page() {
                           alt={blog.title || "Blog banner"} src={imageUrl} />}
                       </div>
                       <div className="cti_blog_content">
-                        <a href={`/blog-details?slug=${blog.slug}`}><h3 className="text-truncate"> {blog.title}</h3></a>
+                        <h3 className="text-truncate"> {blog.title}</h3>
                         <p className="ct_minimise_cnt">
                           {blog.description}
                         </p>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 );
               })
@@ -1303,47 +1310,7 @@ export default async function Page() {
               </div>
             )}
 
-            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-              <div className="cti_blog_card">
-                <div className="cti_blog_img">
-                  <img
-                    alt="Blog Image"
-                    className="img-fluid"
-                    src="/img/new_blog_2.webp"
-                  />
-                </div>
-                <div className="cti_blog_content">
-                  <h3>
-                    Lovable vs Replit vs Creative AI Compared: Best AI App
-                    Builder
-                  </h3>
-                  <p>
-                    Compare Lovable, Replit, and Creative AI. See which AI app
-                    builder is best for your needs, workflow, and technical
-                    level. Fair comparison with real metrics.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
-              <div className="cti_blog_card">
-                <div className="cti_blog_img">
-                  <img
-                    alt="Blog Image"
-                    className="img-fluid"
-                    src="/img/new_blog_3.webp"
-                  />
-                </div>
-                <div className="cti_blog_content">
-                  <h3>Claude Sonnet 4.5 Is Now Live in Creative AI</h3>
-                  <p>
-                    Claude Sonnet 4.5 is now live in Creative AI, helping
-                    startups and businesses build smarter, faster, and more
-                    advanced AI-powered applications with improved performance.
-                  </p>
-                </div>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>

@@ -3,29 +3,55 @@
 import React, { useState } from "react";
 import { LOGIN_URL } from "@/config";
 
+// const SUGGESTIONS = [
+//   {
+//     label: "Food Delivery App",
+//     prompt: "Create a food delivery app with user authentication, restaurant listings, cart, and order tracking."
+//   },
+//   {
+//     label: "CRM Dashboard",
+//     prompt: "Build a CRM dashboard with leads, contacts, deals, and activity tracking."
+//   },
+//   {
+//     label: "AI Chatbot",
+//     prompt: "Create an AI chatbot with natural language understanding and a modern UI."
+//   },
+//   {
+//     label: "Fitness Platform",
+//     prompt: "Build a fitness platform with workout plans, progress tracking, and user profiles."
+//   },
+//   {
+//     label: "Marketplace App",
+//     prompt: "Create a marketplace app with product listings, user profiles, and secure payments."
+//   }
+// ];
 const SUGGESTIONS = [
   {
     label: "Food Delivery App",
-    prompt: "Create a food delivery app with user authentication, restaurant listings, cart, and order tracking."
+    prompt:
+      "Build a modern food delivery platform with secure user authentication, restaurant onboarding, advanced search and filters, menu management, shopping cart, online payment integration, live order tracking, delivery partner management, order history, customer reviews and ratings, push notifications, promo codes, loyalty rewards, and an intuitive admin dashboard for managing restaurants, orders, users, and analytics."
   },
   {
     label: "CRM Dashboard",
-    prompt: "Build a CRM dashboard with leads, contacts, deals, and activity tracking."
+    prompt:
+      "Create a comprehensive CRM dashboard for sales teams with lead management, contact management, deal pipelines, task and activity tracking, calendar integration, email communication, customer segmentation, performance analytics, customizable reports, role-based access control, notifications, and an admin panel for managing users, permissions, and business insights."
   },
   {
-    label: "AI Chatbot",
-    prompt: "Create an AI chatbot with natural language understanding and a modern UI."
+    label: "Hospital Management System",
+    prompt:
+      "Develop a complete hospital management system with patient registration, doctor and staff management, appointment scheduling, electronic medical records, prescription management, laboratory and diagnostic reports, billing and insurance support, pharmacy management, inpatient and outpatient tracking, role-based dashboards, notifications, and detailed reporting for administrators."
   },
   {
     label: "Fitness Platform",
-    prompt: "Build a fitness platform with workout plans, progress tracking, and user profiles."
+    prompt:
+      "Design a fitness platform that allows users to create personalized workout plans, track fitness goals, monitor progress with charts and analytics, schedule training sessions, access nutrition plans, connect with personal trainers, join fitness challenges, earn achievements, integrate wearable devices, and provide an admin dashboard to manage users, subscriptions, and content."
   },
   {
     label: "Marketplace App",
-    prompt: "Create a marketplace app with product listings, user profiles, and secure payments."
+    prompt:
+      "Build a scalable online marketplace where buyers and sellers can register, manage profiles, list products with categories and images, search and filter products, manage wishlists, compare products, securely process payments, track orders, handle returns and refunds, chat with sellers, leave reviews and ratings, and provide an admin dashboard for inventory, users, orders, commissions, and analytics."
   }
 ];
-
 export default function HomePromptSection() {
   const [prompt, setPrompt] = useState("");
   const handleSend = (e) => {
