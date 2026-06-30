@@ -29,7 +29,7 @@ export default function Page() {
                            <p className="ct_fs_18 ct_fw_500 mb-0 mx-auto" style={{ maxWidth: "700px" }}>Creative AI transforms your requirements into fully functional projects with complete support from planning to deployment.
                            </p>
                            <div className="ct_btn_group justify-content-center mt-5">
-                              <Link className="ct_blue_btn_fill" href="/our-story">See Our Success Stories</Link>
+                              <Link className="ct_blue_btn_fill" href="/about-us">See Our Success Stories</Link>
                               <a className="ct_blue_outline_btn" href={LOGIN_URL} >Get Started</a>
                            </div>
                         </div>

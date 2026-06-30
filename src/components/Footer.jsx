@@ -61,7 +61,7 @@ export default function Footer() {
                         </h5>
                         <ul className="all-link-block">
                             <li>
-                                <Link href="/our-story">About Us</Link>
+                                <Link href="/about-us">About Us</Link>
                             </li>
                             {/* <li>
                                 <Link href="/careers">Careers</Link>

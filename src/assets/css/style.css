@@ -550,6 +550,7 @@ header::after {
   font-weight: 200;
   transition: 0.4s ease all;
   font-family: Satoshi-Regular;
+  color: #fff;
 
 }
 
@@ -941,9 +942,11 @@ header::after {
   justify-content: space-between;
   gap: 10px;
 }
-.ctiprompt_left_btns button i{
+
+.ctiprompt_left_btns button i {
   color: #fff;
 }
+
 .ctiprompt_left_btns button,
 .ctiprompt_right_btns button {
   width: 30px;
@@ -2388,21 +2391,24 @@ input[type="radio"]:checked+.cti_option_btn span {
 .ct_down_btn.ct_get_started_btn {
   background-color: #4140b0;
   color: #fff;
-  border:1px solid #4140b0;
+  border: 1px solid #4140b0;
 
   overflow: hidden;
 
 }
-.ct_down_btn.ct_get_started_btn:hover{
+
+.ct_down_btn.ct_get_started_btn:hover {
   color: #000;
 }
 
-.ct_get_started_btn.ct_down_btn svg path{
+.ct_get_started_btn.ct_down_btn svg path {
   fill: #fff;
 }
+
 .ct_down_btn.ct_get_started_btn:hover svg path {
   fill: #000;
 }
+
 .your_own_bulid_sec_desc {
   display: grid;
   grid-template-columns: 340px auto 310px;

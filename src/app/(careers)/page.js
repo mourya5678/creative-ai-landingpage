@@ -33,7 +33,9 @@ export default function Page() {
                                     <div className="col-lg-6 mb-4 mb-lg-0">
                                           <div className="ct_hero_right_main">
                                                 <div className="position-relative">
-                                                      <img alt="AI app builder for mobile and web" className="ct_img_w_80" src="/img/carrers_right_img.webp" />
+                                                      <img
+                                                            loading="lazy"
+                                                            alt="AI app builder for mobile and web" className="ct_img_w_80" src="/img/carrers_right_img.webp" />
                                                 </div>
                                           </div>
                                     </div>

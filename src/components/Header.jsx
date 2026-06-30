@@ -214,7 +214,10 @@ export default function Header() {
               <li className="ct_dropdown">
                 <Link href="/why-creative-ai" onClick={() => setIsMenuOpen(false)}>Why Creative AI</Link>
               </li>
-              <li className="ct_dropdown">
+              <li>
+                <Link href="/about-us" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+              </li>
+              {/* <li className="ct_dropdown">
                 <span type="button">About Us</span>
                 <div className="ct_custom_dropdown d-block">
                   <div className="ct_dropdown_items ct_py_20">
@@ -231,7 +234,7 @@ export default function Header() {
                           </div>
                           <div>
                             <Link
-                              href="/our-story"
+                              href="/about-us"
                               className="ct_fs_14 ct_fw_600"
                               onClick={() => setIsMenuOpen(false)}
                             >Our Story</Link>
@@ -242,7 +245,7 @@ export default function Header() {
                         </div>
                       </li>
 
-                      {/* <li>
+                     <li>
                         <div className="ct_grid_2_flex">
                           <div className="ct_drop_title_icon">
                             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,11 +261,11 @@ export default function Header() {
                             <p className="mb-0">See our current openings</p>
                           </div>
                         </div>
-                      </li> */}
+                      </li> 
                     </ol>
                   </div>
                 </div>
-              </li>
+              </li> */}
               <li className="ct_dropdown">
                 <span type="button">Resources</span>
                 <div className="ct_custom_dropdown d-block">

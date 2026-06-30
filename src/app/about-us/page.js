@@ -21,7 +21,7 @@ export default function Page() {
                      <div className="ct_inner_banner_w_bg">
                         <h1 className="ct_fs_44 ct_fw_700 mb-2 text-center">
                            About
-                           <span className="ct_orange_gredient_text">Creative AI</span>
+                           <span className="ct_orange_gredient_text"> Creative AI</span>
                         </h1>
                         <h2 className="ct_fs_18 mb-0 text-center">
                            We believe the power of software can unlock every human’s potential

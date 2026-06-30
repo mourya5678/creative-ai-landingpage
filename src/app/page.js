@@ -6,48 +6,134 @@ import HomePromptSection from "@/components/HomePromptSection";
 import ServiceSection from "@/components/ServiceSection";
 import { LOGIN_URL, API_URL } from "@/config";
 
+// export const websitePrompts = [
+//   {
+//     title: "E-Commerce Stores",
+//     prompt:
+//       "Build a modern, responsive e-commerce platform with secure user authentication, product catalog management, advanced search and filtering, shopping cart, wishlist, secure payment gateway integration, order tracking, customer reviews and ratings, discount coupons, inventory management, email notifications, responsive design, SEO optimization, and a comprehensive admin dashboard for managing products, orders, customers, analytics, and sales reports."
+//   },
+//   {
+//     title: "Doctor & Clinic Websites",
+//     prompt:
+//       "Create a professional healthcare website for doctors and clinics featuring appointment scheduling, doctor profiles, specialties, online consultation booking, patient testimonials, service listings, health blogs, secure contact forms, Google Maps integration, emergency contact information, responsive design, SEO optimization, and an admin panel to manage appointments, doctors, patients, and website content."
+//   },
+//   {
+//     title: "Restaurant Websites",
+//     prompt:
+//       "Design a premium restaurant website with an elegant UI featuring interactive menus, food categories, online table reservations, food ordering, delivery and pickup options, chef profiles, image gallery, customer reviews, promotional offers, events management, Google Maps integration, social media links, responsive design, SEO optimization, and an admin dashboard to manage menu items, reservations, orders, and customer feedback."
+//   },
+//   {
+//     title: "Law Firm Websites",
+//     prompt:
+//       "Develop a professional law firm website with practice area pages, attorney profiles, case studies, client testimonials, legal resources and blogs, consultation booking, secure contact forms, live chat support, office locations, responsive design, SEO optimization, and an admin dashboard to manage lawyers, appointments, blog articles, inquiries, and client communications."
+//   },
+//   {
+//     title: "Fitness Apps",
+//     prompt:
+//       "Build a comprehensive fitness platform with user authentication, personalized workout plans, exercise library, nutrition tracking, meal plans, progress analytics, BMI calculator, fitness challenges, trainer profiles, subscription plans, wearable device integration, push notifications, responsive design, and an admin dashboard to manage users, trainers, workout content, subscriptions, and analytics."
+//   },
+//   {
+//     title: "Booking Apps",
+//     prompt:
+//       "Create a complete booking and reservation platform with secure user authentication, real-time availability calendar, booking management, online payments, automated confirmations, email and SMS notifications, cancellation and refund handling, customer profiles, service provider dashboard, reviews and ratings, responsive design, and an admin panel for managing bookings, customers, services, schedules, and reports."
+//   },
+//   {
+//     title: "Loyalty & Rewards Apps",
+//     prompt:
+//       "Develop a customer loyalty and rewards platform with user registration, digital membership cards, points earning and redemption, referral program, exclusive offers, coupons, reward tiers, transaction history, personalized recommendations, push notifications, analytics dashboard, responsive design, and an admin panel to manage customers, campaigns, rewards, offers, and engagement reports."
+//   },
+//   {
+//     title: "Travel Apps",
+//     prompt:
+//       "Build a feature-rich travel platform with destination discovery, AI-powered travel recommendations, itinerary planning, hotel and flight booking, vacation packages, interactive maps, weather forecasts, travel guides, budget tracking, trip sharing, customer reviews, secure payments, multilingual support, responsive design, and an admin dashboard to manage destinations, bookings, users, travel content, and analytics."
+//   }
+// ];
+
 export const websitePrompts = [
+
   {
+
     title: "E-Commerce Stores",
+
     prompt:
-      "Build a modern, responsive e-commerce platform with secure user authentication, product catalog management, advanced search and filtering, shopping cart, wishlist, secure payment gateway integration, order tracking, customer reviews and ratings, discount coupons, inventory management, email notifications, responsive design, SEO optimization, and a comprehensive admin dashboard for managing products, orders, customers, analytics, and sales reports."
+
+      "Create a premium e-commerce experience focused on discovering and purchasing products effortlessly. Include beautiful product browsing, smart search, curated collections, rich product pages, favorites, a seamless shopping cart, secure checkout, order tracking, and a polished mobile-first experience suitable for an elegant MVP."
+
   },
+
   {
+
     title: "Doctor & Clinic Websites",
+
     prompt:
-      "Create a professional healthcare website for doctors and clinics featuring appointment scheduling, doctor profiles, specialties, online consultation booking, patient testimonials, service listings, health blogs, secure contact forms, Google Maps integration, emergency contact information, responsive design, SEO optimization, and an admin panel to manage appointments, doctors, patients, and website content."
+
+      "Design a modern healthcare website that helps patients easily discover doctors, explore specialties, learn about available treatments, book appointments, and access essential clinic information. Focus on trust, simplicity, and a premium patient experience with an MVP-ready design."
+
   },
+
   {
+
     title: "Restaurant Websites",
+
     prompt:
-      "Design a premium restaurant website with an elegant UI featuring interactive menus, food categories, online table reservations, food ordering, delivery and pickup options, chef profiles, image gallery, customer reviews, promotional offers, events management, Google Maps integration, social media links, responsive design, SEO optimization, and an admin dashboard to manage menu items, reservations, orders, and customer feedback."
+
+      "Build a visually rich restaurant website that highlights the dining experience through elegant food presentation, interactive menus, chef stories, online reservations, featured dishes, location details, and a seamless mobile experience designed for a premium restaurant brand."
+
   },
+
   {
+
     title: "Law Firm Websites",
+
     prompt:
-      "Develop a professional law firm website with practice area pages, attorney profiles, case studies, client testimonials, legal resources and blogs, consultation booking, secure contact forms, live chat support, office locations, responsive design, SEO optimization, and an admin dashboard to manage lawyers, appointments, blog articles, inquiries, and client communications."
+
+      "Create a sophisticated law firm website that builds trust through professional attorney profiles, practice areas, success stories, legal insights, consultation requests, and clear contact information. Focus on credibility, clarity, and a premium client-first experience."
+
   },
+
   {
+
     title: "Fitness Apps",
+
     prompt:
-      "Build a comprehensive fitness platform with user authentication, personalized workout plans, exercise library, nutrition tracking, meal plans, progress analytics, BMI calculator, fitness challenges, trainer profiles, subscription plans, wearable device integration, push notifications, responsive design, and an admin dashboard to manage users, trainers, workout content, subscriptions, and analytics."
+
+      "Design a modern fitness platform that motivates users to achieve their goals through personalized workout plans, progress tracking, fitness challenges, nutrition guidance, achievements, and an engaging user experience that feels motivating, clean, and premium."
+
   },
+
   {
+
     title: "Booking Apps",
+
     prompt:
-      "Create a complete booking and reservation platform with secure user authentication, real-time availability calendar, booking management, online payments, automated confirmations, email and SMS notifications, cancellation and refund handling, customer profiles, service provider dashboard, reviews and ratings, responsive design, and an admin panel for managing bookings, customers, services, schedules, and reports."
+
+      "Create an intuitive booking platform that makes discovering services, checking availability, scheduling appointments, and managing upcoming bookings effortless. Deliver a smooth, modern experience centered around speed, convenience, and a focused MVP."
+
   },
+
   {
+
     title: "Loyalty & Rewards Apps",
+
     prompt:
-      "Develop a customer loyalty and rewards platform with user registration, digital membership cards, points earning and redemption, referral program, exclusive offers, coupons, reward tiers, transaction history, personalized recommendations, push notifications, analytics dashboard, responsive design, and an admin panel to manage customers, campaigns, rewards, offers, and engagement reports."
+
+      "Build a premium loyalty platform that encourages customer engagement through digital memberships, reward points, exclusive benefits, personalized offers, achievement milestones, and a delightful experience that keeps customers coming back."
+
   },
+
   {
+
     title: "Travel Apps",
+
     prompt:
-      "Build a feature-rich travel platform with destination discovery, AI-powered travel recommendations, itinerary planning, hotel and flight booking, vacation packages, interactive maps, weather forecasts, travel guides, budget tracking, trip sharing, customer reviews, secure payments, multilingual support, responsive design, and an admin dashboard to manage destinations, bookings, users, travel content, and analytics."
+
+      "Design an inspiring travel platform where users can discover destinations, explore curated experiences, plan trips, organize itineraries, save favorite places, and enjoy a visually immersive journey planning experience focused on exploration and simplicity."
+
   }
+
 ];
+
+
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
   description:
@@ -298,6 +384,7 @@ export default async function Page() {
                   <div className="ct_sass_card_img">
                     <img
                       src="/img/dummy_img_1_new.webp"
+                      loading="lazy"
                       className="img-fluid"
                       alt="AI website builder interface showing drag and drop elements"
                     />
@@ -359,6 +446,7 @@ export default async function Page() {
                   <div className="ct_sass_card_img">
                     <img
                       src="/img/dummy_img_2_new.webp"
+                      loading="lazy"
                       alt="AI mobile application development dashboard"
                     />
                   </div>
@@ -419,6 +507,7 @@ export default async function Page() {
                   <div className="ct_sass_card_img">
                     <img
                       src="/img/dummy_img_3_new.webp"
+                      loading="lazy"
                       alt="Client onboarding portal displaying analytics chart"
                     />
                   </div>
@@ -479,6 +568,7 @@ export default async function Page() {
                   <div className="ct_sass_card_img">
                     <img
                       src="/img/dummy_img_4_new.webp"
+                      loading="lazy"
                       alt="E-commerce multi-vendor marketplace product listings screen"
                     />
                   </div>
@@ -515,6 +605,7 @@ export default async function Page() {
                     <img
                       src="/img/1.webp"
                       alt="AI design generation step 1 - describe your vision illustration"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -528,6 +619,7 @@ export default async function Page() {
                   <div className="card-preview">
                     <img
                       src="/img/2.webp"
+                      loading="lazy"
                       alt="AI design generation step 2 - generate instantly illustration"
                     />
                   </div>
@@ -542,6 +634,7 @@ export default async function Page() {
                   <div className="card-preview">
                     <img
                       src="/img/3.webp"
+                      loading="lazy"
                       alt="AI design generation step 3 - build without code illustration"
                     />
                   </div>
@@ -853,6 +946,7 @@ export default async function Page() {
                   <div className="card-preview">
                     <img
                       src="/img/4.webp"
+                      loading="lazy"
                       alt="Analytics and growth dashboard visual layout"
                     />
                   </div>
@@ -867,6 +961,7 @@ export default async function Page() {
                   <div className="card-preview">
                     <img
                       src="/img/5.webp"
+                      loading="lazy"
                       alt="Mobile app customization drag and drop editor view"
                     />
                   </div>
@@ -881,6 +976,7 @@ export default async function Page() {
                   <div className="card-preview">
                     <img
                       src="/img/6.webp"
+                      loading="lazy"
                       alt="Cloud deployment status showing success screen"
                     />
                   </div>
@@ -901,6 +997,7 @@ export default async function Page() {
                 </h2>
                 <img
                   src="/img/build-shap-svg.webp"
+                  loading="lazy"
                   className="ct_curve_arrow"
                   alt="Decorative dynamic arrow pointer pointing to ownership benefits"
                 />
@@ -934,6 +1031,7 @@ export default async function Page() {
             <div>
               <img
                 src="/img/MacBookPro.webp"
+                loading="lazy"
                 className="w-100 h-100 object-fit-cover"
                 alt="MacBook mockup displaying custom web dashboard"
               />
@@ -1062,7 +1160,8 @@ export default async function Page() {
                 </p>
               </div>
               <div className="ct_video_banner">
-                <img alt="Video Thumbnail" src="/img/video_thumb_img.webp" />
+                <img alt="Video Thumbnail" src="/img/video_thumb_img.webp"
+                  loading="lazy" />
               </div>
             </div>
           </div>
@@ -1094,7 +1193,8 @@ export default async function Page() {
               recommended!
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_4.webp" />
+              <img alt="User" src="/img/client_4.webp"
+                loading="lazy" />
               <div>
                 <h5>Stefan Roger</h5>
                 <span>Our Happy Client</span>
@@ -1109,7 +1209,7 @@ export default async function Page() {
               in traffic and leads!
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_5.webp" />
+              <img alt="User" src="/img/client_5.webp" loading="lazy" />
               <div>
                 <h5>Eric J.</h5>
                 <span>Our Happy Client</span>
@@ -1130,7 +1230,7 @@ export default async function Page() {
               smarter and faster.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/sam.webp" />
+              <img alt="User" src="/img/sam.webp" loading="lazy" />
               <div>
                 <h5>Sam Buah</h5>
                 <span>Our Happy Client</span>
@@ -1148,7 +1248,7 @@ export default async function Page() {
               while ensuring enterprise-level quality.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/james.webp" />
+              <img alt="User" src="/img/james.webp" loading="lazy" />
               <div>
                 <h5>James Pollard</h5>
                 <span>Our Happy Client</span>
@@ -1164,7 +1264,7 @@ export default async function Page() {
               apart from other tools I’ve tried.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/paul.webp" />
+              <img alt="User" src="/img/paul.webp" loading="lazy" />
               <div>
                 <h5>Paul Calleja</h5>
                 <span>Our Happy Client</span>
@@ -1186,7 +1286,7 @@ export default async function Page() {
               sets them apart.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/nirdesh.webp" />
+              <img alt="User" src="/img/nirdesh.webp" loading="lazy" />
               <div>
                 <h5>Nirdesh Badjatiya</h5>
                 <span>Our Happy Client</span>
@@ -1201,7 +1301,7 @@ export default async function Page() {
               them.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_2.webp" />
+              <img alt="User" src="/img/client_2.webp" loading="lazy" />
               <div>
                 <h5>Justine Pogroske</h5>
                 <span>Our Happy Client</span>
@@ -1216,7 +1316,7 @@ export default async function Page() {
               and very professional fellow. Keep up the great work folks!
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_1.webp" />
+              <img alt="User" src="/img/client_1.webp" loading="lazy" />
               <div>
                 <h5>Ady Bui</h5>
                 <span>Our Happy Client</span>
@@ -1232,7 +1332,7 @@ export default async function Page() {
               pleased with the work in general.
             </p>
             <div className="cti_testimonial_user">
-              <img alt="User" src="/img/client_3.webp" />
+              <img alt="User" src="/img/client_3.webp" loading="lazy" />
               <div>
                 <h5>Phillipe Dastous</h5>
                 <span>Our Happy Client</span>
@@ -1291,7 +1391,7 @@ export default async function Page() {
                         {imageUrl && <img
 
                           className="img-fluid"
-
+                          loading="lazy"
                           alt={blog.title || "Blog banner"} src={imageUrl} />}
                       </div>
                       <div className="cti_blog_content">
@@ -1514,18 +1614,22 @@ export default async function Page() {
                   <img
                     alt="Trusted client Paul profile avatar"
                     src="/img/client_3.webp"
+                    loading="lazy"
                   />
                   <img
                     alt="Trusted client Stefan profile avatar"
                     src="/img/client_4.webp"
+                    loading="lazy"
                   />
                   <img
                     alt="Trusted client Justine profile avatar"
                     src="/img/client_2.webp"
+                    loading="lazy"
                   />
                   <img
                     alt="Trusted client James profile avatar"
                     src="/img/james.webp"
+                    loading="lazy"
                   />
                 </div>
                 <div className="cti_trusted_content">
