@@ -39,6 +39,7 @@ jobs:
             mkdir -p /var/www/creative-ai-landingpage-live
             rsync -a --delete --exclude='.git' /var/www/creative-ai-landingpage/ /var/www/creative-ai-landingpage-live/
             
-            # 3. Force restart PM2 to clear process memory cache
+            # 3. Force clean restart PM2 to clear process memory cache and apply ecosystem.config changes
             cd /var/www/creative-ai-landingpage-live
-            pm2 restart creative-ai-next --update-env || pm2 start ecosystem.config.js --update-env
+            pm2 delete creative-ai-next || true
+            pm2 start ecosystem.config.js --update-env
