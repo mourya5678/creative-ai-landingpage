@@ -34,6 +34,7 @@ export async function generateMetadata({ searchParams }) {
   const blog = blogs.find((b) => b.slug === slug) || blogs[0];
 
   if (!blog) {
+
     return {
       title: "Creative AI Blog",
       description: "Explore AI app development ideas, product updates, and no-code app building guides.",
