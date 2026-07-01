@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import { BlogDetailsSliderInit } from "@/components/PageInitializers";
 import { API_URL } from "@/config";
+import { notFound } from "next/navigation";
 
 const formatDate = (dateStr) => {
   if (!dateStr) return "";
@@ -31,15 +32,15 @@ export async function generateMetadata({ searchParams }) {
   const resolvedSearchParams = await searchParams;
   const slug = resolvedSearchParams?.slug;
   const blogs = await getBlogs();
-  const blog = blogs.find((b) => b.slug === slug) || blogs[0];
+  const blog = blogs.find((b) => b.slug === slug);
 
   if (!blog) {
-
     return {
-      title: "Creative AI Blog",
-      description: "Explore AI app development ideas, product updates, and no-code app building guides.",
+      title: "404 - Blog Not Found",
+      description: "The requested blog could not be found.",
     };
   }
+
 
   const imageUrl = blog.banner_image
     ? (blog.banner_image.startsWith("http") ? blog.banner_image : `${API_URL}${blog.banner_image}`)
@@ -67,24 +68,28 @@ export default async function Page({ searchParams }) {
   const blogs = await getBlogs();
 
   // Find target blog, fallback to first blog in the list if not found
-  const blog = blogs.find((b) => b.slug === slug) || blogs[0];
+  const blog = blogs.find((b) => b.slug === slug);
 
   if (!blog) {
-    return (
-      <>
-        <Header />
-        <section className="ct_pb_50 ct_pt_50 text-center">
-          <div className="container">
-            <h1 className="ct_fs_44 ct_fw_700 mb-4">Blog Post Not Found</h1>
-            <p className="mb-4">We couldn't find the blog post you are looking for.</p>
-            <Link className="ct_blue_btn_fill" href="/blog">
-              Back to Blog
-            </Link>
-          </div>
-        </section>
-      </>
-    );
+    notFound();
   }
+
+  // if (!blog) {
+  //   return (
+  //     <>
+  //       <Header />
+  //       <section className="ct_pb_50 ct_pt_50 text-center">
+  //         <div className="container">
+  //           <h1 className="ct_fs_44 ct_fw_700 mb-4">Blog Post Not Found</h1>
+  //           <p className="mb-4">We couldn't find the blog post you are looking for.</p>
+  //           <Link className="ct_blue_btn_fill" href="/blog">
+  //             Back to Blog
+  //           </Link>
+  //         </div>
+  //       </section>
+  //     </>
+  //   );
+  // }
 
   // Get recent blogs (excluding the current one, capped at 4)
   const recentBlogs = blogs.filter((b) => b.id !== blog.id).slice(0, 4);
