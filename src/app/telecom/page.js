@@ -2,6 +2,7 @@ import { LOGIN_URL } from "@/config";
 import Header from "@/components/Header";
 import Link from "next/link";
 import { InnerTestimonialInit, RetailSliderInit, PricingSliderInit, BlogDetailsSliderInit } from "@/components/PageInitializers";
+import Image from "next/image";
 
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
@@ -81,7 +82,14 @@ export default function Page() {
             </div>
             <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
-                <img alt="AI app builder" className="ct_object_cover ct_border_radius_10" loading="lazy" src="/img/telecome_img_new_2.webp" style={{ objectPosition: "top" }} />
+                <Image
+                  alt="AI app builder"
+                  className="ct_object_cover ct_border_radius_10"
+                  src="/img/telecome_img_new_2.webp"
+                  width={400}
+                  height={500}
+                  style={{ objectPosition: "top" }}
+                />
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { InnerTestimonialInit } from "@/components/PageInitializers";
 import InnerPricingSection from "@/components/InnerPricingSection";
 import { API_URL } from "@/config";
+import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata = {
   title: "Creative AI | AI App Builder for Mobile & Web Application",
@@ -309,84 +310,57 @@ export default async function Page() {
             </div>
             <div className="col-md-7 offset-md-1 mb-4 mb-md-0">
               <div className="ct_how_works_collapse">
-                <div className="accordion" id="ct_how_works_accordion">
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="faq_one">
-                      <button aria-controls="collapsefaq_one" aria-expanded="true" className="accordion-button" data-bs-target="#collapsefaq_one" data-bs-toggle="collapse" type="button">
-                        What is an AI app builder?
-                      </button>
-                    </h2>
-                    <div aria-labelledby="faq_one" className="accordion-collapse collapse show" data-bs-parent="#ct_how_works_accordion" id="collapsefaq_one">
-                      <div className="accordion-body">
+                <FAQAccordion
+                  accordionId="ct_how_works_accordion"
+                  items={[
+                    {
+                      question: "What is an AI app builder?",
+                      answer: (
                         <p className="ct_fs_16 mb-0 ct_line_h_30">
                           An AI app builder is a tool that lets you create apps
                           just by describing your idea. It automatically builds
                           the design, features, and backend for you.
                         </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="faqtwo">
-                      <button aria-controls="collapseTwo" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Two" data-bs-toggle="collapse" type="button">
-                        How does this AI app builder work?
-                      </button>
-                    </h2>
-                    <div aria-labelledby="faqtwo" className="accordion-collapse collapse" data-bs-parent="#ct_how_works_accordion" id="collapsefaq_Two">
-                      <div className="accordion-body">
+                      )
+                    },
+                    {
+                      question: "How does this AI app builder work?",
+                      answer: (
                         <p className="ct_fs_16 mb-0 ct_line_h_30">
                           You simply type what you want to build, and the AI turns
                           it into a working app step by step, in minutes.
                         </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="faqthree">
-                      <button aria-controls="collapsefaq_Three" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Three" data-bs-toggle="collapse" type="button">
-                        Do I need coding to build an app?
-                      </button>
-                    </h2>
-                    <div aria-labelledby="faqthree" className="accordion-collapse collapse" data-bs-parent="#ct_how_works_accordion" id="collapsefaq_Three">
-                      <div className="accordion-body">
+                      )
+                    },
+                    {
+                      question: "Do I need coding to build an app?",
+                      answer: (
                         <p className="ct_fs_16 mb-0 ct_line_h_30">
                           No, you don’t need any coding skills. The AI handles
                           everything; you just focus on your idea.
                         </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="faqfour">
-                      <button aria-controls="collapsefaq_four" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_four" data-bs-toggle="collapse" type="button">
-                        What kind of apps can I build?
-                      </button>
-                    </h2>
-                    <div aria-labelledby="faqfour" className="accordion-collapse collapse" data-bs-parent="#ct_how_works_accordion" id="collapsefaq_four">
-                      <div className="accordion-body">
+                      )
+                    },
+                    {
+                      question: "What kind of apps can I build?",
+                      answer: (
                         <p className="ct_fs_16 mb-1 ct_line_h_30">
                           You can build web apps, mobile apps, dashboards, tools,
                           and more. If you can describe it, you can build it.
                         </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="faqfive">
-                      <button aria-controls="collapsefaq_five" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_five" data-bs-toggle="collapse" type="button">
-                        How fast can I launch my app?
-                      </button>
-                    </h2>
-                    <div aria-labelledby="faqfive" className="accordion-collapse collapse" data-bs-parent="#ct_how_works_accordion" id="collapsefaq_five">
-                      <div className="accordion-body">
+                      )
+                    },
+                    {
+                      question: "How fast can I launch my app?",
+                      answer: (
                         <p className="ct_fs_16 mb-0 ct_line_h_30">
                           You can create and launch your app in just a few
                           minutes, depending on your idea.
                         </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      )
+                    }
+                  ]}
+                />
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { LOGIN_URL } from "@/config";
 import Header from "@/components/Header";
 import Link from "next/link";
+import FAQAccordion from "@/components/FAQAccordion";
 
 
 export const metadata = {
@@ -86,349 +87,205 @@ export default function Page() {
                                                 <div className="d-flex align-items-center justify-content-between gap-3 flex-wrap ct_mb_34">
                                                       <h2 className="ct_fs_24 ct_fw_700">About Creative AI</h2>
                                                 </div>
-                                                <div className="accordion" id="faq_accordionExample">
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faq_one">
-                                                                  <button aria-controls="collapsefaq_one" aria-expanded="true" className="accordion-button" data-bs-target="#collapsefaq_one" data-bs-toggle="collapse" type="button">
-                                                                        What is Creative AI?
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faq_one" className="accordion-collapse collapse show" data-bs-parent="#faq_accordionExample" id="collapsefaq_one">
-                                                                  <div className="accordion-body">
+                                                <FAQAccordion
+                                                      accordionId="faq_accordionExample"
+                                                      items={[
+                                                            {
+                                                                  question: "What is Creative AI?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Creative AI is an end-to-end AI app builder that transforms user requirements into fully functional applications, handling everything from idea understanding to final deployment.
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqtwo">
-                                                                  <button aria-controls="collapseTwo" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Two" data-bs-toggle="collapse" type="button">
-                                                                        What does creative AI actually do?
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqtwo" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample" id="collapsefaq_Two">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "What does creative AI actually do?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               It analyzes your input, understands project intent, and generates complete project solutions, including UI, workflows, and backend structure, automatically.
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqthree">
-                                                                  <button aria-controls="collapsefaq_Three" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Three" data-bs-toggle="collapse" type="button">
-                                                                        Who can use Creative AI?
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqthree" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample" id="collapsefaq_Three">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Who can use Creative AI?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Startups, SMBs, developers, and non-technical users can all use creative AI to quickly build and launch digital products without complex coding.
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
+                                                                  )
+                                                            }
+                                                      ]}
+                                                />
                                           </div>
                                           <div className="ct_faq_question_main mt-5" id="Pricing">
                                                 <div className="d-flex align-items-center justify-content-between gap-3 flex-wrap ct_mb_34">
                                                       <h2 className="ct_fs_24 ct_fw_700">Pricing</h2>
-
                                                 </div>
-                                                <div className="accordion" id="faq_accordionExample11">
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faq_one11">
-                                                                  <button aria-controls="collapsefaq_one11" aria-expanded="true" className="accordion-button" data-bs-target="#collapsefaq_one11" data-bs-toggle="collapse" type="button">
-                                                                        How does creative AI pricing work?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faq_one11" className="accordion-collapse collapse show" data-bs-parent="#faq_accordionExample11" id="collapsefaq_one11">
-                                                                  <div className="accordion-body">
+                                                <FAQAccordion
+                                                      accordionId="faq_accordionExample11"
+                                                      items={[
+                                                            {
+                                                                  question: "How does creative AI pricing work?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Creative AI follows a subscription-based model where users can create multiple projects and explore different app variations.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqtwo22">
-                                                                  <button aria-controls="collapseTwo" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Two22" data-bs-toggle="collapse" type="button">
-                                                                        Are there any hidden charges?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqtwo22" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample11" id="collapsefaq_Two22">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Are there any hidden charges?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               No, pricing is transparent. Users pay for the subscription plan they choose, with optional costs only for advanced custom requirements.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqthree33">
-                                                                  <button aria-controls="collapsefaq_Three33" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Three33" data-bs-toggle="collapse" type="button">
-                                                                        Can I get custom enterprise pricing?
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqthree33" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample11" id="collapsefaq_Three33">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Can I get custom enterprise pricing?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Yes, businesses with advanced needs can request tailored enterprise pricing based on project scope and usage.
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
+                                                                  )
+                                                            }
+                                                      ]}
+                                                />
                                           </div>
                                           <div className="ct_faq_question_main mt-5" id="App_development">
                                                 <div className="d-flex align-items-center justify-content-between gap-3 flex-wrap ct_mb_34">
                                                       <h2 className="ct_fs_24 ct_fw_700">App development time</h2>
-
                                                 </div>
-                                                <div className="accordion" id="faq_accordionExample33">
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faq_one33">
-                                                                  <button aria-controls="collapsefaq_one44" aria-expanded="true" className="accordion-button" data-bs-target="#collapsefaq_one44" data-bs-toggle="collapse" type="button">
-                                                                        How fast can I build an app using creative AI?
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faq_one33" className="accordion-collapse collapse show" data-bs-parent="#faq_accordionExample33" id="collapsefaq_one44">
-                                                                  <div className="accordion-body">
+                                                <FAQAccordion
+                                                      accordionId="faq_accordionExample33"
+                                                      items={[
+                                                            {
+                                                                  question: "How fast can I build an app using creative AI?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Apps can be generated in a fraction of traditional development time since the AI app builder automates most of the process.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqtwo33">
-                                                                  <button aria-controls="collapsefaq_Two33" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Two33" data-bs-toggle="collapse" type="button">
-                                                                        Do I need coding knowledge?
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqtwo33" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample33" id="collapsefaq_Two33">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Do I need coding knowledge?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               No, Creative AI is a no-code AI app builder, so you can create apps without any programming skills.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqthree333">
-                                                                  <button aria-controls="collapsefaq_Three333" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Three333" data-bs-toggle="collapse" type="button">
-                                                                        Can I update my app after generating it?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqthree333" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample33" id="collapsefaq_Three333">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Can I update my app after generating it?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Yes, you can easily customize, modify, and regenerate parts of your project anytime.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
+                                                                  )
+                                                            }
+                                                      ]}
+                                                />
                                           </div>
                                           <div className="ct_faq_question_main mt-5" id="Support">
                                                 <div className="d-flex align-items-center justify-content-between gap-3 flex-wrap ct_mb_34">
                                                       <h2 className="ct_fs_24 ct_fw_700">Support</h2>
-
                                                 </div>
-                                                <div className="accordion" id="faq_accordionExample_new">
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faq_one_new">
-                                                                  <button aria-controls="collapsefaq_one_new" aria-expanded="true" className="accordion-button" data-bs-target="#collapsefaq_one_new" data-bs-toggle="collapse" type="button">
-                                                                        What kind of support do I get?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faq_one_new" className="accordion-collapse collapse show" data-bs-parent="#faq_accordionExample_new" id="collapsefaq_one_new">
-                                                                  <div className="accordion-body">
+                                                <FAQAccordion
+                                                      accordionId="faq_accordionExample_new"
+                                                      items={[
+                                                            {
+                                                                  question: "What kind of support do I get?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               You get full support, including guidance, troubleshooting, and help from the Creative AI team.
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqtwo_new">
-                                                                  <button aria-controls="collapsefaq_Two_new" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Two_new" data-bs-toggle="collapse" type="button">
-                                                                        Can I talk to someone directly?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqtwo_new" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample_new" id="collapsefaq_Two_new">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Can I talk to someone directly?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Yes, users can connect with the team through calls for detailed discussion and requirement clarity.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqthree_new">
-                                                                  <button aria-controls="collapsefaq_Three_new" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Three_new" data-bs-toggle="collapse" type="button">
-                                                                        Is support available for complex projects?
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqthree_new" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample_new" id="collapsefaq_Three_new">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Is support available for complex projects?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Yes, the team helps with advanced requirements, custom workflows, and enterprise-level solutions.
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
+                                                                  )
+                                                            }
+                                                      ]}
+                                                />
                                           </div>
                                           <div className="ct_faq_question_main mt-5" id="Custom_features">
                                                 <div className="d-flex align-items-center justify-content-between gap-3 flex-wrap ct_mb_34">
                                                       <h2 className="ct_fs_24 ct_fw_700">Custom features</h2>
-
                                                 </div>
-                                                <div className="accordion" id="faq_accordionExample_new_22">
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faq_one_new_2">
-                                                                  <button aria-controls="collapsefaq_one_new_2" aria-expanded="true" className="accordion-button" data-bs-target="#collapsefaq_one_new_2" data-bs-toggle="collapse" type="button">
-                                                                        Can I add custom features to my app?
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faq_one_new_2" className="accordion-collapse collapse show" data-bs-parent="#faq_accordionExample_new_22" id="collapsefaq_one_new_2">
-                                                                  <div className="accordion-body">
+                                                <FAQAccordion
+                                                      accordionId="faq_accordionExample_new_22"
+                                                      items={[
+                                                            {
+                                                                  question: "Can I add custom features to my app?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Yes, Creative AI allows you to request advanced custom features based on your business needs.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqtwo_new_22">
-                                                                  <button aria-controls="collapsefaq_Two_new_22" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Two_new_22" data-bs-toggle="collapse" type="button">
-                                                                        How are custom features implemented?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqtwo_new_22" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample_new_22" id="collapsefaq_Two_new_22">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "How are custom features implemented?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               You share your requirements, and the team designs and integrates tailored solutions into your project.
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqthree_new_22">
-                                                                  <button aria-controls="collapsefaq_Three_new_22" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Three_new_22" data-bs-toggle="collapse" type="button">
-                                                                        Are integrations supported?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqthree_new_22" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample_new_22" id="collapsefaq_Three_new_22">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Are integrations supported?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Yes, you can request API integrations, workflow enhancements, and other advanced custom functionalities.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
+                                                                  )
+                                                            }
+                                                      ]}
+                                                />
                                           </div>
                                           <div className="ct_faq_question_main mt-5" id="How_to_build">
                                                 <div className="d-flex align-items-center justify-content-between gap-3 flex-wrap ct_mb_34">
                                                       <h2 className="ct_fs_24 ct_fw_700">How to build</h2>
-
                                                 </div>
-                                                <div className="accordion" id="faq_accordionExample_new_33">
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faq_one_new_44">
-                                                                  <button aria-controls="collapsefaq_one_new_44" aria-expanded="true" className="accordion-button" data-bs-target="#collapsefaq_one_new_44" data-bs-toggle="collapse" type="button">
-                                                                        How do I start building with Creative AI?
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faq_one_new_44" className="accordion-collapse collapse show" data-bs-parent="#faq_accordionExample_new_33" id="collapsefaq_one_new_44">
-                                                                  <div className="accordion-body">
+                                                <FAQAccordion
+                                                      accordionId="faq_accordionExample_new_33"
+                                                      items={[
+                                                            {
+                                                                  question: "How do I start building with Creative AI?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Simply submit your idea or requirements, and the AI app builder will generate your project automatically.
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqtwo_new_55">
-                                                                  <button aria-controls="collapsefaq_Two_new_55" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Two_new_55" data-bs-toggle="collapse" type="button">
-                                                                        What happens after I submit my idea?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqtwo_new_55" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample_new_33" id="collapsefaq_Two_new_55">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "What happens after I submit my idea?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               The system analyzes your input, builds the structure, and provides a ready-to-customize application.
-
-
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                      <div className="accordion-item">
-                                                            <h2 className="accordion-header" id="faqthree_new_66">
-                                                                  <button aria-controls="collapsefaq_Three_new_66" aria-expanded="false" className="accordion-button collapsed" data-bs-target="#collapsefaq_Three_new_66" data-bs-toggle="collapse" type="button">
-                                                                        Can I deploy my app directly?
-
-
-                                                                  </button>
-                                                            </h2>
-                                                            <div aria-labelledby="faqthree_new_66" className="accordion-collapse collapse" data-bs-parent="#faq_accordionExample_new_33" id="collapsefaq_Three_new_66">
-                                                                  <div className="accordion-body">
+                                                                  )
+                                                            },
+                                                            {
+                                                                  question: "Can I deploy my app directly?",
+                                                                  answer: (
                                                                         <p className="ct_fs_16 mb-3 ct_line_h_30">
                                                                               Yes, once your project is ready and refined, you can deploy it directly from the platform with full support.
                                                                         </p>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
+                                                                  )
+                                                            }
+                                                      ]}
+                                                />
                                           </div>
                                     </div>
                               </div>

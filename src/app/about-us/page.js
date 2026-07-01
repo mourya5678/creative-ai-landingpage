@@ -2,6 +2,7 @@ import { LOGIN_URL } from "@/config";
 import Header from "@/components/Header";
 import Link from "next/link";
 import { OurStorySlidersInit } from "@/components/PageInitializers";
+import Image from "next/image";
 
 export const metadata = {
    title: "Creative AI | AI App Builder for Mobile & Web Application",
@@ -418,12 +419,12 @@ export default function Page() {
                      </div>
                      <div className="item">
                         <div className="ct_team_card">
-                           <img alt="AI app builder for mobile and web" loading="lazy" src="/img/photo11.webp" />
+                           <Image alt="AI app builder for mobile and web" src="/img/photo11.webp" width={300} height={300} />
                         </div>
                      </div>
                      <div className="item">
                         <div className="ct_team_card">
-                           <img alt="AI app builder for mobile and web" loading="lazy" src="/img/photo12.webp" />
+                           <Image alt="AI app builder for mobile and web" src="/img/photo12.webp" width={300} height={300} />
                         </div>
                      </div>
                      <div className="item">

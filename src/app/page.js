@@ -5,6 +5,7 @@ import HomePricingSection from "@/components/HomePricingSection";
 import HomePromptSection from "@/components/HomePromptSection";
 import ServiceSection from "@/components/ServiceSection";
 import { LOGIN_URL, API_URL } from "@/config";
+import FAQAccordion from "@/components/FAQAccordion";
 
 // export const websitePrompts = [
 //   {
@@ -1424,173 +1425,43 @@ export default async function Page() {
                   Common Questions, Clear Answers
                 </h2>
               </div>
-              <div className="accordion cti_faq_accordion" id="ctiFaqAccordion">
-                <div className="accordion-item cti_faq_item">
-                  <h2 className="accordion-header">
-                    <button
-                      aria-expanded="true"
-                      className="accordion-button cti_faq_btn"
-                      data-bs-target="#ctiFaqOne"
-                      data-bs-toggle="collapse"
-                      type="button"
-                    >
-                      What is Creative AI?
-                    </button>
-                  </h2>
-                  <div
-                    className="accordion-collapse collapse show"
-                    data-bs-parent="#ctiFaqAccordion"
-                    id="ctiFaqOne"
-                  >
-                    <div className="accordion-body cti_faq_body">
-                      Creative AI is an AI website and app builder that helps
-                      you create websites, web apps, customer portals,
-                      marketplaces, and other digital products using simple
-                      prompts. No coding is required.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item cti_faq_item">
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button collapsed cti_faq_btn"
-                      data-bs-target="#ctiFaqTwo"
-                      data-bs-toggle="collapse"
-                      type="button"
-                    >
-                      Do I need coding skills to use Creative AI?
-                    </button>
-                  </h2>
-                  <div
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#ctiFaqAccordion"
-                    id="ctiFaqTwo"
-                  >
-                    <div className="accordion-body cti_faq_body">
-                      No. You can describe what you want to build in plain
-                      English, and Creative AI will generate the website or
-                      application for you.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item cti_faq_item">
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button collapsed cti_faq_btn"
-                      data-bs-target="#ctiFaqThree"
-                      data-bs-toggle="collapse"
-                      type="button"
-                    >
-                      What can I build with Creative AI?
-                    </button>
-                  </h2>
-                  <div
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#ctiFaqAccordion"
-                    id="ctiFaqThree"
-                  >
-                    <div className="accordion-body cti_faq_body">
-                      You can build business websites, online stores, web
-                      applications, customer portals, booking systems,
-                      marketplaces, dashboards, and many other digital products.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item cti_faq_item">
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button collapsed cti_faq_btn"
-                      data-bs-target="#ctiFaqFour"
-                      data-bs-toggle="collapse"
-                      type="button"
-                    >
-                      Can I download the source code?
-                    </button>
-                  </h2>
-                  <div
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#ctiFaqAccordion"
-                    id="ctiFaqFour"
-                  >
-                    <div className="accordion-body cti_faq_body">
-                      Yes. You can download your project's source code, giving
-                      you full ownership and the freedom to host, customize, and
-                      scale it however you want.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item cti_faq_item">
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button collapsed cti_faq_btn"
-                      data-bs-target="#ctiFaqFive"
-                      data-bs-toggle="collapse"
-                      type="button"
-                    >
-                      Is Creative AI good for small businesses?
-                    </button>
-                  </h2>
-                  <div
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#ctiFaqAccordion"
-                    id="ctiFaqFive"
-                  >
-                    <div className="accordion-body cti_faq_body">
-                      Yes. Creative AI is built for small businesses, startups,
-                      agencies, consultants, and entrepreneurs who want to
-                      launch online faster without hiring a large development
-                      team.{" "}
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item cti_faq_item">
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button collapsed cti_faq_btn"
-                      data-bs-target="#ctiFaqSix"
-                      data-bs-toggle="collapse"
-                      type="button"
-                    >
-                      How long does it take to build a website or app?
-                    </button>
-                  </h2>
-                  <div
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#ctiFaqAccordion"
-                    id="ctiFaqSix"
-                  >
-                    <div className="accordion-body cti_faq_body">
-                      Most projects can be generated within minutes. The exact
-                      time depends on the complexity of the website or
-                      application you want to create.
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item cti_faq_item">
-                  <h2 className="accordion-header">
-                    <button
-                      className="accordion-button collapsed cti_faq_btn"
-                      data-bs-target="#ctiFaqSeven"
-                      data-bs-toggle="collapse"
-                      type="button"
-                    >
-                      Why choose Creative AI over a traditional website builder?
-                    </button>
-                  </h2>
-                  <div
-                    className="accordion-collapse collapse"
-                    data-bs-parent="#ctiFaqAccordion"
-                    id="ctiFaqSeven"
-                  >
-                    <div className="accordion-body cti_faq_body">
-                      Unlike many website builders, Creative AI helps you create
-                      both websites and applications, offers source code access,
-                      and allows you to build using simple prompts instead of
-                      complex tools.
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <FAQAccordion
+                accordionId="ctiFaqAccordion"
+                accordionClass="cti_faq_accordion"
+                itemClass="cti_faq_item"
+                btnClass="cti_faq_btn"
+                bodyClass="cti_faq_body"
+                items={[
+                  {
+                    question: "What is Creative AI?",
+                    answer: "Creative AI is an AI website and app builder that helps you create websites, web apps, customer portals, marketplaces, and other digital products using simple prompts. No coding is required."
+                  },
+                  {
+                    question: "Do I need coding skills to use Creative AI?",
+                    answer: "No. You can describe what you want to build in plain English, and Creative AI will generate the website or application for you."
+                  },
+                  {
+                    question: "What can I build with Creative AI?",
+                    answer: "You can build business websites, online stores, web applications, customer portals, booking systems, marketplaces, dashboards, and many other digital products."
+                  },
+                  {
+                    question: "Can I download the source code?",
+                    answer: "Yes. You can download your project's source code, giving you full ownership and the freedom to host, customize, and scale it however you want."
+                  },
+                  {
+                    question: "Is Creative AI good for small businesses?",
+                    answer: "Yes. Creative AI is built for small businesses, startups, agencies, consultants, and entrepreneurs who want to launch online faster without hiring a large development team."
+                  },
+                  {
+                    question: "How long does it take to build a website or app?",
+                    answer: "Most projects can be generated within minutes. The exact time depends on the complexity of the website or application you want to create."
+                  },
+                  {
+                    question: "Why choose Creative AI over a traditional website builder?",
+                    answer: "Unlike many website builders, Creative AI helps you create both websites and applications, offers source code access, and allows you to build using simple prompts instead of complex tools."
+                  }
+                ]}
+              />
             </div>
           </div>
         </div>

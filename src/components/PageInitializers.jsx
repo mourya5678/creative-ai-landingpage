@@ -533,3 +533,23 @@ export function EntrepreneursAnimationInit() {
 
   return null;
 }
+
+export function StylesheetLoader() {
+  useEffect(() => {
+    const urls = [
+      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css",
+      "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    ];
+    urls.forEach((url) => {
+      if (!document.querySelector(`link[href="${url}"]`)) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = url;
+        document.head.appendChild(link);
+      }
+    });
+  }, []);
+
+  return null;
+}
+

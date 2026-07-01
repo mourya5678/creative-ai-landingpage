@@ -2,6 +2,7 @@ import { LOGIN_URL } from "@/config";
 import Header from "@/components/Header";
 import Link from "next/link";
 import { InnerTestimonialInit, EntrepreneursAnimationInit } from "@/components/PageInitializers";
+import Script from "next/script";
 
 export const metadata = {
    title: "Creative AI | AI App Builder for Mobile & Web Application",
@@ -12,6 +13,8 @@ export const metadata = {
 export default function Page() {
    return (
       <>
+         <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" strategy="afterInteractive" />
+         <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" strategy="afterInteractive" />
          <Header />
          <InnerTestimonialInit />
          <EntrepreneursAnimationInit />

@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import { OurStorySlidersInit } from "@/components/PageInitializers";
+import Image from "next/image";
 
 
 export const metadata = {
@@ -225,35 +226,35 @@ export default function Page() {
                               <div className="item">
                                     <div className="ct_messanory_grid">
                                           <div className="ct_social_img">
-                                                <img alt="AI app builder for mobile and web" loading="lazy" src="/img/social_img_1.webp" />
+                                                <Image alt="AI app builder for mobile and web" src="/img/social_img_1.webp" width={400} height={300} />
                                           </div>
                                     </div>
                               </div>
                               <div className="item">
                                     <div className="ct_messanory_grid">
                                           <div className="ct_social_img">
-                                                <img alt="AI app builder for mobile and web" loading="lazy" src="/img/social_img_2.webp" />
+                                                <Image alt="AI app builder for mobile and web" src="/img/social_img_2.webp" width={400} height={300} />
                                           </div>
                                     </div>
                               </div>
                               <div className="item">
                                     <div className="ct_messanory_grid">
                                           <div className="ct_social_img">
-                                                <img alt="AI app builder for mobile and web" loading="lazy" src="/img/social_img_3.webp" />
+                                                <Image alt="AI app builder for mobile and web" src="/img/social_img_3.webp" width={400} height={300} />
                                           </div>
                                     </div>
                               </div>
                               <div className="item">
                                     <div className="ct_messanory_grid">
                                           <div className="ct_social_img">
-                                                <img alt="AI app builder for mobile and web" loading="lazy" src="/img/social_img_4.webp" />
+                                                <Image alt="AI app builder for mobile and web" src="/img/social_img_4.webp" width={400} height={300} />
                                           </div>
                                     </div>
                               </div>
                               <div className="item">
                                     <div className="ct_messanory_grid">
                                           <div className="ct_social_img">
-                                                <img alt="AI app builder for mobile and web" loading="lazy" src="/img/social_img_5.webp" />
+                                                <Image alt="AI app builder for mobile and web" src="/img/social_img_5.webp" width={400} height={300} />
                                           </div>
                                     </div>
                               </div>
