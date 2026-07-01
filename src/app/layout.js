@@ -19,17 +19,17 @@ const inter = Inter({
 
 export const metadata = {
   metadataBase: new URL("https://creativethoughts.ai"),
-  title: "Creative AI | AI App Builder for Mobile & Web Application",
-  description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
+  title: "AI Website & App Builder | No-Code Platform | Creative AI",
+  description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
   icons: {
-    icon: "/img/c.png",
-    shortcut: "/img/c.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
     apple: "/img/c.png",
   },
   openGraph: {
-    title: "Creative AI | AI App Builder for Mobile & Web Application",
-    description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
-    url: "https://creativethoughts.ai",
+    title: "AI Website & App Builder | No-Code Platform | Creative AI",
+    description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
+    url: "https://creativethoughts.ai/",
     siteName: "Creative AI",
     images: [
       {
@@ -44,8 +44,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Creative AI | AI App Builder for Mobile & Web Application",
-    description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
+    title: "AI Website & App Builder | No-Code Platform | Creative AI",
+    description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
     images: ["https://creativethoughts.ai/img/c.png"],
   },
 };
@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
 
-        <link rel="icon" href="/img/c.png" />
+        <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
       </head>
       <body suppressHydrationWarning>
