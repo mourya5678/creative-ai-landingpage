@@ -3,13 +3,6 @@
 import React from "react";
 
 export default function ServiceSection({ websitePrompts, loginUrl }) {
-  const handleTabClick = (promptText) => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("prompt", promptText);
-      window.location.href = loginUrl;
-    }
-  };
-
   return (
     <section className="ct_service_section">
       <div className="container">
@@ -22,9 +15,13 @@ export default function ServiceSection({ websitePrompts, loginUrl }) {
               }`}
             >
               <a
+                href={loginUrl}
                 className="ct_service_card"
-                style={{ cursor: "pointer" }}
-                onClick={() => handleTabClick(item.prompt)}
+                onClick={() => {
+                  if (typeof window !== "undefined") {
+                    localStorage.setItem("prompt", item.prompt);
+                  }
+                }}
               >
                 <span>{item.title}</span>
                 <div className="ct_arrow_btn">
@@ -49,3 +46,4 @@ export default function ServiceSection({ websitePrompts, loginUrl }) {
     </section>
   );
 }
+

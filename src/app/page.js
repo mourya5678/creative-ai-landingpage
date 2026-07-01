@@ -7,49 +7,6 @@ import ServiceSection from "@/components/ServiceSection";
 import { LOGIN_URL, API_URL } from "@/config";
 import FAQAccordion from "@/components/FAQAccordion";
 
-// export const websitePrompts = [
-//   {
-//     title: "E-Commerce Stores",
-//     prompt:
-//       "Build a modern, responsive e-commerce platform with secure user authentication, product catalog management, advanced search and filtering, shopping cart, wishlist, secure payment gateway integration, order tracking, customer reviews and ratings, discount coupons, inventory management, email notifications, responsive design, SEO optimization, and a comprehensive admin dashboard for managing products, orders, customers, analytics, and sales reports."
-//   },
-//   {
-//     title: "Doctor & Clinic Websites",
-//     prompt:
-//       "Create a professional healthcare website for doctors and clinics featuring appointment scheduling, doctor profiles, specialties, online consultation booking, patient testimonials, service listings, health blogs, secure contact forms, Google Maps integration, emergency contact information, responsive design, SEO optimization, and an admin panel to manage appointments, doctors, patients, and website content."
-//   },
-//   {
-//     title: "Restaurant Websites",
-//     prompt:
-//       "Design a premium restaurant website with an elegant UI featuring interactive menus, food categories, online table reservations, food ordering, delivery and pickup options, chef profiles, image gallery, customer reviews, promotional offers, events management, Google Maps integration, social media links, responsive design, SEO optimization, and an admin dashboard to manage menu items, reservations, orders, and customer feedback."
-//   },
-//   {
-//     title: "Law Firm Websites",
-//     prompt:
-//       "Develop a professional law firm website with practice area pages, attorney profiles, case studies, client testimonials, legal resources and blogs, consultation booking, secure contact forms, live chat support, office locations, responsive design, SEO optimization, and an admin dashboard to manage lawyers, appointments, blog articles, inquiries, and client communications."
-//   },
-//   {
-//     title: "Fitness Apps",
-//     prompt:
-//       "Build a comprehensive fitness platform with user authentication, personalized workout plans, exercise library, nutrition tracking, meal plans, progress analytics, BMI calculator, fitness challenges, trainer profiles, subscription plans, wearable device integration, push notifications, responsive design, and an admin dashboard to manage users, trainers, workout content, subscriptions, and analytics."
-//   },
-//   {
-//     title: "Booking Apps",
-//     prompt:
-//       "Create a complete booking and reservation platform with secure user authentication, real-time availability calendar, booking management, online payments, automated confirmations, email and SMS notifications, cancellation and refund handling, customer profiles, service provider dashboard, reviews and ratings, responsive design, and an admin panel for managing bookings, customers, services, schedules, and reports."
-//   },
-//   {
-//     title: "Loyalty & Rewards Apps",
-//     prompt:
-//       "Develop a customer loyalty and rewards platform with user registration, digital membership cards, points earning and redemption, referral program, exclusive offers, coupons, reward tiers, transaction history, personalized recommendations, push notifications, analytics dashboard, responsive design, and an admin panel to manage customers, campaigns, rewards, offers, and engagement reports."
-//   },
-//   {
-//     title: "Travel Apps",
-//     prompt:
-//       "Build a feature-rich travel platform with destination discovery, AI-powered travel recommendations, itinerary planning, hotel and flight booking, vacation packages, interactive maps, weather forecasts, travel guides, budget tracking, trip sharing, customer reviews, secure payments, multilingual support, responsive design, and an admin dashboard to manage destinations, bookings, users, travel content, and analytics."
-//   }
-// ];
-
 export const websitePrompts = [
 
   {
