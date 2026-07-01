@@ -33,9 +33,9 @@ export const metadata = {
     siteName: "Creative AI",
     images: [
       {
-        url: "https://creativethoughts.ai/img/c.png",
-        width: 512,
-        height: 512,
+        url: "https://creativethoughts.ai/img/image_28.png",
+        width: 32,
+        height: 32,
         alt: "Creative AI Logo",
       },
     ],
@@ -46,7 +46,7 @@ export const metadata = {
     card: "summary",
     title: "AI Website & App Builder | No-Code Platform | Creative AI",
     description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
-    images: ["https://creativethoughts.ai/img/c.png"],
+    images: ["https://creativethoughts.ai/img/image_28.png"],
   },
 };
 
