@@ -6,89 +6,49 @@ import HomePromptSection from "@/components/HomePromptSection";
 import ServiceSection from "@/components/ServiceSection";
 import { LOGIN_URL, API_URL } from "@/config";
 import FAQAccordion from "@/components/FAQAccordion";
+import VideoPlayer from "@/components/VideoPlayer";
 
 export const websitePrompts = [
-
   {
-
     title: "E-Commerce Stores",
-
     prompt:
-
       "Create a premium e-commerce experience focused on discovering and purchasing products effortlessly. Include beautiful product browsing, smart search, curated collections, rich product pages, favorites, a seamless shopping cart, secure checkout, order tracking, and a polished mobile-first experience suitable for an elegant MVP."
-
   },
-
   {
-
     title: "Doctor & Clinic Websites",
-
     prompt:
-
       "Design a modern healthcare website that helps patients easily discover doctors, explore specialties, learn about available treatments, book appointments, and access essential clinic information. Focus on trust, simplicity, and a premium patient experience with an MVP-ready design."
-
   },
-
   {
-
     title: "Restaurant Websites",
-
     prompt:
-
       "Build a visually rich restaurant website that highlights the dining experience through elegant food presentation, interactive menus, chef stories, online reservations, featured dishes, location details, and a seamless mobile experience designed for a premium restaurant brand."
-
   },
-
   {
-
     title: "Law Firm Websites",
-
     prompt:
-
       "Create a sophisticated law firm website that builds trust through professional attorney profiles, practice areas, success stories, legal insights, consultation requests, and clear contact information. Focus on credibility, clarity, and a premium client-first experience."
-
   },
-
   {
-
     title: "Fitness Apps",
-
     prompt:
-
       "Design a modern fitness platform that motivates users to achieve their goals through personalized workout plans, progress tracking, fitness challenges, nutrition guidance, achievements, and an engaging user experience that feels motivating, clean, and premium."
-
   },
-
   {
-
     title: "Booking Apps",
-
     prompt:
-
       "Create an intuitive booking platform that makes discovering services, checking availability, scheduling appointments, and managing upcoming bookings effortless. Deliver a smooth, modern experience centered around speed, convenience, and a focused MVP."
-
   },
-
   {
-
     title: "Loyalty & Rewards Apps",
-
     prompt:
-
       "Build a premium loyalty platform that encourages customer engagement through digital memberships, reward points, exclusive benefits, personalized offers, achievement milestones, and a delightful experience that keeps customers coming back."
-
   },
-
   {
-
     title: "Travel Apps",
-
     prompt:
-
       "Design an inspiring travel platform where users can discover destinations, explore curated experiences, plan trips, organize itineraries, save favorite places, and enjoy a visually immersive journey planning experience focused on exploration and simplicity."
-
   }
-
 ];
 
 
@@ -1118,8 +1078,9 @@ export default async function Page() {
                 </p>
               </div>
               <div className="ct_video_banner">
-                <img alt="Video Thumbnail" src="/img/video_thumb_img.webp"
-                  loading="lazy" />
+                {/* <img alt="Video Thumbnail" src="/img/video_thumb_img.webp"
+                  loading="lazy" /> */}
+                <VideoPlayer src="https://api.creativethoughts.ai/CreativeAI_V01.mp4" />
               </div>
             </div>
           </div>
@@ -1341,13 +1302,11 @@ export default async function Page() {
                 const imageUrl = blog.banner_image
                   ? (blog.banner_image.startsWith("http") ? blog.banner_image : `${API_URL}${blog.banner_image}`)
                   : "";
-
                 return (
                   <div className="col-lg-4 col-md-6 mb-4 mb-lg-0" key={blog.id}>
                     <a href={`/blog-details?slug=${blog.slug}`} className="cti_blog_card d-block">
                       <div className="cti_blog_img">
                         {imageUrl && <img
-
                           className="img-fluid"
                           loading="lazy"
                           alt={blog.title || "Blog banner"} src={imageUrl} />}
@@ -1367,8 +1326,6 @@ export default async function Page() {
                 <p className="ct_fs_18 ct_fw_600 text-muted">No blogs found.</p>
               </div>
             )}
-
-
           </div>
         </div>
       </section>
