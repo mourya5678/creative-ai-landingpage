@@ -34,23 +34,10 @@ export default function VideoPlayer({ src, className = "" }) {
       playVideo();
     };
 
-    // Timeupdate listener to loop before the absolute end to prevent browser freeze
-    const handleTimeUpdate = () => {
-      // Loop at 9.0s to prevent reaching the corrupted audio packet at 9.68s
-      if (video.currentTime >= 9.0) {
-        console.log("[VideoPlayer] Loop threshold (9.0s) reached. Resetting to 0.");
-        video.currentTime = 0;
-        playVideo();
-      }
-    };
-
     // Event listener to restart/play if the browser or user activity causes a pause
     const handlePause = () => {
       console.log("[VideoPlayer] Event: pause. CurrentTime:", video.currentTime);
       if (video.paused) {
-        if (video.currentTime >= 9.0) {
-          video.currentTime = 0;
-        }
         playVideo();
       }
     };
@@ -82,9 +69,6 @@ export default function VideoPlayer({ src, className = "" }) {
     // Attempt to play on user interactions anywhere on the document (safari/chrome bypass)
     const handleInteraction = () => {
       if (video.paused) {
-        if (video.currentTime >= 9.0) {
-          video.currentTime = 0;
-        }
         playVideo();
       }
     };
@@ -94,7 +78,6 @@ export default function VideoPlayer({ src, className = "" }) {
     video.addEventListener("waiting", handleWaiting);
     video.addEventListener("error", handleError);
     video.addEventListener("ended", handleEnded);
-    video.addEventListener("timeupdate", handleTimeUpdate);
     video.addEventListener("pause", handlePause);
     video.addEventListener("stalled", handleStalled);
     document.addEventListener("click", handleInteraction);
@@ -106,7 +89,6 @@ export default function VideoPlayer({ src, className = "" }) {
       video.removeEventListener("waiting", handleWaiting);
       video.removeEventListener("error", handleError);
       video.removeEventListener("ended", handleEnded);
-      video.removeEventListener("timeupdate", handleTimeUpdate);
       video.removeEventListener("pause", handlePause);
       video.removeEventListener("stalled", handleStalled);
       document.removeEventListener("click", handleInteraction);
@@ -120,10 +102,13 @@ export default function VideoPlayer({ src, className = "" }) {
       muted
       playsInline
       autoPlay
+      loop
       preload="auto"
+      className={className}
     >
       <source src={src} type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   );
 }
+
