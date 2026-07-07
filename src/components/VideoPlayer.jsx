@@ -1,114 +1,140 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function VideoPlayer({ src, className = "" }) {
   const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    // Force play and mute settings programmatically to ensure compliance
-    video.muted = true;
-    video.defaultMuted = true;
-    video.playsInline = true;
+    const handlePlay = () => setIsPlaying(true);
+    const handlePause = () => setIsPlaying(false);
 
-    const playVideo = () => {
-      video.play().catch((err) => {
-        console.warn("Autoplay failed or was blocked:", err);
-      });
-    };
-
-    // Initial play attempt
-    playVideo();
-
-    const handleLoadedMetadata = () => {
-      console.log("[VideoPlayer] Loaded metadata. Duration:", video.duration);
-    };
-
-    // Force replay on end (fallback for loop attribute failing)
-    const handleEnded = () => {
-      console.log("[VideoPlayer] Event: ended. Looping to 0.");
-      video.currentTime = 0;
-      playVideo();
-    };
-
-    // Event listener to restart/play if the browser or user activity causes a pause
-    const handlePause = () => {
-      console.log("[VideoPlayer] Event: pause. CurrentTime:", video.currentTime);
-      if (video.paused) {
-        playVideo();
-      }
-    };
-
-    // If video load stalls, force reload and play to prevent freeze
-    const handleStalled = () => {
-      console.warn("[VideoPlayer] Event: stalled, reloading...");
-      video.load();
-      playVideo();
-    };
-
-    const handleWaiting = () => {
-      console.log("[VideoPlayer] Event: waiting (buffering)...");
-    };
-
-    const handlePlay = () => {
-      console.log("[VideoPlayer] Event: play. CurrentTime:", video.currentTime);
-    };
-
-    const handleError = () => {
-      const err = video.error;
-      console.warn("[VideoPlayer] Event: error occurred. Code:", err ? err.code : "unknown", "Message:", err ? err.message : "");
-      console.log("[VideoPlayer] Attempting self-healing recovery: resetting currentTime to 0 and reloading stream.");
-      video.currentTime = 0;
-      video.load();
-      playVideo();
-    };
-
-    // Attempt to play on user interactions anywhere on the document (safari/chrome bypass)
-    const handleInteraction = () => {
-      if (video.paused) {
-        playVideo();
-      }
-    };
-
-    video.addEventListener("loadedmetadata", handleLoadedMetadata);
     video.addEventListener("play", handlePlay);
-    video.addEventListener("waiting", handleWaiting);
-    video.addEventListener("error", handleError);
-    video.addEventListener("ended", handleEnded);
     video.addEventListener("pause", handlePause);
-    video.addEventListener("stalled", handleStalled);
-    document.addEventListener("click", handleInteraction);
-    document.addEventListener("touchstart", handleInteraction);
+
+    // Initial sync
+    setIsPlaying(!video.paused);
 
     return () => {
-      video.removeEventListener("loadedmetadata", handleLoadedMetadata);
       video.removeEventListener("play", handlePlay);
-      video.removeEventListener("waiting", handleWaiting);
-      video.removeEventListener("error", handleError);
-      video.removeEventListener("ended", handleEnded);
       video.removeEventListener("pause", handlePause);
-      video.removeEventListener("stalled", handleStalled);
-      document.removeEventListener("click", handleInteraction);
-      document.removeEventListener("touchstart", handleInteraction);
     };
   }, []);
 
+  const handlePlayPause = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (video.paused) {
+      video.play().catch((err) => {
+        console.warn("Play failed:", err);
+      });
+    } else {
+      video.pause();
+    }
+  };
+
+  const showOverlay = !isPlaying || isHovered;
+
   return (
-    <video
-      ref={videoRef}
-      muted
-      playsInline
-      autoPlay
-      loop
-      preload="auto"
-      className={className}
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      style={{ position: "relative", width: "100%", maxWidth: "1000px", margin: "0 auto" }}
     >
-      <source src={src} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+      <video
+        ref={videoRef}
+        playsInline
+        controls
+        controlsList="nodownload"
+        onContextMenu={(e) => e.preventDefault()}
+        preload="auto"
+        className={className}
+        onClick={handlePlayPause}
+        style={{ cursor: "pointer", display: "block" }}
+      >
+        <source src={src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          width: "100%",
+          height: "100%",
+          display: "flex",
+          alignItems: "center",
+          transform: "translate(-50% , -50%)",
+          justifyContent: "center",
+          background: "rgba(0, 0, 0, 0.25)",
+          transition: "opacity 0.3s ease, visibility 0.3s ease",
+          borderRadius: "10px",
+          opacity: showOverlay ? 1 : 0,
+          visibility: showOverlay ? "visible" : "hidden",
+          pointerEvents: "none", // Let clicks fall through to controls
+        }}
+      >
+        <div
+          onClick={handlePlayPause}
+          style={{
+            width: "50px",
+            height: "50px",
+            borderRadius: "50%",
+            backgroundColor: "#5e5ff5", // Theme primary purple/blue
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow: "0 10px 25px rgba(94, 95, 245, 0.4)",
+            transition: "transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease",
+            pointerEvents: "auto", // Handle clicks on the play button
+            cursor: "pointer",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.12)";
+            e.currentTarget.style.backgroundColor = "#4c4df0";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+            e.currentTarget.style.backgroundColor = "#5e5ff5";
+          }}
+        >
+          {isPlaying ? (
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"
+                fill="#ffffff"
+              />
+            </svg>
+          ) : (
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ marginLeft: "4px" }}
+            >
+              <path
+                d="M8 5v14l11-7z"
+                fill="#ffffff"
+              />
+            </svg>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
 
