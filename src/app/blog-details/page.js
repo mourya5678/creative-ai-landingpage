@@ -14,10 +14,12 @@ const formatDate = (dateStr) => {
   return cleanDate;
 };
 
+export const dynamic = "force-dynamic";
+
 const getBlogs = async () => {
   try {
     const res = await fetch(`${API_URL}/api/user/getBlogs`, {
-      next: { revalidate: 3600 }
+      cache: "no-store"
     });
     if (!res.ok) return [];
     const json = await res.json();

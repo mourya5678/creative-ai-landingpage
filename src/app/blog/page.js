@@ -9,10 +9,12 @@ export const metadata = {
   keywords: "AI app builder, AI app generator, AI app maker, AI app creator, AI mobile app builder, AI application generator, AI retail solutions, retail AI solutions, mobile e-commerce, finance software, software solutions, AI solutions, AI-powered financial solutions, AI healthcare companies, AI healthcare, AI in healthcare, AI for manufacturing, manufacturing artificial intelligence, AI in telecommunications, telecom AI, AI-powered software, energy app, AI educational apps, AI website builder, Entertainment mobile app development, converting a website to a mobile app, converting a website to an app, creating an iPhone app, how to create an app for iPhone",
 };
 
+export const dynamic = "force-dynamic";
+
 const getBlogs = async () => {
   try {
     const res = await fetch(`${API_URL}/api/user/getBlogs`, {
-      next: { revalidate: 3600 }
+      cache: "no-store"
     });
     if (!res.ok) return [];
     const json = await res.json();
