@@ -26,6 +26,11 @@ export const metadata = {
     shortcut: "/favicon.ico",
     apple: "/img/c.png",
   },
+  verification: {
+    other: {
+      "facebook-domain-verification": "w7o4tut28un74wabdjxdmnnxdbevai",
+    },
+  },
   openGraph: {
     title: "AI Website & App Builder | No-Code Platform | Creative AI",
     description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
