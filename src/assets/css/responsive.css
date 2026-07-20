@@ -13,6 +13,8 @@
 }
 
 
+
+
 @media screen and (max-width:1399px) {
   .ct_sass_card_img img {
     height: auto;
@@ -21,7 +23,12 @@
   .ct_sass_card_img {
     padding: 10px;
   }
+
+
 }
+
+
+
 
 @media screen and (max-width: 1338px) {
   .ct_hero_right_main {
@@ -55,7 +62,13 @@
     gap: 10px;
   }
 
-
+.cti_everything_build_con {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  
+}
+.step-image .accordian-right-img {
+  width: auto;
+}
 
 
   header {
@@ -208,6 +221,20 @@
   .your_own_bulid_sec_desc>div:nth-child(2) {
     order: 3;
   }
+    .hero_features{
+     flex-wrap: wrap;
+    gap: 25px;
+  }
+
+
+
+  .hero_content{
+        width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, .75rem);
+  }
 }
 
 @media (min-width:1048px) and (max-width:1180px) {
@@ -238,6 +265,15 @@
 
 
 
+
+}
+
+
+@media screen and (max-width:1024px) {
+  
+  .ct_fs_74{
+    font-size: 56px;
+  }
 
 }
 
@@ -319,6 +355,13 @@
     grid-template-columns: 1fr;
   }
 
+  .ct_fs_66{
+    font-size: 50px;
+  }
+  .hero_features .divider {
+  display: none;
+}
+
 }
 
 @media screen and (max-width:767px) {
@@ -397,9 +440,26 @@
   .ct_faq_banner {
     padding-inline: 0;
   }
+   .ct_fs_66{
+    font-size: 40px;
+  }
+
+      .ct_fs_74 {
+font-size: 40px;
+}
+.cti_build_banner:after , .cti_build_banner:before{
+  width: 280px;
+}
+
+.comp_sol_icon_box_sec{
+  grid-template-columns: repeat(5 , 1fr);
+}
 }
 
 @media screen and (max-width:575px) {
+  .comp_sol_icon_box_sec{
+  grid-template-columns: repeat(3 , 1fr);
+}
   .cti_home_banner_cnt h1 {
     font-size: 41px;
     max-width: 498px;
@@ -484,4 +544,20 @@
   .cti_contact_bg_new {
     padding-bottom: 82px;
   }
+    .ct_fs_66{
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 991px) {
+    .hero_content {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero_content {
+        max-width: 540px;
+    }
 }

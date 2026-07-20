@@ -25,7 +25,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className={`ct_header_main ${pathname === "/" ? "et_main_header_344" : ""} ${isSticky ? "ct_sticky_menu" : ""}`}>
+    <div className={`ct_header_main ${pathname === "/"  ? "et_main_header_344" : pathname === "/build"  ? "et_main_header_344": pathname === "/build-detail-restaurant"  ? "et_main_header_344": ""  } ${isSticky ? "ct_sticky_menu" : ""}`}>
       <header className="container">
         <div className="ct_logo">
           <Link href="/" onClick={() => setIsMenuOpen(false)}>
