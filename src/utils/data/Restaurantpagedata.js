@@ -1,9 +1,3 @@
-// All data below is specific to the Restaurant industry page and is fed into
-// the shared/reusable section components (FeatureCardsGrid, SolutionColumns,
-// ComparisonTable). Other industry pages (Law Firm, Hospital, School, Hotel,
-// Gym, Salon, Real Estate, Automobile, Travel, Insurance, Photography...) can
-// create their own equivalent data file and reuse the exact same components.
-
 export const restaurantFeatures = [
   {
     id: "restaurant-website",
@@ -195,7 +189,7 @@ export const restaurantSolutionColumns = [
 export const restaurantComparisonRows = [
   { feature: "Development Time", us: "Build in Minutes", them: "Weeks to Months" },
   { feature: "Coding Required", us: "No Coding Required", them: "Developer Required" },
-  { feature: "Cost", us: "Affordable Pricing", them: "High Development Cost" },
+  { feature: "Development Cost", us: "Affordable Pricing", them: "High Development Cost" },
   { feature: "Development Process", us: "AI-Powered", them: "Manual Development" },
   { feature: "Source Code Ownership", us: "Source Code Included", them: "Often Not Available" },
   { feature: "Deployment", us: "Publish in Minutes", them: "Complex Deployment Process" },

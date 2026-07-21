@@ -7,8 +7,8 @@ const defaultBuildOptions = [
 ];
 
 export default function ContactSection({
-  title = "Have An Idea? Let's Build It.",
-  description = "Whether you're building a website, app, marketplace, or startup MVP, we're here to help you get started.",
+  title,
+  description,
   trustedAvatars = ["/img/client_3.webp", "/img/client_4.webp", "/img/client_2.webp", "/img/james.webp"],
   trustedLabel = "Trusted by 1000+ Businesses",
   buildOptions = defaultBuildOptions,
@@ -21,7 +21,7 @@ export default function ContactSection({
           <div className="col-lg-6 mb-5 mb-lg-0">
             <div className="ct_home_titles_cnt">
               <span>Contact Us</span>
-              <h2 style={{ maxWidth: "439px" }}>{title}</h2>
+              <h2 className="contact_heading">{title}</h2>
               <p style={{ maxWidth: "533px" }}>{description}</p>
             </div>
             <div className="cti_trusted_wrap">

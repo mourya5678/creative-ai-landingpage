@@ -9,7 +9,7 @@ const CheckIcon = () => (
 );
 
 export default function OwnershipSection({
-  description = "Download the complete source code of your website or app anytime. Host it anywhere, customize it freely, and stay in full control.",
+  description = "Download The Complete Source Code Of Your Website Or App Anytime. Host It Anywhere, Customize It Freely, And Stay In Full Control.",
   image = "/img/MacBookPro.webp",
   features = ["Download Anytime", "Full Ownership", "No Vendor Lock-In", "Deploy Anywhere"],
 }) {

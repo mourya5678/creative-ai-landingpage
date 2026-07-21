@@ -663,6 +663,11 @@ header::after {
   }
 }
 
+
+
+.ct_dropdown_items ol li:hover a , .ct_dropdown_items ol li:hover p {
+  color: #9b9b9b !important;
+}
 .ct_dropdown_items ol li a {
   font-weight: 500;
   font-family: Satoshi-medium;
@@ -2837,7 +2842,7 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24));
 }
 
 .trust-stats .divider {
-  width: 1px;
+  width: 2px;
   height: 55px;
   background: linear-gradient(
     to bottom,
@@ -3146,7 +3151,7 @@ text-align: center;
 }
 
 .hero_features .divider {
-  width: 1px;
+  width: 2px;
   height: 55px;
   background: linear-gradient(
     to bottom,
@@ -3430,6 +3435,7 @@ box-shadow: 0px 4px 22.5px 0px #5D5CFF6E;
 .why_choose_creative_ai{
   background: #0C031A;
   padding: 140px 0px 90px 0px;
+  margin-top: 150px;
 }
 
 

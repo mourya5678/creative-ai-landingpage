@@ -2,8 +2,8 @@ export default function BlogsSection({
   blogs = [],
   apiUrl = "",
   eyebrow = "Blogs",
-  title = "Insights & Ideas On AI-Powered Building",
-  description = "Explore the latest articles, guides, and insights from the world of AI and innovation.",
+  title,
+  description,
 }) {
   return (
     <section className="cti_blog_new_bg">

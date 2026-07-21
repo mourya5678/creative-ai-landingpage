@@ -959,7 +959,7 @@ export default async function Page() {
             <div>
               <p className="ct_text_dark ct_fs_20 ct_mb_34 text-xl-start text-center">
                 Download the complete source code of your website or app
-                anytime. Host it anywhere, customize it freely, and stay in full
+                anytime. Host it Anywhere, customize it freely, and stay in full
                 control.{" "}
               </p>
               <div className="">

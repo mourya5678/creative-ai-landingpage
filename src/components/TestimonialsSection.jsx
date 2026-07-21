@@ -1,7 +1,7 @@
 export default function TestimonialsSection({
   eyebrow = "Testimonial",
-  title = "Loved By Founders And Businesses",
-  description = "Hear from customers who turned their ideas into real products with Creative AI.",
+  title,
+  description,
   testimonials = [],
 }) {
   return (

@@ -1,6 +1,6 @@
 export default function CTABanner({
-  title = "Build Your Next Website, App or Business Platform with AI",
-  description = "From professional websites to enterprise applications, Creative AI helps you build, customize, and launch complete digital products in minutes without coding.",
+  title,
+  description,
   buttonText = "Start Building Free",
   onClick,
 }) {
