@@ -1,4 +1,4 @@
-  import Header from "@/components/Header";
+import Header from "@/components/Header";
 import { HomeInit } from "@/components/PageInitializers";
 import HomePricingSection from "@/components/HomePricingSection";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -18,10 +18,10 @@ import ContactSection from "@/components/ContactSection";
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
 import {
-  restaurantFeatures,
-  restaurantSolutionColumns,
-  restaurantComparisonRows,
-  restaurantFAQItems,
+  lawFirmSolutionColumns,
+  lawFirmFeatures,
+  lawfirmComparisonRows,
+  lawFirmFAQItems,
 } from "@/utils/data/AllPagesData";
 
 export const dynamic = "force-dynamic";
@@ -64,22 +64,22 @@ export default async function RestaurantPage() {
       <Header />
 
       <IndustryHero
-        title="AI Website Builder for Restaurants with Online Ordering"
-        description="Create a modern restaurant website with online ordering, table reservations, QR menus, customer accounts and business management tools without writing code."
+        title="AI Website Builder for Law Firms and Case Management"
+        description="Build a professional law firm website with AI and manage clients, legal cases, appointments, documents, and consultations from one platform. No coding required."
         image="/img/restaurant-banner.webp"
       />
 
       <FeatureCardsGrid
-        title="Everything Your Restaurant Needs in One Platform"
-        description="Build a complete online presence and run your restaurant smarter."
-        features={restaurantFeatures}
+        title="Everything Your Law Firm Needs in One Platform"
+        description="Build a professional law firm website, manage cases, clients, and appointments from one AI-powered platform."
+        features={lawFirmFeatures}
       />
 
-      <SolutionColumns title="Complete Solutions For Your Restaurant" columns={restaurantSolutionColumns} />
+      <SolutionColumns title="Complete Solutions For Your Law Firm" columns={lawFirmSolutionColumns} />
 
       <HowItWorksSection steps={defaultHowItWorksSteps} />
 
-      <ComparisonTable title="Why Restaurants Choose Creative AI" rows={restaurantComparisonRows} />
+      <ComparisonTable title="Why Restaurants Choose Creative AI" rows={lawfirmComparisonRows} />
 
       <OwnershipSection />
 
@@ -124,10 +124,10 @@ export default async function RestaurantPage() {
       <CTABanner 
        title={
           <>
-           Launch Your Restaurant Website with Creative AI
+           Launch Your Law Firm Website with Creative AI
           </>
         }
-        description="Create a professional restaurant website with online ordering, reservations, QR menus, and business management tools powered by Creative AI."
+        description="Create a trusted law firm website with case management, client portals, consultation booking, and legal practice tools using Creative AI."
       />
 
       <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
@@ -137,7 +137,7 @@ export default async function RestaurantPage() {
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
                 <h2 className="mx-auto text-center" style={{ maxWidth: "990px" }}>
-                  Questions from Restaurant Owners
+                 Questions from Law Firm Owners
                 </h2>
               </div>
               <FAQAccordion
@@ -146,7 +146,7 @@ export default async function RestaurantPage() {
                 itemClass="cti_faq_item"
                 btnClass="cti_faq_btn"
                 bodyClass="cti_faq_body"
-                items={restaurantFAQItems}
+                items={lawFirmFAQItems}
               />
             </div>
           </div>

@@ -1,4 +1,4 @@
-  import Header from "@/components/Header";
+import Header from "@/components/Header";
 import { HomeInit } from "@/components/PageInitializers";
 import HomePricingSection from "@/components/HomePricingSection";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -14,16 +14,14 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BlogsSection from "@/components/BlogsSection";
 import CTABanner from "@/components/CTABanner";
 import ContactSection from "@/components/ContactSection";
-
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
 import {
-  restaurantFeatures,
-  restaurantSolutionColumns,
-  restaurantComparisonRows,
-  restaurantFAQItems,
+  studentFeatures,
+  studentSolutionColumns,
+  studentComparisonRows,
+  studentFAQItems,
 } from "@/utils/data/AllPagesData";
-
 export const dynamic = "force-dynamic";
 
 const getPlans = async (billingInterval) => {
@@ -64,22 +62,22 @@ export default async function RestaurantPage() {
       <Header />
 
       <IndustryHero
-        title="AI Website Builder for Restaurants with Online Ordering"
-        description="Create a modern restaurant website with online ordering, table reservations, QR menus, customer accounts and business management tools without writing code."
+        title="AI Website Builder for Schools and Student Portal"
+        description="Build a modern school website with AI and manage admissions, students, courses, faculty, announcements, and communication from one intelligent platform."
         image="/img/restaurant-banner.webp"
       />
 
       <FeatureCardsGrid
-        title="Everything Your Restaurant Needs in One Platform"
-        description="Build a complete online presence and run your restaurant smarter."
-        features={restaurantFeatures}
+        title="Everything Your School Needs in One Platform"
+        description="Build a professional school website, simplify admissions, connect students and parents, and manage daily academic operations with one AI-powered platform."
+        features={studentFeatures}
       />
 
-      <SolutionColumns title="Complete Solutions For Your Restaurant" columns={restaurantSolutionColumns} />
+      <SolutionColumns title="Complete Solutions For Your School" columns={studentSolutionColumns} />
 
       <HowItWorksSection steps={defaultHowItWorksSteps} />
 
-      <ComparisonTable title="Why Restaurants Choose Creative AI" rows={restaurantComparisonRows} />
+      <ComparisonTable title="Why Schools Choose Creative AI" rows={studentComparisonRows} />
 
       <OwnershipSection />
 
@@ -124,10 +122,10 @@ export default async function RestaurantPage() {
       <CTABanner 
        title={
           <>
-           Launch Your Restaurant Website with Creative AI
+           Launch Your School Website with Creative AI
           </>
         }
-        description="Create a professional restaurant website with online ordering, reservations, QR menus, and business management tools powered by Creative AI."
+        description="Create a modern school website with student portals, online admissions, academic management, and parent communication using Creative AI."
       />
 
       <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
@@ -137,7 +135,7 @@ export default async function RestaurantPage() {
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
                 <h2 className="mx-auto text-center" style={{ maxWidth: "990px" }}>
-                  Questions from Restaurant Owners
+                 Questions From School Administrators
                 </h2>
               </div>
               <FAQAccordion
@@ -146,7 +144,7 @@ export default async function RestaurantPage() {
                 itemClass="cti_faq_item"
                 btnClass="cti_faq_btn"
                 bodyClass="cti_faq_body"
-                items={restaurantFAQItems}
+                items={studentFAQItems}
               />
             </div>
           </div>

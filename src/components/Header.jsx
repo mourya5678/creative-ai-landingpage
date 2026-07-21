@@ -24,9 +24,22 @@ export default function Header() {
     };
   }, []);
 
+  const transparentHeaderRoutes = [
+    "/",
+    "/build",
+    "/build-detail-restaurant",
+    "/build-detail-law-firm",
+    "/build-detail-hospital-patient-portal",
+    "/build-detail-student-portal",
+    "/build-detail-hotel-booking",
+    "/build-detail-gym-platform",
+  ];
+
   return (
     <div
-      className={`ct_header_main ${pathname === "/" ? "et_main_header_344" : pathname === "/build" ? "et_main_header_344" : pathname === "/build-detail-restaurant" ? "et_main_header_344" : ""} ${isSticky ? "ct_sticky_menu" : ""}`}
+      className={`ct_header_main ${
+        transparentHeaderRoutes.includes(pathname) ? "et_main_header_344" : ""
+      } ${isSticky ? "ct_sticky_menu" : ""}`}
     >
       <header className="container">
         <div className="ct_logo">
@@ -150,17 +163,12 @@ export default function Header() {
                         </svg>
                       </div>
                       {/* <h4 className="mb-0 ct_fs_18 ct_fw_700">AI Solutions</h4> */}
-                      <Link
-                        href="/build"
-                        className="text-decoration-none"
-                      >
-                        <h4 className="mb-0 ct_fs_18 ct_fw_700">
-                          AI Solutions
-                        </h4>
+                      <Link href="/build" className="text-decoration-none">
+                        <h4 className="mb-0 ct_fs_18 ct_fw_700">AI Builder</h4>
                       </Link>
                     </div>
                     <ol className="ct_ps_35">
-                       <li>
+                      <li>
                         <Link
                           href="/build-detail-restaurant"
                           className="ct_fs_14 ct_fw_600"
@@ -170,7 +178,7 @@ export default function Header() {
                           <i className="fa-solid fa-angle-right ms-1"></i>
                         </Link>
                       </li>
-                       <li>
+                      <li>
                         <Link
                           href="/healthcare"
                           className="ct_fs_14 ct_fw_600"
@@ -180,13 +188,13 @@ export default function Header() {
                           <i className="fa-solid fa-angle-right ms-1"></i>
                         </Link>
                       </li>
-                       <li>
+                      <li>
                         <Link
                           href="/education"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                         School Website & Student Portal
+                          School Website & Student Portal
                           <i className="fa-solid fa-angle-right ms-1"></i>
                         </Link>
                       </li>

@@ -983,13 +983,18 @@ export default async function Page() {
               apiUrl={API_URL}
             />
 
-      <CTABanner />
+    <CTABanner 
+           title={
+              <>
+               Build Your Next Website, App or Business Platform with AI
+              </>
+            }
+            description="From professional websites to enterprise applications, Creative AI helps you build, customize, and launch complete digital products in minutes without coding."
+          />
       <ContactSection
   title={
     <>
-      Let's Build <br />
-      Something <br />
-      Amazing
+      Let's Build Something Amazing
     </>
   }
   description="Have an idea for an app, website, or SaaS product? Our AI-powered platform helps you design, build, launch, and scale digital products faster than traditional development."
