@@ -1343,10 +1343,10 @@ export default async function Page() {
               </div>
               <FAQAccordion
                 accordionId="ctiFaqAccordion"
-                accordionClass="cti_faq_accordion"
-                itemClass="cti_faq_item"
-                btnClass="cti_faq_btn"
-                bodyClass="cti_faq_body"
+                accordionclassName="cti_faq_accordion"
+                itemclassName="cti_faq_item"
+                btnclassName="cti_faq_btn"
+                bodyclassName="cti_faq_body"
                 items={[
                   {
                     question: "What is Creative AI?",

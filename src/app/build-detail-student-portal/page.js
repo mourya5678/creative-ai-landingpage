@@ -64,7 +64,7 @@ export default async function RestaurantPage() {
       <IndustryHero
         title="AI Website Builder for Schools and Student Portal"
         description="Build a modern school website with AI and manage admissions, students, courses, faculty, announcements, and communication from one intelligent platform."
-        image="/img/restaurant-banner.webp"
+        image="/img/school_banner.webp"
       />
 
       <FeatureCardsGrid
@@ -140,10 +140,10 @@ export default async function RestaurantPage() {
               </div>
               <FAQAccordion
                 accordionId="ctiFaqAccordion"
-                accordionClass="cti_faq_accordion"
-                itemClass="cti_faq_item"
-                btnClass="cti_faq_btn"
-                bodyClass="cti_faq_body"
+                accordionclassName="cti_faq_accordion"
+                itemclassName="cti_faq_item"
+                btnclassName="cti_faq_btn"
+                bodyclassName="cti_faq_body"
                 items={studentFAQItems}
               />
             </div>
