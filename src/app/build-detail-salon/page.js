@@ -14,16 +14,18 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import BlogsSection from "@/components/BlogsSection";
 import CTABanner from "@/components/CTABanner";
 import ContactSection from "@/components/ContactSection";
-
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
 import {
-  lawFirmSolutionColumns,
-  lawFirmFeatures,
-  lawfirmComparisonRows,
-  lawFirmFAQItems,
+  gymFeatures,
+  gymSolutionColumns,
+  gymComparisonRows,
+  gymFAQItems,
+  salonFeatures,
+  salonSolutionColumns,
+  salonComparisonRows,
+  salonFAQItems,
 } from "@/utils/data/AllPagesData";
-
 export const dynamic = "force-dynamic";
 
 const getPlans = async (billingInterval) => {
@@ -64,22 +66,22 @@ export default async function RestaurantPage() {
       <Header />
 
       <IndustryHero
-        title="AI Website Builder for Law Firms and Case Management"
-        description="Build a professional law firm website with AI and manage clients, legal cases, appointments, documents, and consultations from one platform. No coding required."
-        image="/img/law_firm_banner.webp"
+        title="AI Website Builder for Salons and Appointment Booking"
+        description="Build a professional salon website with an AI-powered appointment booking system that helps clients schedule beauty services, explore treatments, choose stylists, and book appointments online."
+        image="/img/restaurant-banner.webp"
       />
 
       <FeatureCardsGrid
-        title="Everything Your Law Firm Needs in One Platform"
-        description="Build a professional law firm website, manage cases, clients, and appointments from one AI-powered platform."
-        features={lawFirmFeatures}
+        title="Everything Your Salon Needs in One Platform"
+        description="Create a modern salon website, accept online appointments, showcase beauty services, manage stylists, and deliver an exceptional customer experience with one AI-powered platform."
+        features={salonFeatures}
       />
 
-      <SolutionColumns title="Complete Solutions For Your Law Firm" columns={lawFirmSolutionColumns} />
+      <SolutionColumns title="Complete Solutions For Your Salon" columns={salonSolutionColumns} />
 
       <HowItWorksSection steps={defaultHowItWorksSteps} />
 
-      <ComparisonTable title="Why Restaurants Choose Creative AI" rows={lawfirmComparisonRows} />
+      <ComparisonTable title="Why Salon Choose Creative AI" rows={salonComparisonRows} />
 
       <OwnershipSection />
 
@@ -124,10 +126,10 @@ export default async function RestaurantPage() {
       <CTABanner 
        title={
           <>
-           Launch Your Law Firm Website with Creative AI
+           Launch Your Salon Website with Creative AI
           </>
         }
-        description="Create a trusted law firm website with case management, client portals, consultation booking, and legal practice tools using Creative AI."
+        description="Create a salon website with online appointment booking, beauty service management, staff scheduling, and customer engagement using Creative AI."
       />
 
       <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
@@ -137,7 +139,7 @@ export default async function RestaurantPage() {
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
                 <h2 className="mx-auto text-center" style={{ maxWidth: "990px" }}>
-                 Questions from Law Firm Owners
+                 Questions From Salon Owners
                 </h2>
               </div>
               <FAQAccordion
@@ -146,7 +148,7 @@ export default async function RestaurantPage() {
                 itemClass="cti_faq_item"
                 btnClass="cti_faq_btn"
                 bodyClass="cti_faq_body"
-                items={lawFirmFAQItems}
+                items={salonFAQItems}
               />
             </div>
           </div>

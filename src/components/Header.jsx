@@ -33,6 +33,7 @@ export default function Header() {
     "/build-detail-student-portal",
     "/build-detail-hotel-booking",
     "/build-detail-gym-platform",
+    "/build-detail-salon"
   ];
 
   return (

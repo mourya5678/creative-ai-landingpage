@@ -33,7 +33,7 @@ export default function IndustryHero({
               </div>
             </div>
 
-            <div className="col-xl-5">
+            <div className="col-xl-5 d-none d-xl-block">
               <div className="d-flex justify-content-end">
                 <div className="step-image mt-lg-0 mt-3">
                   <img src={image} alt="Industry hero illustration" className="accordian-right-img" />

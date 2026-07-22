@@ -10,6 +10,7 @@ import CTABanner from "@/components/CTABanner";
 import ContactSection from "@/components/ContactSection";
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
+import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
@@ -612,7 +613,7 @@ export default async function Page() {
                   <p>Restaurant Website & Ordering System</p>
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <Link href="/build-detail-restaurant"><i className="fa-solid fa-chevron-right text-dark"></i></Link>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
@@ -635,7 +636,7 @@ export default async function Page() {
                   <p>Law Firm Website & Case Management</p>
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <Link href="/build-detail-law-firm"><i className="fa-solid fa-chevron-right text-dark"></i></Link>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
@@ -666,7 +667,7 @@ export default async function Page() {
                   <p>Hospital Website & Patient Portal</p>
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <Link href="/build-detail-hospital-patient-portal"><i className="fa-solid fa-chevron-right text-dark"></i></Link>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
@@ -696,7 +697,7 @@ export default async function Page() {
                   <p>School Website & Student Portal</p>
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <Link href="/build-detail-student-portal"><i className="fa-solid fa-chevron-right text-dark"></i></Link>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
@@ -719,7 +720,7 @@ export default async function Page() {
                   <p>Hotel Website & Booking Engine</p>
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <Link href="/build-detail-hotel-booking"><i className="fa-solid fa-chevron-right text-dark"></i></Link>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
@@ -766,7 +767,7 @@ export default async function Page() {
                   <p>Gym Website & Membership Platform</p>
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <Link href="/build-detail-gym-platform"><i className="fa-solid fa-chevron-right text-dark"></i></Link>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
@@ -948,7 +949,7 @@ export default async function Page() {
 
       <TestimonialsSection testimonials={testimonials} title={
         <>
-         Loved By Founders And Businesses
+          Loved By Founders And Businesses
         </>
       }
         description="Hear from customers who turned their ideas into real products with Creative AI." />
@@ -971,34 +972,34 @@ export default async function Page() {
           <HomePricingSection monthlyPlans={monthlyPlans} yearlyPlans={yearlyPlans} />
         </div>
       </section>
-       <BlogsSection
-              eyebrow="Blogs"
-              title={
-                <>
-                  Insights & Ideas On AI-Powered Building
-                </>
-              }
-              description="Explore the latest articles, guides, and insights from the world of AI and innovation."
-              blogs={blogs}
-              apiUrl={API_URL}
-            />
+      <BlogsSection
+        eyebrow="Blogs"
+        title={
+          <>
+            Insights & Ideas On AI-Powered Building
+          </>
+        }
+        description="Explore the latest articles, guides, and insights from the world of AI and innovation."
+        blogs={blogs}
+        apiUrl={API_URL}
+      />
 
-    <CTABanner 
-           title={
-              <>
-               Build Your Next Website, App or Business Platform with AI
-              </>
-            }
-            description="From professional websites to enterprise applications, Creative AI helps you build, customize, and launch complete digital products in minutes without coding."
-          />
+      <CTABanner
+        title={
+          <>
+            Build Your Next Website, App or Business Platform with AI
+          </>
+        }
+        description="From professional websites to enterprise applications, Creative AI helps you build, customize, and launch complete digital products in minutes without coding."
+      />
       <ContactSection
-  title={
-    <>
-      Let's Build Something Amazing
-    </>
-  }
-  description="Have an idea for an app, website, or SaaS product? Our AI-powered platform helps you design, build, launch, and scale digital products faster than traditional development."
-/>
+        title={
+          <>
+            Let's Build Something Amazing
+          </>
+        }
+        description="Have an idea for an app, website, or SaaS product? Our AI-powered platform helps you design, build, launch, and scale digital products faster than traditional development."
+      />
     </>
   );
 }

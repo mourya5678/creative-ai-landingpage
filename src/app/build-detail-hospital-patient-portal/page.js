@@ -64,7 +64,7 @@ export default async function RestaurantPage() {
             <IndustryHero
                 title="AI Website Builder for Hospitals and Patient Portal"
                 description="Build a professional hospital website with AI and manage appointments, patients, medical records, and healthcare services from one platform."
-                image="/img/restaurant-banner.webp"
+                image="/img/hospital-patient_banner.webp"
             />
 
             <FeatureCardsGrid
