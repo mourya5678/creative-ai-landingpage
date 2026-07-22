@@ -179,9 +179,19 @@ export default function Header() {
                           <i className="fa-solid fa-angle-right ms-1"></i>
                         </Link>
                       </li>
+                       <li>
+                        <Link
+                          href="/build-detail-law-firm"
+                          className="ct_fs_14 ct_fw_600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          Law Firm Website & Case Management
+                          <i className="fa-solid fa-angle-right ms-1"></i>
+                        </Link>
+                      </li>
                       <li>
                         <Link
-                          href="/healthcare"
+                          href="/build-detail-hospital-patient-portal"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -191,7 +201,7 @@ export default function Header() {
                       </li>
                       <li>
                         <Link
-                          href="/education"
+                          href="/build-detail-student-portal"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -199,39 +209,39 @@ export default function Header() {
                           <i className="fa-solid fa-angle-right ms-1"></i>
                         </Link>
                       </li>
-                      {/* <li>
+                      <li>
                         <Link
-                          href="/retail-&-commerce"
+                          href="/build-detail-hotel-booking"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                          Retail & Commerce
+                          Hotel Website & Booking Engine
                           <i className="fa-solid fa-angle-right ms-1"></i>
                         </Link>
                       </li>
-                      <li>
+                       <li>
                         <Link
-                          href="/financial-services"
+                          href="/build-detail-gym-platform"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                          Financial Services
+                          Gym Website & Membership Platform
                           <i className="fa-solid fa-angle-right ms-1"></i>
                         </Link>
                       </li>
                      
                       <li>
                         <Link
-                          href="/manufacturing"
+                          href="/build-detail-salon"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                          Manufacturing
+                         Salon Website & Appointment System
                           <i className="fa-solid fa-angle-right ms-1"></i>
                         </Link>
                       </li>
 
-                      <li>
+                     {/* <li>
                         <Link
                           href="/entertainment"
                           className="ct_fs_14 ct_fw_600"

@@ -790,7 +790,7 @@ export default async function Page() {
                   <p>Salon Website & Appointment System</p>
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <Link href="/build-detail-salon"><i className="fa-solid fa-chevron-right text-dark"></i></Link>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
