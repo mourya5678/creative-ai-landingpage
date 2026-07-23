@@ -26,7 +26,9 @@ export default function Header() {
 
   return (
     <div className={`ct_header_main ${pathname === "/" ? "et_main_header_344" : ""} ${isSticky ? "ct_sticky_menu" : ""}`}>
+       
       <header className="container">
+        
         <div className="ct_logo">
           <Link href="/" onClick={() => setIsMenuOpen(false)}>
             <img
@@ -40,8 +42,42 @@ export default function Header() {
         </div>
         <div className="ct_middle_navbar">
           <nav>
+           
             <ul className={`mb-0 ${isMenuOpen ? "show" : ""}`}>
-              <li className="ct_close_bar">
+             
+<li className="ct_mobile_top">
+    <div className="ct_logo">
+       <Link href="/" onClick={() => setIsMenuOpen(false)}>
+            <img
+              loading="eager"
+              src="/img/cti_white_new_logo.webp"
+              alt="AI-powered app and web development"
+              width={140}
+              height={28}
+            />
+          </Link>
+    </div>
+
+     <a href={LOGIN_URL} className="ct_get_started_btn"
+              >Get Started
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="12" fill="black" />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M15.3894 12.707L9.73236 18.364L8.31836 16.95L13.2684 12L8.31836 7.05L9.73236 5.636L15.3894 11.293C15.5768 11.4805 15.6821 11.7348 15.6821 12C15.6821 12.2652 15.5768 12.5195 15.3894 12.707Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+
+    <div className="ct_close_bar">
                 <button
                   type="button"
                   onClick={() => setIsMenuOpen(false)}
@@ -57,10 +93,12 @@ export default function Header() {
                 >
                   <i className="fa-solid fa-xmark"></i>
                 </button>
-              </li>
-
+              </div>
+</li>
               <li className="ct_dropdown">
-                <span type="button">Solutions</span>
+                
+                <span type="button">Solutions <i className="fa-solid fa-chevron-down dropdown-btn"></i></span>
+
                 <div className="ct_custom_dropdown ct_mega_dropdown_width">
                   <div className="ct_dropdown_items">
                     <div className="ct_grid_2_flex">
@@ -146,37 +184,33 @@ export default function Header() {
                           href="/retail-&-commerce"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
-                        >Retail & Commerce<i
-                          className="fa-solid fa-angle-right ms-1"
-                        ></i
-                          ></Link>
+                        >Retail & Commerce
+                       
+                        </Link>
                       </li>
                       <li>
                         <Link
                           href="/financial-services"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
-                        >Financial Services<i
-                          className="fa-solid fa-angle-right ms-1"
-                        ></i
-                          ></Link>
+                        >Financial Services
+                      
+                          </Link>
                       </li>
                       <li>
                         <Link href="/healthcare" className="ct_fs_14 ct_fw_600" onClick={() => setIsMenuOpen(false)}
-                        >Healthcare<i
-                          className="fa-solid fa-angle-right ms-1"
-                        ></i
-                          ></Link>
+                        >Healthcare
+                       
+                          </Link>
                       </li>
                       <li>
                         <Link
                           href="/manufacturing"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
-                        >Manufacturing<i
-                          className="fa-solid fa-angle-right ms-1"
-                        ></i
-                          ></Link>
+                        >Manufacturing
+                       
+                          </Link>
                       </li>
 
                       <li>
@@ -184,28 +218,28 @@ export default function Header() {
                           href="/entertainment"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
-                        >Entertainment<i
-                          className="fa-solid fa-angle-right ms-1"
-                        ></i
-                          ></Link>
+                        >Entertainment
+                       
+                          </Link>
                       </li>
 
                       <li>
                         <Link href="/education" className="ct_fs_14 ct_fw_600" onClick={() => setIsMenuOpen(false)}
-                        >Education<i
-                          className="fa-solid fa-angle-right ms-1"
-                        ></i
-                          ></Link>
+                        >Education
+                       
+                          </Link>
                       </li>
                       <li>
                         <Link href="/telecom" className="ct_fs_14 ct_fw_600" onClick={() => setIsMenuOpen(false)}
-                        >Telecom<i className="fa-solid fa-angle-right ms-1"></i
-                        ></Link>
+                        >Telecom
+                       
+                        </Link>
                       </li>
                       <li>
                         <Link href="/energy" className="ct_fs_14 ct_fw_600" onClick={() => setIsMenuOpen(false)}
-                        >Energy<i className="fa-solid fa-angle-right ms-1"></i
-                        ></Link>
+                        >Energy
+                      
+                        </Link>
                       </li>
                     </ol>
                   </div>
@@ -267,7 +301,7 @@ export default function Header() {
                 </div>
               </li> */}
               <li className="ct_dropdown">
-                <span type="button">Resources</span>
+                <span type="button">Resources <i className="fa-solid fa-chevron-down dropdown-btn"></i></span>
                 <div className="ct_custom_dropdown d-block">
                   <div className="ct_dropdown_items ct_py_20">
                     <ol className="mt-0">
@@ -365,6 +399,9 @@ export default function Header() {
             </li>
           </ul>
         </div>
+
+
+       
       </header>
     </div>
   );
