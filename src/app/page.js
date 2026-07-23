@@ -271,7 +271,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -333,7 +333,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -394,7 +394,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -455,7 +455,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
