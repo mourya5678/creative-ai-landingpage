@@ -674,10 +674,44 @@ header::after {
   gap: 2%;
 }
 
+.ct_custom_dropdown.ct_mega_dropdown_width {
+  max-height: calc(100vh - 100px);
+}
+
 .ct_middle_navbar ul li:hover .ct_custom_dropdown {
   transform: scale(1);
   opacity: 1;
   height: auto;
+  overflow: visible;
+}
+
+.ct_middle_navbar ul li:hover .ct_custom_dropdown.ct_mega_dropdown_width {
+  overflow-y: auto;
+}
+
+.ct_dropdown {
+  pointer-events: none;
+}
+
+.ct_dropdown > span,
+.ct_dropdown .ct_custom_dropdown {
+  pointer-events: auto;
+}
+
+.ct_dropdown > span {
+  position: relative;
+  display: inline-block;
+}
+
+.ct_dropdown > span::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  pointer-events: auto;
 }
 
 .ct_drop_grey_bg {

@@ -26,9 +26,9 @@ export default function Header() {
 
   return (
     <div className={`ct_header_main ${pathname === "/" ? "et_main_header_344" : ""} ${isSticky ? "ct_sticky_menu" : ""}`}>
-       
+
       <header className="container">
-        
+
         <div className="ct_logo">
           <Link href="/" onClick={() => setIsMenuOpen(false)}>
             <img
@@ -42,64 +42,64 @@ export default function Header() {
         </div>
         <div className="ct_middle_navbar">
           <nav>
-           
+
             <ul className={`mb-0 ${isMenuOpen ? "show" : ""}`}>
-             
-<li className="ct_mobile_top">
-    <div className="ct_logo">
-       <Link href="/" onClick={() => setIsMenuOpen(false)}>
-            <img
-              loading="eager"
-              src="/img/cti_white_new_logo.webp"
-              alt="AI-powered app and web development"
-              width={140}
-              height={28}
-            />
-          </Link>
-    </div>
 
-     <a href={LOGIN_URL} className="ct_get_started_btn"
-              >Get Started
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="24" height="24" rx="12" fill="black" />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M15.3894 12.707L9.73236 18.364L8.31836 16.95L13.2684 12L8.31836 7.05L9.73236 5.636L15.3894 11.293C15.5768 11.4805 15.6821 11.7348 15.6821 12C15.6821 12.2652 15.5768 12.5195 15.3894 12.707Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
+              <li className="ct_mobile_top">
+                <div className="ct_logo">
+                  <Link href="/" onClick={() => setIsMenuOpen(false)}>
+                    <img
+                      loading="eager"
+                      src="/img/cti_white_new_logo.webp"
+                      alt="AI-powered app and web development"
+                      width={140}
+                      height={28}
+                    />
+                  </Link>
+                </div>
 
-    <div className="ct_close_bar">
-                <button
-                  type="button"
-                  onClick={() => setIsMenuOpen(false)}
-                  aria-label="Close navigation menu"
-                  style={{
-                    background: "none",
-                    border: "none",
-                    padding: 0,
-                    color: "inherit",
-                    font: "inherit",
-                    cursor: "pointer",
-                  }}
-                >
-                  <i className="fa-solid fa-xmark"></i>
-                </button>
-              </div>
-</li>
+                <a href={LOGIN_URL} className="ct_get_started_btn"
+                >Get Started
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" rx="12" fill="black" />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M15.3894 12.707L9.73236 18.364L8.31836 16.95L13.2684 12L8.31836 7.05L9.73236 5.636L15.3894 11.293C15.5768 11.4805 15.6821 11.7348 15.6821 12C15.6821 12.2652 15.5768 12.5195 15.3894 12.707Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+
+                <div className="ct_close_bar">
+                  <button
+                    type="button"
+                    onClick={() => setIsMenuOpen(false)}
+                    aria-label="Close navigation menu"
+                    style={{
+                      background: "none",
+                      border: "none",
+                      padding: 0,
+                      color: "inherit",
+                      font: "inherit",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <i className="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </li>
               <li className="ct_dropdown">
-                
+
                 <span type="button">Solutions <i className="fa-solid fa-chevron-down dropdown-btn"></i></span>
 
-                <div className="ct_custom_dropdown ct_mega_dropdown_width">
+                <div className="ct_custom_dropdown ct_mega_dropdown_width" data-lenis-prevent>
                   <div className="ct_dropdown_items">
                     <div className="ct_grid_2_flex">
                       <div className="ct_drop_title_icon">
@@ -185,7 +185,7 @@ export default function Header() {
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >Retail & Commerce
-                       
+
                         </Link>
                       </li>
                       <li>
@@ -194,14 +194,14 @@ export default function Header() {
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >Financial Services
-                      
-                          </Link>
+
+                        </Link>
                       </li>
                       <li>
                         <Link href="/healthcare" className="ct_fs_14 ct_fw_600" onClick={() => setIsMenuOpen(false)}
                         >Healthcare
-                       
-                          </Link>
+
+                        </Link>
                       </li>
                       <li>
                         <Link
@@ -209,8 +209,8 @@ export default function Header() {
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >Manufacturing
-                       
-                          </Link>
+
+                        </Link>
                       </li>
 
                       <li>
@@ -219,26 +219,26 @@ export default function Header() {
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >Entertainment
-                       
-                          </Link>
+
+                        </Link>
                       </li>
 
                       <li>
                         <Link href="/education" className="ct_fs_14 ct_fw_600" onClick={() => setIsMenuOpen(false)}
                         >Education
-                       
-                          </Link>
+
+                        </Link>
                       </li>
                       <li>
                         <Link href="/telecom" className="ct_fs_14 ct_fw_600" onClick={() => setIsMenuOpen(false)}
                         >Telecom
-                       
+
                         </Link>
                       </li>
                       <li>
                         <Link href="/energy" className="ct_fs_14 ct_fw_600" onClick={() => setIsMenuOpen(false)}
                         >Energy
-                      
+
                         </Link>
                       </li>
                     </ol>
@@ -302,7 +302,7 @@ export default function Header() {
               </li> */}
               <li className="ct_dropdown">
                 <span type="button">Resources <i className="fa-solid fa-chevron-down dropdown-btn"></i></span>
-                <div className="ct_custom_dropdown d-block">
+                <div className="ct_custom_dropdown d-block" data-lenis-prevent>
                   <div className="ct_dropdown_items ct_py_20">
                     <ol className="mt-0">
                       <li>
@@ -314,7 +314,7 @@ export default function Header() {
                               <path d="M3.85658 10.3462C4.20918 10.2002 4.5871 10.125 4.96875 10.125C5.73954 10.125 6.47875 10.4312 7.02378 10.9762C7.56881 11.5212 7.875 12.2605 7.875 13.0313C7.875 13.802 7.56881 14.5413 7.02378 15.0863C6.47875 15.6313 5.73954 15.9375 4.96875 15.9375C4.5871 15.9375 4.20918 15.8623 3.85658 15.7163C3.50397 15.5702 3.18359 15.3561 2.91372 15.0863C2.64385 14.8164 2.42978 14.496 2.28373 14.1434C2.13767 13.7908 2.0625 13.4129 2.0625 13.0313C2.0625 12.6496 2.13767 12.2717 2.28373 11.9191C2.42978 11.5665 2.64385 11.2461 2.91372 10.9762C3.18359 10.7064 3.50397 10.4923 3.85658 10.3462Z" stroke="white" strokeWidth="1.3125" strokeLinecap="round" strokeLinejoin="round" />
                               <path d="M11.9191 10.3462C12.2717 10.2002 12.6496 10.125 13.0313 10.125C13.802 10.125 14.5413 10.4312 15.0863 10.9762C15.6313 11.5212 15.9375 12.2605 15.9375 13.0313C15.9375 13.802 15.6313 14.5413 15.0863 15.0863C14.5413 15.6313 13.802 15.9375 13.0313 15.9375C12.6496 15.9375 12.2717 15.8623 11.9191 15.7163C11.5665 15.5702 11.2461 15.3561 10.9762 15.0863C10.7064 14.8164 10.4923 14.496 10.3462 14.1434C10.2002 13.7908 10.125 13.4129 10.125 13.0313C10.125 12.6496 10.2002 12.2717 10.3462 11.9191C10.4923 11.5665 10.7064 11.2461 10.9762 10.9762C11.2461 10.7064 11.5665 10.4923 11.9191 10.3462Z" stroke="white" strokeWidth="1.3125" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-
+                
                           </div>
                           <div>
                             <Link
@@ -401,7 +401,7 @@ export default function Header() {
         </div>
 
 
-       
+
       </header>
     </div>
   );

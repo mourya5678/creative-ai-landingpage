@@ -88,11 +88,10 @@
     height: 100vh;
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: inset 0 1px 0 rgba(173, 155, 155, 0.12), 0 10px 40px rgba(0, 0, 0, 0.35);
-
   }
 
   .ct_sticky_menu .ct_middle_navbar .ct_close_bar {
- top: 0;
+    top: 0;
 
   }
 
@@ -217,35 +216,35 @@
 
 
   /* extra */
-      .ct_mobile_top{
-        display:flex !important;
-        align-items:center;
-        justify-content:space-between;
-        width:100%;
-        padding-bottom:20px;
-        margin-bottom:20px;
-        border-bottom:1px solid rgba(255,255,255,.15);
-    }
+  .ct_mobile_top {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, .15);
+  }
 
-    .ct_mobile_top .ct_logo img{
-        max-width:120px;
-    }
+  .ct_mobile_top .ct_logo img {
+    max-width: 120px;
+  }
 
-    .ct_mobile_top .ct_get_started_btn{
-        margin-left:auto;
-        margin-right:15px;
-    }
+  .ct_mobile_top .ct_get_started_btn {
+    margin-left: auto;
+    margin-right: 15px;
+  }
 
-    .ct_mobile_top .ct_close_bar{
-        display:flex;
-        position:static;
-    }
+  .ct_mobile_top .ct_close_bar {
+    display: flex;
+    position: static;
+  }
 
-    /* Keep desktop header visible */
-    header .ct_logo,
-    header .ct_right_menu{
-        display:flex;
-    }
+  /* Keep desktop header visible */
+  header .ct_logo,
+  header .ct_right_menu {
+    display: flex;
+  }
 }
 
 @media (min-width:1048px) and (max-width:1180px) {
@@ -296,7 +295,11 @@
   }
 
   .ct_sass_card_img {
-    width: 100%;
+    display: none;
+  }
+
+  .ct_sticky_scroll_main {
+    grid-row-gap: 2rem;
   }
 
   .cti_saas_card {
@@ -355,6 +358,23 @@
 
   .ct_pricing_grid {
     grid-template-columns: 1fr;
+  }
+
+  .cti_badge {
+    font-size: 22px;
+  }
+
+  .cti_heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .cti_stat_box h3 {
+    font-size: 18px;
+  }
+
+  .cti_build_btn {
+    padding: 8px 16px;
   }
 
 }
@@ -521,5 +541,12 @@
   .ct_pb_150,
   .cti_contact_bg_new {
     padding-bottom: 82px;
+  }
+
+  .cti_brands_logo_slider {
+
+    margin-top: -118px;
+    padding-top: 70px;
+
   }
 }
