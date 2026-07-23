@@ -765,6 +765,7 @@ header::after {
 .ct_mega_dropdown_width {
   width: 100%;
   max-width: 630px;
+  overflow-x: hidden !important;
 }
 
 .ct_dropdown_items {
@@ -1186,7 +1187,7 @@ padding: 8px;
   font-weight: 700;
   letter-spacing: 1px;
   color: #1a1a1a;
-  line-height: 40px;
+  line-height: 1.2;
   font-family: Satoshi-bold;
   margin: 0;
   font-family: "delight-regular";
@@ -1579,7 +1580,7 @@ html.w-mod-touch * {
   border: 1px solid transparent;
   background:
     linear-gradient(#080216, #080216) padding-box,
-    linear-gradient(180deg, #5d5cff 0%, rgba(93, 92, 255, 0) 100%) border-box;
+    linear-gradient(180deg, #5d5cff 0%, #5d5cff2b 100%) border-box;
   display: grid;
   height: 100%;
 
@@ -1745,11 +1746,14 @@ html.w-mod-touch * {
 
 .cti_faq_body {
   padding: 0px 20px 28px !important;
-  color: #22133a;
+  color: #7b8794;
   font-size: 21.95px;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: -4%;
+
+
+
+
 }
 
 .cti_faq_accordion button {
@@ -2614,4 +2618,9 @@ input[type="radio"]:checked+.cti_option_btn span {
   .ct_sticky_scroll_main {
     grid-row-gap: 2rem;
   }
+}
+
+
+.cti_height_111{
+  height: 111px;
 }

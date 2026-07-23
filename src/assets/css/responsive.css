@@ -60,8 +60,9 @@
 
   header {
     backdrop-filter: unset;
-    padding-block: 15px;
+    padding-block: 10px;
   }
+
 
   .ct_middle_navbar ul {
     position: fixed;
@@ -245,6 +246,9 @@
   header .ct_right_menu {
     display: flex;
   }
+  .ct_get_started_btn{
+    padding: 9px 12px;
+  }
 }
 
 @media (min-width:1048px) and (max-width:1180px) {
@@ -288,6 +292,10 @@
 
   .cti_home_banner_cnt h1 {
     font-size: 68px;
+    font-weight: 500;
+  }
+  .cti_home_banner_cnt small{
+    font-weight: 500;
   }
 
   .cti_content {
@@ -366,7 +374,7 @@
 
   .cti_heading {
     font-size: 36px;
-    line-height: 36px;
+    line-height: 1;
   }
 
   .cti_stat_box h3 {
@@ -377,11 +385,79 @@
     padding: 8px 16px;
   }
 
+  .cti_height_111 {
+    height: 60px;
+}
+
+.what_you_build_sec{
+  padding-top: 60px;
+}
+.ct_service_section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.cti_testimonal_new_section{
+  padding-bottom: 60px;
+}
+  .ct_home_titles_cnt h2 {
+    font-size: 50px;
+    line-height: 1.2;
+
+  }
+  .ct_smart_product_design_cont {
+     padding-top: 30px;
+  }
+  
+  .creative_ai_in_action , .cti_price_main_bg , .cti_blog_new_bg , .cti_home_faq_bg_new , .cti_contact_bg_new{
+    padding-block: 60px;
+  }
+  .design-box-card h3{
+font-size: 28px;
+line-height: 1.1;
+  }
+  .card-preview img{
+    width: 50%;
+  }
+  .ct_smart_product_design_bg {
+    padding-block: 60px;
+  }
+  .your_own_bulid_sec {
+    padding-top: 60px;
+  }
+      .build-sec-list {
+        grid-template-columns: repeat(2, 1fr);
+     
+    }
+     .cti_brands_logo_slider {
+
+    margin-top: -118px;
+    padding-top: 70px;
+
+  }
+  .cti_home_banner {
+    padding-bottom: 200px;
+  }
+  .cti_pricing_card{
+    padding: 30px;
+  }
+  .ct_pt_76{
+    padding-top: 60px;
+  }
+  .cti_faq_body {
+  font-size: 18px;
+
+}
+.ct_mt_60 {
+  margin-top: 20px;
+}
+    .cti_faq_btn.collapsed {
+  padding: 24gpx 28px;
+}
 }
 
 @media screen and (max-width:767px) {
   .cti_home_banner_cnt h1 {
-    font-size: 60px;
+    font-size: 50px;
     max-width: 498px;
 
   }
@@ -400,16 +476,9 @@
     aspect-ratio: unset;
   }
 
-  .ct_home_titles_cnt h2 {
-    font-size: 60px;
-    line-height: 63px;
 
-  }
 
-  .cti_heading {
-    font-size: 45px;
-    line-height: 45px;
-  }
+
 
   .design-box-card h3 {
     font-size: 28px;
@@ -455,6 +524,25 @@
   .ct_faq_banner {
     padding-inline: 0;
   }
+      .ct_home_titles_cnt h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+      .cti_heading {
+    font-size: 30px;
+  }
+      .cti_badge {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .ct_home_titles_cnt p{
+      font-size: 20px;
+    }
+    .cti_testimonial_card{
+      margin-inline: 30px;
+      height: auto;
+    }
+
 }
 
 @media screen and (max-width:575px) {
@@ -464,18 +552,16 @@
   }
 
   .ct_home_titles_cnt h2 {
-    font-size: 40px;
-    line-height: 43px;
-    max-width: 399px;
+  
+    max-width: 399px !important;
 
   }
 
-  .cti_stat_box h3 {
-    font-size: 20px;
-  }
+
 
   .cti_stats_wrapper {
-    gap: 20px;
+    gap: 8px;
+    flex-direction: column;
   }
 
   .cti_heading {
@@ -531,11 +617,12 @@
   }
 
   .ct_pt_145px,
-  .ct_service_section,
+  
   .ct_pt_150,
   .cti_contact_bg_new {
     padding-top: 82px;
   }
+
 
   .ct_service_section,
   .ct_pb_150,
@@ -543,10 +630,5 @@
     padding-bottom: 82px;
   }
 
-  .cti_brands_logo_slider {
-
-    margin-top: -118px;
-    padding-top: 70px;
-
-  }
+ 
 }

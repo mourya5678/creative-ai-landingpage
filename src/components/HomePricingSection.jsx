@@ -70,7 +70,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
 
       <div className="row ct_pt_60">
         {/* Free Plan */}
-        <div className="col-lg-4 mb-4 mb-lg-0">
+        <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
 
           <div className="cti_pricing_card">
             <div>
@@ -170,7 +170,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
         </div>
 
         {/* Standard Plan */}
-        <div className="col-lg-4 mb-4 mb-lg-0">
+        <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
           <div className="cti_pricing_card cti_pricing_card_active">
             <div>
               <h3 className="cti_plan_title">Standard Plan</h3>
@@ -372,7 +372,7 @@ export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
         </div>
 
         {/* Enterprise Plan */}
-        <div className="col-lg-4 mb-4 mb-lg-0">
+        <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
           <div className="cti_pricing_card">
             <div>
               <h3 className="cti_plan_title">Enterprise Plan</h3>
