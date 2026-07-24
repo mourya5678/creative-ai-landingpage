@@ -64,7 +64,7 @@ export default async function RestaurantPage() {
       <IndustryHero
         title="AI Website Builder for Schools and Student Portal"
         description="Build a modern school website with AI and manage admissions, students, courses, faculty, announcements, and communication from one intelligent platform."
-        image="/img/school_banner.webp"
+        image="/img/school_banner (2).webp"
       />
 
       <FeatureCardsGrid

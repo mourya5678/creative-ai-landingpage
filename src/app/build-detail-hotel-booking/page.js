@@ -64,7 +64,7 @@ export default async function RestaurantPage() {
       <IndustryHero
         title="AI Website Builder for Hotels and Booking Engine"
         description="Build a professional hotel website with an AI-powered booking engine that helps guests check room availability, make secure online reservations, explore hotel amenities, and book directly from your website."
-        image="/img/restaurant-banner.webp"
+        image="/img/Hotel_banner.webp"
       />
 
       <FeatureCardsGrid

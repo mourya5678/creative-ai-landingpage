@@ -68,7 +68,7 @@ export default async function RestaurantPage() {
       <IndustryHero
         title="AI Website Builder for Gyms and Membership Platform"
         description="Build a professional gym website with an AI-powered membership platform that helps people join your fitness center, book workout classes, manage memberships, and connect with personal trainers."
-        image="/img/restaurant-banner.webp"
+        image="/img/Gym_banner.webp"
       />
 
       <FeatureCardsGrid
