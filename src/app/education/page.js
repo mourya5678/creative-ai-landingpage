@@ -18,10 +18,10 @@ export default function Page() {
       <PricingSliderInit />
       <BlogDetailsSliderInit />
       <div>
-        <section className="ct_py_70">
+        <section className="ct_py_70 ct_md_py_50">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6 mb-lg-0">
                 <div className="ct_hero_banner_left_cnt">
                   <h1 className="ct_fs_44 ct_fw_700">
                     AI-Powered Education App Development Made Simple
@@ -34,7 +34,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6 mb-lg-0">
                 <div className="ct_hero_right_main">
                   <div className="position-relative">
                     <img alt="AI app builder for mobile and web"
@@ -60,13 +60,13 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="row align-items-center pt-5">
+         <div className="row align-items-center pb-lg-0 mb-lg-0 my-5">
             <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" className="ct_object_cover ct_border_radius_10" loading="lazy" src="/img/eudcation_img_new_1.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Understands Education Project Requirements Quickly
@@ -77,8 +77,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5 ct_row_reverse_767">
+           <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Builds End-to-End Education Solutions
@@ -94,15 +94,15 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center pb-lg-0 mb-lg-0 mb-5">
+             <div className="col-md-4 mb-5  mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" src="/img/eudcation_img_new_5.webp"
                   loading="lazy"
                 />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+           <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Supports Multiple Learning Platform Variations
@@ -113,8 +113,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+           <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Offers Flexible Customization and Expert Guidance
@@ -124,19 +124,19 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+           <div className="col-md-4 mb-5  mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" loading="lazy" src="/img/eudcation_img_new_4.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 pb-0">
+           <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" loading="lazy" src="/img/eudcation_img_new_3.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+             <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Helps Launch Education Apps Faster
                 </h3>

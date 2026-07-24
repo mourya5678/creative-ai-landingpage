@@ -21,10 +21,10 @@ export default function Page() {
       <div>
 
 
-        <section className="ct_py_70">
+        <section className="ct_py_70 ct_md_py_50">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6 mb-lg-0">
                 <div className="ct_hero_banner_left_cnt">
                   <h1 className="ct_fs_44 ct_fw_700" style={{ maxWidth: "500px" }}>Launch Entertainment Apps Without Coding
                   </h1>
@@ -35,7 +35,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6 mb-lg-0">
                 <div className="ct_hero_right_main">
                   <div className="position-relative">
                     <img alt="AI app builder" className="ct_img_w_80" src="/img/entertainment_banner_right_new.webp" />
@@ -59,13 +59,13 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center pb-lg-0 mb-lg-0 my-5">
+           <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" className="ct_object_cover ct_border_radius_10" loading="lazy" src="/img/entertainment__new_img_1.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Understands Your Entertainment Project Requirements
 
@@ -76,8 +76,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Creates End-to-End Entertainment Solutions
 
@@ -88,14 +88,14 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+           <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" className="ct_object_cover ct_border_radius_10" loading="lazy" src="/img/entertainment__new_img_2.webp.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center pb-lg-0 mb-lg-0 mb-5">
+            <div className="col-md-4 mb-5  mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" loading="lazy" src="/img/entertainment__new_img_3.webp" />
               </div>
@@ -113,8 +113,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+           <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Supports Easy Customization and Expert Guidance
@@ -126,19 +126,19 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+            <div className="col-md-4 mb-5  mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" className="ct_object_cover ct_border_radius_10" loading="lazy" src="/img/entertainment__new_img_4.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 pb-0">
+           <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" loading="lazy" src="/img/retail_img_5.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+           <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Simplifies Faster App Launches
 
@@ -231,7 +231,7 @@ export default function Page() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2 className="ct_fs_44 ct_fw_700 text-center">See Our
+              <h2 className="ct_fs_44 ct_fw_700 text-center">See Our{" "}
                 <span className="ct_orange_gredient_text">Entertainment Apps </span> in Action</h2>
             </div>
           </div>

@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="main-footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-5 col-md-6 mb-lg-0 mb-3">
+                    <div className="col-lg-5 col-md-12 mb-lg-0 mb-3">
                         <div>
                             <img src="/img/cti_white_new_logo.webp" className="mb-3" alt="Creative AI white branding logo" width={140} height={28} />
                             <p className="ct_fs_20 ct_fw_500 mb-0 text-white ct_satoshi_medium"
@@ -36,7 +36,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-6 col-sm-4 col-6 mb-3 mb-md-0">
+                    <div className="col-lg-2 col-md-4 col-sm-4 col-6 mb-3 mb-md-0">
                         <h5 className="ct_fw_700 ct_fs_18 text-white mb-3 text-uppercase ct_satoshi_bold">
                             resources
                         </h5>
@@ -55,7 +55,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-2 col-md-6 col-sm-4 col-6 mb-3 mb-md-0">
+                    <div className="col-lg-2 col-md-4 col-sm-4 col-6 mb-3 mb-md-0">
                         <h5 className="ct_fw_700 ct_fs_18 text-white mb-3 text-uppercase ct_satoshi_bold">
                             company
                         </h5>
@@ -72,7 +72,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-lg-3 col-md-6 col-sm-4 col-6 mb-3 mb-md-0">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-6 mb-3 mb-md-0">
                         <h5 className="ct_fw_700 ct_fs_18 text-white mb-3 text-uppercase ct_satoshi_bold">
                             Legal
                         </h5>

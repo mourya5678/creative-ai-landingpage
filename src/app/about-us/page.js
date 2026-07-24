@@ -33,7 +33,7 @@ export default function Page() {
                </div>
             </div>
          </section>
-         <section className="ct_py_70 pt-0" id="failure">
+         <section className="ct_py_70 ct_md_py_50 pt-0" id="failure">
             <div className="container">
                <div className="row align-items-center ct_py_70 pb-0">
                   <div className="col-md-10 mx-auto mb-md-0">

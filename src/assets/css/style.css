@@ -470,7 +470,8 @@ header {
   position: relative;
   z-index: 9999999999;
   border: 1px solid rgba(255, 255, 255, 0.17);
-  background: #01010280;
+  /* background: #01010280; */
+  background: #02020291;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -2623,4 +2624,9 @@ input[type="radio"]:checked+.cti_option_btn span {
 
 .cti_height_111{
   height: 111px;
+}
+
+
+#ct_how_works_accordion .accordion-button:focus{
+  box-shadow: none;
 }

@@ -35,7 +35,7 @@ export default async function Page() {
   return (
     <>
       <Header />
-      <section className="ct_py_70 ct_inner_hero_bg">
+      <section className="ct_py_70 ct_md_py_50 ct_inner_hero_bg">
         <div className="container">
           <div className="row">
             <div className="col-md-8 mx-auto">

@@ -326,7 +326,13 @@
     width: auto;
     justify-content: center;
     margin-top: 20px;
+    display: none !important;
   }
+
+
+    .ct_testimonial_slider .owl-dots{
+      display: none;
+    }
 
   .ct_testimonial_slider .owl-nav button.owl-prev {
     left: 0px;
@@ -354,6 +360,11 @@
 
   .ct_app_types_img {
     text-align: center;
+    height: 359px;
+  }
+   .ct_app_types_img img{
+  
+   height: 359px;
   }
 
   .ct_inner_banner_main_cnt:before,
@@ -365,7 +376,7 @@
   }
 
   .ct_pricing_grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2 , 1fr);
   }
 
   .cti_badge {
@@ -452,6 +463,21 @@ line-height: 1.1;
 }
     .cti_faq_btn.collapsed {
   padding: 24gpx 28px;
+}
+  .ct_md_py_50{
+    padding-block: 50px;
+  }
+  .ct_mb_py_0{
+    padding-block: 0;
+  }
+
+  .ct_pricing_cta{
+    flex-direction: column;
+  }
+  .ct_creative_single_img img {
+   
+    height: auto;
+  
 }
 }
 
@@ -543,6 +569,16 @@ line-height: 1.1;
       height: auto;
     }
 
+      .ct_inner_hero_bg{
+    padding-bottom: 50px;
+  }
+   .ct_pricing_grid {
+    grid-template-columns:  1fr;
+  }
+
+  .ct_creative_single_img img {
+        height: 300px;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -629,6 +665,14 @@ line-height: 1.1;
   .cti_contact_bg_new {
     padding-bottom: 82px;
   }
+
+
+  .ct_fs_40 {
+    font-size: 28px;
+  }
+
+    
+
 
  
 }

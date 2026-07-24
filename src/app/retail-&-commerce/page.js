@@ -21,10 +21,10 @@ export default function Page() {
       <div className="">
 
 
-        <section className="ct_py_70">
+        <section className="ct_py_70 ct_md_py_50">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6  mb-lg-0">
                 <div className="ct_hero_banner_left_cnt">
                   <h1 className="ct_fs_44 ct_fw_700" style={{ maxWidth: "600px" }}>
                     AI-Powered E-commerce Development Made Simple
@@ -39,7 +39,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6  mb-lg-0">
                 <div className="ct_hero_right_main">
                   <div className="position-relative">
                     <img alt="AI-powered app and web development" className="ct_img_w_80" src="/img/retail-solution-1.webp" />
@@ -57,24 +57,24 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12">
               <h2 className="ct_fw_700 ct_fs_44 text-center mb-3">
-                How Creative AI Helps E-commerce <br />
+                How Creative AI Helps E-commerce <br />{" "}
                 <span className="ct_orange_gredient_text"> Businesses Grow</span>
               </h2>
 
-              <p className="ct_fw_18 text-center mb-2 ct_fw_500 mx-auto" style={{ maxWidth: "800px" }}>
+              <p className="ct_fw_18 text-center  ct_fw_500 mx-auto" style={{ maxWidth: "800px" }}>
                 Creative AI is a no-code AI app builder that helps ecommerce
                 businesses create custom apps, manage workflows more easily, and
                 launch digital products faster with complete end-to-end support.
               </p>
             </div>
           </div>
-          <div className="row align-items-center pt-5">
+          <div className="row align-items-center pb-lg-0 mb-lg-0 my-5">
             <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI-powered app and web development" loading="lazy" src="/img/retail_img_1.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Build ecommerce apps without coding
@@ -88,8 +88,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Easy store design and customization
@@ -101,14 +101,14 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+            <div className="col-md-4  mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI-powered app and web development" loading="lazy" src="/img/retail_img_2.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center pb-lg-0 mb-lg-0 mb-5">
+            <div className="col-md-4  mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI-powered app and web development" loading="lazy" src="/img/retail_img_3.webp" />
               </div>
@@ -126,8 +126,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Faster product launch
@@ -139,19 +139,19 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+            <div className="col-md-4  mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI-powered app and web development" loading="lazy" src="/img/retail_img_4.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 pb-0">
+            <div className="col-md-4  mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI-powered app and web development" loading="lazy" src="/img/retail_img_5.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Complete end-to-end support
@@ -171,8 +171,8 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12">
               <h2 className="ct_fs_44 ct_fw_700 text-center mb-5">
-                Why
-                <span className="ct_orange_gredient_text">Retail Businesses</span>
+                Why{" "}
+                <span className="ct_orange_gredient_text">Retail Businesses</span>{" "}
                 Choose Us
               </h2>
               <div className="owl-carousel owl-theme ct_dot_nav_hover" id="ct_retaial_app_slider">
@@ -247,8 +247,8 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12 mb-5">
               <h2 className="ct_fs_44 ct_fw_700 text-center">
-                Explore Our
-                <span className="ct_orange_gredient_text">Retail E-commerce Project</span>
+                Explore Our{" "}
+                <span className="ct_orange_gredient_text">Retail E-commerce Project{" "}</span>
                 Built <br />
                 with Creative AI
               </h2>
@@ -482,7 +482,7 @@ export default function Page() {
               <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
                 <div className="text-center">
                   <h4 className="ct_fs_34 ct_fw_700 mb-2">
-                    See How We've Transformed Ideas into <br />
+                    See How We've Transformed Ideas into <br />{" "}
                     <span className="ct_orange_gredient_text">Digital Success Stories</span>
                   </h4>
                   <p className="ct_fs_18 ct_fs_600">
@@ -728,7 +728,7 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12">
               <h3 className="ct_fs_44 ct_fw_700 text-center">
-                Related <span className="ct_orange_gredient_text">Blogs</span>
+                Related {" "}<span className="ct_orange_gredient_text">Blogs</span>
               </h3>
             </div>
           </div>
