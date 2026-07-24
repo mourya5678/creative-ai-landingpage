@@ -254,7 +254,7 @@ export default function Header() {
                   </div>
                 </div>
               </li>
-              <li className="ct_dropdown">
+              <li>
                 <Link
                   href="/why-creative-ai"
                   onClick={() => setIsMenuOpen(false)}
