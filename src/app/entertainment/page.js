@@ -505,7 +505,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <hr className="ct_break_line" />
+      <hr className="ct_break_line mb-0" />
       <section className="ct_grey_bg ct_py_70 ct_olw_nav_show_main">
         <div className="container">
           <div className="row">
