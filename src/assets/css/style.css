@@ -2630,3 +2630,7 @@ input[type="radio"]:checked+.cti_option_btn span {
 #ct_how_works_accordion .accordion-button:focus{
   box-shadow: none;
 }
+
+.ct_navbar-bottom{
+  display: none;
+}
