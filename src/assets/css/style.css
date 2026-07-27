@@ -2717,6 +2717,16 @@ border-bottom-right-radius: 50px;
   margin-bottom:1rem;
 }
 
+
+.docs-row .content-card ul{
+  color:#000000CC;
+  font-size:16px;
+  line-height:1.65;
+  margin-bottom:1rem;
+  list-style: disc;
+}
+
+
 .docs-row .content-card p:last-child{
   margin-bottom:0;
 }

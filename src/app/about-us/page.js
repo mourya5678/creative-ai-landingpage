@@ -66,11 +66,14 @@ export default function Page() {
       <div className="col-lg-9">
            <section id="section-intro" className="content-card">
           <h2>Building the Future of AI-Powered Websites and Business Applications</h2>
-          <p>Creative AI is an AI-powered website and application builder that helps businesses turn ideas into professional digital products without the complexity of traditional development.</p>
-          <p>We believe creating a website or business application should be simple, fast, and accessible. Instead of spending weeks designing, writing code, configuring tools, and managing development, users can describe what they want to build, and Creative AI generates the foundation in minutes.</p>
-          <p>From business websites and landing pages to customer portals, internal systems, and AI-powered web applications, our platform is built to help businesses launch faster and grow with confidence.</p>
-          <p>At Creative AI, our mission is to make modern technology accessible to everyone, regardless of technical expertise. By combining artificial intelligence with intuitive workflows, we help entrepreneurs, startups, agencies, and businesses focus less on building software and more on growing their business.</p>
-          <p>As AI continues to reshape how digital products are created, Creative AI is committed to building a platform that makes launching, managing, and scaling websites and business applications faster, smarter, and more efficient.</p>
+          <p>Creative AI is an AI-powered website and application builder that helps businesses turn ideas into professional digital products without the complexity of traditional development.
+</p>
+          <p>We believe creating a website or business application should be simple, fast, and accessible. Instead of spending weeks designing, writing content, configuring tools, and managing development, users can describe what they want to build, and Creative AI generates the foundation in minutes.</p>
+          <p>From business websites and landing pages to customer portals, internal systems, and AI-powered web applications, our platform is built to help businesses launch faster and grow with confidence.
+</p>
+          <p>At Creative AI, our mission is to make modern technology accessible to everyone, regardless of technical expertise. By combining artificial intelligence with intuitive workflows, we help entrepreneurs, startups, agencies, and businesses focus less on building software and more on building their business.</p>
+          <p>As AI continues to reshape how digital products are created, Creative AI is committed to building a platform that makes launching, managing, and scaling websites and business applications faster, smarter, and more efficient.
+</p>
         </section>
 
         <section id="section-mission" className="content-card">
@@ -81,18 +84,107 @@ export default function Page() {
 
         <section id="section-why-exists" className="content-card">
           <h2>Why Creative AI Exists</h2>
-          <p>Traditional web development is slow, expensive, and often requires specialized teams. Most small businesses and independent creators either spend months learning to build it themselves or spend thousands of dollars hiring developers and agencies.</p>
-          <p>Creative AI exists to close that gap — turning ideas into working digital products in minutes instead of weeks, without sacrificing quality or flexibility.</p>
+          <p>The internet has no shortage of website builders.
+</p>
+          <p>The problem is that most still expect users to become designers, developers, content writers, SEO specialists, and project managers.
+</p>
+          <p>Traditional website creation often involves multiple tools, freelancers, revisions, plugins, integrations, and weeks of development before a business can go live.
+</p>
+<p>We believed there had to be a better approach. Instead of asking users to build websites manually, we built an AI platform that creates them automatically. Describe your business.
+</p>
+<p>Our AI understands your requirements and generates the foundation for a complete digital product, allowing you to spend less time building and more time growing your business.
+</p>
         </section>
 
         <section id="section-what-we-build" className="content-card">
           <h2>What We Build</h2>
-          <p>From simple landing pages to full business applications, Creative AI supports a wide range of digital products: marketing websites, customer portals, internal dashboards, booking systems, and AI-powered tools tailored to each business's needs.</p>
+          <p>Creative AI is more than an AI website builder.
+</p>
+<p>It is a platform designed to generate complete digital experiences for businesses across industries.
+</p>
+<p>
+   Using AI, users can build:
+</p>
+<ul>
+   <li>Business Websites</li>
+   <li>AI Landing Pages</li>
+   <li>Portfolio Websites </li>
+   <li>Ecommerce Stores</li>
+   <li>Customer Portals</li>
+   <li>Employee Portals</li>
+   <li>Restaurant Ordering Systems</li>
+
+
+
+   <li>Booking Platforms </li>
+
+
+   <li>Appointment Systems </li>
+   <li>Learning Platforms </li>
+
+   <li>Healthcare Portals </li>
+   <li>Inventory Management Systems</li>
+   <li>HR Management Software</li>
+   <li>CRM Applications</li>
+   <li>Admin Dashboards</li>
+   <li>Internal Business Tools</li>
+   <li>AI Web Applications</li>
+
+</ul>
+<p>Every project starts with a prompt and evolves into a production-ready foundation that can be customized, expanded, and published.
+</p>
         </section>
 
         <section id="section-why-choose" className="content-card">
           <h2>Why Businesses Choose Creative AI</h2>
-          <p>Businesses choose Creative AI because it removes the biggest barriers to launching online: cost, time, and technical complexity. With an intuitive, AI-guided process, teams of any size can go from idea to live product without hiring a full development team.</p>
+
+          <p className="mb-0"><strong>AI-First Experience</strong></p>
+          <p>Generate websites and business applications through natural language instead of manual development.</p>
+
+
+           <p className="mb-0"><strong>Faster Time to Launch</strong></p>
+          <p>Reduce weeks of planning, design, and development into minutes.</p>
+
+
+          <p className="mb-0"><strong>Professional Design</strong></p>
+          <p>Modern layouts designed for usability, responsiveness, and conversion.</p>
+          <p className="mb-0"><strong>SEO-Ready Foundation</strong></p>
+          <p>Generate search engine friendly page structures, semantic HTML, optimized content, and scalable architecture from the beginning.</p>
+          <p className="mb-0"><strong>Business-Focused</strong></p>
+          <p>Designed for real businesses that need websites capable of generating leads, sales, bookings, and customer engagement.</p>
+          <p className="mb-0"><strong>Built to Scale</strong></p>
+          <p>Start with a website today and expand into portals, dashboards, internal systems, and business applications as your business grows.</p>
+        </section>
+
+
+         <section id="section-our-philosophy" className="content-card">
+          <h2>Why Businesses Choose Creative AI</h2>
+<p>Technology should empower creativity, not replace it.</p>
+<p>Artificial intelligence works best when it removes repetitive work while allowing people to focus on ideas, strategy, and innovation.</p>
+<p>Creative AI combines automation with flexibility so businesses can launch quickly while maintaining complete control over their digital presence.</p>
+<p>We believe the future belongs to businesses that can turn ideas into reality faster than ever before.
+</p>
+ </section>
+
+
+   <section id="section-our-values" className="content-card">
+          <h2>Our Values</h2>
+
+          <p className="mb-0"><strong>Innovation First</strong></p>
+          <p>We continuously explore how artificial intelligence can simplify digital creation.</p>
+
+
+           <p className="mb-0"><strong>Customer Success</strong></p>
+          <p>Every feature is designed to help businesses launch, grow, and scale more efficiently.</p>
+
+
+          <p className="mb-0"><strong>Simplicity</strong></p>
+          <p>Powerful technology should feel intuitive from the first interaction.</p>
+          <p className="mb-0"><strong>Quality by Design</strong></p>
+          <p>Every generated project should provide a professional foundation that businesses can confidently build upon.</p>
+          <p className="mb-0"><strong>Continuous Improvement</strong></p>
+          <p>We believe software should evolve with the needs of modern businesses.</p>
+          
         </section>
       </div>
 
