@@ -2666,7 +2666,7 @@ border-bottom-right-radius: 50px;
 
 
 /* ---------- Sidebar ---------- */
-.sidebar{
+.docs-row .sidebar{
   position:sticky;
   top:90px;
 }
@@ -2694,30 +2694,30 @@ border-bottom-right-radius: 50px;
 }
 
 /* ---------- Content cards ---------- */
-.content-card{
+.docs-row .content-card{
   background:#5D5CFF1F;
-
   border-radius:20px;
   padding:32px;
   margin-bottom:28px;
+    scroll-margin-top:80px;
 }
 
 
 
-.content-card h2{
+.docs-row .content-card h2{
   font-size:32px;
   font-weight:400;
   margin-bottom:12px;
 }
 
-.content-card p{
+.docs-row .content-card p{
   color:#000000CC;
   font-size:16px;
   line-height:1.65;
   margin-bottom:1rem;
 }
 
-.content-card p:last-child{
+.docs-row .content-card p:last-child{
   margin-bottom:0;
 }
 
@@ -2735,7 +2735,7 @@ border-bottom-right-radius: 50px;
 }
 
 
-.toc-list .nav-link.default-active{
+.docs-row .toc-list .nav-link.default-active{
   border-left:2px solid #5D5CFF;
   color:#000;
 
