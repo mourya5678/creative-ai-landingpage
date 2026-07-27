@@ -724,7 +724,7 @@ line-height: 1.1;
 
 /* Active State */
 .ct_navbar-bottom li a.active span , .ct_navbar-bottom li a:hover span{
-  color: var(--orange) !important;
+  color:#3778fa !important;
 
 }
 
@@ -733,18 +733,18 @@ line-height: 1.1;
 
 /* Home, Become Host, Blogs use stroke icons */
 
-.ct_navbar-bottom li:nth-child(2) a.active svg path,
-.ct_navbar-bottom li:nth-child(2) a:hover svg path,
-.ct_navbar-bottom li:nth-child(3) a.active svg path,
-.ct_navbar-bottom li:nth-child(3) a:hover svg path , 
-.ct_navbar-bottom li:nth-child(1) a.active svg path,
-.ct_navbar-bottom li:nth-child(1) a:hover svg path  {
-  stroke: var(--orange);
-}
 
+ 
+.ct_navbar-bottom li:nth-child(1) a.active svg path,
+.ct_navbar-bottom li:nth-child(1) a:hover svg path ,
 .ct_navbar-bottom li:nth-child(4) a.active svg path,
 .ct_navbar-bottom li:nth-child(4) a:hover svg path {
-    fill: var(--orange); 
+  stroke:#3778fa;
+}
+
+.ct_navbar-bottom li:nth-child(2) a.active svg path,
+.ct_navbar-bottom li:nth-child(2) a:hover svg path {
+    fill:#3778fa; 
 }
 
 
@@ -761,7 +761,7 @@ line-height: 1.1;
   width: 100%;
   height: 3px;
 
-  background: var(--orange);
+  background:#3778fa;
   border-radius: 0 0 4px 4px;
 }
 
@@ -788,7 +788,7 @@ line-height: 1.1;
   }
 
    .ct_navbar-bottom li a.active {
-    color: var(--orange);
+    color:#3778fa;
   }
 
  .ct_navbar-bottom li a,
