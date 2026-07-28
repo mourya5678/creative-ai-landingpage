@@ -34,7 +34,7 @@ export default async function Page() {
     <>
       <Header />
       <InnerTestimonialInit />
-      <section className="ct_pricing_section ct_py_70">
+      <section className="ct_pricing_section ct_py_70 ct_md_py_50">
         <div className="container">
           <div className="ct_section_heading text-center">
             <h2 className="ct_fw_600 ct_fs_40 mb-2">
@@ -56,14 +56,14 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <hr className="ct_break_line" />
-      <section className="ct_grey_bg ct_py_70 pb-0 ct_olw_nav_show_main">
+      <hr className="ct_break_line mb-0" />
+      <section className="ct_grey_bg ct_py_70 ct_md_py_50 pb-0 ct_olw_nav_show_main">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="ct_section_heading text-center">
                 <h2 className="ct_fs_40 ct_fw_600 mb-2">
-                  See How
+                  See How{" "}
                   <span className="ct_orange_gredient_text ct_ff_figtree">Creative AI Works</span>
                 </h2>
                 <p>Watch how your idea turns into a real app in minutes.</p>
@@ -297,12 +297,12 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_grey_bg ct_py_70">
+      <section className="ct_grey_bg ct_py_70 ct_md_py_50">
         <div className="container">
           <div className="row mt-4 align-items-start">
-            <div className="col-md-4 mb-4 mb-md-0">
-              <h2 className="ct_fs_44 ct_fw_700">
-                Got Questions? We've
+            <div className="col-lg-4 mb-4 mb-lg-0">
+              <h2 className="ct_fs_40 ct_fw_600">
+                Got Questions? We've {" "}
                 <span className="ct_orange_gredient_text">Got You</span>
               </h2>
               <p>
@@ -310,7 +310,7 @@ export default async function Page() {
                 builder
               </p>
             </div>
-            <div className="col-md-7 offset-md-1 mb-4 mb-md-0">
+            <div className="col-lg-7 offset-lg-1 mb-4 mb-lg-0">
               <div className="ct_how_works_collapse">
                 <FAQAccordion
                   accordionId="ct_how_works_accordion"
@@ -318,7 +318,7 @@ export default async function Page() {
                     {
                       question: "What is an AI app builder?",
                       answer: (
-                        <p className="ct_fs_16 mb-0 ct_line_h_30">
+                        <p className="ct_fs_16 mb-0 ">
                           An AI app builder is a tool that lets you create apps
                           just by describing your idea. It automatically builds
                           the design, features, and backend for you.
@@ -328,7 +328,7 @@ export default async function Page() {
                     {
                       question: "How does this AI app builder work?",
                       answer: (
-                        <p className="ct_fs_16 mb-0 ct_line_h_30">
+                        <p className="ct_fs_16 mb-0 ">
                           You simply type what you want to build, and the AI turns
                           it into a working app step by step, in minutes.
                         </p>
@@ -337,7 +337,7 @@ export default async function Page() {
                     {
                       question: "Do I need coding to build an app?",
                       answer: (
-                        <p className="ct_fs_16 mb-0 ct_line_h_30">
+                        <p className="ct_fs_16 mb-0 ">
                           No, you don’t need any coding skills. The AI handles
                           everything; you just focus on your idea.
                         </p>
@@ -355,7 +355,7 @@ export default async function Page() {
                     {
                       question: "How fast can I launch my app?",
                       answer: (
-                        <p className="ct_fs_16 mb-0 ct_line_h_30">
+                        <p className="ct_fs_16 mb-0 ">
                           You can create and launch your app in just a few
                           minutes, depending on your idea.
                         </p>
@@ -368,7 +368,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_py_70">
+      <section className="ct_py_70 ct_md_py_50">
         <div className="logo-slider">
           <div className="logo-slider__track">
             <div className="logo-slider__item">

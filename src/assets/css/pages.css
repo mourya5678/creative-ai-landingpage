@@ -126,9 +126,7 @@
     color: #fff;
 }
 
-.ct_perks_job_list_ul ul li+li {
-    margin-top: 6px;
-}
+
 
 .ct_white_outline_border {
     border-color: #fff;
@@ -174,6 +172,7 @@
     transform: translateY(-50%);
     width: 100%;
     justify-content: space-between;
+    
 }
 
 .ct_testimonial_slider .owl-nav button.owl-prev {

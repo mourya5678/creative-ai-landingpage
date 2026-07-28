@@ -1,3 +1,5 @@
+
+
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -33,7 +35,8 @@ export default function Header() {
     "/build-detail-student-portal",
     "/build-detail-hotel-booking",
     "/build-detail-gym-platform",
-    "/build-detail-salon"
+    "/build-detail-salon",
+    "/about-us"
   ];
 
   return (
@@ -57,7 +60,57 @@ export default function Header() {
         <div className="ct_middle_navbar">
           <nav>
             <ul className={`mb-0 ${isMenuOpen ? "show" : ""}`}>
-              <li className="ct_close_bar">
+              <li className="ct_mobile_top">
+                <div className="ct_logo">
+                  <Link href="/" onClick={() => setIsMenuOpen(false)}>
+                    <img
+                      loading="eager"
+                      src="/img/cti_white_new_logo.webp"
+                      alt="AI-powered app and web development"
+                      width={140}
+                      height={28}
+                    />
+                  </Link>
+                </div>
+ 
+                <a href={LOGIN_URL} className="ct_get_started_btn"
+                >Get Started
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" rx="12" fill="black" />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M15.3894 12.707L9.73236 18.364L8.31836 16.95L13.2684 12L8.31836 7.05L9.73236 5.636L15.3894 11.293C15.5768 11.4805 15.6821 11.7348 15.6821 12C15.6821 12.2652 15.5768 12.5195 15.3894 12.707Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+ 
+                <div className="ct_close_bar">
+                  <button
+                    type="button"
+                    onClick={() => setIsMenuOpen(false)}
+                    aria-label="Close navigation menu"
+                    style={{
+                      background: "none",
+                      border: "none",
+                      padding: 0,
+                      color: "inherit",
+                      font: "inherit",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <i className="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+              </li>
+              {/* <li className="ct_close_bar">
                 <button
                   type="button"
                   onClick={() => setIsMenuOpen(false)}
@@ -73,7 +126,7 @@ export default function Header() {
                 >
                   <i className="fa-solid fa-xmark"></i>
                 </button>
-              </li>
+              </li> */}
 
               <li className="ct_dropdown">
                 <span type="button">Solutions</span>
@@ -176,7 +229,7 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Restaurant Website & Ordering System
-                          <i className="fa-solid fa-angle-right ms-1"></i>
+                          
                         </Link>
                       </li>
                        <li>
@@ -186,7 +239,7 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Law Firm Website & Case Management
-                          <i className="fa-solid fa-angle-right ms-1"></i>
+                          
                         </Link>
                       </li>
                       <li>
@@ -196,7 +249,7 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Hospital Website & Patient Portal
-                          <i className="fa-solid fa-angle-right ms-1"></i>
+                         
                         </Link>
                       </li>
                       <li>
@@ -206,7 +259,7 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           School Website & Student Portal
-                          <i className="fa-solid fa-angle-right ms-1"></i>
+                         
                         </Link>
                       </li>
                       <li>
@@ -216,7 +269,7 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Hotel Website & Booking Engine
-                          <i className="fa-solid fa-angle-right ms-1"></i>
+                      
                         </Link>
                       </li>
                        <li>
@@ -226,7 +279,7 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Gym Website & Membership Platform
-                          <i className="fa-solid fa-angle-right ms-1"></i>
+                       
                         </Link>
                       </li>
                      
@@ -237,7 +290,7 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                          Salon Website & Appointment System
-                          <i className="fa-solid fa-angle-right ms-1"></i>
+                        
                         </Link>
                       </li>
 

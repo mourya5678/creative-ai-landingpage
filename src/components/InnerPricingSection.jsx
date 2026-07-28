@@ -124,7 +124,7 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
               {standardPrevPrice && (
                 <span className="ct_price_previous d-block">{standardPrevPrice}</span>
               )}
-              <div className="d-flex align-items-center gap-2 justify-content-center">
+              <div className="d-flex flex-wrap align-items-center gap-1 justify-content-center">
                 <div>
                   <span className="ct_price_current">{standardPrice}</span>
                   <span className="ct_price_suffix">{intervalSuffix}</span>

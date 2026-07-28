@@ -20,10 +20,10 @@ export default function Page() {
 
 
 
-        <section className="ct_py_70">
+        <section className="ct_py_70 ct_md_py_50">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6  mb-lg-0">
                 <div className="ct_hero_banner_left_cnt ct_interprenuer_shape">
                   <h1 className="ct_fs_44 ct_fw_700" style={{ maxWidth: "450px" }}> Enterprise Growth Starts with Creative AI
                   </h1>
@@ -35,7 +35,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6  mb-lg-0">
                 <div className="ct_hero_right_main">
                   <div className="position-relative">
                     <img alt="AI-powered app and web development" className="ct_img_w_80" src="/img/enterprice-innovation.webp" />
@@ -47,12 +47,12 @@ export default function Page() {
         </section>
 
       </div>
-      <hr className="ct_break_line" />
+      <hr className="ct_break_line mb-0" />
       <section className="ct_how_works_bg">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2 className="ct_fs_44 ct_fw_700 text-center">How <span className="ct_orange_gredient_text">Creative AI </span> Works
+              <h2 className="ct_fs_44 ct_fw_700 text-center">How <span className="ct_orange_gredient_text">{" "}Creative AI </span> Works
               </h2>
             </div>
           </div>
@@ -134,16 +134,20 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_py_70">
+      <section className="ct_py_70 ct_md_py_50">
         <div className="container">
-          <div className="row"><div className="col-md-12 mb-5"><h2 className="ct_fs_44 ct_fw_700 text-center"> How Creative AI Helps Enterprises <br /> <span className="ct_orange_gredient_text">Launch Faster</span></h2></div></div>
-          <div className="row align-items-center">
+          <div className="row">
+            <div className="col-md-12 mb-5"><h2 className="ct_fs_44 ct_fw_700 text-center"> How Creative AI Helps Enterprises <br />{" "} <span className="ct_orange_gredient_text">Launch Faster</span></h2></div>
+            </div>
+
+
+          <div className="row align-items-center pb-lg-0 mb-lg-0 mb-5">
             <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI-powered app and web development" loading="lazy" src="/img/enterprice-automate-1.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Understands Enterprise Requirements Clearly
 
@@ -155,8 +159,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Builds Complete Projects Faster
 
@@ -168,19 +172,19 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+            <div className="col-md-4  mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI-powered app and web development" loading="lazy" src="/img/enterprice-precise-1.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 pb-0">
             <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI-powered app and web development" loading="lazy" src="/img/enterprice-briing-ideas-1.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Full Support from Start to Launch
                 </h3>
@@ -200,7 +204,7 @@ export default function Page() {
             <div className="col-md-12">
               <h2 className="ct_fs_44 ct_fw_700 mb-3 text-center"> Transform Any Business Idea into Reality with
 
-                <br />
+                <br />{" "}
                 <span className="ct_orange_gredient_text">Creative AI</span>
               </h2>
               <p className="text-center ct_fs_16">
@@ -284,7 +288,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="ct_btn_group ct_py_70 pb-0 justify-content-center">
+          <div className="ct_btn_group ct_py_70 pt-lg-5 pt-3 pb-0 justify-content-center">
             <a className="ct_blue_btn_fill" href="/all-industries">View More
               industries</a>
           </div>
@@ -323,14 +327,14 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_grey_bg ct_py_70 ct_olw_nav_show_main">
+      <section className="ct_grey_bg ct_py_70 ct_md_py_50 ct_olw_nav_show_main">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="d-flex align-items-center justify-content-center flex-wrap gap-3">
                 <div className="text-center">
                   <h4 className="ct_fs_34 ct_fw_700 mb-2 text-center">
-                    See How We've Transformed Ideas into <br />
+                    See How We've Transformed Ideas into <br />{" "}
                     <span className="ct_orange_gredient_text">Digital Success Stories</span>
                   </h4>
                   <p className="ct_fs_18 ct_fs_600">
@@ -546,7 +550,7 @@ export default function Page() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h3 className="ct_fs_44 ct_fw_700 text-center pt-0">Related <span className="ct_orange_gredient_text">Blogs</span>
+              <h3 className="ct_fs_44 ct_fw_700 text-center pt-0">Related <span className="ct_orange_gredient_text">{" "}Blogs</span>
               </h3>
             </div>
           </div>

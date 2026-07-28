@@ -22,10 +22,10 @@ export default function Page() {
 
 
 
-        <section className="ct_py_70">
+        <section className="ct_py_70 ct_md_py_50">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6  mb-lg-0">
                 <div className="ct_hero_banner_left_cnt">
                   <h1 className="ct_fs_44 ct_fw_700">Create Smarter Healthcare Apps with Less Effort
                   </h1>
@@ -36,10 +36,10 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6  mb-lg-0">
                 <div className="ct_hero_right_main">
                   <div className="position-relative">
-                    <img alt="AI app builder" className="ct_img_w_80 ct_border_radius_10 ct_object_fit_cover ct_img_h_400" src="/img/ai_health_care_banner_new.webp" style={{ width: "60%" }} />
+                    <img alt="AI app builder" className="ct_img_w_80 " src="/img/ai_health_care_banner_new.webp"  />
                   </div>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export default function Page() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2 className="ct_fw_700 ct_fs_44 text-center mb-3"> How Creative AI Helps You Launch  <br />
+              <h2 className="ct_fw_700 ct_fs_44 text-center mb-3"> How Creative AI Helps You Launch  <br />{" "}
                 <span className="ct_orange_gredient_text">Healthcare Apps Faster</span>
               </h2>
               <p className="ct_fw_18 text-center mb-2 ct_fw_500 mx-auto" style={{ maxWidth: "750px" }}>
@@ -62,13 +62,13 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="row align-items-center pt-5">
+          <div className="row align-items-center pb-lg-0 mb-lg-0 my-5">
             <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" loading="lazy" src="/img/ai_healthcare_new_1.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Share Your Healthcare App Idea
                 </h3>
@@ -79,8 +79,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+           <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Build Faster Without Complexity
 
@@ -90,19 +90,19 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+            <div className="col-md-4  mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" loading="lazy" src="/img/ai_healthcare_new_2.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center pb-lg-0 mb-lg-0 mb-5">
+            <div className="col-md-4  mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" loading="lazy" src="/img/ai_healthcare_new_3.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+             <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Customize Your Healthcare Project
@@ -114,8 +114,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+           <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
                   Get Expert Support When Needed
@@ -127,19 +127,19 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+            <div className="col-md-4  mb-md-0 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" loading="lazy" src="/img/ai_healthcare_new_4.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 pb-0">
+            <div className="col-md-4  mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder" loading="lazy" src="/img/ai_healthcare_new_5.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+             <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">End-to-End Development Support
 
@@ -158,8 +158,8 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12">
               <h2 className="ct_fs_44 ct_fw_700 text-center mb-5">
-                Why <span className="ct_orange_gredient_text"> Healthcare Businesses
-                </span> Choose Us
+                Why <span className="ct_orange_gredient_text">{" "}Healthcare Businesses
+                </span>{" "}Choose Us
               </h2>
               <div className="owl-carousel owl-theme ct_dot_nav_hover" id="ct_retaial_app_slider">
                 <div className="item">
@@ -229,7 +229,7 @@ export default function Page() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2 className="ct_fs_44 ct_fw_700 text-center"> See Our  <span className="ct_orange_gredient_text">Healthcare Apps </span> in Action</h2>
+              <h2 className="ct_fs_44 ct_fw_700 text-center">See Our{" "}<span className="ct_orange_gredient_text">Healthcare Apps</span>{" "}in Action</h2>
             </div>
           </div>
           <div className="owl-carousel owl-theme ct_pricing_works ct_dot_nav_hover pt-5">
@@ -508,7 +508,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <hr className="ct_break_line" />
+      <hr className="ct_break_line mb-0" />
       <section className="ct_grey_bg ct_pt_50 ct_pb_50 ct_olw_nav_show_main">
         <div className="container">
           <div className="row">
@@ -516,7 +516,7 @@ export default function Page() {
               <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
                 <div className="text-center">
                   <h4 className="ct_fs_34 ct_fw_700 mb-2">
-                    See How We've Transformed Ideas into <br />
+                    See How We've Transformed Ideas into <br />{" "}
                     <span className="ct_orange_gredient_text">Digital Success Stories</span>
                   </h4>
                   <p className="ct_fs_18 ct_fs_600">
@@ -735,7 +735,7 @@ export default function Page() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h3 className="ct_fs_44 ct_fw_700 text-center">Related <span className="ct_orange_gredient_text">Blogs</span>
+              <h3 className="ct_fs_44 ct_fw_700 text-center">Related<span className="ct_orange_gredient_text">{" "}Blogs</span>
               </h3>
             </div>
           </div>

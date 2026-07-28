@@ -234,7 +234,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_pt_145px" style={{ overflowX: "unset" }}>
+      <section className="ct_pt_145px what_you_build_sec" style={{ overflowX: "unset" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -246,7 +246,7 @@ export default async function Page() {
                   and launch faster without coding.
                 </p>
               </div>
-              <div style={{ height: "111px" }}></div>
+              <div className="cti_height_111"></div>
               <div className="ct_sticky_scroll_main">
                 <section className="cti_saas_card">
                   <div className="cti_content">
@@ -271,7 +271,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -333,7 +333,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -394,7 +394,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -455,7 +455,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -513,7 +513,7 @@ export default async function Page() {
               </div>
             </div>
           </div>
-          <div className="ct_pt_105">
+          <div className="ct_pt_105 ct_smart_product_design_cont">
             <div className="row gy-4">
               <div className="col-lg-4 col-md-12">
                 <div className="card design-box-card">
@@ -1062,7 +1062,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_py_98">
+      <section className="ct_py_98 creative_ai_in_action">
         <div className="container">
           <div className="row">
             <div className="col-md-12">

@@ -238,6 +238,10 @@ input[type="number"] {
 
 /* All Reset Css E */
 /* All Font Size css S */
+
+.ct_fs_75{
+  font-size: 75px;
+}
 .ct_fs_80 {
   font-size: 60px;
 }
@@ -294,6 +298,9 @@ input[type="number"] {
 .ct_fs_22 {
   font-size: 22px;
   line-height: 30.8px;
+}
+.cti_fs_22{
+  font-size: 22px;
 }
 
 .ct_fs_18 {
@@ -500,7 +507,8 @@ header {
   position: relative;
   z-index: 9999999999;
   border: 1px solid rgba(255, 255, 255, 0.17);
-  background: #01010280;
+  /* background: #01010280; */
+  background: #02020291;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -665,9 +673,7 @@ header::after {
 
 
 
-.ct_dropdown_items ol li:hover a , .ct_dropdown_items ol li:hover p {
-  color: #9b9b9b !important;
-}
+
 .ct_dropdown_items ol li a {
   font-weight: 500;
   font-family: Satoshi-medium;
@@ -705,14 +711,48 @@ header::after {
   max-width: 400px;
   width: 100%;
   display: grid;
-  grid-template-columns: 49% 49%;
+  grid-template-columns: 50% 50%;
   gap: 2%;
+}
+
+.ct_custom_dropdown.ct_mega_dropdown_width {
+  max-height: calc(100vh - 100px);
 }
 
 .ct_middle_navbar ul li:hover .ct_custom_dropdown {
   transform: scale(1);
   opacity: 1;
   height: auto;
+  overflow: visible;
+}
+
+.ct_middle_navbar ul li:hover .ct_custom_dropdown.ct_mega_dropdown_width {
+  overflow-y: auto;
+}
+
+.ct_dropdown {
+  pointer-events: none;
+}
+
+.ct_dropdown > span,
+.ct_dropdown .ct_custom_dropdown {
+  pointer-events: auto;
+}
+
+.ct_dropdown > span {
+  position: relative;
+  display: inline-block;
+}
+
+.ct_dropdown > span::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  pointer-events: auto;
 }
 
 .ct_drop_grey_bg {
@@ -756,10 +796,7 @@ header::after {
   transform: scaleX(1);
 }
 
-.ct_dropdown_items ol,
-.ct_dropdown_items ol li+li {
-  margin-top: 13px;
-}
+
 
 .ct_dropdown_items li a,
 .ct_dropdown_items li span {
@@ -768,7 +805,8 @@ header::after {
 
 .ct_mega_dropdown_width {
   width: 100%;
-  max-width: 770px;
+  max-width: 750px;
+  overflow-x: hidden !important;
 }
 
 .ct_dropdown_items {
@@ -790,7 +828,32 @@ header::after {
 .ct_grid_2_flex {
   display: grid;
   grid-template-columns: 40px auto;
+  padding-inline: 8px;
 }
+
+
+.ct_dropdown_items ol li + li {
+margin-top: 5px;
+}
+
+.ct_dropdown_items ol,
+.ct_dropdown_items ol li {
+padding: 8px;
+}
+/* new */
+.ct_mobile_top{
+    display:none !important;
+}
+.ct_dropdown_items ol li:hover{
+  background: #151530b3;
+ 
+  border-radius: 12px;
+   box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
 
 /* Header Css E */
 
@@ -1165,7 +1228,7 @@ header::after {
   font-weight: 700;
   letter-spacing: 1px;
   color: #1a1a1a;
-  line-height: 40px;
+  line-height: 1.2;
   font-family: Satoshi-bold;
   margin: 0;
   font-family: "delight-regular";
@@ -1558,7 +1621,7 @@ html.w-mod-touch * {
   border: 1px solid transparent;
   background:
     linear-gradient(#080216, #080216) padding-box,
-    linear-gradient(180deg, #5d5cff 0%, rgba(93, 92, 255, 0) 100%) border-box;
+    linear-gradient(180deg, #5d5cff 0%, #5d5cff2b 100%) border-box;
   display: grid;
   height: 100%;
 
@@ -1724,11 +1787,14 @@ html.w-mod-touch * {
 
 .cti_faq_body {
   padding: 0px 20px 28px !important;
-  color: #22133a;
+  color: #7b8794;
   font-size: 21.95px;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: -4%;
+
+
+
+
 }
 
 .cti_faq_accordion button {
@@ -2508,6 +2574,10 @@ input[type="radio"]:checked+.cti_option_btn span {
   color: #555;
 }
 
+.ct_clr_D9D9D9{
+  color: #D9D9D9;
+}
+
 .ct_fs_35 {
   font-size: 35px;
 }
@@ -2793,7 +2863,45 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24));
    box-shadow:
     inset 0 0 20px rgba(255,255,255,.03),
     0 0 40px rgba(93,92,255,.08);
-   border-radius: 18px;  
+   border-radius: 18px; 
+} 
+  
+.cti_height_111{
+  height: 111px;
+}
+
+
+#ct_how_works_accordion .accordion-button:focus{
+  box-shadow: none;
+}
+
+.ct_navbar-bottom{
+  display: none;
+}
+
+
+
+/* about us  */
+
+.about_us_banner{
+  background: linear-gradient(180deg, #000000 29.88%, #5D5CFF 100%);
+padding-top: 180px;
+padding-bottom: 70px;
+border-bottom-left-radius: 50px;
+border-bottom-right-radius: 50px;
+}
+
+
+
+
+
+/* scroll offset so headings aren't flush against the viewport edge */
+
+
+/* ---------- Sidebar ---------- */
+.docs-row .sidebar{
+  position:sticky;
+  top:90px;
 }
 
 
@@ -3126,10 +3234,37 @@ text-align: center;
   }
 
 
-
   .trust-item h3 {
     font-size: 26px;
   }
+}
+
+.toc-list .nav-link{
+  display:block;
+  padding:8px 12px;
+  margin-bottom:6px;
+
+  color:#000000BF;
+  font-size:14px;
+
+  border-left:3px solid transparent;
+  transition:background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+
+.toc-list .nav-link:hover{
+  border-left:2px solid #5D5CFF;
+  color:#000;
+
+  font-weight:500;
+}
+
+/* ---------- Content cards ---------- */
+.docs-row .content-card{
+  background:#5D5CFF1F;
+  border-radius:20px;
+  padding:32px;
+  margin-bottom:28px;
+    scroll-margin-top:80px;
 }
 
 
@@ -3332,6 +3467,45 @@ font-size: 18px;
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(2 , 1fr);
+}
+
+.docs-row .content-card h2{
+  font-size:32px;
+  font-weight:400;
+  margin-bottom:12px;
+}
+
+.docs-row .content-card p{
+  color:#000000CC;
+  font-size:16px;
+  line-height:1.65;
+  margin-bottom:1rem;
+}
+
+
+.docs-row .content-card ul{
+  color:#000000CC;
+  font-size:16px;
+  line-height:1.65;
+  margin-bottom:1rem;
+  list-style: disc;
+}
+
+
+.docs-row .content-card p:last-child{
+  margin-bottom:0;
+}
+
+
+.docs-row:has(#section-intro:target) .sidebar a[href="#section-intro"],
+.docs-row:has(#section-mission:target) .sidebar a[href="#section-mission"],
+.docs-row:has(#section-why-exists:target) .sidebar a[href="#section-why-exists"],
+.docs-row:has(#section-what-we-build:target) .sidebar a[href="#section-what-we-build"],
+.docs-row:has(#section-why-choose:target) .sidebar a[href="#section-why-choose"]{
+  border-left:2px solid #5D5CFF;
+  color:#000;
+
+  font-weight:500;
 
 }
 
@@ -3528,3 +3702,19 @@ border-top-left-radius: 24px;
 
 
 
+.docs-row .toc-list .nav-link.default-active{
+  border-left:2px solid #5D5CFF;
+  color:#000;
+
+  font-weight:500;
+}
+
+.docs-row:has(#section-mission:target) .default-active,
+.docs-row:has(#section-why-exists:target) .default-active,
+.docs-row:has(#section-what-we-build:target) .default-active,
+.docs-row:has(#section-why-choose:target) .default-active{
+  border-left:3px solid transparent;
+  color:var(--text-muted);
+  background-color:transparent;
+  font-weight:400;
+}
