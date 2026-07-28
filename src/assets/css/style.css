@@ -254,6 +254,13 @@ input[type="number"] {
 .ct_fs_66{
   font-size: 66px;
 }
+.ct_fs_60{
+  font-size: 60px;
+}
+
+.ct_fs_50{
+  font-size: 66px;
+}
 
 .ct_fs_44 {
   font-size: 36px;
@@ -1137,8 +1144,8 @@ padding: 8px;
 }
 
 .ct_home_titles_cnt h2 {
-  font-size: 74px;
-  line-height: 77px;
+  font-size: 55px;
+  /* line-height: 77px; */
   letter-spacing: -1%;
   color: #090909;
   font-family: delight-regular;
@@ -1402,7 +1409,7 @@ html.w-mod-touch * {
 }
 
 .cti_blog_new_bg {
-  padding-block: 80px;
+  padding-block: 100px;
   background-color: #ad5cff0d;
 }
 
@@ -1526,6 +1533,13 @@ html.w-mod-touch * {
   padding-top: 150px;
 }
 
+.ct_pt_100{
+  padding-top: 100px;
+
+}
+.ct_pb_100{
+padding-bottom: 100px;
+}
 .cti_testimonial_section {
   background: #fff;
   padding: 80px 0;
@@ -1605,7 +1619,7 @@ html.w-mod-touch * {
 
 .cti_price_main_bg {
   background-color: #0c031a;
-  padding-block: 120px;
+  padding-block: 100px;
 }
 
 .cti_price_main_bg .ct_home_titles_cnt span {
@@ -1797,79 +1811,11 @@ html.w-mod-touch * {
 
 }
 
-.cti_faq_accordion button {
-  font-size: 23.95px;
-  font-family: Satoshi-medium;
-  font-weight: 500;
-  padding-right: 70px;
 
-
-}
-
-.cti_faq_accordion button.collapsed {
-
-  background-color: #FBF7FF !important;
-  box-shadow: 0px 1px 2px 0px #0000000D !important;
-  padding-right: 70px;
-
-}
-
-.cti_faq_btn::after {
-  display: none;
-}
-
-.cti_faq_btn {
-  position: relative;
-  padding-right: 90px;
-}
-
-.cti_faq_btn::before {
-  content: "+";
-  position: absolute;
-  right: 22px;
-  top: 50%;
-  transform: translateY(-50%);
-
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-
-  background: #fff;
-  color: #1e1533;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-size: 24px;
-  font-weight: 300;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-/* Open State */
-.cti_faq_btn:not(.collapsed)::before {
-  content: "×";
-  color: #7c3aed;
-  font-size: 28px;
-  background-color: #ffffff01;
-  box-shadow:
-    0px 4px 6px -4px #0000001a,
-    0px 10px 15px -3px #0000001a;
-}
-
-.cti_faq_accordion .accordion-button:not(.collapsed) {
-  background: transparent;
-}
-
-.cti_faq_accordion {
-  margin-top: 45px;
-}
 
 .cti_contact_bg_new {
   background-color: #ad5cff0d;
-  padding-block: 134px;
+  padding-block: 100px;
 }
 
 .cti_trusted_wrap {
@@ -2678,7 +2624,7 @@ input[type="radio"]:checked+.cti_option_btn span {
 
   position: relative;
   overflow: hidden;
-  padding-top: 250px;
+  padding-top: 180px;
 }
 
 .cti_build_banner::before {
@@ -2744,7 +2690,7 @@ top: 0;
 }
 
 .cti_build_proj_banner{
-  padding-block: 103px;
+  padding-block: 100px;
   
 
 
@@ -3346,19 +3292,14 @@ margin-right: 10px;
     object-position: right;
 }
 
-
-
-
-
-
 .everything_one-plat_sec{
       z-index: 99;
     background-color: #fff;
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;
     margin-top: -142px;
-    padding-top: 144px;
-    padding-bottom: 157px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     position: relative;
 }
 
@@ -3421,7 +3362,7 @@ font-size: 18px;
 
 
 .complete_sol_project{
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .complete_sol_box_1 .comp_sol_icon_box {
@@ -3607,8 +3548,8 @@ box-shadow: 0px 4px 22.5px 0px #5D5CFF6E;
 
 .why_choose_creative_ai{
   background: #0C031A;
-  padding: 140px 0px 90px 0px;
-  margin-top: 150px;
+  padding: 100px 0px 100px 0px;
+  margin-top: 100px;
 }
 
 
@@ -3718,3 +3659,7 @@ border-top-left-radius: 24px;
   background-color:transparent;
   font-weight:400;
 }
+
+
+
+

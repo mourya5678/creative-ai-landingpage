@@ -130,13 +130,16 @@ export default async function RestaurantPage() {
         description="Create a professional restaurant website with online ordering, reservations, QR menus, and business management tools powered by Creative AI."
       />
 
-      <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
+      <section className="cti_home_faq_bg_new ct_pt_100 ct_pb_100">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-                <h2 className="mx-auto text-center" style={{ maxWidth: "990px" }}>
+                 <h2
+                  className="mx-auto text-center "
+                  
+                >
                   Questions from Restaurant Owners
                 </h2>
               </div>

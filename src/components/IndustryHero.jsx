@@ -3,7 +3,7 @@ export default function IndustryHero({
   description,
   image,
   features = ["No Coding", "AI Powered", "Mobile Ready", "SEO Optimized", "Source Code"],
-  buttonText = "Start Building",
+  buttonText = "Start Building Free",
 }) {
   return (
     <div className="cti_build_banner">
@@ -12,7 +12,7 @@ export default function IndustryHero({
           <div className="row">
             <div className="col-xl-7">
               <div className="hero_content">
-                <h1 className="ct_fw_400 ct_fs_66 text-white mx-auto mb-3">{title}</h1>
+                <h1 className="ct_fw_400 ct_fs_60 text-white mx-auto mb-3">{title}</h1>
 
                 <p className="ct_fw_200 ct_fs_18 ct_text_bebfc2" style={{ maxWidth: "560px" }}>
                   {description}

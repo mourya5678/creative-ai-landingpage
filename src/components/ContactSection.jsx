@@ -21,7 +21,7 @@ export default function ContactSection({
           <div className="col-lg-6 mb-5 mb-lg-0">
             <div className="ct_home_titles_cnt">
               <span>Contact Us</span>
-              <h2 className="contact_heading">{title}</h2>
+              <h3 className="contact_heading">{title}</h3>
               <p style={{ maxWidth: "533px" }}>{description}</p>
             </div>
             <div className="cti_trusted_wrap">

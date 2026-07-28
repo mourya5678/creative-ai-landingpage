@@ -2,7 +2,9 @@ export default function SolutionColumns({ title, columns = [] }) {
   return (
     <section className="complete_sol_project">
       <div className="container">
-        <h4 className="ct_fs_74 ct_fs_400 text-center ct_mb_44">{title}</h4>
+      <div className="ct_home_titles_cnt">
+          <h2 className=" mx-auto text-center mb-5">{title}</h2>
+      </div>
 
         <div className="row">
           {columns.map((col, idx) => (

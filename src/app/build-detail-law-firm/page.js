@@ -79,7 +79,7 @@ export default async function RestaurantPage() {
 
       <HowItWorksSection steps={defaultHowItWorksSteps} />
 
-      <ComparisonTable title="Why Restaurants Choose Creative AI" rows={lawfirmComparisonRows} />
+      <ComparisonTable title="Why Law Firm Choose Creative AI" rows={lawfirmComparisonRows} />
 
       <OwnershipSection />
 
@@ -130,13 +130,16 @@ export default async function RestaurantPage() {
         description="Create a trusted law firm website with case management, client portals, consultation booking, and legal practice tools using Creative AI."
       />
 
-      <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
+      <section className="cti_home_faq_bg_new ct_pt_100 ct_pb_100">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-                <h2 className="mx-auto text-center" style={{ maxWidth: "990px" }}>
+                <h2
+                  className="mx-auto text-center"
+                  
+                >
                  Questions from Law Firm Owners
                 </h2>
               </div>

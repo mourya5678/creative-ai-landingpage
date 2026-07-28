@@ -128,13 +128,16 @@ export default async function RestaurantPage() {
         description="Launch a hotel website with a built-in booking engine, room management, guest portals, and direct online reservations using Creative AI."
       />
 
-      <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
+      <section className="cti_home_faq_bg_new ct_pt_100 ct_pb_100">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-                <h2 className="mx-auto text-center" style={{ maxWidth: "990px" }}>
+                <h2
+                  className="mx-auto text-center "
+                  
+                >
                  Questions From Hotel Owners
                 </h2>
               </div>

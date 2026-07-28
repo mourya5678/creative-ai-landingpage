@@ -36,6 +36,9 @@ export default function Header() {
     "/build-detail-hotel-booking",
     "/build-detail-gym-platform",
     "/build-detail-salon",
+     "/build-detail-real-estate",
+     "/build-detail-automotive-business",
+     "/build-detail-travel-agencies",
     "/about-us"
   ];
 
@@ -293,6 +296,66 @@ export default function Header() {
                         
                         </Link>
                       </li>
+                        <li>
+                        <Link
+                          href="/build-detail-real-estate"
+                          className="ct_fs_14 ct_fw_600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                         Real Estate Website & Property Portal
+                        
+                        </Link>
+                      </li>
+
+
+                          <li>
+                        <Link
+                          href="/build-detail-automotive-business"
+                          className="ct_fs_14 ct_fw_600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                         Automobile Website & Booking Platform
+
+                        
+                        </Link>
+                      </li>
+                          <li>
+                        <Link
+                          href="/build-detail-travel-agencies"
+                          className="ct_fs_14 ct_fw_600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                         Travel Website & Reservation System
+
+                        
+                        </Link>
+                      </li>
+
+                      
+                          {/* <li>
+                        <Link
+                          href="/build-detail-real-estate"
+                          className="ct_fs_14 ct_fw_600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                         Insurance Website & Agent Portal
+
+                        
+                        </Link>
+                      </li>
+
+                       <li>
+                        <Link
+                          href="/build-detail-real-estate"
+                          className="ct_fs_14 ct_fw_600"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                         Photography Portfolio & Booking
+
+
+                        
+                        </Link>
+                      </li> */}
 
                      {/* <li>
                         <Link

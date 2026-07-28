@@ -118,10 +118,13 @@ export default async function Page() {
 
         <section className="cti_everything_build_sec">
           <div className="container">
-            <h5 className="ct_fs_38 ct_fw_400 text-white text-center">
+
+           <div className="ct_home_titles_cnt" >
+             <h2 className="text-white text-center mx-auto">
               Everything You Can Build With{" "}
-              <span className="ct_text_purple">Creative AI</span>
-            </h5>
+              <small className="ct_text_purple">Creative AI</small>
+            </h2>
+           </div>
 
             <div className="cti_everything_build_con">
               <div className="cti_everything_build_con_detail">
@@ -824,7 +827,7 @@ export default async function Page() {
                   <p>Real Estate Website & Property Portal</p>
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <a href="/build-detail-real-estate"><i className="fa-solid fa-chevron-right text-dark"></i></a>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
@@ -848,7 +851,7 @@ export default async function Page() {
 
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <a href="/build-detail-automotive-business"><i className="fa-solid fa-chevron-right text-dark"></i></a>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">
@@ -875,7 +878,7 @@ export default async function Page() {
 
                 </div>
                 <div>
-                  <a href="#"><i className="fa-solid fa-chevron-right text-dark"></i></a>
+                  <a href="/build-detail-travel-agencies"><i className="fa-solid fa-chevron-right text-dark"></i></a>
                 </div>
               </div>
               <div className="ai_sol_every_industry_desc">

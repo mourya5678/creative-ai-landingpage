@@ -32,7 +32,7 @@ const getPlans = async (billingInterval) => {
   try {
     const res = await fetch(
       `${API_URL}/api/user/getAllPlans?billing_interval=${billingInterval}`,
-      { cache: "no-store" }
+      { cache: "no-store" },
     );
     if (!res.ok) return null;
     const json = await res.json();
@@ -45,7 +45,9 @@ const getPlans = async (billingInterval) => {
 
 const getBlogs = async () => {
   try {
-    const res = await fetch(`${API_URL}/api/user/getBlogs`, { cache: "no-store" });
+    const res = await fetch(`${API_URL}/api/user/getBlogs`, {
+      cache: "no-store",
+    });
     if (!res.ok) return [];
     const json = await res.json();
     return json.success ? json.data : [];
@@ -68,7 +70,7 @@ export default async function RestaurantPage() {
       <IndustryHero
         title="AI Website Builder for Salons and Appointment Booking"
         description="Build a professional salon website with an AI-powered appointment booking system that helps clients schedule beauty services, explore treatments, choose stylists, and book appointments online."
-        image="/img/restaurant-banner.webp"
+        image="/img/salon-banner.webp"
       />
 
       <FeatureCardsGrid
@@ -77,20 +79,25 @@ export default async function RestaurantPage() {
         features={salonFeatures}
       />
 
-      <SolutionColumns title="Complete Solutions For Your Salon" columns={salonSolutionColumns} />
+      <SolutionColumns
+        title="Complete Solutions For Your Salon"
+        columns={salonSolutionColumns}
+      />
 
       <HowItWorksSection steps={defaultHowItWorksSteps} />
 
-      <ComparisonTable title="Why Salon Choose Creative AI" rows={salonComparisonRows} />
+      <ComparisonTable
+        title="Why Salons Choose Creative AI"
+        rows={salonComparisonRows}
+      />
 
       <OwnershipSection />
 
-      <TestimonialsSection testimonials={testimonials} title={
-        <>
-          Trusted By Founders Worldwide
-        </>
-      }
-        description="See how startups are launching faster and growing smarter with our help." />
+      <TestimonialsSection
+        testimonials={testimonials}
+        title={<>Trusted By Founders Worldwide</>}
+        description="See how startups are launching faster and growing smarter with our help."
+      />
 
       <section className="cti_price_main_bg">
         <div className="container">
@@ -102,52 +109,56 @@ export default async function RestaurantPage() {
                   Simple Pricing. Powerful Results.
                 </h2>
                 <p className="mx-auto text-white ct_opacity_80">
-                  Simple, transparent plans built for modern creators, startups, and businesses.
+                  Simple, transparent plans built for modern creators, startups,
+                  and businesses.
                 </p>
               </div>
             </div>
           </div>
-          <HomePricingSection monthlyPlans={monthlyPlans} yearlyPlans={yearlyPlans} />
+          <HomePricingSection
+            monthlyPlans={monthlyPlans}
+            yearlyPlans={yearlyPlans}
+          />
         </div>
       </section>
 
       <BlogsSection
         eyebrow="Blogs"
-        title={
-          <>
-            Insights & Ideas On AI-Powered Building
-          </>
-        }
+        title={<>Insights & Ideas On AI-Powered Building</>}
         description="Explore how AI is transforming the way we design, build, and launch digital products."
         blogs={blogs}
         apiUrl={API_URL}
       />
 
-      <CTABanner 
-       title={
-          <>
-           Launch Your Salon Website with Creative AI
-          </>
-        }
+      <CTABanner
+        title={<>Launch Your Salon Website with Creative AI</>}
         description="Create a salon website with online appointment booking, beauty service management, staff scheduling, and customer engagement using Creative AI."
       />
 
-      <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
+      <section className="cti_home_faq_bg_new ct_pt_100 ct_pb_100">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-                <h2 className="mx-auto text-center" style={{ maxWidth: "990px" }}>
-                 Questions From Salon Owners
+                <h2
+                  className="mx-auto text-center"
+                  
+                >
+                  Questions From Salon Owners
                 </h2>
               </div>
+              {/* <FAQAccordion
+                accordionId="ctiFaqAccordion"
+                accordionClass="cti_faq_accordion"
+                itemclass="cti_faq_item"
+                btnclass="cti_faq_btn"
+                bodyclass="cti_faq_body"
+                items={salonFAQItems}
+              /> */}
+
               <FAQAccordion
                 accordionId="ctiFaqAccordion"
-                accordionclassName="cti_faq_accordion"
-                itemclassName="cti_faq_item"
-                btnclassName="cti_faq_btn"
-                bodyclassName="cti_faq_body"
                 items={salonFAQItems}
               />
             </div>
@@ -158,11 +169,7 @@ export default async function RestaurantPage() {
       {/* <ContactSection /> */}
 
       <ContactSection
-        title={
-          <>
-            Have An Idea? Let's Build It.
-          </>
-        }
+        title={<>Have An Idea? Let's Build It.</>}
         description="Whether you're building a website, app, marketplace, or startup MVP, we're here to help you get started."
       />
     </>

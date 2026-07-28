@@ -5,7 +5,7 @@ export default function TestimonialsSection({
   testimonials = [],
 }) {
   return (
-    <section className="cti_testimonal_new_section ct_pb_150 ct_pt_150">
+    <section className="cti_testimonal_new_section ct_pb_100 ct_pt_100">
       <div className="container">
         <div className="row">
           <div className="col-md-12">

@@ -3,8 +3,8 @@ export default function FeatureCardsGrid({ title, description, features = [] }) 
     <section className="everything_one-plat_sec">
       <div className="container">
         <div className="ct_home_titles_cnt ct_mb_34">
-          <h2 style={{ maxWidth: "927px" }}>{title}</h2>
-          <p style={{ maxWidth: "600px" }}>{description}</p>
+          <h2 className="">{title}</h2>
+          <p className="" style={{maxWidth:"850px"}}>{description}</p>
         </div>
 
         <div className="row">

@@ -17,14 +17,10 @@ import ContactSection from "@/components/ContactSection";
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
 import {
-  hotelFeatures,
-  hotelSolutionColumns,
-  hotelComparisonRows,
-  hotelFAQItems,
-  gymFeatures,
-  gymSolutionColumns,
-  gymComparisonRows,
-  gymFAQItems,
+ realEstateFeatures,
+  realEstateColumns,
+  realEstateFAQItems,
+  realEstateComparisonRows,
 } from "@/utils/data/AllPagesData";
 export const dynamic = "force-dynamic";
 
@@ -32,7 +28,7 @@ const getPlans = async (billingInterval) => {
   try {
     const res = await fetch(
       `${API_URL}/api/user/getAllPlans?billing_interval=${billingInterval}`,
-      { cache: "no-store" }
+      { cache: "no-store" },
     );
     if (!res.ok) return null;
     const json = await res.json();
@@ -45,7 +41,9 @@ const getPlans = async (billingInterval) => {
 
 const getBlogs = async () => {
   try {
-    const res = await fetch(`${API_URL}/api/user/getBlogs`, { cache: "no-store" });
+    const res = await fetch(`${API_URL}/api/user/getBlogs`, {
+      cache: "no-store",
+    });
     if (!res.ok) return [];
     const json = await res.json();
     return json.success ? json.data : [];
@@ -66,31 +64,36 @@ export default async function RestaurantPage() {
       <Header />
 
       <IndustryHero
-        title="AI Website Builder for Gyms and Membership Platform"
-        description="Build a professional gym website with an AI-powered membership platform that helps people join your fitness center, book workout classes, manage memberships, and connect with personal trainers."
-        image="/img/Gym_banner.webp"
+        title="AI Website Builder for Real Estate and Property Listings"
+        description="Build a professional real estate website with an AI-powered property portal that helps buyers discover properties, schedule site visits, and connect with agents. Manage property listings, inquiries, appointments, and real estate operations from one intelligent platform without coding."
+        image="/img/real-estate-banner.webp"
       />
 
       <FeatureCardsGrid
-        title="Everything Your Gym Needs in One Platform"
-        description="Create a modern gym website, grow your fitness community, manage memberships, schedule fitness classes, and deliver a better member experience with one AI-powered platform."
-        features={gymFeatures}
+        title="Everything Your Real Estate Business Needs in One Platform"
+        description="Create a modern real estate website, showcase property listings, generate qualified leads, schedule property visits, and manage your real estate business with one AI-powered platform."
+        features={realEstateFeatures}
       />
 
-      <SolutionColumns title="Complete Solutions For Your Gym" columns={gymSolutionColumns} />
+      <SolutionColumns
+        title="Complete Solutions For Your Real Estate Business"
+        columns={realEstateColumns}
+      />
 
       <HowItWorksSection steps={defaultHowItWorksSteps} />
 
-      <ComparisonTable title="Why Gym Choose Creative AI" rows={gymComparisonRows} />
+      <ComparisonTable
+        title="Why Real Estate Choose Creative AI"
+        rows={realEstateComparisonRows}
+      />
 
       <OwnershipSection />
 
-      <TestimonialsSection testimonials={testimonials} title={
-        <>
-          Trusted By Founders Worldwide
-        </>
-      }
-        description="See how startups are launching faster and growing smarter with our help." />
+      <TestimonialsSection
+        testimonials={testimonials}
+        title={<>Trusted By Founders Worldwide</>}
+        description="See how startups are launching faster and growing smarter with our help."
+      />
 
       <section className="cti_price_main_bg">
         <div className="container">
@@ -102,34 +105,30 @@ export default async function RestaurantPage() {
                   Simple Pricing. Powerful Results.
                 </h2>
                 <p className="mx-auto text-white ct_opacity_80">
-                  Simple, transparent plans built for modern creators, startups, and businesses.
+                  Simple, transparent plans built for modern creators, startups,
+                  and businesses.
                 </p>
               </div>
             </div>
           </div>
-          <HomePricingSection monthlyPlans={monthlyPlans} yearlyPlans={yearlyPlans} />
+          <HomePricingSection
+            monthlyPlans={monthlyPlans}
+            yearlyPlans={yearlyPlans}
+          />
         </div>
       </section>
 
       <BlogsSection
         eyebrow="Blogs"
-        title={
-          <>
-            Insights & Ideas On AI-Powered Building
-          </>
-        }
+        title={<>Insights & Ideas On AI-Powered Building</>}
         description="Explore how AI is transforming the way we design, build, and launch digital products."
         blogs={blogs}
         apiUrl={API_URL}
       />
 
-      <CTABanner 
-       title={
-          <>
-           Launch Your Gym Website with Creative AI
-          </>
-        }
-        description="Grow your fitness business with a gym website, membership platform, class booking, and member management powered by Creative AI."
+      <CTABanner
+        title={<>Launch Your Real Estate Website with Creative AI</>}
+        description="Showcase property listings, generate buyer leads, schedule site visits, and manage your real estate business with Creative AI."
       />
 
       <section className="cti_home_faq_bg_new ct_pt_100 ct_pb_100">
@@ -138,20 +137,26 @@ export default async function RestaurantPage() {
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-               <h2
+                <h2
                   className="mx-auto text-center "
                   
                 >
-                 Questions From Gym Owners
+                 Questions From Real Estate Professionals
+
                 </h2>
               </div>
+              {/* <FAQAccordion
+                accordionId="ctiFaqAccordion"
+                accordionClass="cti_faq_accordion"
+                itemclass="cti_faq_item"
+                btnclass="cti_faq_btn"
+                bodyclass="cti_faq_body"
+                items={salonFAQItems}
+              /> */}
+
               <FAQAccordion
                 accordionId="ctiFaqAccordion"
-                accordionclassName="cti_faq_accordion"
-                itemclassName="cti_faq_item"
-                btnclassName="cti_faq_btn"
-                bodyclassName="cti_faq_body"
-                items={gymFAQItems}
+                items={realEstateFAQItems}
               />
             </div>
           </div>
@@ -161,11 +166,7 @@ export default async function RestaurantPage() {
       {/* <ContactSection /> */}
 
       <ContactSection
-        title={
-          <>
-            Have An Idea? Let's Build It.
-          </>
-        }
+        title={<>Have An Idea? Let's Build It.</>}
         description="Whether you're building a website, app, marketplace, or startup MVP, we're here to help you get started."
       />
     </>

@@ -1088,7 +1088,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="cti_testimonal_new_section ct_pb_150 pt-0">
+      <section className="cti_testimonal_new_section ct_pb_100 pt-0">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -1331,7 +1331,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
+      <section className="cti_home_faq_bg_new ct_pt_100 ct_pb_100">
         <div className="container">
           <div className="row">
             <div className="col-md-12">

@@ -17,7 +17,9 @@ export default function HowItWorksSection({
   return (
     <section className={`cti_how_creative_ai_work ${className}`}>
       <div className="container">
-        <h4 className="ct_fs_74 ct_fs_400 text-center pb-5">{title}</h4>
+     <div className="ct_home_titles_cnt">
+         <h2 className=" mx-auto text-center pb-5">{title}</h2>
+     </div>
 
         <div className="row mt-5">
           {steps.map((step, idx) => (

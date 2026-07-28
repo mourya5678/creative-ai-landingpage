@@ -7,12 +7,14 @@ export default function ComparisonTable({
   return (
     <section className="why_choose_creative_ai">
       <div className="container">
-        <h4
-          className="ct_fs_74 ct_fs_400 text-center pb-5 mx-auto text-white"
-          style={{ maxWidth: "850px" }}
+       <div className="ct_home_titles_cnt">
+         <h2
+          className=" text-center pb-5 mx-auto text-white"
+         
         >
           {title}
-        </h4>
+        </h2>
+       </div>
 
         <div className="table-responsive mt-4">
           <table className="table ct_custom_table">
