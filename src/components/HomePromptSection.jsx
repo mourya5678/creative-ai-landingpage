@@ -11,8 +11,7 @@ const SUGGESTIONS = [
 
     prompt:
 
-      "Design a premium food delivery mobile app focused on a fast and delightful ordering experience. Include beautiful restaurant discovery, curated menus, smart search, personalized recommendations, a seamless cart, secure checkout, real-time order tracking, favorites, and a clean order history. Prioritize an elegant user experience and a polished MVP suitable for launch."
-
+      "Design a premium food delivery platform focused on a fast and delightful ordering experience. Include restaurant discovery, curated menus, smart search, personalized recommendations, a seamless cart, secure checkout, real-time order tracking, favorites, user profiles, notifications, and order history. Prioritize a modern, intuitive interface with scalable architecture, excellent performance, and a polished user experience."
   },
 
   {
@@ -51,7 +50,7 @@ const SUGGESTIONS = [
 
     prompt:
 
-      "Create a beautifully designed online marketplace where people can discover, explore, and purchase unique products from independent sellers. Focus on immersive product browsing, rich product pages, search, collections, favorites, secure checkout, messaging, and order tracking while keeping the experience clean, premium, and MVP-focused."
+      "Create a modern online marketplace where people can discover, explore, and purchase products from independent sellers. Include advanced search, categories, collections, rich product pages, seller profiles, wishlists, secure checkout, messaging, reviews, ratings, order tracking, and account management. Focus on a clean, premium experience with scalable design, high usability, and smooth user interactions."
 
   }
 
