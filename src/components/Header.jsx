@@ -39,6 +39,8 @@ export default function Header() {
      "/build/real-estate",
      "/build/automotive-business",
      "/build/travel-agencies",
+     "/build/insurance-agencies",
+     "/build/photography-portfolio" ,
     "/about-us"
   ];
 
@@ -330,11 +332,11 @@ export default function Header() {
                         
                         </Link>
                       </li>
-
+{/*  */}
                       
-                          {/* <li>
+                          <li>
                         <Link
-                          href="/build/real-estate"
+                          href="/build/insurance-agencies"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -346,7 +348,7 @@ export default function Header() {
 
                        <li>
                         <Link
-                          href="/build/real-estate"
+                          href="/build/photography-portfolio"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -355,7 +357,7 @@ export default function Header() {
 
                         
                         </Link>
-                      </li> */}
+                      </li>
 
                      {/* <li>
                         <Link
