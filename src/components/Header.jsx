@@ -134,7 +134,7 @@ export default function Header() {
               </li> */}
 
               <li className="ct_dropdown">
-                <span type="button">Solutions</span>
+                <span type="button">Solutions <i class="fa-solid fa-chevron-down ms-1"></i></span>
                 <div className="ct_custom_dropdown ct_mega_dropdown_width">
                   <div className="ct_dropdown_items">
                     <div className="ct_grid_2_flex">
@@ -455,10 +455,10 @@ export default function Header() {
                 </div>
               </li> */}
               <li className="ct_dropdown">
-                <span type="button">Resources</span>
+                <span type="button">Resources<i class="fa-solid fa-chevron-down ms-1"></i></span>
                 <div className="ct_custom_dropdown d-block">
                   <div className="ct_dropdown_items ct_py_20">
-                    <ol className="mt-0">
+                    <ol className="mt-0 p-0">
                       <li>
                         <div className="ct_grid_2_flex">
                           <div className="ct_drop_title_icon">
