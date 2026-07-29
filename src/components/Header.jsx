@@ -29,16 +29,16 @@ export default function Header() {
   const transparentHeaderRoutes = [
     "/",
     "/build",
-    "/build-detail-restaurant",
-    "/build-detail-law-firm",
-    "/build-detail-hospital-patient-portal",
-    "/build-detail-student-portal",
-    "/build-detail-hotel-booking",
-    "/build-detail-gym-platform",
-    "/build-detail-salon",
-     "/build-detail-real-estate",
-     "/build-detail-automotive-business",
-     "/build-detail-travel-agencies",
+    "/build/restaurant",
+    "/build/law-firm",
+    "/build/hospital-patient-portal",
+    "/build/student-portal",
+    "/build/hotel-booking",
+    "/build/gym-platform",
+    "/build/salon",
+     "/build/real-estate",
+     "/build/automotive-business",
+     "/build/travel-agencies",
     "/about-us"
   ];
 
@@ -227,7 +227,7 @@ export default function Header() {
                     <ol className="ct_ps_35">
                       <li>
                         <Link
-                          href="/build-detail-restaurant"
+                          href="/build/restaurant"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -237,7 +237,7 @@ export default function Header() {
                       </li>
                        <li>
                         <Link
-                          href="/build-detail-law-firm"
+                          href="/build/law-firm"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -247,7 +247,7 @@ export default function Header() {
                       </li>
                       <li>
                         <Link
-                          href="/build-detail-hospital-patient-portal"
+                          href="/build/hospital-patient-portal"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -257,7 +257,7 @@ export default function Header() {
                       </li>
                       <li>
                         <Link
-                          href="/build-detail-student-portal"
+                          href="/build/student-portal"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -267,7 +267,7 @@ export default function Header() {
                       </li>
                       <li>
                         <Link
-                          href="/build-detail-hotel-booking"
+                          href="/build/hotel-booking"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -277,7 +277,7 @@ export default function Header() {
                       </li>
                        <li>
                         <Link
-                          href="/build-detail-gym-platform"
+                          href="/build/gym-platform"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -288,7 +288,7 @@ export default function Header() {
                      
                       <li>
                         <Link
-                          href="/build-detail-salon"
+                          href="/build/salon"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -298,7 +298,7 @@ export default function Header() {
                       </li>
                         <li>
                         <Link
-                          href="/build-detail-real-estate"
+                          href="/build/real-estate"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -310,7 +310,7 @@ export default function Header() {
 
                           <li>
                         <Link
-                          href="/build-detail-automotive-business"
+                          href="/build/automotive-business"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -321,7 +321,7 @@ export default function Header() {
                       </li>
                           <li>
                         <Link
-                          href="/build-detail-travel-agencies"
+                          href="/build/travel-agencies"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -334,7 +334,7 @@ export default function Header() {
                       
                           {/* <li>
                         <Link
-                          href="/build-detail-real-estate"
+                          href="/build/real-estate"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -346,7 +346,7 @@ export default function Header() {
 
                        <li>
                         <Link
-                          href="/build-detail-real-estate"
+                          href="/build/real-estate"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >

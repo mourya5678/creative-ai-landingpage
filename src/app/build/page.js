@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import { HomeInit } from "@/components/PageInitializers";
 import HomePricingSection from "@/components/HomePricingSection";
-import { API_URL } from "@/config";
+import { API_URL, LOGIN_URL } from "@/config";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import OwnershipSection from "@/components/OwnershipSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -70,10 +70,10 @@ export default async function Page() {
               using AI. No coding required. Customize visually, deploy
               instantly, or download the complete source code.
             </p>
-            <button className="start_build_btn mx-auto ct_mt_34">
+            <Link className="d-inline-flex start_build_btn mx-auto ct_mt_34" href={LOGIN_URL}>
               Start Building Now{" "}
               <i className="fa-solid fa-arrow-right ms-2"></i>
-            </button>
+            </Link>
           </div>
 
           <section className="trust-section">
@@ -607,7 +607,7 @@ export default async function Page() {
             </div>
 
             <div className="ai_sol_every_industry_cont">
-              <Link href="/build-detail-restaurant">
+              <Link href="/build/restaurant">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -628,7 +628,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-law-firm">
+              <Link href="/build/law-firm">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -649,7 +649,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-hospital-patient-portal">
+              <Link href="/build/hospital-patient-portal">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -678,7 +678,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-student-portal">
+              <Link href="/build/student-portal">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -709,7 +709,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-hotel-booking">
+              <Link href="/build/hotel-booking">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -730,7 +730,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-gym-platform">
+              <Link href="/build/gym-platform">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -775,7 +775,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-salon">
+              <Link href="/build/salon">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -796,7 +796,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-real-estate">
+              <Link href="/build/real-estate">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -827,7 +827,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-automotive-business">
+              <Link href="/build/automotive-business">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -848,7 +848,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build-detail-travel-agencies">
+              <Link href="/build/travel-agencies">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -870,67 +870,62 @@ export default async function Page() {
                     </div>
                     <p>Travel Website & Reservation System</p>
                   </div>
-                 
                 </div>
               </Link>
-               <Link href="#">
-
-              <div className="ai_sol_every_industry_desc">
-                <div className="d-flex gap-2 align-items-center">
-                  <div className="ai_sol_every_industry_icon_box">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M11.5 15H8C6.67392 15 5.40215 15.5268 4.46447 16.4645C3.52678 17.4021 3 18.6739 3 20V21H11.55M16 7.5C16 8.69347 15.5259 9.83807 14.682 10.682C13.8381 11.5259 12.6935 12 11.5 12C10.3065 12 9.16193 11.5259 8.31802 10.682C7.47411 9.83807 7 8.69347 7 7.5C7 6.30653 7.47411 5.16193 8.31802 4.31802C9.16193 3.47411 10.3065 3 11.5 3C12.6935 3 13.8381 3.47411 14.682 4.31802C15.5259 5.16193 16 6.30653 16 7.5ZM15.5 14.5H22.5V19.134C22.5 19.4663 22.4171 19.7934 22.2589 20.0857C22.1007 20.378 21.8722 20.6262 21.594 20.808L19 22.502L16.406 20.808C16.1278 20.6262 15.8993 20.378 15.7411 20.0857C15.5829 19.7934 15.5 19.4663 15.5 19.134V14.5Z"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="square"
-                      />
-                    </svg>
+              <Link href="#">
+                <div className="ai_sol_every_industry_desc">
+                  <div className="d-flex gap-2 align-items-center">
+                    <div className="ai_sol_every_industry_icon_box">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.5 15H8C6.67392 15 5.40215 15.5268 4.46447 16.4645C3.52678 17.4021 3 18.6739 3 20V21H11.55M16 7.5C16 8.69347 15.5259 9.83807 14.682 10.682C13.8381 11.5259 12.6935 12 11.5 12C10.3065 12 9.16193 11.5259 8.31802 10.682C7.47411 9.83807 7 8.69347 7 7.5C7 6.30653 7.47411 5.16193 8.31802 4.31802C9.16193 3.47411 10.3065 3 11.5 3C12.6935 3 13.8381 3.47411 14.682 4.31802C15.5259 5.16193 16 6.30653 16 7.5ZM15.5 14.5H22.5V19.134C22.5 19.4663 22.4171 19.7934 22.2589 20.0857C22.1007 20.378 21.8722 20.6262 21.594 20.808L19 22.502L16.406 20.808C16.1278 20.6262 15.8993 20.378 15.7411 20.0857C15.5829 19.7934 15.5 19.4663 15.5 19.134V14.5Z"
+                          stroke="white"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                        />
+                      </svg>
+                    </div>
+                    <p>Insurance Website & Agent Porta</p>
                   </div>
-                  <p>Insurance Website & Agent Porta</p>
                 </div>
-                
-              </div>
-               </Link>
-                <Link href="#">
-
-              <div className="ai_sol_every_industry_desc">
-                <div className="d-flex gap-2 align-items-center">
-                  <div className="ai_sol_every_industry_icon_box">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6 7H5C4.46957 7 3.96086 7.21071 3.58579 7.58579C3.21071 7.96086 3 8.46957 3 9V18C3 18.5304 3.21071 19.0391 3.58579 19.4142C3.96086 19.7893 4.46957 20 5 20H19C19.5304 20 20.0391 19.7893 20.4142 19.4142C20.7893 19.0391 21 18.5304 21 18V9C21 8.46957 20.7893 7.96086 20.4142 7.58579C20.0391 7.21071 19.5304 7 19 7H18C17.4696 7 16.9609 6.78929 16.5858 6.41421C16.2107 6.03914 16 5.53043 16 5C16 4.73478 15.8946 4.48043 15.7071 4.29289C15.5196 4.10536 15.2652 4 15 4H9C8.73478 4 8.48043 4.10536 8.29289 4.29289C8.10536 4.48043 8 4.73478 8 5C8 5.53043 7.78929 6.03914 7.41421 6.41421C7.03914 6.78929 6.53043 7 6 7Z"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M9 13C9 13.7956 9.31607 14.5587 9.87868 15.1213C10.4413 15.6839 11.2044 16 12 16C12.7956 16 13.5587 15.6839 14.1213 15.1213C14.6839 14.5587 15 13.7956 15 13C15 12.2044 14.6839 11.4413 14.1213 10.8787C13.5587 10.3161 12.7956 10 12 10C11.2044 10 10.4413 10.3161 9.87868 10.8787C9.31607 11.4413 9 12.2044 9 13Z"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+              </Link>
+              <Link href="#">
+                <div className="ai_sol_every_industry_desc">
+                  <div className="d-flex gap-2 align-items-center">
+                    <div className="ai_sol_every_industry_icon_box">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 7H5C4.46957 7 3.96086 7.21071 3.58579 7.58579C3.21071 7.96086 3 8.46957 3 9V18C3 18.5304 3.21071 19.0391 3.58579 19.4142C3.96086 19.7893 4.46957 20 5 20H19C19.5304 20 20.0391 19.7893 20.4142 19.4142C20.7893 19.0391 21 18.5304 21 18V9C21 8.46957 20.7893 7.96086 20.4142 7.58579C20.0391 7.21071 19.5304 7 19 7H18C17.4696 7 16.9609 6.78929 16.5858 6.41421C16.2107 6.03914 16 5.53043 16 5C16 4.73478 15.8946 4.48043 15.7071 4.29289C15.5196 4.10536 15.2652 4 15 4H9C8.73478 4 8.48043 4.10536 8.29289 4.29289C8.10536 4.48043 8 4.73478 8 5C8 5.53043 7.78929 6.03914 7.41421 6.41421C7.03914 6.78929 6.53043 7 6 7Z"
+                          stroke="white"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M9 13C9 13.7956 9.31607 14.5587 9.87868 15.1213C10.4413 15.6839 11.2044 16 12 16C12.7956 16 13.5587 15.6839 14.1213 15.1213C14.6839 14.5587 15 13.7956 15 13C15 12.2044 14.6839 11.4413 14.1213 10.8787C13.5587 10.3161 12.7956 10 12 10C11.2044 10 10.4413 10.3161 9.87868 10.8787C9.31607 11.4413 9 12.2044 9 13Z"
+                          stroke="white"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <p>Photography Portfolio & Booking</p>
                   </div>
-                  <p>Photography Portfolio & Booking</p>
                 </div>
-              
-              </div>
-                </Link>
+              </Link>
             </div>
           </div>
         </section>
