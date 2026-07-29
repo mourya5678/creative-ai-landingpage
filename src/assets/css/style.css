@@ -730,11 +730,11 @@ header::after {
   transform: scale(1);
   opacity: 1;
   height: auto;
-  /* overflow: visible; */
+  overflow: visible;
 }
 
 .ct_middle_navbar ul li:hover .ct_custom_dropdown.ct_mega_dropdown_width {
-  /* overflow-y: auto; */
+  overflow-y: auto;
 }
 
 .ct_dropdown {
@@ -818,8 +818,7 @@ header::after {
 
 .ct_dropdown_items {
   padding: 28px 22px;
-  max-height: 400px;
-  overflow-y: auto;
+  max-height: 500px;
 
 }
 

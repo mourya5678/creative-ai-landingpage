@@ -872,7 +872,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="#">
+              <Link href="/build/insurance-agencies">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -895,7 +895,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="#">
+              <Link href="/build/photography-portfolio">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
