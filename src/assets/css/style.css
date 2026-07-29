@@ -2987,8 +2987,9 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.24));
 gap: 25px;
   margin-top: 60px;
 }
-.ai_sol_every_industry_desc{
-  border: 1px solid #0000000D;
+.ai_sol_every_industry_cont a{
+  height: 100%;
+    border: 1px solid #0000000D;
   box-shadow: 0px 4px 8.9px 0px #00000021;
   padding: 24px 20px;
   border-radius: 14px;
@@ -2998,7 +2999,9 @@ gap: 25px;
   justify-content: space-between;
    transition: 0.4s ease all;
 }
-.ai_sol_every_industry_desc:hover{
+
+
+.ai_sol_every_industry_cont a:hover{
   transform: scale(1.05);
 
 }
