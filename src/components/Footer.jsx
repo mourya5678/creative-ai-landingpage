@@ -83,7 +83,7 @@ export default function Footer() {
                                     <Link href="/privacy-policy">Privacy Policy</Link>
                                 </li>
                                 <li>
-                                    <Link href="/terms-condition">Terms of Service</Link>
+                                    <Link href="/terms-of-use">Terms of Use</Link>
                                 </li>
 
                             </ul>
@@ -93,7 +93,7 @@ export default function Footer() {
                         className="d-flex flex-wrap justify-content-lg-center justify-content-center gap-4 ct_mt_60">
                         {/* <div>
                         <Link
-                            href="/terms-condition"
+                            href="/terms-of-use"
                             className="text-decoration-none text-white ct_fs_16 ct_fw_500 ct_delight_medium"
                         >Terms of Service
                         </Link>

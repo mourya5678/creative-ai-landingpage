@@ -27,7 +27,8 @@ const nextConfig = {
       { source: '/enterprise.html', destination: '/enterprise', permanent: true },
       { source: '/entrepreneurs.html', destination: '/entrepreneurs', permanent: true },
       { source: '/privacy-policy.html', destination: '/privacy-policy', permanent: true },
-      { source: '/terms-condition.html', destination: '/terms-condition', permanent: true },
+      { source: '/terms-condition.html', destination: '/terms-of-use', permanent: true },
+      { source: '/terms-condition', destination: '/terms-of-use', permanent: true },
     ];
   }
 };

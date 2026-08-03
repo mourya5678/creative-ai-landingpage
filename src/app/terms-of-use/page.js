@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Terms & Conditions | Creative AI",
+  title: "Terms of Use | Creative AI",
   description: "Read the Terms of Use and Conditions for using the Creative AI platform, services, and applications.",
   keywords: "terms and conditions, terms of use, terms of service, creative ai",
 };
