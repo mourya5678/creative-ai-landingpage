@@ -60,6 +60,32 @@ function LenisBridge() {
     };
   }, [lenis, pathname]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const handleTouch = (e) => {
+      if (
+        e.target &&
+        typeof e.target.closest === "function" &&
+        e.target.closest(".ct_testimonial_slider p")
+      ) {
+        e.stopPropagation();
+      }
+    };
+
+    window.addEventListener("touchstart", handleTouch, { capture: true, passive: true });
+    window.addEventListener("touchmove", handleTouch, { capture: true, passive: true });
+    window.addEventListener("touchend", handleTouch, { capture: true, passive: true });
+
+    return () => {
+      window.removeEventListener("touchstart", handleTouch, { capture: true });
+      window.removeEventListener("touchmove", handleTouch, { capture: true });
+      window.removeEventListener("touchend", handleTouch, { capture: true });
+    };
+  }, []);
+
   return null;
 }
 
@@ -76,8 +102,8 @@ export default function LenisProvider({ children }) {
         wheelMultiplier: 1,
         touchMultiplier: 1.5,
         prevent: (node) => {
-          return node.closest?.(".ct_testimonial_slider") || 
-                 node.closest?.("[data-lenis-prevent]");
+          return node.closest?.(".ct_testimonial_slider") ||
+            node.closest?.("[data-lenis-prevent]");
         },
       }}
     >

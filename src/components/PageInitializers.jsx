@@ -189,6 +189,9 @@ export function InnerTestimonialInit() {
           margin: 15,
           nav: true,
           autoHeight: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
           responsive: {
             0: { items: 1 },
             575: { items: 1 },
