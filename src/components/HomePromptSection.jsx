@@ -58,7 +58,7 @@ export default function HomePromptSection() {
         ></textarea>
         <div className="cti_home_prompt_action_btns">
           <div className="ctiprompt_left_btns">
-            <button type="button" aria-label="Attach file"
+            {/* <button type="button" aria-label="Attach file"
               onClick={handleSend}>
               <svg
                 width="14"
@@ -72,7 +72,7 @@ export default function HomePromptSection() {
                   fill="white"
                 />
               </svg>
-            </button>
+            </button> */}
             <button
               onClick={handleSend} type="button" aria-label="Voice input">
               <i className="fa-solid fa-microphone"></i>
