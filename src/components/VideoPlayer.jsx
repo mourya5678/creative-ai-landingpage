@@ -62,27 +62,27 @@ export default function VideoPlayer({ src, className = "" }) {
         Your browser does not support the video tag.
       </video>
 
-      {/* Clickable Overlay Wrapper */}
+      {/* 1. Full Height Visual Overlay (Pointer events: none, no click blockage) */}
       <div
-        onClick={handlePlayPause}
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
-          height: "calc(100% - 0px)", // Leave bottom controls uncovered
+          height: "100%",
+          background: showButton ? "rgba(0, 0, 0, 0.35)" : "transparent",
+          transition: "background 0.3s ease",
+          borderRadius: "10px",
+          pointerEvents: "none",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: showButton ? "rgba(0, 0, 0, 0.25)" : "transparent",
-          transition: "background 0.3s ease",
-          borderRadius: "10px",
-          cursor: "pointer",
-          zIndex: 10,
+          zIndex: 9,
         }}
       >
-        {/* Play/Pause Button in Center */}
+        {/* Play/Pause Button in Center (Pointer events: auto, clickable) */}
         <div
+          onClick={handlePlayPause}
           style={{
             width: "50px",
             height: "50px",
@@ -96,6 +96,7 @@ export default function VideoPlayer({ src, className = "" }) {
             opacity: showButton ? 1 : 0,
             visibility: showButton ? "visible" : "hidden",
             pointerEvents: showButton ? "auto" : "none",
+            cursor: "pointer",
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.12)";
@@ -136,6 +137,21 @@ export default function VideoPlayer({ src, className = "" }) {
           )}
         </div>
       </div>
+
+      {/* 2. Invisible Click Catcher for Play/Pause (Covers top video body, leaves bottom 60px controls) */}
+      <div
+        onClick={handlePlayPause}
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "calc(100% - 60px)",
+          cursor: "pointer",
+          zIndex: 10,
+          pointerEvents: "auto",
+        }}
+      />
     </div>
   );
 }
