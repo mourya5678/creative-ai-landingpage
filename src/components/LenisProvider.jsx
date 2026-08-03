@@ -75,6 +75,10 @@ export default function LenisProvider({ children }) {
         smoothWheel: true,
         wheelMultiplier: 1,
         touchMultiplier: 1.5,
+        prevent: (node) => {
+          return node.closest?.(".ct_testimonial_slider") || 
+                 node.closest?.("[data-lenis-prevent]");
+        },
       }}
     >
       <LenisBridge />

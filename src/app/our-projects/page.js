@@ -19,13 +19,13 @@ export default function Page() {
 
 
       </div>
-      <section className="ct_py_70 ct_inner_hero_bg">
+      <section className="ct_py_70 ct_md_py_50 ct_inner_hero_bg">
         <div className="container">
           <div className="row">
             <div className="col-md-8 mx-auto">
               <div className="ct_inner_banner_w_bg">
                 <h1 className="ct_fs_44 ct_fw_700 mb-4 text-center">
-                  Experience your app
+                  Experience your app{" "}
                   <span className="ct_orange_gredient_text">before you build it</span>
                 </h1>
                 <h2 className="ct_fs_18 mb-0 text-center mb-3">

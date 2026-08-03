@@ -22,10 +22,10 @@ export default function Page() {
 
 
 
-        <section className="ct_py_70">
+        <section className="ct_py_70 ct_md_py_50">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6  mb-lg-0">
                 <div className="ct_hero_banner_left_cnt">
                   <h1 className="ct_fs_44 ct_fw_700" style={{ maxWidth: "600px" }}> Build Secure Fintech Apps Faster with Creative AI
 
@@ -37,7 +37,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 mb-4 mb-lg-0">
+              <div className="col-lg-6  mb-lg-0">
                 <div className="ct_hero_right_main">
                   <div className="position-relative financial-solution-img">
                     <img alt="AI app builder for mobile and web" className="ct_img_w_80" src="/img/finance-solution-1.webp" style={{ objectFit: "contain" }} />
@@ -55,7 +55,7 @@ export default function Page() {
           <div className="row">
             <div className="col-md-12">
               <h1 className="ct_fw_700 ct_fs_44 text-center mb-3">How Creative AI Helps You Build Secure
-                <br />
+                <br />{" "}
                 <span className="ct_orange_gredient_text">
                   Fintech Apps</span>
               </h1>
@@ -65,13 +65,13 @@ export default function Page() {
               </p>
             </div>
           </div>
-          <div className="row align-items-center pt-5">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center pb-lg-0 mb-lg-0 my-5">
+           <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" className="ct_border_radius_10 ct_object_cover" loading="lazy" src="/img/Financial_Solutions_new_12.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Build secure financial apps without coding
 
@@ -85,8 +85,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 mb-lg-0 mb-5  ct_row_reverse_767">
+             <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Faster development and deployment
 
@@ -99,13 +99,13 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+            <div className="col-md-4  mb-md-0 mb-5 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" className="ct_border_radius_10 ct_object_cover" loading="lazy" src="/img/Financial_Solutions_new_1.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
+         <div className="row align-items-center pb-lg-0 mb-lg-0 mb-5">
             <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" className="ct_border_radius_10 ct_object_cover" loading="lazy" src="/img/Financial_Solutions_new_13.webp" />
@@ -125,8 +125,9 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+          
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 pb-0 mb-lg-0 mb-5  ct_row_reverse_767">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate">
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">
 
@@ -141,19 +142,19 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="col-md-4 mb-5 mb-md-0 offset-md-1 aos-init aos-animate">
+             <div className="col-md-4  mb-md-0 mb-5 offset-md-1 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" loading="lazy" src="/img/Financial_Solutions_new_14.webp" />
               </div>
             </div>
           </div>
-          <div className="row align-items-center ct_py_70 pb-0">
-            <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
+          <div className="row align-items-center ct_py_70 ct_mb_py_0 pb-0">
+             <div className="col-md-4  mb-md-0 mb-5 aos-init aos-animate">
               <div className="ct_creative_single_img">
                 <img alt="AI app builder for mobile and web" className="ct_object_fit_cover ct_border_radius_10" loading="lazy" src="/img/Financial_Solutions_new_15.webp" />
               </div>
             </div>
-            <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate offset-md-1">
+            <div className="col-md-7  mb-md-0 aos-init aos-animate offset-md-1">
               <div className="ct_flexible_serivce_cnt">
                 <h4 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">End-to-end support and scalability
 
@@ -243,12 +244,12 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_py_70">
+      <section className="ct_py_70 ct_md_py_50">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <h2 className="ct_fs_44 ct_fw_700 text-center">Explore How We Built a
-                <span className="ct_orange_gredient_text">Finance Project </span> <br /> with Creative AI</h2>
+                <span className="ct_orange_gredient_text">{" "}Finance Project </span> <br />{" "} with Creative AI</h2>
             </div>
           </div>
           <div className="owl-carousel owl-theme ct_pricing_works ct_dot_nav_hover pt-5">
@@ -543,15 +544,15 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <hr className="ct_break_line" />
-      <section className="ct_grey_bg ct_py_70 ct_olw_nav_show_main">
+      <hr className="ct_break_line mb-0" />
+      <section className="ct_grey_bg ct_py_70 ct_md_py_50 ct_olw_nav_show_main">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="d-flex align-items-center justify-content-between flex-wrap gap-3">
                 <div className="text-center">
                   <h4 className="ct_fs_34 ct_fw_700 mb-2">
-                    See How We've Transformed Ideas into <br />
+                    See How We've Transformed Ideas into <br />{" "}
                     <span className="ct_orange_gredient_text">Digital Success Stories</span>
                   </h4>
                   <p className="ct_fs_18 ct_fs_600">
@@ -770,7 +771,7 @@ export default function Page() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h3 className="ct_fs_44 ct_fw_700 text-center">Related <span className="ct_orange_gredient_text">Blogs</span>
+              <h3 className="ct_fs_44 ct_fw_700 text-center">Related {" "}<span className="ct_orange_gredient_text">Blogs</span>
               </h3>
             </div>
           </div>

@@ -8,8 +8,10 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import Footer from "@/components/Footer";
 import LenisProvider from "@/components/LenisProvider";
 import { AOSInit, StylesheetLoader } from "@/components/PageInitializers";
+import PwaRegister from "@/components/PwaRegister";
 import Script from "next/script";
 import { Inter } from "next/font/google";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,14 +19,19 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+export const viewport = {
+  themeColor: "#0f172a",
+};
+
 export const metadata = {
   metadataBase: new URL("https://creativethoughts.ai"),
   title: "AI Website & App Builder | No-Code Platform | Creative AI",
   description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
+  manifest: "/manifest.json",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/img/c.png",
+    icon: "/creative_icon.png",
+    shortcut: "/creative_icon.png",
+    apple: "/creative_icon.png",
   },
   verification: {
     other: {
@@ -76,7 +83,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/creative_icon.png" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
 
         {/* Organization Schema Markup */}
@@ -255,6 +262,7 @@ export default function RootLayout({ children }) {
 
         <LenisProvider>
           <AOSInit />
+          <PwaRegister />
           <StylesheetLoader />
           {children}
           <Footer />

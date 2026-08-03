@@ -234,7 +234,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_pt_145px" style={{ overflowX: "unset" }}>
+      <section className="ct_pt_145px what_you_build_sec" style={{ overflowX: "unset" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -246,7 +246,7 @@ export default async function Page() {
                   and launch faster without coding.
                 </p>
               </div>
-              <div style={{ height: "111px" }}></div>
+              <div className="cti_height_111"></div>
               <div className="ct_sticky_scroll_main">
                 <section className="cti_saas_card">
                   <div className="cti_content">
@@ -271,7 +271,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -333,7 +333,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -394,7 +394,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -455,7 +455,7 @@ export default async function Page() {
                     <div className="mt-auto">
                       <a
                         href={LOGIN_URL}
-                        className="cti_build_btn mt-4"
+                        className="cti_build_btn mt-lg-4 mt-3"
                         style={{ width: "fit-content", textDecoration: "none" }}
                       >
                         Build
@@ -513,7 +513,7 @@ export default async function Page() {
               </div>
             </div>
           </div>
-          <div className="ct_pt_105">
+          <div className="ct_pt_105 ct_smart_product_design_cont">
             <div className="row gy-4">
               <div className="col-lg-4 col-md-12">
                 <div className="card design-box-card">
@@ -923,27 +923,8 @@ export default async function Page() {
                 />
               </div>
               <div className="d-xl-flex d-none justify-content-end ct_mt_63">
-                <button className="ct_get_started_btn ct_down_btn">
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 15 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.33365 6.79167V0.833333C8.33365 0.61232 8.24586 0.400358 8.08958 0.244078C7.9333 0.0877973 7.72133 0 7.50032 0C7.27931 0 7.06735 0.0877973 6.91107 0.244078C6.75478 0.400358 6.66699 0.61232 6.66699 0.833333V6.79167L4.81699 4.47833C4.74994 4.38909 4.66565 4.31422 4.56911 4.25817C4.47258 4.20213 4.36576 4.16605 4.25502 4.15208C4.14427 4.13811 4.03184 4.14653 3.92441 4.17684C3.81698 4.20716 3.71674 4.25874 3.62963 4.32854C3.54252 4.39834 3.47032 4.48493 3.41732 4.58317C3.36431 4.68141 3.33159 4.7893 3.32108 4.90043C3.31058 5.01156 3.3225 5.12366 3.35616 5.23009C3.38981 5.33653 3.4445 5.43511 3.51699 5.52L6.85032 9.68667C6.92841 9.78399 7.02735 9.86255 7.13985 9.91652C7.25235 9.9705 7.37554 9.99852 7.50032 9.99852C7.6251 9.99852 7.74829 9.9705 7.86079 9.91652C7.97329 9.86255 8.07224 9.78399 8.15032 9.68667L11.4837 5.52C11.5561 5.43511 11.6108 5.33653 11.6445 5.23009C11.6781 5.12366 11.6901 5.01156 11.6796 4.90043C11.6691 4.7893 11.6363 4.68141 11.5833 4.58317C11.5303 4.48493 11.4581 4.39834 11.371 4.32854C11.2839 4.25874 11.1837 4.20716 11.0762 4.17684C10.9688 4.14653 10.8564 4.13811 10.7456 4.15208C10.6349 4.16605 10.5281 4.20213 10.4315 4.25817C10.335 4.31422 10.2507 4.38909 10.1837 4.47833L8.33365 6.79167Z"
-                      fill="white"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M5.5475 10.7285L3.63167 8.3335H1.66667C1.22464 8.3335 0.800716 8.50909 0.488155 8.82165C0.175595 9.13421 0 9.55814 0 10.0002V13.3335C0 13.7755 0.175595 14.1994 0.488155 14.512C0.800716 14.8246 1.22464 15.0002 1.66667 15.0002H13.3333C13.7754 15.0002 14.1993 14.8246 14.5118 14.512C14.8244 14.1994 15 13.7755 15 13.3335V10.0002C15 9.55814 14.8244 9.13421 14.5118 8.82165C14.1993 8.50909 13.7754 8.3335 13.3333 8.3335H11.3683L9.45167 10.7285C9.21745 11.0212 8.9204 11.2575 8.58249 11.4199C8.24459 11.5823 7.87449 11.6666 7.49958 11.6666C7.12468 11.6666 6.75458 11.5823 6.41668 11.4199C6.07877 11.2575 5.78172 11.0212 5.5475 10.7285ZM11.6667 10.8335C11.4457 10.8335 11.2337 10.9213 11.0774 11.0776C10.9211 11.2339 10.8333 11.4458 10.8333 11.6668C10.8333 11.8878 10.9211 12.0998 11.0774 12.2561C11.2337 12.4124 11.4457 12.5002 11.6667 12.5002H11.675C11.896 12.5002 12.108 12.4124 12.2643 12.2561C12.4205 12.0998 12.5083 11.8878 12.5083 11.6668C12.5083 11.4458 12.4205 11.2339 12.2643 11.0776C12.108 10.9213 11.896 10.8335 11.675 10.8335H11.6667Z"
-                      fill="white"
-                    />
-                  </svg>
+                <button className=" ct_down_btn">
+               
                   Download
                 </button>
               </div>
@@ -959,7 +940,7 @@ export default async function Page() {
             <div>
               <p className="ct_text_dark ct_fs_20 ct_mb_34 text-xl-start text-center">
                 Download the complete source code of your website or app
-                anytime. Host it anywhere, customize it freely, and stay in full
+                anytime. Host it Anywhere, customize it freely, and stay in full
                 control.{" "}
               </p>
               <div className="">
@@ -1062,7 +1043,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="ct_py_98">
+      <section className="ct_py_98 creative_ai_in_action">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -1088,7 +1069,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="cti_testimonal_new_section ct_pb_150 pt-0">
+      <section className="cti_testimonal_new_section ct_pb_100 pt-0">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -1331,7 +1312,7 @@ export default async function Page() {
           </div>
         </div>
       </section>
-      <section className="cti_home_faq_bg_new ct_pt_150 ct_pb_150">
+      <section className="cti_home_faq_bg_new ct_pt_100 ct_pb_100">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
@@ -1343,10 +1324,10 @@ export default async function Page() {
               </div>
               <FAQAccordion
                 accordionId="ctiFaqAccordion"
-                accordionClass="cti_faq_accordion"
-                itemClass="cti_faq_item"
-                btnClass="cti_faq_btn"
-                bodyClass="cti_faq_body"
+                accordionclassName="cti_faq_accordion"
+                itemclassName="cti_faq_item"
+                btnclassName="cti_faq_btn"
+                bodyclassName="cti_faq_body"
                 items={[
                   {
                     question: "What is Creative AI?",

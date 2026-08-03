@@ -16,7 +16,7 @@ export default function Page() {
                   <Header />
 
 
-                  <section className="ct_faq_banner pt-0">
+                  <section className="ct_faq_banner pt-0 mt-4">
                         <div>
 
 

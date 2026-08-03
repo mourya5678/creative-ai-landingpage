@@ -43,7 +43,7 @@ export default function Page() {
          <section className="ct_pb_50 ct_pt_50">
             <div className="container">
                <div className="row">
-                  <div className="col-md-12 mb-5 pb-4">
+                  <div className="col-md-12 mb-5 pb-lg-4">
                      <h2 className="ct_fs_44 ct_fw_700 text-center mb-3">How
                         <span className="ct_orange_gredient_text">  Creative AI </span> Builds Your App
                      </h2>
@@ -79,7 +79,7 @@ export default function Page() {
                            </div>
                         </div>
                      </div>
-                     <div className="col-lg-5 mb-5 mb-lg-0 offset-lg-1">
+                     <div className="col-lg-5 mb-0 mb-lg-0 offset-lg-1">
                         <div className="ct_flexible_srvc_img">
                            <img alt="AI app builder for mobile and web" loading="lazy" src="/img/how-works_right.webp" />
                         </div>
@@ -89,11 +89,11 @@ export default function Page() {
             </div>
          </section>
          <hr className="ct_break_line" />
-         <section className="ct_py_70">
+         <section className="ct_py_70 ct_md_py_50">
             <div className="container">
                <div className="row">
                   <div className="col-md-12 mb-5">
-                     <h2 className="ct_fs_44 ct_fw_700 mb-3 text-center">What Makes
+                     <h2 className="ct_fs_44 ct_fw_700 mb-3 text-center">What Makes {" "}
                         <span className="ct_orange_gredient_text">Creative AI  </span> Different
                      </h2>
                      <p className="mb-0 text-center">Creative AI is an AI app builder that helps businesses create complete, scalable, and customized applications faster with intelligent automation and expert support.</p>
@@ -115,7 +115,7 @@ export default function Page() {
                      </div>
                   </div>
                </div>
-               <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
+               <div className="row align-items-center ct_py_70 ct_md_py_50 pb-0 ct_row_reverse_767">
                   <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
                      <div className="ct_flexible_serivce_cnt">
                         <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Multiple Project Creation
@@ -131,7 +131,7 @@ export default function Page() {
                      </div>
                   </div>
                </div>
-               <div className="row align-items-center ct_py_70 pb-0">
+               <div className="row align-items-center ct_py_70 ct_md_py_50 pb-0">
                   <div className="col-md-4 mb-5 mb-md-0 aos-init aos-animate">
                      <div className="ct_creative_single_img">
                         <img alt="AI app builder" className="h-auto" loading="lazy" src="/img/Customization_with_Expert_Support.webp" />
@@ -147,8 +147,8 @@ export default function Page() {
                      </div>
                   </div>
                </div>
-               <div className="row align-items-center ct_py_70 pb-0 ct_row_reverse_767">
-                  <div className="col-md-7 mb-5 mb-md-0 aos-init aos-animate">
+               <div className="row align-items-center ct_py_70 ct_md_py_50 pb-0 ct_row_reverse_767">
+                  <div className="col-md-7 mb-0 mb-md-0 aos-init aos-animate">
                      <div className="ct_flexible_serivce_cnt">
                         <h3 className="ct_fs_26 ct_fw_700 mb-3 ct_line_h_25">Complete Development Support
                         </h3>
@@ -166,13 +166,15 @@ export default function Page() {
             </div>
          </section>
          <hr className="ct_break_line" />
-         <section className="ct_py_70">
+         <section className="ct_py_70 ct_md_py_50">
             <div className="container">
                <div className="row">
                   <div className="col-md-12 mb-5">
                      <h2 className="ct_fs_44 ct_fw_700 mb-3 text-center">
-                        Launch Products Faster with
-                        <span className="ct_orange_gredient_text">Creative AI </span>
+                        Launch Products Faster with{" "}
+                        <span className="ct_orange_gredient_text d-lg-inline d-block" >
+                          
+                           Creative AI </span>
                      </h2>
                      <p className="text-center">Launch products faster with Creative AI, a no-code AI app builder for scalable and end-to-end app development. </p>
                   </div>
@@ -266,14 +268,14 @@ export default function Page() {
                </div>
             </div>
          </section>
-         <section className="ct_grey_bg ct_py_70 ct_olw_nav_show_main">
+         <section className="ct_grey_bg ct_py_70 ct_md_py_50 ct_olw_nav_show_main">
             <div className="container">
                <div className="row">
                   <div className="col-md-12">
                      <div className="d-flex align-items-center justify-content-center flex-wrap gap-3">
                         <div className="text-center">
                            <h4 className="ct_fs_34 ct_fw_700 mb-2">
-                              See How We've Transformed Ideas into
+                              See How We've Transformed Ideas into{" "}
                               <span className="ct_orange_gredient_text">Digital Success Stories</span>
                            </h4>
                            <p className="ct_fs_18 ct_fs_600">
