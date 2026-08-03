@@ -1788,7 +1788,7 @@ html.w-mod-touch * {
   border-radius: 24px !important;
   overflow: hidden;
   margin-bottom: 16px;
-  box-shadow: 0px 1px 2px 0px #0000000d;
+  box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.08);
 }
 
 .cti_faq_item:first-child {
@@ -3620,12 +3620,14 @@ input[type="radio"]:checked+.cti_option_btn span {
 
 .ct_custom_table tr th,
 .ct_custom_table tr td {
-  padding: 40px 24px;
+  padding: 40px 10px;
   /* text-align: center; */
   vertical-align: middle;
   white-space: nowrap;
   background: transparent;
   text-align: center;
+  white-space: normal;
+  font-size: 14px;
 
 }
 
@@ -3700,5 +3702,17 @@ input[type="radio"]:checked+.cti_option_btn span {
 @media screen and (max-width:575px) {
   .ct_fs_60 {
     font-size: 40px !important;
+  }
+
+  .ct_custom_table tr th,
+  .ct_custom_table tr td {
+    white-space: normal;
+    font-size: 12px;
+    padding-inline: 10px;
+  }
+
+  .ct_custom_table tr th img {
+    width: 71px;
+    object-fit: contain;
   }
 }

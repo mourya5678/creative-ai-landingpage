@@ -31,14 +31,16 @@ export default function VideoPlayer({ src, className = "" }) {
     if (!video) return;
     if (video.paused) {
       video.play().catch((err) => {
-        console.warn("Play failed:", err);
+        if (err.name !== "AbortError") {
+          console.warn("Play failed:", err);
+        }
       });
     } else {
       video.pause();
     }
   };
 
-  const showOverlay = !isPlaying || isHovered;
+  const showButton = !isPlaying || isHovered;
 
   return (
     <div
@@ -54,34 +56,33 @@ export default function VideoPlayer({ src, className = "" }) {
         onContextMenu={(e) => e.preventDefault()}
         preload="auto"
         className={className}
-        onClick={handlePlayPause}
-        style={{ cursor: "pointer", display: "block" }}
+        style={{ display: "block", width: "100%", borderRadius: "10px" }}
       >
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
+      {/* Clickable Overlay Wrapper */}
       <div
+        onClick={handlePlayPause}
         style={{
           position: "absolute",
-          top: "50%",
-          left: "50%",
+          top: 0,
+          left: 0,
           width: "100%",
-          height: "100%",
+          height: "calc(100% - 0px)", // Leave bottom controls uncovered
           display: "flex",
           alignItems: "center",
-          transform: "translate(-50% , -50%)",
           justifyContent: "center",
-          background: "rgba(0, 0, 0, 0.25)",
-          transition: "opacity 0.3s ease, visibility 0.3s ease",
+          background: showButton ? "rgba(0, 0, 0, 0.25)" : "transparent",
+          transition: "background 0.3s ease",
           borderRadius: "10px",
-          opacity: showOverlay ? 1 : 0,
-          visibility: showOverlay ? "visible" : "hidden",
-          pointerEvents: "none", // Let clicks fall through to controls
+          cursor: "pointer",
+          zIndex: 10,
         }}
       >
+        {/* Play/Pause Button in Center */}
         <div
-          onClick={handlePlayPause}
           style={{
             width: "50px",
             height: "50px",
@@ -91,9 +92,10 @@ export default function VideoPlayer({ src, className = "" }) {
             alignItems: "center",
             justifyContent: "center",
             boxShadow: "0 10px 25px rgba(94, 95, 245, 0.4)",
-            transition: "transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease",
-            pointerEvents: "auto", // Handle clicks on the play button
-            cursor: "pointer",
+            transition: "transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease, opacity 0.3s ease, visibility 0.3s ease",
+            opacity: showButton ? 1 : 0,
+            visibility: showButton ? "visible" : "hidden",
+            pointerEvents: showButton ? "auto" : "none",
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "scale(1.12)";

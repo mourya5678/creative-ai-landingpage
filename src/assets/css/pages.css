@@ -172,7 +172,7 @@
     transform: translateY(-50%);
     width: 100%;
     justify-content: space-between;
-    
+
 }
 
 .ct_testimonial_slider .owl-nav button.owl-prev {
@@ -489,7 +489,7 @@
 
 /* blog css s */
 .ct_blog_search_input input {
-    height: 60px;
+    height: 48px;
     border: 1px solid #000;
     border-radius: 100px;
 }
@@ -500,11 +500,19 @@
     transform: translateY(-50%);
     right: 5px;
     color: var(--dark_blue);
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 100px;
     border: transparent;
     background-color: hsl(0deg 0% 0% / 10%);
+}
+
+.ct_blog_search_input .form-control:focus {
+    border: 1px solid #333 !important;
+}
+
+.ct_blog_search_input .form-control {
+    color: #000 !important;
 }
 
 
@@ -1454,71 +1462,71 @@
 
 
 .cti_faq_accordion button {
-  font-size: 23.95px;
-  font-family: Satoshi-medium;
-  font-weight: 500;
-  padding-right: 70px;
+    font-size: 23.95px;
+    font-family: Satoshi-medium;
+    font-weight: 500;
+    padding-right: 70px;
 
 
 }
 
 .cti_faq_accordion button.collapsed {
 
-  background-color: #FBF7FF !important;
-  box-shadow: 0px 1px 2px 0px #0000000D !important;
-  padding-right: 70px;
+    background-color: #FBF7FF !important;
+    box-shadow: 0px 1px 2px 0px #0000000D !important;
+    padding-right: 70px;
 
 }
 
 .cti_faq_btn::after {
-  display: none;
+    display: none;
 }
 
 .cti_faq_btn {
-  position: relative;
-  padding-right: 90px;
+    position: relative;
+    padding-right: 90px;
 }
 
 .cti_faq_btn::before {
-  content: "+";
-  position: absolute;
-  right: 22px;
-  top: 50%;
-  transform: translateY(-50%);
+    content: "+";
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
 
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
 
-  background: #fff;
-  color: #1e1533;
+    background: #fff;
+    color: #1e1533;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  font-size: 24px;
-  font-weight: 300;
+    font-size: 24px;
+    font-weight: 300;
 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
 }
 
 /* Open State */
 .cti_faq_btn:not(.collapsed)::before {
-  content: "×";
-  color: #7c3aed;
-  font-size: 28px;
-  background-color: #ffffff01;
-  box-shadow:
-    0px 4px 6px -4px #0000001a,
-    0px 10px 15px -3px #0000001a;
+    content: "×";
+    color: #7c3aed;
+    font-size: 28px;
+    background-color: #ffffff01;
+    box-shadow:
+        0px 4px 6px -4px #0000001a,
+        0px 10px 15px -3px #0000001a;
 }
 
 .cti_faq_accordion .accordion-button:not(.collapsed) {
-  background: transparent;
+    background: transparent;
 }
 
 .cti_faq_accordion {
-  margin-top: 45px;
+    margin-top: 45px;
 }
