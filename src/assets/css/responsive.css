@@ -683,7 +683,7 @@
   }
 
   .ct_fs_60 {
-    font-size: 50px;
+    font-size: 50px !important;
   }
 }
 
@@ -787,6 +787,13 @@
 @media (max-width: 991px) {
   .hero_content {
     max-width: 720px;
+  }
+
+  .docs-row .toc-list .nav-link.default-active {
+    color: #fff;
+    border-left: 2px solid #5d5cff;
+    font-weight: 500;
+    background-color: #5d5cff;
   }
 }
 

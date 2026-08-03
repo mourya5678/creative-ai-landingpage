@@ -52,7 +52,7 @@ export default function BlogList({ initialBlogs, apiUrl }) {
 
               return (
                 <div key={blog.id} className="col-lg-6 col-md-6 mb-4">
-                  <div className="ct_related_article_card">
+                  <div className="ct_related_article_card w-100">
                     <figure>
                       <div className="ct_article_img" tabIndex="0">
                         {imageUrl && <img alt={blog.title || "Blog banner"} src={imageUrl} />}

@@ -2492,11 +2492,11 @@ input[type="radio"]:checked+.cti_option_btn span {
 }
 
 .ct_curve_arrow {
-  position: absolute;
-  bottom: 11px;
-  right: 40%;
   z-index: 1;
-  transform: rotate(14deg);
+  position: absolute;
+  bottom: -14px;
+  right: 40%;
+  transform: rotate(-34deg);
 }
 
 .ct_clr_6c82fe {
