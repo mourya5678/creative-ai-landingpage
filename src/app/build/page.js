@@ -593,7 +593,7 @@ export default async function Page() {
             </div>
 
             <div className="ai_sol_every_industry_cont">
-              <Link href="/build/restaurant">
+              <Link href="/restaurant-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -614,7 +614,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/law-firm">
+              <Link href="/law-firm-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -635,7 +635,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/hospital-patient-portal">
+              <Link href="/hospital-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -664,7 +664,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/student-portal">
+              <Link href="/school-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -695,7 +695,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/hotel-booking">
+              <Link href="/hotel-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -716,7 +716,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/gym-platform">
+              <Link href="/gym-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -761,7 +761,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/salon">
+              <Link href="/salon-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -782,7 +782,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/real-estate">
+              <Link href="/real-estate-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -813,7 +813,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/automotive-business">
+              <Link href="/automobile-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -834,7 +834,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/travel-agencies">
+              <Link href="/travel-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -858,7 +858,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/insurance-agencies">
+              <Link href="/insurance-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">
@@ -881,7 +881,7 @@ export default async function Page() {
                   </div>
                 </div>
               </Link>
-              <Link href="/build/photography-portfolio">
+              <Link href="/photography-website-builder">
                 <div className="ai_sol_every_industry_desc">
                   <div className="d-flex gap-2 align-items-center">
                     <div className="ai_sol_every_industry_icon_box">

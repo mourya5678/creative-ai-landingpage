@@ -65,7 +65,7 @@ export default async function RestaurantPage() {
       />
 
       <SolutionColumns
-        title="Complete Solutions For Your Automobile Business"
+        title="Complete Solutions For Your Travel Agencies"
         columns={travelAgenciesColumns}
       />
 
