@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import { LOGIN_URL } from "@/config";
+import React, { useState, useEffect } from "react";
+import { LOGIN_URL, API_URL } from "@/config";
 
 const formatCurrency = (val) => {
   if (val === undefined || val === null) return "";
@@ -28,10 +28,60 @@ const getCurrencySymbol = (currency) => {
   return symbolMap[upper] || clean;
 };
 
-export default function HomePricingSection({ monthlyPlans, yearlyPlans }) {
+export default function HomePricingSection({ monthlyPlans: initialMonthlyPlans, yearlyPlans: initialYearlyPlans }) {
   const [billingInterval, setBillingInterval] = useState("MONTH");
   const [selectedPlanIndex, setSelectedPlanIndex] = useState(0);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [monthlyPlans, setMonthlyPlans] = useState(initialMonthlyPlans);
+  const [yearlyPlans, setYearlyPlans] = useState(initialYearlyPlans);
+
+  useEffect(() => {
+    let active = true;
+    const detectAndFetch = async () => {
+      try {
+        const isIndia = () => {
+          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+          if (tz === "Asia/Kolkata" || tz === "Asia/Calcutta") return true;
+          const offset = new Date().getTimezoneOffset();
+          return offset === -330;
+        };
+
+        const targetCurrency = isIndia() ? "INR" : "USD";
+        
+        // Find current currency from plans
+        const currentCurrency = initialMonthlyPlans?.free?.[0]?.display_currency || 
+                                initialMonthlyPlans?.pro?.[0]?.display_currency || 
+                                "USD";
+
+        if (currentCurrency !== targetCurrency) {
+          console.log(`Currency mismatch detected client-side. Current: ${currentCurrency}, Target: ${targetCurrency}. Fetching correct plans...`);
+          const [mRes, yRes] = await Promise.all([
+            fetch(`${API_URL}/api/user/getAllPlans?billing_interval=MONTH&currency=${targetCurrency}`),
+            fetch(`${API_URL}/api/user/getAllPlans?billing_interval=YEAR&currency=${targetCurrency}`)
+          ]);
+          
+          if (mRes.ok && yRes.ok && active) {
+            const mJson = await mRes.json();
+            const yJson = await yRes.json();
+            if (mJson.success && yJson.success) {
+              setMonthlyPlans(mJson.data);
+              setYearlyPlans(yJson.data);
+            }
+          }
+        }
+      } catch (error) {
+        console.error("Error checking/fetching plans client-side:", error);
+      }
+    };
+
+    setMonthlyPlans(initialMonthlyPlans);
+    setYearlyPlans(initialYearlyPlans);
+    detectAndFetch();
+    
+    return () => {
+      active = false;
+    };
+  }, [initialMonthlyPlans, initialYearlyPlans]);
 
   const plans = billingInterval === "MONTH" ? monthlyPlans : yearlyPlans;
 
