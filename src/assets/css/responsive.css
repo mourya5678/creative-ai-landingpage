@@ -958,7 +958,10 @@
   }
 
   .ct_fs_60 {
-    font-size: 35px !important;
+    font-size: 40px !important;
+  }
+  .ct_dropdown_items ol{
+    padding-bottom: 40px !important;
   }
 
   .ct_custom_table tr th,
