@@ -39,19 +39,39 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
     let active = true;
     const detectAndFetch = async () => {
       try {
-        const isIndia = () => {
-          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-          if (tz === "Asia/Kolkata" || tz === "Asia/Calcutta") return true;
-          const offset = new Date().getTimezoneOffset();
-          return offset === -330;
+        const detectCountry = async () => {
+          try {
+            const res = await fetch("https://ipapi.co/json/");
+            if (res.ok) {
+              const data = await res.json();
+              if (data && data.country_code) {
+                return data.country_code.toUpperCase();
+              }
+            }
+          } catch (e) {
+            console.warn("ipapi.co fetch failed, falling back to timezone:", e);
+          }
+          
+          try {
+            const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            if (tz === "Asia/Kolkata" || tz === "Asia/Calcutta") return "IN";
+            const offset = new Date().getTimezoneOffset();
+            if (offset === -330) return "IN";
+          } catch (e) {
+            console.error("Timezone fallback failed:", e);
+          }
+          return "US";
         };
 
-        const targetCurrency = isIndia() ? "INR" : "USD";
+        const countryCode = await detectCountry();
+        const targetCurrency = countryCode === "IN" ? "INR" : "USD";
         
         // Find current currency from plans
         const currentCurrency = initialMonthlyPlans?.free?.[0]?.display_currency || 
                                 initialMonthlyPlans?.pro?.[0]?.display_currency || 
                                 "USD";
+
+        console.log("Client-side detected country:", countryCode, "Target Currency:", targetCurrency, "Current Currency:", currentCurrency);
 
         if (currentCurrency !== targetCurrency) {
           console.log(`Currency mismatch detected client-side. Current: ${currentCurrency}, Target: ${targetCurrency}. Fetching correct plans...`);
