@@ -129,14 +129,18 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
     standardPrice = billingInterval === "MONTH" ? `${standardCurrency}199.00` : `${standardCurrency}18349.00`;
   }
 
-  const standardCredits = standardPlan.credits_per_cycle ? `${standardPlan.credits_per_cycle} Credits` : "100 Credits";
+  const standardCredits = standardPlan.credits_per_cycle 
+    ? `${standardPlan.credits_per_cycle} Credits${billingInterval === "YEAR" ? "/month" : ""}` 
+    : `100 Credits${billingInterval === "YEAR" ? "/month" : ""}`;
 
   // Enterprise Plan pricing fields
   const enterpriseCurrency = getCurrencySymbol(enterprisePlan.display_currency);
   const enterprisePrice = enterprisePlan.display_amount
     ? `${enterpriseCurrency}${formatCurrency(enterprisePlan.display_amount)}`
     : (billingInterval === "MONTH" ? `${enterpriseCurrency}35000.00` : `${enterpriseCurrency}385199.00`);
-  const enterpriseCredits = enterprisePlan.credits_per_cycle ? `${enterprisePlan.credits_per_cycle} Credits` : "2000 Credits";
+  const enterpriseCredits = enterprisePlan.credits_per_cycle 
+    ? `${enterprisePlan.credits_per_cycle} Credits${billingInterval === "YEAR" ? "/month" : ""}` 
+    : `2000 Credits${billingInterval === "YEAR" ? "/month" : ""}`;
 
   const intervalSuffix = billingInterval === "MONTH" ? "/month" : "/year";
 
@@ -161,51 +165,53 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
         </div>
       </div>
 
-      <div className="ct_pricing_grid mt-5">
+      <div className={`ct_pricing_grid mt-5 ${billingInterval !== "MONTH" ? "ct_pricing_grid_two" : ""}`}>
         {/* Free Plan */}
-        <div className="ct_price_card">
-          <div className="ct_price_card_top">
-            <span className="ct_price_badge">FREE PLAN</span>
-            <h3 className="ct_price_credits">
-              {freeCredits}
-            </h3>
-            <div className="ct_price_value">
-              <span className="ct_price_current">{freePrice}</span>
-              <span className="ct_price_suffix">/month</span>
+        {billingInterval === "MONTH" && (
+          <div className="ct_price_card">
+            <div className="ct_price_card_top">
+              <span className="ct_price_badge">FREE PLAN</span>
+              <h3 className="ct_price_credits">
+                {freeCredits}
+              </h3>
+              <div className="ct_price_value">
+                <span className="ct_price_current">{freePrice}</span>
+                <span className="ct_price_suffix">/month</span>
+              </div>
+              <p>Best for exploring the platform</p>
+              <div className="ct_price_offer_slot"></div>
+              <a className="ct_price_cta" href={LOGIN_URL}>Start Free</a>
             </div>
-            <p>Best for exploring the platform</p>
-            <div className="ct_price_offer_slot"></div>
-            <a className="ct_price_cta" href={LOGIN_URL}>Start Free</a>
+            <div className="ct_price_card_bottom">
+              <h4>Features you will get:</h4>
+              <ul>
+                <li>
+                  <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
+                  <span>Create your first project (at 25 credits)</span>
+                </li>
+                <li>
+                  <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
+                  <span>Use remaining credits for minor edits &amp; tweaks</span>
+                </li>
+                <li>
+                  <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
+                  <span>Access to basic AI generation</span>
+                </li>
+                <li>
+                  <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
+                  <span>Single agent processing</span>
+                </li>
+                <li>
+                  <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
+                  <span>Chat-based interaction only</span>
+                </li>
+              </ul>
+              <p className="ct_price_note">
+                Upgrade anytime or buy credits directly
+              </p>
+            </div>
           </div>
-          <div className="ct_price_card_bottom">
-            <h4>Features you will get:</h4>
-            <ul>
-              <li>
-                <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
-                <span>Create your first project (at 25 credits)</span>
-              </li>
-              <li>
-                <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
-                <span>Use remaining credits for minor edits &amp; tweaks</span>
-              </li>
-              <li>
-                <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
-                <span>Access to basic AI generation</span>
-              </li>
-              <li>
-                <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
-                <span>Single agent processing</span>
-              </li>
-              <li>
-                <img alt="pricing icon" className="me-2" height="20" src="/img/pricing_check_icon.svg" width="20" />
-                <span>Chat-based interaction only</span>
-              </li>
-            </ul>
-            <p className="ct_price_note">
-              Upgrade anytime or buy credits directly
-            </p>
-          </div>
-        </div>
+        )}
 
         {/* Standard Plan */}
         <div className="ct_price_card ct_price_card_featured">

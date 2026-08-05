@@ -1104,6 +1104,12 @@
     gap: 34px;
 }
 
+.ct_pricing_grid.ct_pricing_grid_two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 800px;
+    margin-inline: auto;
+}
+
 .ct_price_card {
     position: relative;
     padding: 28px 30px 24px;
