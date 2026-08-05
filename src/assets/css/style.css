@@ -851,12 +851,12 @@ header::after {
 
 .ct_grid_2_flex {
   display: grid;
-  grid-template-columns: 40px auto;
-  padding-inline: 8px;
+  grid-template-columns: 30px auto;
+  /* padding-inline: 8px; */
 }
 
 
-.ct_dropdown_items ol li+li {
+.ct_dropdown_items ol li {
   margin-top: 5px;
 }
 
