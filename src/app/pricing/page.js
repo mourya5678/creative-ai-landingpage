@@ -1,3 +1,4 @@
+import { getPlans } from "@/utils/plans";
 import Header from "@/components/Header";
 import Link from "next/link";
 import { InnerTestimonialInit } from "@/components/PageInitializers";
@@ -12,20 +13,6 @@ export const metadata = {
 };
 
 export const dynamic = "force-dynamic";
-
-const getPlans = async (billingInterval) => {
-  try {
-    const res = await fetch(`${API_URL}/api/user/getAllPlans?billing_interval=${billingInterval}`, {
-      cache: "no-store"
-    });
-    if (!res.ok) return null;
-    const json = await res.json();
-    return json.success ? json.data : null;
-  } catch (error) {
-    console.error("Error fetching plans:", error);
-    return null;
-  }
-};
 
 export default async function Page() {
   const monthlyPlans = await getPlans("MONTH");

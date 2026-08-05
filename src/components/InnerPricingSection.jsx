@@ -9,6 +9,25 @@ const formatCurrency = (val) => {
   return num.toFixed(2);
 };
 
+const getCurrencySymbol = (currency) => {
+  if (!currency) return "₹";
+  const clean = currency.trim();
+  if (clean.length === 1 || !/^[A-Za-z0-9]+$/.test(clean)) {
+    return clean;
+  }
+  const upper = clean.toUpperCase();
+  const symbolMap = {
+    INR: "₹",
+    USD: "$",
+    EUR: "€",
+    GBP: "£",
+    JPY: "¥",
+    AUD: "A$",
+    CAD: "C$",
+  };
+  return symbolMap[upper] || clean;
+};
+
 export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
   const [billingInterval, setBillingInterval] = useState("MONTH");
   const [selectedPlanIndex, setSelectedPlanIndex] = useState(0);
@@ -22,28 +41,31 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
   const enterprisePlan = plans?.business?.[0] || plans?.business || {};
 
   // Free Plan pricing fields
-  const freePrice = freePlan.display_amount ? `₹${formatCurrency(freePlan.display_amount)}` : "₹0.00";
+  const freeCurrency = getCurrencySymbol(freePlan.display_currency);
+  const freePrice = freePlan.display_amount ? `${freeCurrency}${formatCurrency(freePlan.display_amount)}` : `${freeCurrency}0.00`;
   const freeCredits = freePlan.credits_per_cycle ? `${freePlan.credits_per_cycle} Credits` : "50 Credits";
 
   // Standard Plan pricing fields
-  let standardPrice = "₹199.00";
+  const standardCurrency = getCurrencySymbol(standardPlan.display_currency);
+  let standardPrice = `${standardCurrency}199.00`;
   let standardPrevPrice = null;
 
   if (standardPlan.has_intro_offer) {
-    standardPrice = `₹${formatCurrency(standardPlan.intro_amount)}`;
-    standardPrevPrice = `₹${formatCurrency(standardPlan.display_amount)}/month`;
+    standardPrice = `${standardCurrency}${formatCurrency(standardPlan.intro_amount)}`;
+    standardPrevPrice = `${standardCurrency}${formatCurrency(standardPlan.display_amount)}/month`;
   } else if (standardPlan.display_amount) {
-    standardPrice = `₹${formatCurrency(standardPlan.display_amount)}`;
+    standardPrice = `${standardCurrency}${formatCurrency(standardPlan.display_amount)}`;
   } else {
-    standardPrice = billingInterval === "MONTH" ? "₹199.00" : "₹18349.00";
+    standardPrice = billingInterval === "MONTH" ? `${standardCurrency}199.00` : `${standardCurrency}18349.00`;
   }
 
   const standardCredits = standardPlan.credits_per_cycle ? `${standardPlan.credits_per_cycle} Credits` : "100 Credits";
 
   // Enterprise Plan pricing fields
+  const enterpriseCurrency = getCurrencySymbol(enterprisePlan.display_currency);
   const enterprisePrice = enterprisePlan.display_amount
-    ? `₹${formatCurrency(enterprisePlan.display_amount)}`
-    : (billingInterval === "MONTH" ? "₹35000.00" : "₹385199.00");
+    ? `${enterpriseCurrency}${formatCurrency(enterprisePlan.display_amount)}`
+    : (billingInterval === "MONTH" ? `${enterpriseCurrency}35000.00` : `${enterpriseCurrency}385199.00`);
   const enterpriseCredits = enterprisePlan.credits_per_cycle ? `${enterprisePlan.credits_per_cycle} Credits` : "2000 Credits";
 
   const intervalSuffix = billingInterval === "MONTH" ? "/month" : "/year";
@@ -129,7 +151,7 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
                   <span className="ct_price_current">{standardPrice}</span>
                   <span className="ct_price_suffix">{intervalSuffix}</span>
                 </div>
-                {billingInterval === "MONTH" && <small className="text-dark opacity-50 fw-semibold ct_fs_12 "> ( 1st month only )</small>}
+                {billingInterval === "MONTH" && selectedPlanIndex === 0 && <small className="text-dark opacity-50 fw-semibold ct_fs_12 "> ( 1st month only )</small>}
               </div>
             </div>
             <div className="ct_price_offer_slot">
@@ -188,9 +210,10 @@ export default function InnerPricingSection({ monthlyPlans, yearlyPlans }) {
                     .map((plan, index) => ({ plan, originalIndex: index }))
                     .filter((item) => item.originalIndex !== selectedPlanIndex)
                     .map(({ plan, originalIndex }) => {
+                      const planCurrency = getCurrencySymbol(plan.display_currency);
                       const price = plan.has_intro_offer
-                        ? `₹${formatCurrency(plan.intro_amount)}`
-                        : `₹${formatCurrency(plan.display_amount)}`;
+                        ? `${planCurrency}${formatCurrency(plan.intro_amount)}`
+                        : `${planCurrency}${formatCurrency(plan.display_amount)}`;
                       const intervalLabel = plan?.billing_interval === "MONTH" ? "/month" : "/year";
                       return (
                         <button
