@@ -917,9 +917,9 @@ export default async function Page() {
         </section>
       </div>
 
-      <HowItWorksSection steps={defaultHowItWorksSteps} className="ct_pb_150" />
+      <HowItWorksSection steps={defaultHowItWorksSteps} className="pb-5" />
 
-      <OwnershipSection />
+      <OwnershipSection newClass="py-0" />
 
       <TestimonialsSection
         testimonials={testimonials}

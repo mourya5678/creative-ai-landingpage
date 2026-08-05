@@ -18,7 +18,7 @@ import ContactSection from "@/components/ContactSection";
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
 import {
- realEstateFeatures,
+  realEstateFeatures,
   realEstateColumns,
   realEstateFAQItems,
   realEstateComparisonRows,
@@ -78,6 +78,7 @@ export default async function RestaurantPage() {
       <TestimonialsSection
         testimonials={testimonials}
         title={<>Trusted By Founders Worldwide</>}
+        newClass="pt-0"
         description="See how startups are launching faster and growing smarter with our help."
       />
 
@@ -125,9 +126,9 @@ export default async function RestaurantPage() {
                 <span className="mx-auto">Frequently Asked Questions</span>
                 <h2
                   className="mx-auto text-center "
-                  
+
                 >
-                 Questions From Real Estate Professionals
+                  Questions From Real Estate Professionals
 
                 </h2>
               </div>

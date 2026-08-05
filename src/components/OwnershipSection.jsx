@@ -12,9 +12,10 @@ export default function OwnershipSection({
   description = "Download The Complete Source Code Of Your Website Or App Anytime. Host It Anywhere, Customize It Freely, And Stay In Full Control.",
   image = "/img/MacBookPro.webp",
   features = ["Download Anytime", "Full Ownership", "No Vendor Lock-In", "Deploy Anywhere"],
+  newClass = ""
 }) {
   return (
-    <section className="your_own_bulid_sec ct_py_98 pb-0">
+    <section className={`your_own_bulid_sec ct_py_98 ${newClass}`}>
       <div className="container">
         <div className="your_own_bulid_sec_desc">
           <div className="position-relative left-cont">

@@ -72,6 +72,7 @@ export default async function RestaurantPage() {
           Trusted By Founders Worldwide
         </>
       }
+        newClass="pt-0"
         description="See how startups are launching faster and growing smarter with our help." />
 
       <section className="cti_price_main_bg">
@@ -105,10 +106,10 @@ export default async function RestaurantPage() {
         apiUrl={API_URL}
       />
 
-      <CTABanner 
-       title={
+      <CTABanner
+        title={
           <>
-           Launch Your Hotel Website with Creative AI
+            Launch Your Hotel Website with Creative AI
           </>
         }
         description="Launch a hotel website with a built-in booking engine, room management, guest portals, and direct online reservations using Creative AI."
@@ -122,9 +123,9 @@ export default async function RestaurantPage() {
                 <span className="mx-auto">Frequently Asked Questions</span>
                 <h2
                   className="mx-auto text-center "
-                  
+
                 >
-                 Questions From Hotel Owners
+                  Questions From Hotel Owners
                 </h2>
               </div>
               <FAQAccordion

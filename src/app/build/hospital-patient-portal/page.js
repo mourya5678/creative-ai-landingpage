@@ -72,6 +72,7 @@ export default async function RestaurantPage() {
                     Trusted By Founders Worldwide
                 </>
             }
+                newClass="pt-0"
                 description="See how startups are launching faster and growing smarter with our help." />
 
             <section className="cti_price_main_bg">
@@ -120,10 +121,10 @@ export default async function RestaurantPage() {
                         <div className="col-md-12">
                             <div className="ct_home_titles_cnt">
                                 <span className="mx-auto">Frequently Asked Questions</span>
-                               <h2
-                  className="mx-auto text-center "
-                  
-                >
+                                <h2
+                                    className="mx-auto text-center "
+
+                                >
                                     Questions From Hospital Administrators
                                 </h2>
                             </div>

@@ -513,6 +513,12 @@ input[type="number"] {
 }
 
 /* Header Css S */
+.cti_2_col_nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+}
+
 header {
   padding: 0px 16px;
   border-radius: 50px;
@@ -724,8 +730,8 @@ header::after {
   overflow: hidden;
   max-width: 400px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  /* display: grid; */
+  /* grid-template-columns: 50% 50%; */
   gap: 2%;
   visibility: hidden;
 }
@@ -821,7 +827,7 @@ header::after {
 
 .ct_mega_dropdown_width {
   width: 100%;
-  max-width: 750px;
+  max-width: 630px;
   overflow-x: hidden !important;
 }
 
@@ -2794,7 +2800,7 @@ input[type="radio"]:checked+.cti_option_btn span {
   padding-top: 78px;
   max-width: 1035px;
   margin-inline: auto;
-  padding-bottom: 166px;
+  padding-bottom: 100px;
 }
 
 
@@ -2925,7 +2931,7 @@ input[type="radio"]:checked+.cti_option_btn span {
 .cti_everything_build_con {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  margin-top: 70px;
+  margin-top: 40px;
   column-gap: 22px;
   row-gap: 32px;
 
@@ -2993,8 +2999,8 @@ input[type="radio"]:checked+.cti_option_btn span {
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
   margin-top: -142px;
-  padding-top: 144px;
-  padding-bottom: 157px;
+  padding-top: 80px;
+  padding-bottom: 100px;
   position: relative;
 }
 
@@ -3206,7 +3212,7 @@ input[type="radio"]:checked+.cti_option_btn span {
 
 
   .trust-item h3 {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
@@ -3324,7 +3330,7 @@ input[type="radio"]:checked+.cti_option_btn span {
   border-top-right-radius: 70px;
   margin-top: -142px;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   position: relative;
 }
 
@@ -3389,7 +3395,7 @@ input[type="radio"]:checked+.cti_option_btn span {
 
 
 .complete_sol_project {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .complete_sol_box_1 .comp_sol_icon_box {
@@ -3578,7 +3584,7 @@ input[type="radio"]:checked+.cti_option_btn span {
 .why_choose_creative_ai {
   background: #0C031A;
   padding: 100px 0px 100px 0px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 
@@ -3700,19 +3706,5 @@ input[type="radio"]:checked+.cti_option_btn span {
 
 
 @media screen and (max-width:575px) {
-  .ct_fs_60 {
-    font-size: 40px !important;
-  }
 
-  .ct_custom_table tr th,
-  .ct_custom_table tr td {
-    white-space: normal;
-    font-size: 12px;
-    padding-inline: 10px;
-  }
-
-  .ct_custom_table tr th img {
-    width: 71px;
-    object-fit: contain;
-  }
 }

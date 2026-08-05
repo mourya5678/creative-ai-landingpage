@@ -76,7 +76,10 @@ export default async function RestaurantPage() {
           Trusted By Founders Worldwide
         </>
       }
-        description="See how startups are launching faster and growing smarter with our help." />
+        description="See how startups are launching faster and growing smarter with our help."
+        newClass="pt-0"
+
+      />
 
       <section className="cti_price_main_bg">
         <div className="container">
@@ -109,10 +112,10 @@ export default async function RestaurantPage() {
         apiUrl={API_URL}
       />
 
-      <CTABanner 
-       title={
+      <CTABanner
+        title={
           <>
-           Launch Your Gym Website with Creative AI
+            Launch Your Gym Website with Creative AI
           </>
         }
         description="Grow your fitness business with a gym website, membership platform, class booking, and member management powered by Creative AI."
@@ -124,11 +127,11 @@ export default async function RestaurantPage() {
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-               <h2
+                <h2
                   className="mx-auto text-center "
-                  
+
                 >
-                 Questions From Gym Owners
+                  Questions From Gym Owners
                 </h2>
               </div>
               <FAQAccordion

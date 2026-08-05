@@ -18,7 +18,7 @@ import ContactSection from "@/components/ContactSection";
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
 import {
- automotiveBusinessFeatures,
+  automotiveBusinessFeatures,
   automotiveBusinessColumns,
   automotiveBusinessFAQItems,
   automotiveBusinessComparisonRows,
@@ -80,6 +80,7 @@ Choose Creative AI"
         testimonials={testimonials}
         title={<>Trusted By Founders Worldwide</>}
         description="See how startups are launching faster and growing smarter with our help."
+        newClass="pt-0"
       />
 
       <section className="cti_price_main_bg">
@@ -124,11 +125,11 @@ Choose Creative AI"
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-               <h2
+                <h2
                   className="mx-auto text-center "
-                  
+
                 >
-                 Questions From Automobile Business Owners
+                  Questions From Automobile Business Owners
 
 
                 </h2>

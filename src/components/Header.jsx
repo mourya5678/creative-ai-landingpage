@@ -36,19 +36,18 @@ export default function Header() {
     "/build/hotel-booking",
     "/build/gym-platform",
     "/build/salon",
-     "/build/real-estate",
-     "/build/automotive-business",
-     "/build/travel-agencies",
-     "/build/insurance-agencies",
-     "/build/photography-portfolio" ,
+    "/build/real-estate",
+    "/build/automotive-business",
+    "/build/travel-agencies",
+    "/build/insurance-agencies",
+    "/build/photography-portfolio",
     "/about-us"
   ];
 
   return (
     <div
-      className={`ct_header_main ${
-        transparentHeaderRoutes.includes(pathname) ? "et_main_header_344" : ""
-      } ${isSticky ? "ct_sticky_menu" : ""}`}
+      className={`ct_header_main ${transparentHeaderRoutes.includes(pathname) ? "et_main_header_344" : ""
+        } ${isSticky ? "ct_sticky_menu" : ""}`}
     >
       <header className="container">
         <div className="ct_logo">
@@ -77,7 +76,7 @@ export default function Header() {
                     />
                   </Link>
                 </div>
- 
+
                 <a href={LOGIN_URL} className="ct_get_started_btn"
                 >Get Started
                   <svg
@@ -96,7 +95,7 @@ export default function Header() {
                     />
                   </svg>
                 </a>
- 
+
                 <div className="ct_close_bar">
                   <button
                     type="button"
@@ -115,28 +114,11 @@ export default function Header() {
                   </button>
                 </div>
               </li>
-              {/* <li className="ct_close_bar">
-                <button
-                  type="button"
-                  onClick={() => setIsMenuOpen(false)}
-                  aria-label="Close navigation menu"
-                  style={{
-                    background: "none",
-                    border: "none",
-                    padding: 0,
-                    color: "inherit",
-                    font: "inherit",
-                    cursor: "pointer",
-                  }}
-                >
-                  <i className="fa-solid fa-xmark"></i>
-                </button>
-              </li> */}
 
               <li className="ct_dropdown">
                 <span type="button">Solutions <i className="fa-solid fa-chevron-down ms-1"></i></span>
                 <div className="ct_custom_dropdown ct_mega_dropdown_width" data-lenis-prevent>
-                  <div className="ct_dropdown_items">
+                  {/* <div className="ct_dropdown_items">
                     <div className="ct_grid_2_flex">
                       <div className="ct_drop_title_icon">
                         <svg
@@ -198,7 +180,7 @@ export default function Header() {
                         </Link>
                       </li>
                     </ol>
-                  </div>
+                  </div> */}
                   <div className="ct_dropdown_items ct_drop_grey_bg">
                     <div className="ct_grid_2_flex">
                       <div className="ct_drop_title_icon">
@@ -227,12 +209,11 @@ export default function Header() {
                           </defs>
                         </svg>
                       </div>
-                      {/* <h4 className="mb-0 ct_fs_18 ct_fw_700">AI Solutions</h4> */}
                       <Link href="/build" className="text-decoration-none">
                         <h4 className="mb-0 ct_fs_18 ct_fw_700">AI Builder</h4>
                       </Link>
                     </div>
-                    <ol className="ct_ps_35">
+                    <ol className="ct_ps_35 cti_2_col_nav">
                       <li>
                         <Link
                           href="/build/restaurant"
@@ -240,17 +221,15 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Restaurant Website & Ordering System
-                          
                         </Link>
                       </li>
-                       <li>
+                      <li>
                         <Link
                           href="/build/law-firm"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Law Firm Website & Case Management
-                          
                         </Link>
                       </li>
                       <li>
@@ -260,7 +239,6 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Hospital Website & Patient Portal
-                         
                         </Link>
                       </li>
                       <li>
@@ -270,7 +248,6 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           School Website & Student Portal
-                         
                         </Link>
                       </li>
                       <li>
@@ -280,120 +257,71 @@ export default function Header() {
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Hotel Website & Booking Engine
-                      
                         </Link>
                       </li>
-                       <li>
+                      <li>
                         <Link
                           href="/build/gym-platform"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           Gym Website & Membership Platform
-                       
                         </Link>
                       </li>
-                     
                       <li>
                         <Link
                           href="/build/salon"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                         Salon Website & Appointment System
-                        
+                          Salon Website & Appointment System
                         </Link>
                       </li>
-                        <li>
+                      <li>
                         <Link
                           href="/build/real-estate"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                         Real Estate Website & Property Portal
-                        
+                          Real Estate Website & Property Portal
                         </Link>
                       </li>
-
-
-                          <li>
+                      <li>
                         <Link
                           href="/build/automotive-business"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                         Automobile Website & Booking Platform
-
-                        
+                          Automobile Website & Booking Platform
                         </Link>
                       </li>
-                          <li>
+                      <li>
                         <Link
                           href="/build/travel-agencies"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                         Travel Website & Reservation System
-
-                        
+                          Travel Website & Reservation System
                         </Link>
                       </li>
-{/*  */}
-                      
-                          <li>
+                      <li>
                         <Link
                           href="/build/insurance-agencies"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                         Insurance Website & Agent Portal
-
-                        
+                          Insurance Website & Agent Portal
                         </Link>
                       </li>
-
-                       <li>
+                      <li>
                         <Link
                           href="/build/photography-portfolio"
                           className="ct_fs_14 ct_fw_600"
                           onClick={() => setIsMenuOpen(false)}
                         >
-                         Photography Portfolio & Booking
-
-
-                        
+                          Photography Portfolio & Booking
                         </Link>
                       </li>
-
-                     {/* <li>
-                        <Link
-                          href="/entertainment"
-                          className="ct_fs_14 ct_fw_600"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          Entertainment
-                          <i className="fa-solid fa-angle-right ms-1"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/telecom"
-                          className="ct_fs_14 ct_fw_600"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          Telecom
-                          <i className="fa-solid fa-angle-right ms-1"></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          href="/energy"
-                          className="ct_fs_14 ct_fw_600"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          Energy<i className="fa-solid fa-angle-right ms-1"></i>
-                        </Link>
-                      </li> */}
                     </ol>
                   </div>
                 </div>

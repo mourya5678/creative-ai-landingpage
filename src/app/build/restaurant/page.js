@@ -1,5 +1,5 @@
 import { getPlans } from "@/utils/plans";
-  import Header from "@/components/Header";
+import Header from "@/components/Header";
 import { HomeInit } from "@/components/PageInitializers";
 import HomePricingSection from "@/components/HomePricingSection";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -74,6 +74,7 @@ export default async function RestaurantPage() {
           Trusted By Founders Worldwide
         </>
       }
+        newClass="pt-0"
         description="See how startups are launching faster and growing smarter with our help." />
 
       <section className="cti_price_main_bg">
@@ -107,10 +108,10 @@ export default async function RestaurantPage() {
         apiUrl={API_URL}
       />
 
-      <CTABanner 
-       title={
+      <CTABanner
+        title={
           <>
-           Launch Your Restaurant Website with Creative AI
+            Launch Your Restaurant Website with Creative AI
           </>
         }
         description="Create a professional restaurant website with online ordering, reservations, QR menus, and business management tools powered by Creative AI."
@@ -122,9 +123,9 @@ export default async function RestaurantPage() {
             <div className="col-md-12">
               <div className="ct_home_titles_cnt">
                 <span className="mx-auto">Frequently Asked Questions</span>
-                 <h2
+                <h2
                   className="mx-auto text-center "
-                  
+
                 >
                   Questions from Restaurant Owners
                 </h2>

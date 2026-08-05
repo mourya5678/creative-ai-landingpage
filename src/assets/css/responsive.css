@@ -687,106 +687,19 @@
   }
 }
 
-@media screen and (max-width:575px) {
-  .comp_sol_icon_box_sec {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-
-
-  .cti_home_banner_cnt h1 {
-    font-size: 40px;
-    max-width: 498px;
-  }
-
-  .ct_home_titles_cnt h2 {
-
-    max-width: 399px !important;
-
-  }
-
-
-
-  .cti_stats_wrapper {
-    gap: 8px;
-    flex-direction: column;
-  }
-
-  .cti_heading {
-    font-size: 32px;
-  }
-
-  .center-row {
-    height: 120px;
-  }
-
-  .orb {
-    width: 88px;
-    height: 88px;
-  }
-
-  .ct_btn_group {
-    flex-direction: column;
-  }
-
-  .ct_btn_group {
-    gap: 20px;
-  }
-
-  .ct_btn_group .ct_blue_outline_btn,
-  .ct_btn_group .ct_blue_btn_fill {
-    width: 100%;
-  }
-
-  .ct_fs_44 {
-    font-size: 26px;
-    line-height: 34px;
-  }
-
-  .ct_header_main {
-    padding-inline: 10px;
-  }
-
-  header,
-  .ct_px_80 {
-    padding-inline: 15px;
-  }
-
-  .ct_inner_banner_main_cnt:before,
-  .ct_inner_banner_main_cnt:after,
-  .ct_inner_hero_bg:before,
-  .ct_inner_hero_bg:after {
-    height: 80px !important;
-    max-width: 180px !important;
-  }
-
-  .build-sec-list {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .ct_pt_145px,
-
-  .ct_pt_150,
-  .cti_contact_bg_new {
-    padding-top: 82px;
-  }
-
-
-  .ct_service_section,
-  .ct_pb_150,
-  .cti_contact_bg_new {
-    padding-bottom: 82px;
-  }
-
-  .ct_fs_66 {
-    font-size: 30px;
-  }
-}
 
 
 @media (max-width: 991px) {
   .hero_content {
     max-width: 720px;
+  }
+
+  .why_choose_creative_ai {
+    margin-top: 40px;
+  }
+
+  .complete_sol_box_1 {
+    padding: 30px;
   }
 
   .docs-row .toc-list .nav-link.default-active {
@@ -942,4 +855,125 @@
 
 
 
+}
+
+@media screen and (max-width:575px) {
+  .comp_sol_icon_box_sec {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+
+  .cti_home_banner_cnt h1 {
+    font-size: 40px;
+    max-width: 498px;
+  }
+
+  .ct_home_titles_cnt h2 {
+
+    max-width: 399px !important;
+
+  }
+
+
+
+  .cti_stats_wrapper {
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .cti_heading {
+    font-size: 32px;
+  }
+
+  .center-row {
+    height: 120px;
+  }
+
+  .orb {
+    width: 88px;
+    height: 88px;
+  }
+
+  .ct_btn_group {
+    flex-direction: column;
+  }
+
+  .ct_btn_group {
+    gap: 20px;
+  }
+
+  .ct_btn_group .ct_blue_outline_btn,
+  .ct_btn_group .ct_blue_btn_fill {
+    width: 100%;
+  }
+
+  .ct_fs_44 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .ct_header_main {
+    padding-inline: 10px;
+  }
+
+  header,
+  .ct_px_80 {
+    padding-inline: 15px;
+  }
+
+  .ct_inner_banner_main_cnt:before,
+  .ct_inner_banner_main_cnt:after,
+  .ct_inner_hero_bg:before,
+  .ct_inner_hero_bg:after {
+    height: 80px !important;
+    max-width: 180px !important;
+  }
+
+  .build-sec-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cti_2_col_nav {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .ct_pt_145px,
+
+  .ct_pt_150,
+  .cti_contact_bg_new {
+    padding-top: 82px;
+  }
+
+
+  .ct_service_section,
+  .ct_pb_150,
+  .cti_contact_bg_new {
+    padding-bottom: 82px;
+  }
+
+  .ct_fs_66 {
+    font-size: 30px;
+  }
+
+  .ct_fs_60 {
+    font-size: 35px !important;
+  }
+
+  .ct_custom_table tr th,
+  .ct_custom_table tr td {
+    white-space: normal;
+    font-size: 12px;
+    padding-inline: 10px;
+  }
+
+  .ct_custom_table tr th img {
+    width: 71px;
+    object-fit: contain;
+  }
+
+  .cti_build_banner {
+    padding-top: 140px;
+  }
 }

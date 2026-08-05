@@ -51,7 +51,7 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
           } catch (e) {
             console.warn("ipapi.co fetch failed, falling back to timezone:", e);
           }
-          
+
           try {
             const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
             if (tz === "Asia/Kolkata" || tz === "Asia/Calcutta") return "IN";
@@ -65,11 +65,11 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
 
         const countryCode = await detectCountry();
         const targetCurrency = countryCode === "IN" ? "INR" : "USD";
-        
+
         // Find current currency from plans
-        const currentCurrency = initialMonthlyPlans?.free?.[0]?.display_currency || 
-                                initialMonthlyPlans?.pro?.[0]?.display_currency || 
-                                "USD";
+        const currentCurrency = initialMonthlyPlans?.free?.[0]?.display_currency ||
+          initialMonthlyPlans?.pro?.[0]?.display_currency ||
+          "USD";
 
         console.log("Client-side detected country:", countryCode, "Target Currency:", targetCurrency, "Current Currency:", currentCurrency);
 
@@ -79,7 +79,7 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
             fetch(`${API_URL}/api/user/getAllPlans?billing_interval=MONTH&currency=${targetCurrency}`),
             fetch(`${API_URL}/api/user/getAllPlans?billing_interval=YEAR&currency=${targetCurrency}`)
           ]);
-          
+
           if (mRes.ok && yRes.ok && active) {
             const mJson = await mRes.json();
             const yJson = await yRes.json();
@@ -97,7 +97,7 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
     setMonthlyPlans(initialMonthlyPlans);
     setYearlyPlans(initialYearlyPlans);
     detectAndFetch();
-    
+
     return () => {
       active = false;
     };
@@ -129,8 +129,8 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
     standardPrice = billingInterval === "MONTH" ? `${standardCurrency}199.00` : `${standardCurrency}18349.00`;
   }
 
-  const standardCredits = standardPlan.credits_per_cycle 
-    ? `${standardPlan.credits_per_cycle} Credits${billingInterval === "YEAR" ? "/month" : ""}` 
+  const standardCredits = standardPlan.credits_per_cycle
+    ? `${standardPlan.credits_per_cycle} Credits${billingInterval === "YEAR" ? "/month" : ""}`
     : `100 Credits${billingInterval === "YEAR" ? "/month" : ""}`;
 
   // Enterprise Plan pricing fields
@@ -138,8 +138,8 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
   const enterprisePrice = enterprisePlan.display_amount
     ? `${enterpriseCurrency}${formatCurrency(enterprisePlan.display_amount)}`
     : (billingInterval === "MONTH" ? `${enterpriseCurrency}35000.00` : `${enterpriseCurrency}385199.00`);
-  const enterpriseCredits = enterprisePlan.credits_per_cycle 
-    ? `${enterprisePlan.credits_per_cycle} Credits${billingInterval === "YEAR" ? "/month" : ""}` 
+  const enterpriseCredits = enterprisePlan.credits_per_cycle
+    ? `${enterprisePlan.credits_per_cycle} Credits${billingInterval === "YEAR" ? "/month" : ""}`
     : `2000 Credits${billingInterval === "YEAR" ? "/month" : ""}`;
 
   const intervalSuffix = billingInterval === "MONTH" ? "/month" : "/year";

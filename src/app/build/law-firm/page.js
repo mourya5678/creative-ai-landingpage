@@ -74,6 +74,7 @@ export default async function RestaurantPage() {
           Trusted By Founders Worldwide
         </>
       }
+        newClass="pt-0"
         description="See how startups are launching faster and growing smarter with our help." />
 
       <section className="cti_price_main_bg">
@@ -107,10 +108,10 @@ export default async function RestaurantPage() {
         apiUrl={API_URL}
       />
 
-      <CTABanner 
-       title={
+      <CTABanner
+        title={
           <>
-           Launch Your Law Firm Website with Creative AI
+            Launch Your Law Firm Website with Creative AI
           </>
         }
         description="Create a trusted law firm website with case management, client portals, consultation booking, and legal practice tools using Creative AI."
@@ -124,9 +125,9 @@ export default async function RestaurantPage() {
                 <span className="mx-auto">Frequently Asked Questions</span>
                 <h2
                   className="mx-auto text-center"
-                  
+
                 >
-                 Questions from Law Firm Owners
+                  Questions from Law Firm Owners
                 </h2>
               </div>
               <FAQAccordion

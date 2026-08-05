@@ -3,9 +3,10 @@ export default function TestimonialsSection({
   title,
   description,
   testimonials = [],
+  newClass = ""
 }) {
   return (
-    <section className="cti_testimonal_new_section ct_pb_100 ct_pt_100">
+    <section className={`cti_testimonal_new_section ct_pb_100 ct_pt_100 ${newClass}`}>
       <div className="container">
         <div className="row">
           <div className="col-md-12">
