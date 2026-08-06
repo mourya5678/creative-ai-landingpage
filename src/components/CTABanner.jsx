@@ -1,8 +1,9 @@
+import { LOGIN_URL } from "@/config";
+
 export default function CTABanner({
   title,
   description,
   buttonText = "Start Building Free",
-  onClick,
 }) {
   return (
     <section className="cti_build_proj_banner">
@@ -13,9 +14,9 @@ export default function CTABanner({
         <p className="ct_fs_16 ct_text_bebfc2 text-center mx-auto mb-0" style={{ maxWidth: "620px" }}>
           {description}
         </p>
-        <button className="start_build_btn ct_mt_40 mx-auto" onClick={onClick}>
+        <a className="start_build_btn ct_mt_40 mx-auto text-decoration-none" href={LOGIN_URL} style={{ width: "fit-content" }}>
           {buttonText} <i className="fa-solid fa-arrow-right ms-2"></i>
-        </button>
+        </a>
       </div>
     </section>
   );

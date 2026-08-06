@@ -1,3 +1,7 @@
+"use client";
+
+import { LOGIN_URL } from "@/config";
+
 export default function IndustryHero({
   title,
   description,
@@ -18,7 +22,7 @@ export default function IndustryHero({
                   {description}
                 </p>
 
-                <button className="start_build_btn ct_mt_34">
+                <button className="start_build_btn ct_mt_34" onClick={() => { window.location.href = LOGIN_URL; }}>
                   {buttonText} <i className="fa-solid fa-arrow-right ms-2"></i>
                 </button>
 

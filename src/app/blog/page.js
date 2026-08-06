@@ -1,84 +1,50 @@
 import Header from "@/components/Header";
-import { API_URL } from "@/config";
+import WordPressSandbox from "@/components/WordPressSandbox";
+import { parseWordPressHtml } from "@/utils/blogs";
 import Link from "next/link";
-import BlogList from "@/components/BlogList";
 
 export const metadata = {
-  title: "Creative AI | AI App Builder for Mobile & Web Application",
-  description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
-  keywords: "AI app builder, AI app generator, AI app maker, AI app creator, AI mobile app builder, AI application generator, AI retail solutions, retail AI solutions, mobile e-commerce, finance software, software solutions, AI solutions, AI-powered financial solutions, AI healthcare companies, AI healthcare, AI in healthcare, AI for manufacturing, manufacturing artificial intelligence, AI in telecommunications, telecom AI, AI-powered software, energy app, AI educational apps, AI website builder, Entertainment mobile app development, converting a website to a mobile app, converting a website to an app, creating an iPhone app, how to create an app for iPhone",
+  title: "Blogs - Creative.ai Blogs",
+  description: "Explore AI app development ideas, product updates, and no-code app building guides.",
 };
 
 export const dynamic = "force-dynamic";
 
-const getBlogs = async () => {
-  try {
-    const res = await fetch(`${API_URL}/api/user/getBlogs`, {
-      cache: "no-store"
-    });
-    if (!res.ok) return [];
-    const json = await res.json();
-    return json.success ? json.data : [];
-  } catch (error) {
-    console.error("Error fetching blogs:", error);
-    return [];
-  }
-};
-
 export default async function Page() {
-  const blogs = await getBlogs();
-  console.log(
+  let wpData = { bodyClasses: "", bodyContent: "", stylesheets: [], inlineStyles: [] };
+  try {
+    const res = await fetch("https://creative.techdeer.in/", { cache: "no-store" });
+    if (res.ok) {
+      const html = await res.text();
+      wpData = parseWordPressHtml(html);
+    }
+  } catch (error) {
+    console.error("Error fetching WordPress homepage HTML:", error);
+  }
 
-
-    { blogs }
-  )
   return (
     <>
       <Header />
-      <section className="ct_py_70 ct_md_py_50 ct_inner_hero_bg">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 mx-auto">
-              <div className="ct_inner_banner_w_bg">
-                <h1 className="ct_fs_44 ct_fw_700 mb-2 text-center">
-                  Creative{" "}
-                  <span className="ct_orange_gredient_text">AI Blogs</span>
-                </h1>
-                <h2 className="ct_fs_18 mb-0 text-center mb-3">
-                  Explore AI app development ideas, product updates, and no-code
-                  app building guides.
-                </h2>
-              </div>
-            </div>
+      
+      {wpData.bodyContent ? (
+        <WordPressSandbox
+          bodyContent={wpData.bodyContent}
+          stylesheets={wpData.stylesheets}
+          inlineStyles={wpData.inlineStyles}
+          bodyClasses={wpData.bodyClasses}
+          style={{ marginTop: "100px" }}
+        />
+      ) : (
+        <section className="ct_py_70 text-center text-white" style={{ minHeight: "500px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div className="container">
+            <h1 className="ct_fs_35 ct_fw_700 mb-3">No Blogs Available</h1>
+            <p className="mb-4" style={{ color: "#a1a1aa" }}>We are currently updating our blog space. Please check back later!</p>
+            <Link href="/" className="ct_blue_btn_fill">
+              Go to Homepage
+            </Link>
           </div>
-        </div>
-      </section>
-      <hr className="ct_break_line" />
-
-      <BlogList initialBlogs={blogs} apiUrl={API_URL} />
-
-      <hr className="ct_break_line" />
-      <section className="ct_pt_50 ct_pb_50">
-        <div className="container">
-          <div className="col-md-12">
-            <div className="ct_free_demo_bg">
-              <h2 className="ct_fs_28 text-center text-white ct_fw_700 mb-2 mx-auto">
-                Start Building Before Your Competitors Do
-              </h2>
-              <p className="mx-auto text-center text-white" style={{ maxWidth: "700px" }}>
-                Turn your ideas into powerful AI-powered applications faster than
-                ever with Creative AI. Build, customize, and launch in minutes, no
-                complexity, just results.
-              </p>
-              <div className="text-center mt-4">
-                <Link className="ct_blue_btn_fill ct_white_btn" href="/pricing">
-                  Build in Minutes
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   );
 }

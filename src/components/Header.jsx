@@ -41,7 +41,9 @@ export default function Header() {
     "/travel-website-builder",
     "/insurance-website-builder",
     "/photography-website-builder",
-    "/about-us"
+    "/about-us",
+    "/blog",
+    "/blog-details"
   ];
 
   return (

@@ -33,7 +33,6 @@ const safeInit = async (name, initFn) => {
       if (!$.fn.owlCarousel) {
         await import("owl.carousel");
       }
-      console.log(`[Carousel] ${name}: jQuery and Owl Carousel initialized via npm.`);
       initFn($);
     } catch (err) {
       console.error(`[Carousel] ${name}: Failed to dynamically load jQuery/OwlCarousel:`, err);
@@ -88,7 +87,6 @@ export function HomeInit() {
     safeInit("Home Testimonial Slider", ($) => {
       const $el = $(".cti_testimonial_slider");
       if ($el.length) {
-        console.log("[Carousel] Home Testimonial Slider element found, instantiating owlCarousel.");
         if ($el.hasClass('owl-loaded')) {
           $el.owlCarousel('destroy');
         }
@@ -109,7 +107,6 @@ export function HomeInit() {
           }
         });
       } else {
-        console.log("[Carousel] Home Testimonial Slider element not found on page.");
       }
     });
 
@@ -180,7 +177,6 @@ export function InnerTestimonialInit() {
     safeInit("Inner Testimonial Slider", ($) => {
       const $el = $(".ct_testimonial_slider");
       if ($el.length) {
-        console.log("[Carousel] Inner Testimonial Slider element found, instantiating owlCarousel.");
         if ($el.hasClass('owl-loaded')) {
           $el.owlCarousel('destroy');
         }
@@ -200,7 +196,6 @@ export function InnerTestimonialInit() {
           }
         });
       } else {
-        console.log("[Carousel] Inner Testimonial Slider element not found on page.");
       }
     });
   }, []);
@@ -212,7 +207,6 @@ export function RetailSliderInit() {
     safeInit("Retail App Slider", ($) => {
       const $el = $("#ct_retaial_app_slider");
       if ($el.length) {
-        console.log("[Carousel] Retail App Slider element found, instantiating owlCarousel.");
         if ($el.hasClass('owl-loaded')) {
           $el.owlCarousel('destroy');
         }
@@ -232,7 +226,6 @@ export function RetailSliderInit() {
           }
         });
       } else {
-        console.log("[Carousel] Retail App Slider element not found on page.");
       }
     });
   }, []);
@@ -244,7 +237,6 @@ export function PricingSliderInit() {
     safeInit("Pricing Slider", ($) => {
       const $el = $(".ct_pricing_works");
       if ($el.length) {
-        console.log("[Carousel] Pricing Slider element found, instantiating owlCarousel.");
         if ($el.hasClass('owl-loaded')) {
           $el.owlCarousel('destroy');
         }
@@ -264,7 +256,6 @@ export function PricingSliderInit() {
           }
         });
       } else {
-        console.log("[Carousel] Pricing Slider element not found on page.");
       }
     });
   }, []);
@@ -276,7 +267,6 @@ export function BlogDetailsSliderInit() {
     safeInit("Blog Details Slider", ($) => {
       const $el = $(".ct_related_article");
       if ($el.length) {
-        console.log("[Carousel] Blog Details Slider element found, instantiating owlCarousel.");
         if ($el.hasClass('owl-loaded')) {
           $el.owlCarousel('destroy');
         }
@@ -291,7 +281,6 @@ export function BlogDetailsSliderInit() {
           }
         });
       } else {
-        console.log("[Carousel] Blog Details Slider element not found on page.");
       }
     });
   }, []);
@@ -303,7 +292,6 @@ export function OurStorySlidersInit() {
     safeInit("Our Story Sliders", ($) => {
       const $el1 = $(".ct_team_slider_1");
       if ($el1.length) {
-        console.log("[Carousel] Our Story Team Slider 1 element found, instantiating.");
         if ($el1.hasClass('owl-loaded')) {
           $el1.owlCarousel('destroy');
         }
@@ -323,12 +311,10 @@ export function OurStorySlidersInit() {
           }
         });
       } else {
-        console.log("[Carousel] Our Story Team Slider 1 element not found on page.");
       }
 
       const $el2 = $(".ct_featured_slider");
       if ($el2.length) {
-        console.log("[Carousel] Our Story Featured Slider element found, instantiating.");
         if ($el2.hasClass('owl-loaded')) {
           $el2.owlCarousel('destroy');
         }
@@ -347,7 +333,6 @@ export function OurStorySlidersInit() {
           }
         });
       } else {
-        console.log("[Carousel] Our Story Featured Slider element not found on page.");
       }
     });
   }, []);

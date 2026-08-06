@@ -23,7 +23,6 @@ export const getPlans = async (billingInterval) => {
 
   try {
     const fetchUrl = `${API_URL}/api/user/getAllPlans?billing_interval=${billingInterval}&currency=${currency}`;
-    console.log("Fetching plans from URL:", fetchUrl);
     const res = await fetch(
       fetchUrl,
       { 

@@ -1,3 +1,5 @@
+import { LOGIN_URL } from "@/config";
+
 export default function FeatureCardsGrid({ title, description, features = [] }) {
   return (
     <section className="everything_one-plat_sec">
@@ -17,7 +19,7 @@ export default function FeatureCardsGrid({ title, description, features = [] }) 
                   <p>{feature.description}</p>
                 </div>
                 <div>
-                  <a href={feature.href || "#"} className="build_now_btn">
+                  <a href={feature.href || LOGIN_URL} className="build_now_btn">
                     Build Now
                     <i className="fa-solid fa-arrow-right ms-2"></i>
                   </a>

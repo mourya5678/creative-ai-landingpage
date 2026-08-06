@@ -1,3 +1,4 @@
+import { getBlogs } from "@/utils/blogs";
 import { getPlans } from "@/utils/plans";
 import Header from "@/components/Header";
 import { HomeInit } from "@/components/PageInitializers";
@@ -27,17 +28,7 @@ import {
 
 export const dynamic = "force-dynamic";
 
-const getBlogs = async () => {
-  try {
-    const res = await fetch(`${API_URL}/api/user/getBlogs`, { cache: "no-store" });
-    if (!res.ok) return [];
-    const json = await res.json();
-    return json.success ? json.data : [];
-  } catch (error) {
-    console.error("Error fetching blogs:", error);
-    return [];
-  }
-};
+
 
 export default async function RestaurantPage() {
   const monthlyPlans = await getPlans("MONTH");

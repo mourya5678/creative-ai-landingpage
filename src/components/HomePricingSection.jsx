@@ -71,10 +71,7 @@ export default function HomePricingSection({ monthlyPlans: initialMonthlyPlans, 
                                 initialMonthlyPlans?.pro?.[0]?.display_currency || 
                                 "USD";
 
-        console.log("Client-side detected country:", countryCode, "Target Currency:", targetCurrency, "Current Currency:", currentCurrency);
-
         if (currentCurrency !== targetCurrency) {
-          console.log(`Currency mismatch detected client-side. Current: ${currentCurrency}, Target: ${targetCurrency}. Fetching correct plans...`);
           const [mRes, yRes] = await Promise.all([
             fetch(`${API_URL}/api/user/getAllPlans?billing_interval=MONTH&currency=${targetCurrency}`),
             fetch(`${API_URL}/api/user/getAllPlans?billing_interval=YEAR&currency=${targetCurrency}`)
@@ -143,8 +140,6 @@ export default function HomePricingSection({ monthlyPlans: initialMonthlyPlans, 
     : `2000 Credits${billingInterval === "YEAR" ? "/month" : ""}`;
 
   const intervalText = billingInterval === "MONTH" ? "/month" : "/year";
-
-  { console.log({ plans }) }
   return (
     <>
       <div className="ct_pricing_toggle ct_pricing_toggle_home">

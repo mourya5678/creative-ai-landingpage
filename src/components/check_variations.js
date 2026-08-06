@@ -28,7 +28,6 @@ async function run() {
 
   for (const url of urls) {
     const status = await checkUrl(url);
-    console.log(`${url} -> ${status}`);
   }
 }
 

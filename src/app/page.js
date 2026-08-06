@@ -1,3 +1,4 @@
+import { getBlogs } from "@/utils/blogs";
 import { getPlans } from "@/utils/plans";
 import Header from "@/components/Header";
 import Link from "next/link";
@@ -63,19 +64,7 @@ export const metadata = {
 
 export const dynamic = "force-dynamic";
 
-const getBlogs = async () => {
-  try {
-    const res = await fetch(`${API_URL}/api/user/getBlogs`, {
-      cache: "no-store"
-    });
-    if (!res.ok) return [];
-    const json = await res.json();
-    return json.success ? json.data : [];
-  } catch (error) {
-    console.error("Error fetching blogs:", error);
-    return [];
-  }
-};
+
 
 
 export default async function Page() {
@@ -911,7 +900,7 @@ export default async function Page() {
               </div>
               <div className="d-xl-flex d-none justify-content-end ct_mt_63">
                 <button className=" ct_down_btn">
-               
+
                   Download
                 </button>
               </div>

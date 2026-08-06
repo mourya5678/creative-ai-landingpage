@@ -70,11 +70,7 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
         const currentCurrency = initialMonthlyPlans?.free?.[0]?.display_currency ||
           initialMonthlyPlans?.pro?.[0]?.display_currency ||
           "USD";
-
-        console.log("Client-side detected country:", countryCode, "Target Currency:", targetCurrency, "Current Currency:", currentCurrency);
-
         if (currentCurrency !== targetCurrency) {
-          console.log(`Currency mismatch detected client-side. Current: ${currentCurrency}, Target: ${targetCurrency}. Fetching correct plans...`);
           const [mRes, yRes] = await Promise.all([
             fetch(`${API_URL}/api/user/getAllPlans?billing_interval=MONTH&currency=${targetCurrency}`),
             fetch(`${API_URL}/api/user/getAllPlans?billing_interval=YEAR&currency=${targetCurrency}`)
@@ -104,7 +100,6 @@ export default function InnerPricingSection({ monthlyPlans: initialMonthlyPlans,
   }, [initialMonthlyPlans, initialYearlyPlans]);
 
   const plans = billingInterval === "MONTH" ? monthlyPlans : yearlyPlans;
-  console.log({ monthlyPlans, yearlyPlans })
   const freePlan = plans?.free?.[0] || plans?.free || {};
   const proPlans = plans?.pro || [];
   const standardPlan = proPlans[selectedPlanIndex] || {};
