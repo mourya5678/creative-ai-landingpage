@@ -23,7 +23,7 @@ export default async function Page() {
   }
 
   return (
-    <>
+    <div style={{ backgroundColor: "#020202", minHeight: "100vh", width: "100%" }}>
       <Header />
       
       {wpData.bodyContent ? (
@@ -32,7 +32,6 @@ export default async function Page() {
           stylesheets={wpData.stylesheets}
           inlineStyles={wpData.inlineStyles}
           bodyClasses={wpData.bodyClasses}
-          style={{ marginTop: "100px" }}
         />
       ) : (
         <section className="ct_py_70 text-center text-white" style={{ minHeight: "500px", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -45,6 +44,6 @@ export default async function Page() {
           </div>
         </section>
       )}
-    </>
+    </div>
   );
 }

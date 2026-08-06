@@ -58,7 +58,7 @@ export default async function Page({ params }) {
   }
 
   return (
-    <>
+    <div style={{ backgroundColor: "#020202", minHeight: "100vh", width: "100%" }}>
       <Header />
       <WordPressSandbox
         bodyContent={wpData.bodyContent}
@@ -66,6 +66,6 @@ export default async function Page({ params }) {
         inlineStyles={wpData.inlineStyles}
         bodyClasses={wpData.bodyClasses}
       />
-    </>
+    </div>
   );
 }
