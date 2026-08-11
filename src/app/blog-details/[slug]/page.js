@@ -57,14 +57,14 @@ export async function generateMetadata({ params }) {
 export default async function Page({ params }) {
   const resolvedParams = await params;
   const slug = resolvedParams?.slug;
-  
+
   if (!slug) {
     notFound();
   }
 
   let wpData = { bodyClasses: "", bodyContent: "", stylesheets: [], inlineStyles: [] };
   try {
-    const res = await fetch(`https://creative.techdeer.in/${slug}/`, { cache: "no-store" });
+    const res = await fetch(`https://blog.creativethoughts.ai/${slug}/`, { cache: "no-store" });
     if (res.ok) {
       const html = await res.text();
       wpData = parseWordPressHtml(html);

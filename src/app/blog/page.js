@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 export default async function Page() {
   let wpData = { bodyClasses: "", bodyContent: "", stylesheets: [], inlineStyles: [] };
   try {
-    const res = await fetch("https://creative.techdeer.in/", { cache: "no-store" });
+    const res = await fetch("https://blog.creativethoughts.ai/", { cache: "no-store" });
     if (res.ok) {
       const html = await res.text();
       wpData = parseWordPressHtml(html);
@@ -25,7 +25,7 @@ export default async function Page() {
   return (
     <div style={{ backgroundColor: "#020202", minHeight: "100vh", width: "100%" }}>
       <Header />
-      
+
       {wpData.bodyContent ? (
         <WordPressSandbox
           bodyContent={wpData.bodyContent}

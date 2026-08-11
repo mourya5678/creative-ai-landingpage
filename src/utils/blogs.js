@@ -63,7 +63,7 @@ export function parseWordPressHtml(html) {
 
 export const getBlogs = async () => {
   try {
-    const res = await fetch("https://creative.techdeer.in/wp-json/wp/v2/posts?_embed&per_page=100", {
+    const res = await fetch("https://blog.creativethoughts.ai/wp-json/wp/v2/posts?_embed&per_page=100", {
       cache: "no-store"
     });
     if (!res.ok) return [];
@@ -81,7 +81,7 @@ export const getBlogs = async () => {
 export const getBlogBySlug = async (slug) => {
   if (!slug) return null;
   try {
-    const res = await fetch(`https://creative.techdeer.in/wp-json/wp/v2/posts?slug=${slug}&_embed`, {
+    const res = await fetch(`https://blog.creativethoughts.ai/wp-json/wp/v2/posts?slug=${slug}&_embed`, {
       cache: "no-store"
     });
     if (!res.ok) return null;
