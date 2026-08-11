@@ -12,7 +12,10 @@ import CTABanner from "@/components/CTABanner";
 import ContactSection from "@/components/ContactSection";
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
-import Link from "next/link";
+export const metadata = {
+  title: "AI Website & App Builder | Build Without Code",
+  description: "Build websites, apps, portals, and business software with AI. Describe your idea, refine the result, and launch without coding.",
+};
 
 export const dynamic = "force-dynamic";
 

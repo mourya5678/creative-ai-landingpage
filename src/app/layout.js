@@ -28,8 +28,8 @@ export const viewport = {
 
 export const metadata = {
   metadataBase: new URL("https://creativethoughts.ai"),
-  title: "AI Website & App Builder | No-Code Platform | Creative AI",
-  description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
+  title: "AI Website Builder & App Builder | Creative AI",
+  description: "Build websites and apps with AI using simple prompts. No coding needed. Create, customize, launch, and own your source code.",
   manifest: "/manifest.json",
   icons: {
     icon: "/creative_icon.png",
@@ -42,8 +42,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "AI Website & App Builder | No-Code Platform | Creative AI",
-    description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
+    title: "AI Website Builder & App Builder | Creative AI",
+    description: "Build websites and apps with AI using simple prompts. No coding needed. Create, customize, launch, and own your source code.",
     url: "https://creativethoughts.ai/",
     siteName: "Creative AI",
     images: [
@@ -59,8 +59,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary",
-    title: "AI Website & App Builder | No-Code Platform | Creative AI",
-    description: "Launch websites and apps faster with an AI-powered no-code builder. Generate designs, publish instantly, and download your source code.",
+    title: "AI Website Builder & App Builder | Creative AI",
+    description: "Build websites and apps with AI using simple prompts. No coding needed. Create, customize, launch, and own your source code.",
     images: ["https://creativethoughts.ai/img/image_28.png"],
   },
 };

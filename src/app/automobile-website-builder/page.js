@@ -24,6 +24,11 @@ import {
   automotiveBusinessFAQItems,
   automotiveBusinessComparisonRows,
 } from "@/utils/data/AllPagesData";
+export const metadata = {
+  title: "Automobile Website Builder | AI Auto Website Creator",
+  description: "Build an automobile website with AI. Add vehicle listings, bookings, services, and customer features without coding or developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 

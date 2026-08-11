@@ -2,8 +2,8 @@ import Header from "@/components/Header";
 import CalendlyWidget from "@/components/CalendlyWidget";
 
 export const metadata = {
-    title: "Contact Us | Creative AI",
-    description: "Get in touch with Creative AI. Book a 30-minute consultation or find our address in Indore, India.",
+    title: "Contact Creative AI | AI Website & App Builder",
+    description: "Contact Creative AI for help building websites, apps, portals, marketplaces, and business software with AI and no coding.",
 };
 
 export default function Contact() {

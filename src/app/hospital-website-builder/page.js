@@ -24,6 +24,11 @@ import {
     hospitalFAQItems,
 } from "@/utils/data/AllPagesData";
 
+export const metadata = {
+  title: "Hospital Website Builder | AI Healthcare Website",
+  description: "Build a hospital website with AI. Add patient portals, appointments, services, and more without coding or hiring web developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 

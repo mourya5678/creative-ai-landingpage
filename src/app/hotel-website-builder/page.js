@@ -24,6 +24,11 @@ import {
   hotelComparisonRows,
   hotelFAQItems,
 } from "@/utils/data/AllPagesData";
+export const metadata = {
+  title: "Hotel Website Builder | AI Hotel Website Creator",
+  description: "Build a hotel website with AI. Add rooms, bookings, services, and customer features without coding or hiring web developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 

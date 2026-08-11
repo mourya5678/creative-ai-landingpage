@@ -28,6 +28,11 @@ import {
   photographyFAQItems,
   photographyColumns,
 } from "@/utils/data/AllPagesData";
+export const metadata = {
+  title: "Photography Website Builder | AI Portfolio Creator",
+  description: "Build a photography website with AI. Create portfolios, galleries, booking features, and more without coding or web developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 

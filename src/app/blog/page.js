@@ -4,8 +4,8 @@ import { parseWordPressHtml } from "@/utils/blogs";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blogs - Creative.ai Blogs",
-  description: "Explore AI app development ideas, product updates, and no-code app building guides.",
+  title: "AI Website Builder Blog | AI & No-Code Insights",
+  description: "Explore practical guides, trends, and insights on AI website builders, no-code development, apps, websites, and digital products.",
 };
 
 export const dynamic = "force-dynamic";

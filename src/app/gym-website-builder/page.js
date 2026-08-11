@@ -28,6 +28,11 @@ import {
   gymComparisonRows,
   gymFAQItems,
 } from "@/utils/data/AllPagesData";
+export const metadata = {
+  title: "Gym Website Builder | AI Fitness Website Creator",
+  description: "Build a professional gym website with AI. Add memberships, bookings, schedules, and fitness features without coding or developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 

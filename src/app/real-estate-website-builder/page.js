@@ -24,6 +24,11 @@ import {
   realEstateFAQItems,
   realEstateComparisonRows,
 } from "@/utils/data/AllPagesData";
+export const metadata = {
+  title: "Real Estate Website Builder | AI Property Portal",
+  description: "Build a real estate website with AI. Add property listings, search, inquiries, and portal features without coding or developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 

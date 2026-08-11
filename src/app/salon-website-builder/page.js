@@ -28,6 +28,11 @@ import {
   salonComparisonRows,
   salonFAQItems,
 } from "@/utils/data/AllPagesData";
+export const metadata = {
+  title: "Salon Website Builder | AI Salon Website Creator",
+  description: "Build a professional salon website with AI. Add services, appointments, and customer features without coding or developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 

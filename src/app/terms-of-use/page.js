@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Terms of Use | Creative AI",
-  description: "Read the Terms of Use and Conditions for using the Creative AI platform, services, and applications.",
+  description: "Review the Creative AI Terms of Use covering account access, platform usage, intellectual property, payments, and your responsibilities.",
   keywords: "terms and conditions, terms of use, terms of service, creative ai",
 };
 

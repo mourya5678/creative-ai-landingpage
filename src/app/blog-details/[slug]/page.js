@@ -8,6 +8,25 @@ export const dynamic = "force-dynamic";
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const slug = resolvedParams?.slug;
+  if (slug === "what-is-a-no-code-website-builder-benefits-features-and-how-it-works") {
+    const blog = await getBlogBySlug(slug);
+    const imageUrl = blog?.banner_image || "https://creativethoughts.ai/img/c.png";
+    return {
+      title: "What Is a No-Code Website Builder? | Guide",
+      description: "Learn what a no-code website builder is, how it works, its key benefits, features, and how to build a website without coding.",
+      openGraph: {
+        title: "What Is a No-Code Website Builder? | Guide",
+        description: "Learn what a no-code website builder is, how it works, its key benefits, features, and how to build a website without coding.",
+        images: [
+          {
+            url: imageUrl,
+            alt: "What Is a No-Code Website Builder? | Guide",
+          },
+        ],
+      },
+    };
+  }
+
   const blog = await getBlogBySlug(slug);
 
   if (!blog) {

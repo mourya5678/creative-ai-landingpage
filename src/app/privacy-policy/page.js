@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Privacy Policy | Creative AI",
-  description: "Read the Privacy Policy of Creative AI Pvt. Ltd. regarding our software development services, client responsibilities, payment terms, intellectual property, and confidentiality.",
+  description: "Read the Creative AI Privacy Policy to understand how we collect, use, protect, and manage information when you use our website and services.",
   keywords: "privacy policy, terms, guidelines, creative ai, software development",
 };
 

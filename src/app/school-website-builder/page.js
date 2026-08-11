@@ -24,6 +24,11 @@ import {
   studentComparisonRows,
   studentFAQItems,
 } from "@/utils/data/AllPagesData";
+export const metadata = {
+  title: "School Website Builder | AI Education Website Creator",
+  description: "Build a school website with AI. Add student portals, admissions, courses, and school features without coding or developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 

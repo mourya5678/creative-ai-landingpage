@@ -26,6 +26,11 @@ import {
   lawFirmFAQItems,
 } from "@/utils/data/AllPagesData";
 
+export const metadata = {
+  title: "Law Firm Website Builder | AI Legal Website Creator",
+  description: "Build a law firm website with AI. Add practice areas, case management, client portals, and more without coding or developers.",
+};
+
 export const dynamic = "force-dynamic";
 
 
