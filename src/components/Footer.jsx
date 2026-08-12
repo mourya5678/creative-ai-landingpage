@@ -49,9 +49,9 @@ export default function Footer() {
                                 <li>
                                     <Link href="/our-projects">Our Projects</Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href="/faqs">FAQs</Link>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link href="/contact">Contact Us</Link>
                                 </li>

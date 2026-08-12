@@ -10,7 +10,7 @@ const nextConfig = {
       { source: '/pricing.html', destination: '/pricing', permanent: true },
       { source: '/our-story.html', destination: '/our-story', permanent: true },
       { source: '/our-projects.html', destination: '/our-projects', permanent: true },
-      { source: '/faqs.html', destination: '/faqs', permanent: true },
+      // { source: '/faqs.html', destination: '/faqs', permanent: true },
       { source: '/careers.html', destination: '/careers', permanent: true },
       { source: '/blog.html', destination: '/blog', permanent: true },
       { source: '/blog-details.html', destination: '/blog-details', permanent: true },

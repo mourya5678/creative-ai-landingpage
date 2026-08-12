@@ -486,7 +486,7 @@ export default function Header() {
                           </div>
                         </div>
                       </li>
-                      <li>
+                      {/*  <li>
                         <div className="ct_grid_2_flex">
                           <div className="ct_drop_title_icon">
                             <svg
@@ -502,7 +502,7 @@ export default function Header() {
                               />
                             </svg>
                           </div>
-                          <div>
+                           <div>
                             <Link
                               href="/faqs"
                               className="ct_fs_14 ct_fw_600"
@@ -515,9 +515,9 @@ export default function Header() {
                                 All your app building questions answered
                               </p>
                             </Link>
-                          </div>
+                          </div> 
                         </div>
-                      </li>
+                      </li>*/}
                     </ol>
                   </div>
                 </div>
