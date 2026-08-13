@@ -27,7 +27,7 @@ export default function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/creative.ai_official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <a href="https://www.instagram.com/creative.ai__official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                         <i className="fa-brands fa-instagram"></i>
                                     </a>
                                 </li>
