@@ -19,15 +19,17 @@ import ContactSection from "@/components/ContactSection";
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
 import {
-
-
-
-
   insuranceAgenciesFeatures,
   insuranceAgenciesComparisonRows,
   insuranceAgenciesFAQItems,
   insuranceAgenciesColumns,
 } from "@/utils/data/AllPagesData";
+
+export const metadata = {
+  title: "Insurance Website Builder | Build Insurance Websites With AI",
+  description: "Build a professional insurance website with AI. Create responsive, modern insurance websites faster without coding using Creative AI.",
+};
+
 export const dynamic = "force-dynamic";
 
 

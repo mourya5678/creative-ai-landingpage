@@ -19,14 +19,17 @@ import ContactSection from "@/components/ContactSection";
 import defaultHowItWorksSteps from "@/utils/data/HowItWorksSteps";
 import testimonials from "@/utils/data/Testimonials";
 import {
-
-
-
   travelAgenciesComparisonRows,
   travelAgenciesFeatures,
   travelAgenciesFAQItems,
   travelAgenciesColumns,
 } from "@/utils/data/AllPagesData";
+
+export const metadata = {
+  title: "Travel Website Builder | Create Travel Websites With AI",
+  description: "Create a professional travel website with AI. Build responsive, engaging travel websites faster without coding using Creative AI.",
+};
+
 export const dynamic = "force-dynamic";
 
 

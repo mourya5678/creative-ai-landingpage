@@ -4,8 +4,8 @@ import Link from "next/link";
 
 
 export const metadata = {
-  title: "Creative AI | AI App Builder for Mobile & Web Application",
-  description: "Creative AI is a powerful AI app builder for mobile and web applications. Create fast, scalable apps without writing a single line of code and grow digitally.",
+  title: "Our Projects | Explore Websites & Apps Built With AI",
+  description: "Explore websites and applications built with Creative AI. Discover real projects and see how AI can simplify digital product development.",
   keywords: "AI app builder, AI app generator, AI app maker, AI app creator, AI mobile app builder, AI application generator, AI retail solutions, retail AI solutions, mobile e-commerce, finance software, software solutions, AI solutions, AI-powered financial solutions, AI healthcare companies, AI healthcare, AI in healthcare, AI for manufacturing, manufacturing artificial intelligence, AI in telecommunications, telecom AI, AI-powered software, energy app, AI educational apps, AI website builder, Entertainment mobile app development, converting a website to a mobile app, converting a website to an app, creating an iPhone app, how to create an app for iPhone",
 };
 

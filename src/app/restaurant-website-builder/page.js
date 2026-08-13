@@ -26,6 +26,11 @@ import {
   restaurantFAQItems,
 } from "@/utils/data/AllPagesData";
 
+export const metadata = {
+  title: "Restaurant Website Builder | Build Restaurant Websites With AI",
+  description: "Build a professional restaurant website with AI. Create responsive, modern websites for restaurants faster without coding using Creative AI.",
+};
+
 export const dynamic = "force-dynamic";
 
 
