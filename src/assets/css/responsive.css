@@ -742,7 +742,7 @@
     right: 0;
 
     width: 100%;
-    height: 70px;
+    height: 82px;
 
     display: flex !important;
     flex-direction: row;
@@ -753,7 +753,8 @@
     padding: 0;
     margin: 0;
 
-    background: #fff;
+    background: #1D1F24;
+    border-radius: 15px 15px 0px 0px;
     z-index: 999;
     box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
 
@@ -761,6 +762,10 @@
     right: 0 !important;
   }
 
+  .ct_navbar-bottom a:hover,
+  .ct_navbar-bottom span:hover {
+    color: #5d5cff !important;
+  }
 
   .ct_navbar-bottom li a {
     position: relative;
@@ -769,15 +774,19 @@
     align-items: center;
     justify-content: center;
     height: 70px;
-    color: #666;
+    color: #ababab !important;
     text-decoration: none;
     transition: 0.3s ease;
   }
 
   /* Active State */
   .ct_navbar-bottom li a.active span,
-  .ct_navbar-bottom li a:hover span {
-    color: #3778fa !important;
+  .ct_navbar-bottom li a:hover span,
+   .ct_navbar-bottom li a.active ,
+  .ct_navbar-bottom li a:hover ,
+  .ct_navbar-bottom li .ct_hamburger.active span,
+  .ct_navbar-bottom li .ct_hamburger:hover span {
+    color: #5d5cff !important;
 
   }
 
@@ -791,20 +800,29 @@
   .ct_navbar-bottom li:nth-child(1) a.active svg path,
   .ct_navbar-bottom li:nth-child(1) a:hover svg path,
   .ct_navbar-bottom li:nth-child(4) a.active svg path,
-  .ct_navbar-bottom li:nth-child(4) a:hover svg path {
-    stroke: #3778fa;
+  .ct_navbar-bottom li:nth-child(4) a:hover svg path,
+  .ct_navbar-bottom li:nth-child(3) a.active svg path,
+  .ct_navbar-bottom li:nth-child(3) a:hover svg path,
+  .ct_navbar-bottom li:nth-child(4) .ct_hamburger.active svg path,
+  .ct_navbar-bottom li:nth-child(4) .ct_hamburger:hover svg path {
+    stroke: #5d5cff;
   }
 
   .ct_navbar-bottom li:nth-child(2) a.active svg path,
-  .ct_navbar-bottom li:nth-child(2) a:hover svg path {
-    fill: #3778fa;
+  .ct_navbar-bottom li:nth-child(2) a:hover svg path,
+  .ct_navbar-bottom li:nth-child(2) a.active svg circle,
+  .ct_navbar-bottom li:nth-child(2) a:hover svg circle,
+  .ct_navbar-bottom li:nth-child(2) a.active svg rect,
+  .ct_navbar-bottom li:nth-child(2) a:hover svg rect {
+    stroke: #5d5cff;
   }
 
 
 
 
   /* Top Border */
-  .ct_navbar-bottom li a.active::before {
+  .ct_navbar-bottom li a.active::before,
+  .ct_navbar-bottom li .ct_hamburger.active::before {
     content: "";
     position: absolute;
     top: 0;
@@ -814,7 +832,7 @@
     width: 100%;
     height: 3px;
 
-    background: #3778fa;
+    background: #5d5cff;
     border-radius: 0 0 4px 4px;
   }
 
@@ -841,7 +859,7 @@
   }
 
   .ct_navbar-bottom li a.active {
-    color: #3778fa;
+    color: #5d5cff !important;
   }
 
   .ct_navbar-bottom li a,
@@ -849,7 +867,7 @@
   .ct_navbar-bottom li span {
     position: relative;
     transition: 0.4s ease all;
-    color: #0d0d0d;
+    color: #ababab;
     font-size: 14px;
   }
 

@@ -26,6 +26,20 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleToggleSidebar = (e) => {
+      setIsMenuOpen(e.detail.open);
+    };
+    window.addEventListener("toggle-sidebar", handleToggleSidebar);
+    return () => {
+      window.removeEventListener("toggle-sidebar", handleToggleSidebar);
+    };
+  }, []);
+
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent("sidebar-state-changed", { detail: { open: isMenuOpen } }));
+  }, [isMenuOpen]);
+
   const transparentHeaderRoutes = [
     "/",
     "/build",
@@ -78,25 +92,6 @@ export default function Header() {
                     />
                   </Link>
                 </div>
-
-                <a href={LOGIN_URL} className="ct_get_started_btn"
-                >Get Started
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="24" height="24" rx="12" fill="black" />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M15.3894 12.707L9.73236 18.364L8.31836 16.95L13.2684 12L8.31836 7.05L9.73236 5.636L15.3894 11.293C15.5768 11.4805 15.6821 11.7348 15.6821 12C15.6821 12.2652 15.5768 12.5195 15.3894 12.707Z"
-                      fill="white"
-                    />
-                  </svg>
-                </a>
 
                 <div className="ct_close_bar">
                   <button
@@ -552,7 +547,7 @@ export default function Header() {
                 </svg>
               </a>
             </li>
-            <li>
+            {/* <li>
               <div
                 className="ct_hamburger"
                 id="hamburger-12"
@@ -563,7 +558,7 @@ export default function Header() {
               >
                 <i className="fa-solid fa-bars"></i>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </header>

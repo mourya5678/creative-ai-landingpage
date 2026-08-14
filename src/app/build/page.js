@@ -1,5 +1,6 @@
 import { getBlogs } from "@/utils/blogs";
 import { getPlans } from "@/utils/plans";
+import Link from "next/link";
 import Header from "@/components/Header";
 import { HomeInit } from "@/components/PageInitializers";
 import HomePricingSection from "@/components/HomePricingSection";

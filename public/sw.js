@@ -46,6 +46,11 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
 
+  // Bypass completely in development mode (localhost) to avoid HMR caching issues
+  if (url.hostname === "localhost" || url.hostname === "127.0.0.1") {
+    return;
+  }
+
   // Bypass chrome-extension files, webpack dev sockets, and other protocols
   if (!url.protocol.startsWith("http")) {
     return;

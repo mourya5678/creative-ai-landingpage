@@ -1,6 +1,20 @@
+"use client";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        const handleStateChange = (e) => {
+            setIsMenuOpen(e.detail.open);
+        };
+        window.addEventListener("sidebar-state-changed", handleStateChange);
+        return () => window.removeEventListener("sidebar-state-changed", handleStateChange);
+    }, []);
+
     return (
         <>
 
@@ -114,53 +128,66 @@ export default function Footer() {
             </footer>
 
 
-            <div className="ct_navbar-bottom">
+            <div className={`ct_navbar-bottom ${isMenuOpen ? "ct_show" : ""}`}>
                 <ul>
                     <li>
                         <Link
                             href="/"
-
+                            className={pathname === "/" ? "active" : ""}
                         >
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 19H9V14C9 13.7167 9.096 13.4793 9.288 13.288C9.48 13.0967 9.71733 13.0007 10 13H14C14.2833 13 14.521 13.096 14.713 13.288C14.905 13.48 15.0007 13.7173 15 14V19H18V10L12 5.5L6 10V19ZM4 19V10C4 9.68333 4.071 9.38333 4.213 9.1C4.355 8.81667 4.55067 8.58333 4.8 8.4L10.8 3.9C11.15 3.63333 11.55 3.5 12 3.5C12.45 3.5 12.85 3.63333 13.2 3.9L19.2 8.4C19.45 8.58333 19.646 8.81667 19.788 9.1C19.93 9.38333 20.0007 9.68333 20 10V19C20 19.55 19.804 20.021 19.412 20.413C19.02 20.805 18.5493 21.0007 18 21H14C13.7167 21 13.4793 20.904 13.288 20.712C13.0967 20.52 13.0007 20.2827 13 20V15H11V20C11 20.2833 10.904 20.521 10.712 20.713C10.52 20.905 10.2827 21.0007 10 21H6C5.45 21 4.97933 20.8043 4.588 20.413C4.19667 20.0217 4.00067 19.5507 4 19Z" fill="black" />
+                                <path d="M19 10V19C19 20.1046 18.1046 21 17 21H7C5.89543 21 5 20.1046 5 19V10M21 12L12 3L3 12" stroke="#ababab" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
 
-                            Home
+
+                            <span>Home</span>
                         </Link>
                     </li>
                     <li>
-
                         <Link
-                            href="/why-creative-ai"
-
+                            href="/about-us"
+                            className={pathname === "/about-us" ? "active" : ""}
                         >
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M21.4498 11.11L18.4498 9.61L15.7498 8.26L14.3998 5.56L12.8998 2.56C12.5598 1.88 11.4498 1.88 11.1098 2.56L9.60977 5.56L8.25977 8.26L5.55977 9.61L2.55977 11.11C2.21977 11.28 2.00977 11.63 2.00977 12C2.00977 12.37 2.21977 12.72 2.55977 12.89L5.55977 14.39L8.25977 15.74L9.60977 18.44L11.1098 21.44C11.2798 21.78 11.6298 21.99 11.9998 21.99C12.3698 21.99 12.7298 21.78 12.8898 21.44L14.3898 18.44L15.7398 15.74L18.4398 14.39L21.4398 12.89C21.7798 12.72 21.9898 12.37 21.9898 12C21.9898 11.63 21.7798 11.28 21.4398 11.11H21.4498ZM17.5598 12.61L16.7198 13.03L14.5598 14.11L14.2598 14.26L14.1098 14.56L11.9998 18.77L9.88977 14.56L9.73977 14.26L9.43976 14.11L7.27977 13.03L6.43977 12.61L5.22977 12L6.43977 11.39L7.27977 10.97L9.43976 9.89L9.73977 9.74L9.88977 9.44L11.9998 5.23L14.1098 9.44L14.2598 9.74L14.5598 9.89L16.7198 10.97L17.5598 11.39L18.7698 12L17.5598 12.61ZM19.4998 1.5L18.5598 3.56L16.4998 4.5L18.5598 5.44L19.4998 7.5L20.4398 5.44L22.4998 4.5L20.4398 3.56L19.4998 1.5Z" fill="black" />
+                                <circle cx="12" cy="11.9999" r="9" stroke="#ababab" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                <rect x="12" y="8" width="0.01" height="0.01" stroke="#ababab" strokeWidth="3" strokeLinejoin="round" />
+                                <path d="M12 12V16" stroke="#ababab" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
 
-                            Why Creative AI
+
+                            <span>About Us</span>
+                        </Link>
+                    </li>
+
+                    <li className="">
+                        <Link
+                            href="/pricing"
+                            className={pathname === "/pricing" ? "active" : ""}
+                        >
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.1719 3C11.9674 3.00008 12.7304 3.31637 13.293 3.87891L20.293 10.8789C21.4643 12.0504 21.4643 13.9496 20.293 15.1211L15.1211 20.293C13.9496 21.4643 12.0504 21.4643 10.8789 20.293L3.87891 13.293C3.31637 12.7304 3.00008 11.9674 3 11.1719V4C3 3.44772 3.44772 3 4 3H11.1719ZM9 7.5C8.17157 7.5 7.5 8.17157 7.5 9V9.00977C7.5 9.83819 8.17157 10.5098 9 10.5098H9.00977C9.83819 10.5098 10.5098 9.83819 10.5098 9.00977V9C10.5098 8.17157 9.83819 7.5 9.00977 7.5H9Z" stroke="#ababab" />
+                            </svg>
+
+
+                            <span>Pricing</span>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about-us" >
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 12C14.76 12 17 9.76 17 7C17 4.24 14.76 2 12 2C9.24 2 7 4.24 7 7C7 9.76 9.24 12 12 12ZM12 4C13.65 4 15 5.35 15 7C15 8.65 13.65 10 12 10C10.35 10 9 8.65 9 7C9 5.35 10.35 4 12 4ZM4 22H20C20.55 22 21 21.55 21 21V20C21 16.14 17.86 13 14 13H10C6.14 13 3 16.14 3 20V21C3 21.55 3.45 22 4 22ZM10 15H14C16.76 15 19 17.24 19 20H5C5 17.24 7.24 15 10 15Z" fill="black" />
-                            </svg>
-
-
-                            About Us
-                        </Link>
-                    </li>
-                    <li className="">
-                        <Link href="/pricing" >
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2 12C2 8.229 2 6.343 3.172 5.172C4.344 4.001 6.229 4 10 4H14C17.771 4 19.657 4 20.828 5.172C21.999 6.344 22 8.229 22 12C22 15.771 22 17.657 20.828 18.828C19.656 19.999 17.771 20 14 20H10C6.229 20 4.343 20 3.172 18.828C2.001 17.656 2 15.771 2 12Z" stroke="black" strokeWidth="1.5" />
-                                <path d="M10 16H6M14 16H12.5M2 10H22" stroke="black" strokeWidth="1.5" strokeLinecap="round" />
-                            </svg>
-
-
-                            Pricing
-                        </Link>
+                        <div
+                            className={`ct_hamburger d-block ${isMenuOpen ? "active" : ""}`}
+                            id="hamburger-12"
+                            onClick={() => window.dispatchEvent(new CustomEvent("toggle-sidebar", { detail: { open: !isMenuOpen } }))}
+                            role="button"
+                            aria-label="Open navigation menu"
+                            tabIndex={0}
+                        >
+                            <div>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 17H19M5 12H19M5 7H19" stroke="#ababab" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                </svg>
+                                <span className="d-block">More</span>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>

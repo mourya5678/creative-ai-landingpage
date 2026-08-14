@@ -32,11 +32,9 @@ export default function Page() {
           </div>
         </div>
       </section>
-
       <section className="ct_pt_76 pb-5">
         <div className="container">
           <div className="row docs-row">
-
             <div className="col-lg-3 mb-4 mb-lg-0">
               <div className="sidebar">
                 <div className="d-flex justify-content-between align-items-center mb-3 px-2">
@@ -62,7 +60,6 @@ export default function Page() {
                 </ul>
               </div>
             </div>
-
             <div className="col-lg-9 mb-4 mb-lg-0">
               <section id="section-intro" className="content-card">
                 <h2>Building the Future of AI-Powered Websites and Business Applications</h2>
@@ -75,13 +72,11 @@ export default function Page() {
                 <p>As AI continues to reshape how digital products are created, Creative AI is committed to building a platform that makes launching, managing, and scaling websites and business applications faster, smarter, and more efficient.
                 </p>
               </section>
-
               <section id="section-mission" className="content-card">
                 <h2>Our Mission</h2>
                 <p>Technology should help people build faster, not become another obstacle.</p>
                 <p>Our mission is to remove the complexity of website and application development by making AI the starting point of every project. We believe entrepreneurs, small businesses, startups, agencies, and creators should be able to launch professional digital products without learning code or managing complicated development workflows. Creative AI exists to give every business access to modern technology, regardless of technical expertise.</p>
               </section>
-
               <section id="section-why-exists" className="content-card">
                 <h2>Why Creative AI Exists</h2>
                 <p>The internet has no shortage of website builders.
@@ -95,7 +90,6 @@ export default function Page() {
                 <p>Our AI understands your requirements and generates the foundation for a complete digital product, allowing you to spend less time building and more time growing your business.
                 </p>
               </section>
-
               <section id="section-what-we-build" className="content-card">
                 <h2>What We Build</h2>
                 <p>Creative AI is more than an AI website builder.
@@ -113,15 +107,9 @@ export default function Page() {
                   <li>Customer Portals</li>
                   <li>Employee Portals</li>
                   <li>Restaurant Ordering Systems</li>
-
-
-
                   <li>Booking Platforms </li>
-
-
                   <li>Appointment Systems </li>
                   <li>Learning Platforms </li>
-
                   <li>Healthcare Portals </li>
                   <li>Inventory Management Systems</li>
                   <li>HR Management Software</li>
@@ -129,23 +117,16 @@ export default function Page() {
                   <li>Admin Dashboards</li>
                   <li>Internal Business Tools</li>
                   <li>AI Web Applications</li>
-
                 </ul>
                 <p>Every project starts with a prompt and evolves into a production-ready foundation that can be customized, expanded, and published.
                 </p>
               </section>
-
               <section id="section-why-choose" className="content-card">
                 <h2>Why Businesses Choose Creative AI</h2>
-
                 <p className="mb-0"><strong>AI-First Experience</strong></p>
                 <p>Generate websites and business applications through natural language instead of manual development.</p>
-
-
                 <p className="mb-0"><strong>Faster Time to Launch</strong></p>
                 <p>Reduce weeks of planning, design, and development into minutes.</p>
-
-
                 <p className="mb-0"><strong>Professional Design</strong></p>
                 <p>Modern layouts designed for usability, responsiveness, and conversion.</p>
                 <p className="mb-0"><strong>SEO-Ready Foundation</strong></p>
@@ -155,8 +136,6 @@ export default function Page() {
                 <p className="mb-0"><strong>Built to Scale</strong></p>
                 <p>Start with a website today and expand into portals, dashboards, internal systems, and business applications as your business grows.</p>
               </section>
-
-
               <section id="section-our-philosophy" className="content-card">
                 <h2>Why Businesses Choose Creative AI</h2>
                 <p>Technology should empower creativity, not replace it.</p>
@@ -165,43 +144,23 @@ export default function Page() {
                 <p>We believe the future belongs to businesses that can turn ideas into reality faster than ever before.
                 </p>
               </section>
-
-
               <section id="section-our-values" className="content-card">
                 <h2>Our Values</h2>
-
                 <p className="mb-0"><strong>Innovation First</strong></p>
                 <p>We continuously explore how artificial intelligence can simplify digital creation.</p>
-
-
                 <p className="mb-0"><strong>Customer Success</strong></p>
                 <p>Every feature is designed to help businesses launch, grow, and scale more efficiently.</p>
-
-
                 <p className="mb-0"><strong>Simplicity</strong></p>
                 <p>Powerful technology should feel intuitive from the first interaction.</p>
                 <p className="mb-0"><strong>Quality by Design</strong></p>
                 <p>Every generated project should provide a professional foundation that businesses can confidently build upon.</p>
                 <p className="mb-0"><strong>Continuous Improvement</strong></p>
                 <p>We believe software should evolve with the needs of modern businesses.</p>
-
               </section>
             </div>
-
-
-
-
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
     </>
   );
 }
