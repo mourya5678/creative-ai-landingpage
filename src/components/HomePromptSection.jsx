@@ -60,9 +60,7 @@ export default function HomePromptSection() {
           aria-label="Type your idea here..."
           value={prompt}
           onChange={(e) => {
-            if (e.target.value.length <= 1000) {
-              setPrompt(e.target.value);
-            }
+            setPrompt(e.target.value);
           }}
           onKeyDown={handleKeyDown}
         ></textarea>
@@ -78,7 +76,7 @@ export default function HomePromptSection() {
             </button>
           </div>
           <div className="ctiprompt_right_btns">
-            <span className="cti_word_counter">{prompt.length}/1000 words</span>
+            <span className="cti_word_counter">{prompt.length} chars</span>
             <a
               href={LOGIN_URL}
               onClick={handleSend}
