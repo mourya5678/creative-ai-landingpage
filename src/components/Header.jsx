@@ -547,7 +547,7 @@ export default function Header() {
                 </svg>
               </a>
             </li>
-            {/* <li>
+            <li>
               <div
                 className="ct_hamburger"
                 id="hamburger-12"
@@ -558,7 +558,7 @@ export default function Header() {
               >
                 <i className="fa-solid fa-bars"></i>
               </div>
-            </li> */}
+            </li>
           </ul>
         </div>
       </header>

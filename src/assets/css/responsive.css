@@ -728,6 +728,10 @@
   /*  */
 
 
+  header .ct_hamburger {
+    display: none !important;
+  }
+
   .ct_navbar-bottom {
     display: block !important;
     margin-top: 70px;
