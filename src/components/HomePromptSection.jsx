@@ -41,7 +41,7 @@ const truncateToWords = (str, limit) => {
   let wordCount = 0;
   let i = 0;
   let inWord = false;
-  
+
   while (i < str.length && wordCount < limit) {
     const isCharWhitespace = /\s/.test(str[i]);
     if (!isCharWhitespace && !inWord) {
@@ -55,18 +55,45 @@ const truncateToWords = (str, limit) => {
     }
     i++;
   }
-  
+
   if (inWord) {
     wordCount++;
   }
-  
+
   return str.slice(0, i);
 };
 
 export default function HomePromptSection() {
   const [prompt, setPrompt] = useState("");
   const [showError, setShowError] = useState(false);
-  
+
+  React.useEffect(() => {
+    const handlePageShow = () => {
+      setPrompt("");
+      const textarea = document.getElementById("home_prompt_textarea");
+      if (textarea) {
+        textarea.value = "";
+      }
+      localStorage.removeItem("prompt");
+
+      // Short delay to override browser autofill/restoration that runs after load
+      setTimeout(() => {
+        setPrompt("");
+        const t = document.getElementById("home_prompt_textarea");
+        if (t) {
+          t.value = "";
+        }
+      }, 50);
+    };
+
+    window.addEventListener("pageshow", handlePageShow);
+    handlePageShow();
+
+    return () => {
+      window.removeEventListener("pageshow", handlePageShow);
+    };
+  }, []);
+
   const handleSend = (e) => {
     if (e) e.preventDefault();
     const wordCount = getWordCount(prompt);
@@ -91,7 +118,7 @@ export default function HomePromptSection() {
   const handleTextareaChange = (e) => {
     const value = e.target.value;
     setPrompt(value);
-    
+
     // Auto-clear error if user edits the prompt back to a valid range
     if (showError && getWordCount(value) <= 1000) {
       setShowError(false);
@@ -125,12 +152,12 @@ export default function HomePromptSection() {
           </div>
           <div className="ctiprompt_right_btns">
             {showError && getWordCount(prompt) > 1000 && (
-              <span 
+              <span
                 className="cti_error_msg"
-                style={{ 
-                  color: '#ff4d4d', 
-                  marginRight: '15px', 
-                  fontSize: '14px', 
+                style={{
+                  color: '#ff4d4d',
+                  marginRight: '15px',
+                  fontSize: '14px',
                   fontWeight: '500',
                   display: 'inline-block'
                 }}
