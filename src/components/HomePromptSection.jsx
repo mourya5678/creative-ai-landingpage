@@ -138,6 +138,7 @@ export default function HomePromptSection() {
           value={prompt}
           onChange={handleTextareaChange}
           onKeyDown={handleKeyDown}
+          data-lenis-prevent
         ></textarea>
         <div className="cti_home_prompt_action_btns">
           <div className="ctiprompt_left_btns">

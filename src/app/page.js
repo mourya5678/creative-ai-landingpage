@@ -1501,6 +1501,7 @@ export default async function Page() {
                     id="ct_message"
                     required=""
                     rows="3"
+                    data-lenis-prevent
                   ></textarea>
                   <span className="highlight"></span>
                   <span className="bar"></span>

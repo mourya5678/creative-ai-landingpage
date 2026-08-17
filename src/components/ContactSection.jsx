@@ -83,7 +83,7 @@ export default function ContactSection({
               </div>
 
               <div className="ct_input_group ct_mb_43">
-                <textarea className="input text-dark" id="ct_message" required rows="3"></textarea>
+                <textarea className="input text-dark" id="ct_message" required rows="3" data-lenis-prevent></textarea>
                 <span className="highlight"></span>
                 <span className="bar"></span>
                 <label htmlFor="ct_message">
