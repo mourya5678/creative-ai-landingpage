@@ -31,10 +31,50 @@ const SUGGESTIONS = [
   }
 ];
 
+const getWordCount = (text) => {
+  if (!text) return 0;
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  return words.length;
+};
+
+const truncateToWords = (str, limit) => {
+  let wordCount = 0;
+  let i = 0;
+  let inWord = false;
+  
+  while (i < str.length && wordCount < limit) {
+    const isCharWhitespace = /\s/.test(str[i]);
+    if (!isCharWhitespace && !inWord) {
+      inWord = true;
+    } else if (isCharWhitespace && inWord) {
+      inWord = false;
+      wordCount++;
+      if (wordCount === limit) {
+        return str.slice(0, i);
+      }
+    }
+    i++;
+  }
+  
+  if (inWord) {
+    wordCount++;
+  }
+  
+  return str.slice(0, i);
+};
+
 export default function HomePromptSection() {
   const [prompt, setPrompt] = useState("");
+  const [showError, setShowError] = useState(false);
+  
   const handleSend = (e) => {
     if (e) e.preventDefault();
+    const wordCount = getWordCount(prompt);
+    if (wordCount > 1000) {
+      setShowError(true);
+      return;
+    }
+    setShowError(false);
     if (typeof window !== "undefined") {
       localStorage.setItem("prompt", prompt);
       window.location.href = LOGIN_URL;
@@ -45,6 +85,16 @@ export default function HomePromptSection() {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       handleSend();
+    }
+  };
+
+  const handleTextareaChange = (e) => {
+    const value = e.target.value;
+    setPrompt(value);
+    
+    // Auto-clear error if user edits the prompt back to a valid range
+    if (showError && getWordCount(value) <= 1000) {
+      setShowError(false);
     }
   };
 
@@ -59,9 +109,7 @@ export default function HomePromptSection() {
           rows="4"
           aria-label="Type your idea here..."
           value={prompt}
-          onChange={(e) => {
-            setPrompt(e.target.value);
-          }}
+          onChange={handleTextareaChange}
           onKeyDown={handleKeyDown}
         ></textarea>
         <div className="cti_home_prompt_action_btns">
@@ -76,7 +124,23 @@ export default function HomePromptSection() {
             </button>
           </div>
           <div className="ctiprompt_right_btns">
-            <span className="cti_word_counter">{prompt.length} chars</span>
+            {showError && getWordCount(prompt) > 1000 && (
+              <span 
+                className="cti_error_msg"
+                style={{ 
+                  color: '#ff4d4d', 
+                  marginRight: '15px', 
+                  fontSize: '14px', 
+                  fontWeight: '500',
+                  display: 'inline-block'
+                }}
+              >
+                Word limit exceeded
+              </span>
+            )}
+            <span className={`cti_word_counter ${getWordCount(prompt) > 1000 ? "limit-reached" : ""}`}>
+              {getWordCount(prompt)} / 1000 words
+            </span>
             <a
               href={LOGIN_URL}
               onClick={handleSend}
