@@ -670,7 +670,8 @@
     padding-bottom: 50px;
   }
 
-  .ct_pricing_grid {
+  .ct_pricing_grid,
+  .ct_pricing_grid.ct_pricing_grid_two {
     grid-template-columns: 1fr;
   }
 
@@ -786,8 +787,8 @@
   /* Active State */
   .ct_navbar-bottom li a.active span,
   .ct_navbar-bottom li a:hover span,
-   .ct_navbar-bottom li a.active ,
-  .ct_navbar-bottom li a:hover ,
+  .ct_navbar-bottom li a.active,
+  .ct_navbar-bottom li a:hover,
   .ct_navbar-bottom li .ct_hamburger.active span,
   .ct_navbar-bottom li .ct_hamburger:hover span {
     color: #5d5cff !important;
