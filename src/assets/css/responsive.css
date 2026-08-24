@@ -1005,3 +1005,44 @@
     padding-top: 140px;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .cti_prompt_main {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+
+  .cti_home_prompt_action_btns {
+    gap: 6px;
+    margin-top: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .ctiprompt_left_btns button,
+  .ctiprompt_right_btns button {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+  .cti_word_counter {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .cti_error_msg {
+    font-size: 11px;
+    margin-right: 6px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .cti_suggestions_wrapper {
+    padding-inline: 12px;
+  }
+
+  .cti_tag {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}

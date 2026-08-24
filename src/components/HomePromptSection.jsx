@@ -148,16 +148,7 @@ export default function HomePromptSection() {
           </div>
           <div className="ctiprompt_right_btns">
             {showError && getWordCount(prompt) > 1000 && (
-              <span
-                className="cti_error_msg"
-                style={{
-                  color: '#ff4d4d',
-                  marginRight: '15px',
-                  fontSize: '14px',
-                  fontWeight: '500',
-                  display: 'inline-block'
-                }}
-              >
+              <span className="cti_error_msg">
                 Word limit exceeded
               </span>
             )}
@@ -195,17 +186,19 @@ export default function HomePromptSection() {
           </div>
         </div>
       </div>
-      <div className="cti_suggestions">
-        {SUGGESTIONS.map((item, idx) => (
-          <div
-            key={idx}
-            className="cti_tag"
-            onClick={() => setPrompt(item.prompt)}
-          >
-            {item.icon}
-            {item.label}
-          </div>
-        ))}
+      <div className="cti_suggestions_wrapper">
+        <div className="cti_suggestions">
+          {SUGGESTIONS.map((item, idx) => (
+            <div
+              key={idx}
+              className="cti_tag"
+              onClick={() => setPrompt(item.prompt)}
+            >
+              {item.icon}
+              {item.label}
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
