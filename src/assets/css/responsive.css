@@ -670,7 +670,8 @@
     padding-bottom: 50px;
   }
 
-  .ct_pricing_grid {
+  .ct_pricing_grid,
+  .ct_pricing_grid.ct_pricing_grid_two {
     grid-template-columns: 1fr;
   }
 
