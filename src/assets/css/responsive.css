@@ -786,8 +786,8 @@
   /* Active State */
   .ct_navbar-bottom li a.active span,
   .ct_navbar-bottom li a:hover span,
-   .ct_navbar-bottom li a.active ,
-  .ct_navbar-bottom li a:hover ,
+  .ct_navbar-bottom li a.active,
+  .ct_navbar-bottom li a:hover,
   .ct_navbar-bottom li .ct_hamburger.active span,
   .ct_navbar-bottom li .ct_hamburger:hover span {
     color: #5d5cff !important;

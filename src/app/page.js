@@ -10,7 +10,6 @@ import { LOGIN_URL, API_URL } from "@/config";
 import FAQAccordion from "@/components/FAQAccordion";
 import VideoPlayer from "@/components/VideoPlayer";
 
-// ChatGPT Image Aug 14, 2026, 05_04_08 PM 1.png
 export const websitePrompts = [
   {
     title: "E-Commerce Stores",
@@ -78,39 +77,17 @@ export default async function Page() {
       <Header />
       <div className="cti_home_banner">
         <div className="cti_home_banner_cnt">
-          {/* <span>
-            ✨
-            Build apps, websites & AI products instantly</span> */}
           <span>
-            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ borderRadius: '2px', display: 'inline-block', verticalAlign: 'middle', marginRight: '8px' }}>
-              <rect width="20" height="4.66" fill="#FF9933"/>
-              <rect y="4.66" width="20" height="4.66" fill="#FFFFFF"/>
-              <rect y="9.32" width="20" height="4.66" fill="#128807"/>
-              <circle cx="10" cy="7" r="1.8" stroke="#000080" strokeWidth="0.5"/>
-              <circle cx="10" cy="7" r="0.4" fill="#000080"/>
-            </svg>
-            Happy Independence Day, India!
-            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ borderRadius: '2px', display: 'inline-block', verticalAlign: 'middle', marginLeft: '8px' }}>
-              <rect width="20" height="4.66" fill="#FF9933"/>
-              <rect y="4.66" width="20" height="4.66" fill="#FFFFFF"/>
-              <rect y="9.32" width="20" height="4.66" fill="#128807"/>
-              <circle cx="10" cy="7" r="1.8" stroke="#000080" strokeWidth="0.5"/>
-              <circle cx="10" cy="7" r="0.4" fill="#000080"/>
-            </svg>
-          </span>
+            ✨
+            Build apps, websites & AI products instantly</span>
           {/* <h1>Turn Your Ideas Into Real <small>Products</small> In Seconds</h1> */}
-          {/* <h1>
+          <h1>
             The AI Business Builder{" "}
             <small className="gradient-text ct_fw_800">For Great Ideas</small>
-          </h1> */}
-          {/* for 15 aug */}
-          <h1>What do you want to <br /> <small style={{ color: "rgb(228 119 59)" }}>build </small> <small style={{ color: "rgb(20 97 44)" }}>today?</small></h1>
-          {/* <p>
+          </h1>
+          <p>
             From business websites to custom apps, Creative AI helps you turn
             ideas into real products in minutes.
-          </p> */}
-          <p className="pb-4">
-            Describe your idea and let AI turn it into a real product in seconds.
           </p>
           <HomePromptSection />
         </div>
