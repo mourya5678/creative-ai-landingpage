@@ -1262,7 +1262,7 @@ export default async function Page() {
                   : "";
                 return (
                   <div className="col-lg-4 col-md-6 mb-4 mb-lg-0" key={blog.id}>
-                    <a href={`/blog-details?slug=${blog.slug}`} className="cti_blog_card d-block">
+                    <a href={`/blog-details/${blog.slug}`} className="cti_blog_card d-block">
                       <div className="cti_blog_img">
                         {imageUrl && <img
                           className="img-fluid"

@@ -70,7 +70,7 @@ export default function BlogList({ initialBlogs, apiUrl }) {
                           </p>
                         </div>
                         <div className="mt-auto">
-                          <Link className="ct_blue_btn_fill w-100 mt-4" href={`/blog-details?slug=${blog.slug}`}>
+                          <Link className="ct_blue_btn_fill w-100 mt-4" href={`/blog-details/${blog.slug}`}>
                             Learn More
                           </Link>
                         </div>

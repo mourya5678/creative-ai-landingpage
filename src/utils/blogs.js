@@ -49,7 +49,7 @@ export function parseWordPressHtml(html) {
   // Rewrite post URLs to /blog-details/slug
   // Exclude theme, uploads, plugins, feeds, comments, author, category, tags, wp-admin/includes/json
   bodyContent = bodyContent.replace(
-    /https:\/\/creative\.techdeer\.in\/(?!(?:feed|comments|wp-json|wp-content|wp-includes|xmlrpc|wp-admin|oembed|category|author|tag)\b)([a-zA-Z0-9_-]+)\/?/g,
+    /https:\/\/blog\.creativethoughts\.ai\/(?!(?:feed|comments|wp-json|wp-content|wp-includes|xmlrpc|wp-admin|oembed|category|author|tag)\b)([a-zA-Z0-9_-]+)\/?/g,
     '/blog-details/$1'
   );
 
