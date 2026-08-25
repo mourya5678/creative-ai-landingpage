@@ -42,6 +42,55 @@ export default async function RestaurantPage() {
 
   return (
     <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://creativethoughts.ai/law-firm-website-builder#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://creativethoughts.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Law Firm Website Builder",
+                "item": "https://creativethoughts.ai/law-firm-website-builder"
+              }
+            ]
+          })
+        }}
+      />
+<script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://creativethoughts.ai/law-firm-website-builder#webpage",
+            "url": "https://creativethoughts.ai/law-firm-website-builder",
+            "name": "Law Firm Website Builder | Creative AI",
+            "description": "Build a professional law firm website with consultation booking, client portals, case management, document management, payments, and legal business tools using Creative AI.",
+            "isPartOf": {
+              "@id": "https://creativethoughts.ai/#website"
+            },
+            "about": {
+              "@id": "https://creativethoughts.ai/#software"
+            },
+            "publisher": {
+              "@id": "https://creativethoughts.ai/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://creativethoughts.ai/#software"
+            }
+          })
+        }}
+      />
       <HomeInit />
       <Header />
 

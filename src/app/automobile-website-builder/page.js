@@ -40,6 +40,55 @@ export default async function RestaurantPage() {
 
   return (
     <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://creativethoughts.ai/automobile-website-builder#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://creativethoughts.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Automobile Website Builder",
+                "item": "https://creativethoughts.ai/automobile-website-builder"
+              }
+            ]
+          })
+        }}
+      />
+<script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://creativethoughts.ai/automobile-website-builder#webpage",
+            "url": "https://creativethoughts.ai/automobile-website-builder",
+            "name": "Automobile Website Builder | Creative AI",
+            "description": "Build an automobile business website with vehicle listings, booking systems, service information, customer inquiries, and automotive business management tools using Creative AI.",
+            "isPartOf": {
+              "@id": "https://creativethoughts.ai/#website"
+            },
+            "about": {
+              "@id": "https://creativethoughts.ai/#software"
+            },
+            "publisher": {
+              "@id": "https://creativethoughts.ai/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://creativethoughts.ai/#software"
+            }
+          })
+        }}
+      />
       <HomeInit />
       <Header />
 

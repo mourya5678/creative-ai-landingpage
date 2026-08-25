@@ -13,3 +13,6 @@ Disallow: /billing/
 Disallow: /login
 Disallow: /signup
 Disallow: /register
+
+Sitemap: https://creativethoughts.ai/sitemap.xml
+

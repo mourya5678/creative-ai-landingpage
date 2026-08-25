@@ -215,48 +215,6 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Breadcrumb Schema Markup */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org/",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://creativethoughts.ai/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "About us",
-                  "item": "https://creativethoughts.ai/about-us"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "name": "Pricing",
-                  "item": "https://creativethoughts.ai/pricing"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 4,
-                  "name": "Blog Page",
-                  "item": "https://creativethoughts.ai/blog"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 5,
-                  "name": "Contact Us",
-                  "item": "https://creativethoughts.ai/contact"
-                }
-              ]
-            })
-          }}
-        />
       </head>
       <body suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}

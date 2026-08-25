@@ -40,6 +40,55 @@ export default async function RestaurantPage() {
 
     return (
         <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://creativethoughts.ai/hospital-website-builder#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://creativethoughts.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Hospital Website Builder",
+                "item": "https://creativethoughts.ai/hospital-website-builder"
+              }
+            ]
+          })
+        }}
+      />
+<script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://creativethoughts.ai/hospital-website-builder#webpage",
+            "url": "https://creativethoughts.ai/hospital-website-builder",
+            "name": "Hospital Website Builder | Creative AI",
+            "description": "Build a professional hospital website with patient portals, appointment management, doctor profiles, healthcare services, and hospital administration tools using Creative AI.",
+            "isPartOf": {
+              "@id": "https://creativethoughts.ai/#website"
+            },
+            "about": {
+              "@id": "https://creativethoughts.ai/#software"
+            },
+            "publisher": {
+              "@id": "https://creativethoughts.ai/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://creativethoughts.ai/#software"
+            }
+          })
+        }}
+      />
             <HomeInit />
             <Header />
 

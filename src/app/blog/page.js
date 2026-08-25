@@ -24,6 +24,29 @@ export default async function Page() {
 
   return (
     <div style={{ backgroundColor: "#020202", minHeight: "100vh", width: "100%" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://creativethoughts.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://creativethoughts.ai/blog"
+              }
+            ]
+          })
+        }}
+      />
       <Header />
 
       {wpData.bodyContent ? (

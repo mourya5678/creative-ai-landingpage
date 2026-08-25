@@ -80,7 +80,6 @@ export default async function Page() {
           <span>
             ✨
             Build apps, websites & AI products instantly</span>
-          {/* <h1>Turn Your Ideas Into Real <small>Products</small> In Seconds</h1> */}
           <h1>
             The AI Business Builder{" "}
             <small className="gradient-text ct_fw_800">For Great Ideas</small>

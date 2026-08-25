@@ -44,6 +44,55 @@ export default async function RestaurantPage() {
 
   return (
     <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://creativethoughts.ai/salon-website-builder#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://creativethoughts.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Salon Website Builder",
+                "item": "https://creativethoughts.ai/salon-website-builder"
+              }
+            ]
+          })
+        }}
+      />
+<script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://creativethoughts.ai/salon-website-builder#webpage",
+            "url": "https://creativethoughts.ai/salon-website-builder",
+            "name": "Salon Website Builder | Creative AI",
+            "description": "Build a professional salon website with online appointment booking, beauty services, stylist profiles, customer management, and salon business tools using Creative AI.",
+            "isPartOf": {
+              "@id": "https://creativethoughts.ai/#website"
+            },
+            "about": {
+              "@id": "https://creativethoughts.ai/#software"
+            },
+            "publisher": {
+              "@id": "https://creativethoughts.ai/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://creativethoughts.ai/#software"
+            }
+          })
+        }}
+      />
       <HomeInit />
       <Header />
 

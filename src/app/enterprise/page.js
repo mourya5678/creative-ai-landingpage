@@ -288,10 +288,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className="ct_btn_group ct_py_70 pt-lg-5 pt-3 pb-0 justify-content-center">
-            <a className="ct_blue_btn_fill" href="/all-industries">View More
-              industries</a>
-          </div>
+
         </div>
       </section>
       <section className="ct_pb_50">
