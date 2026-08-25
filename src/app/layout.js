@@ -96,6 +96,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": "https://creativethoughts.ai/#organization",
               "name": "Creative AI",
               "alternateName": "Creativethoughts.ai",
               "url": "https://creativethoughts.ai/",
@@ -134,6 +135,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": "https://creativethoughts.ai/#website",
               "name": "Creative AI",
               "url": "https://creativethoughts.ai/",
               "description": "Creative AI is an AI website builder and AI app builder that helps businesses, startups, and entrepreneurs create websites and apps without coding. Build faster, automate workflows, and launch high-quality digital products with AI-powered innovation.",
@@ -141,6 +143,26 @@ export default function RootLayout({ children }) {
                 "@type": "SearchAction",
                 "target": "https://creativethoughts.ai/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
+
+        {/* SoftwareApplication Schema Markup */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "@id": "https://creativethoughts.ai/#software",
+              "name": "Creative AI",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "All",
+              "url": "https://creativethoughts.ai/",
+              "description": "Creative AI is an AI-powered website and application builder that allows you to build, customize, and launch digital products from simple text prompts.",
+              "publisher": {
+                "@id": "https://creativethoughts.ai/#organization"
               }
             })
           }}
