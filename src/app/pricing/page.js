@@ -57,13 +57,13 @@ export default async function Page() {
               "@id": "https://creativethoughts.ai/#website"
             },
             "about": {
-              "@id": "https://creativethoughts.ai/#software"
+              "@id": "https://creativethoughts.ai/#organization"
             },
             "publisher": {
               "@id": "https://creativethoughts.ai/#organization"
             },
             "mainEntity": {
-              "@id": "https://creativethoughts.ai/#software"
+              "@id": "https://creativethoughts.ai/#organization"
             }
           })
         }}

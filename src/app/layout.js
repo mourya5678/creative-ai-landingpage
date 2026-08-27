@@ -148,26 +148,6 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* SoftwareApplication Schema Markup */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "@id": "https://creativethoughts.ai/#software",
-              "name": "Creative AI",
-              "applicationCategory": "BusinessApplication",
-              "operatingSystem": "All",
-              "url": "https://creativethoughts.ai/",
-              "description": "Creative AI is an AI-powered website and application builder that allows you to build, customize, and launch digital products from simple text prompts.",
-              "publisher": {
-                "@id": "https://creativethoughts.ai/#organization"
-              }
-            })
-          }}
-        />
-
       </head>
       <body suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
