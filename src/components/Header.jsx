@@ -60,9 +60,13 @@ export default function Header() {
     "/blog-details"
   ];
 
+  const isTransparentHeader = transparentHeaderRoutes.some(
+    (route) => pathname === route || (route !== "/" && pathname?.startsWith(route + "/"))
+  );
+
   return (
     <div
-      className={`ct_header_main ${transparentHeaderRoutes.includes(pathname) ? "et_main_header_344" : ""
+      className={`ct_header_main ${isTransparentHeader ? "et_main_header_344" : ""
         } ${isSticky ? "ct_sticky_menu" : ""}`}
     >
       <header className="container">
