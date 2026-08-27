@@ -89,6 +89,23 @@ export default async function RestaurantPage() {
           })
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": hotelFAQItems.map((item) => ({
+              "@type": "Question",
+              "name": item.question.trim(),
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer.trim(),
+              },
+            })),
+          }),
+        }}
+      />
       <HomeInit />
       <Header />
 

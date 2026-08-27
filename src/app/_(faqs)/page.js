@@ -13,6 +13,210 @@ export const metadata = {
 export default function Page() {
       return (
             <>
+                  <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                              __html: JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "BreadcrumbList",
+                                    "@id": "https://creativethoughts.ai/faqs#breadcrumb",
+                                    "itemListElement": [
+                                          {
+                                                "@type": "ListItem",
+                                                "position": 1,
+                                                "name": "Home",
+                                                "item": "https://creativethoughts.ai/"
+                                          },
+                                          {
+                                                "@type": "ListItem",
+                                                "position": 2,
+                                                "name": "FAQs",
+                                                "item": "https://creativethoughts.ai/faqs"
+                                          }
+                                    ]
+                              })
+                        }}
+                  />
+                  <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                              __html: JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "WebPage",
+                                    "@id": "https://creativethoughts.ai/faqs#webpage",
+                                    "url": "https://creativethoughts.ai/faqs",
+                                    "name": "AI Website Builder FAQs | Creative AI",
+                                    "description": "Find answers about Creative AI, including AI website building, app creation, coding requirements, source code, pricing, and more.",
+                                    "isPartOf": {
+                                          "@id": "https://creativethoughts.ai/#website"
+                                    },
+                                    "about": {
+                                          "@id": "https://creativethoughts.ai/#software"
+                                    },
+                                    "publisher": {
+                                          "@id": "https://creativethoughts.ai/#organization"
+                                    },
+                                    "mainEntity": {
+                                          "@id": "https://creativethoughts.ai/#software"
+                                    }
+                              })
+                        }}
+                  />
+                  <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                              __html: JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "FAQPage",
+                                    "mainEntity": [
+                                          {
+                                                "@type": "Question",
+                                                "name": "What is Creative AI?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Creative AI is an end-to-end AI app builder that transforms user requirements into fully functional applications, handling everything from idea understanding to final deployment."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "What does creative AI actually do?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "It analyzes your input, understands project intent, and generates complete project solutions, including UI, workflows, and backend structure, automatically."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Who can use Creative AI?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Startups, SMBs, developers, and non-technical users can all use creative AI to quickly build and launch digital products without complex coding."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "How does creative AI pricing work?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Creative AI follows a subscription-based model where users can create multiple projects and explore different app variations."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Are there any hidden charges?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "No, pricing is transparent. Users pay for the subscription plan they choose, with optional costs only for advanced custom requirements."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Can I get custom enterprise pricing?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Yes, businesses with advanced needs can request tailored enterprise pricing based on project scope and usage."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "How fast can I build an app using creative AI?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Apps can be generated in a fraction of traditional development time since the AI app builder automates most of the process."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Do I need coding knowledge?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "No, Creative AI is a no-code AI app builder, so you can create apps without any programming skills."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Can I update my app after generating it?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Yes, you can easily customize, modify, and regenerate parts of your project anytime."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "What kind of support do I get?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "You get full support, including guidance, troubleshooting, and help from the Creative AI team."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Can I talk to someone directly?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Yes, users can connect with the team through calls for detailed discussion and requirement clarity."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Is support available for complex projects?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Yes, the team helps with advanced requirements, custom workflows, and enterprise-level solutions."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Can I add custom features to my app?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Yes, Creative AI allows you to request advanced custom features based on your business needs."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "How are custom features implemented?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "You share your requirements, and the team designs and integrates tailored solutions into your project."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Are integrations supported?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Yes, you can request API integrations, workflow enhancements, and other advanced custom functionalities."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "How do I start building with Creative AI?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Simply submit your idea or requirements, and the AI app builder will generate your project automatically."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "What happens after I submit my idea?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "The system analyzes your input, builds the structure, and provides a ready-to-customize application."
+                                                }
+                                          },
+                                          {
+                                                "@type": "Question",
+                                                "name": "Can I deploy my app directly?",
+                                                "acceptedAnswer": {
+                                                      "@type": "Answer",
+                                                      "text": "Yes, once your project is ready and refined, you can deploy it directly from the platform with full support."
+                                                }
+                                          }
+                                    ]
+                              })
+                        }}
+                  />
                   <Header />
 
 

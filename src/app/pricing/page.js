@@ -19,6 +19,106 @@ export default async function Page() {
   const yearlyPlans = await getPlans("YEAR");
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "@id": "https://creativethoughts.ai/pricing#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://creativethoughts.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Pricing",
+                "item": "https://creativethoughts.ai/pricing"
+              }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://creativethoughts.ai/pricing#webpage",
+            "url": "https://creativethoughts.ai/pricing",
+            "name": "AI Website Builder Pricing | Creative AI Plans",
+            "description": "Explore Creative AI pricing plans for building websites, apps, and business software with AI. Choose a plan that fits your needs.",
+            "isPartOf": {
+              "@id": "https://creativethoughts.ai/#website"
+            },
+            "about": {
+              "@id": "https://creativethoughts.ai/#software"
+            },
+            "publisher": {
+              "@id": "https://creativethoughts.ai/#organization"
+            },
+            "mainEntity": {
+              "@id": "https://creativethoughts.ai/#software"
+            }
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is an AI app builder?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An AI app builder is a tool that lets you create apps just by describing your idea. It automatically builds the design, features, and backend for you."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does this AI app builder work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You simply type what you want to build, and the AI turns it into a working app step by step, in minutes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need coding to build an app?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, you don’t need any coding skills. The AI handles everything; you just focus on your idea."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What kind of apps can I build?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can build web apps, mobile apps, dashboards, tools, and more. If you can describe it, you can build it."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How fast can I launch my app?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can create and launch your app in just a few minutes, depending on your idea."
+                }
+              }
+            ]
+          })
+        }}
+      />
       <Header />
       <InnerTestimonialInit />
       <section className="ct_pricing_section ct_py_70 ct_md_py_50">
